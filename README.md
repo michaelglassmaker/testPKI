@@ -1,1 +1,1 @@
-# testPKI
+# testPKI    MG initial test repository with Git ...   So far  as a general backup scheduler, I like it,  but as far as meta data analysis and granular metadata gmt - I'm still evaluating what looks, initially, like there might limitations... TBD 4MAR  Michael Glassmaker

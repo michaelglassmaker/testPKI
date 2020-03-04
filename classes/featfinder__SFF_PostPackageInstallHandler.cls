@@ -1,0 +1,15 @@
+/*
+This file is generated and isn't the actual source code for this
+managed global class.
+This read-only file shows the class's global constructors,
+methods, variables, and properties.
+To enable code to compile, all methods return null.
+*/
+global class SFF_PostPackageInstallHandler implements System.InstallHandler {
+    global SFF_PostPackageInstallHandler() {
+
+    }
+    global void onInstall(System.InstallContext context) {
+
+    }
+}

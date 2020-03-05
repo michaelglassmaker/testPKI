@@ -1,0 +1,12 @@
+trigger SMAX_PS_WorkOrderEvent on SMAX_PS_WorkOrder_Event__e (after insert) {
+
+    List<SMAX_PS_Platform_Event_Log__c> logs = new List<SMAX_PS_Platform_Event_Log__c>();
+    for (SMAX_PS_WorkOrder_Event__e evt : trigger.new)
+    {
+        Id woId = (evt.SMAX_PS_WorkOrderId__c != null) ? evt.SMAX_PS_WorkOrderId__c : evt.SMAX_PS_InvoiceId__c;
+        SMAX_PS_Platform_Event_Log__c log = SMAX_PS_PlatformEventUtility.createEventLog(evt, woId, evt.SMAX_PS_Action__c);
+        System.debug('Created Platform Event Log: ' + log);
+        logs.add(log);
+    }
+    insert logs;
+}

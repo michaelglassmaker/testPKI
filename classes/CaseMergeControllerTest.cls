@@ -1,5 +1,18 @@
 @isTest
+/*
+see  changes in Git Compare View
+// voila
+// hello_woeld
+*/
+
 public class CaseMergeControllerTest{
+
+@testSetup static void setup() {
+SAI_Lead_Routing_Values__c cc = new SAI_Lead_Routing_Values__c();
+cc.SAI_Values__c = 'Applied Genomics, Maternal Fetal Health, Newborn Screening';
+ insert cc;
+ }
+
     static testMethod void searchTaskTestMethod(){
         Account acc = CT_TestDataSetupUtility.createTestAccount('TEST','77778','Test');
         insert acc;
@@ -196,6 +209,6 @@ public class CaseMergeControllerTest{
         INFEnvironmentalData__c env = new INFEnvironmentalData__c(Name='test',Account__c=acc.id);
         insert env;
         EmailTemplate emtemp = [select id from EmailTemplate where isActive = TRUE LIMIT 1];    
-        SendMassEmail.SendEmail(String.Valueof(con1.id),emtemp.id);
+      //  SendMassEmail.SendEmail(String.Valueof(con1.id),emtemp.id);
     }
 }

@@ -6,6 +6,12 @@ methods, variables, and properties.
 To enable code to compile, all methods return null.
 */
 global class PowerLoaderMapping extends PowerLoader.Configero_Base {
+    global PowerLoaderMapping() {
+
+    }
+    global void initPage() {
+
+    }
     @RemoteAction
     global static void saveMappingWithDescription(String objectAPIName, String fileName, String description, List<Map<String,String>> mapps) {
 

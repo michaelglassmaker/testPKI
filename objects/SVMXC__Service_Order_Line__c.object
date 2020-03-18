@@ -1,0 +1,2461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <fullName>SMAX_PS_PKI_Apply_Adjustment_Field_Servi</fullName>
+        <description>SFM: SMAX_PS_PKI_Apply_Adjustment_Field_Service</description>
+        <displayedFields>
+            <field>RecordTypeId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SVMXC__Product__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SVMXC__Actual_Quantity2__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SVMXC__Actual_Price2__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SMAX_PS_ContractPercentDiscount__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SMAX_PS_ReplacementBasePrice__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SMAX_PS_CalculatedLinePrice__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SMAX_PS_ServicePercentAdjustmentType__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SMAX_PS_ServicePercentAdjustment__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SMAX_PS_ServiceAmountAdjustment__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SMAX_PS_ServiceAmountAdjustmentType__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SMAX_PS_Calculated_Line_Discount__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SVMXC__Activity_Type__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SVMXC__Expense_Type__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>SMAX_PS_PKI_Apply_Adjustment_Field_Service</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>SMAX_PS_PKI_Apply_Estimate_Adjustment_v2</fullName>
+        <description>SFM: SMAX_PS_PKI_Apply_Estimate_Adjustment_v2</description>
+        <displayedFields>
+            <field>RecordTypeId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SVMXC__Line_Type__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SVMXC__Is_Billable__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SVMXC__Line_Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SMAX_PS_Translation__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SVMXC__Estimated_Quantity2__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SVMXC__Product__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SVMXC__Actual_Quantity2__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SVMXC__Actual_Price2__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SMAX_PS_ContractPercentDiscount__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SMAX_PS_ReplacementBasePrice__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SMAX_PS_ServicePercentAdjustment__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SMAX_PS_ServicePercentAdjustmentType__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SMAX_PS_ServiceAmountAdjustment__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SMAX_PS_ServiceAmountAdjustmentType__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SVMXC__Total_Line_Price__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SVMXC__Activity_Type__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>SMAX_PS_PKI_Apply_Estimate_Adjustment_v2</label>
+    </fieldSets>
+    <fields>
+        <fullName>BD_Discount_Type__c</fullName>
+        <description>The Product / Discount Type applied to the line, based on the Product and Contract Discount Exceptions</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Product / Discount Type applied to the line, based on the Product and Contract Discount Exceptions</inlineHelpText>
+        <label>Discount Type</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BD_Eligible_for_Return__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Eligible for Return</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>BD_Fault_Code_Family__c</fullName>
+        <externalId>false</externalId>
+        <label>Fault Code Family</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BD_Product_Plant__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Product Plant</label>
+        <referenceTo>SMAX_PS_ProductPlant__c</referenceTo>
+        <relationshipLabel>Work Details</relationshipLabel>
+        <relationshipName>Work_Details</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BD_Return_Part_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Return Part Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ActionFaultCode__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Action Code</label>
+        <referenceTo>SMAX_PS_Fault_Code__c</referenceTo>
+        <relationshipLabel>Work Details (Action Fault Code)</relationshipLabel>
+        <relationshipName>Work_Detail_Actions</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Approval_Required__c</fullName>
+        <description>Indicates if the estimate line requires approval.</description>
+        <externalId>false</externalId>
+        <formula>RecordType.DeveloperName = &quot;Estimate&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Approval Required</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_CalculatedLinePrice__c</fullName>
+        <description>2018-05-17 Maples Edited to move * QTy to end and paren around 1st 2 blocks to calculate properly
+2018-07-30 VanLoon - Reverting the changes Maples made for SVMXCFG-683</description>
+        <externalId>false</externalId>
+        <formula>/* Start with the Replacement Base Price if not blank.. */ 
+BLANKVALUE(SMAX_PS_ReplacementBasePrice__c, 
+/* OR the Actual Price - Contract Discount */ 
+(SVMXC__Actual_Price2__c * 
+(1.0 - (BLANKVALUE(SMAX_PS_ContractPercentDiscount__c, 0.00) / 100)) )) 
+/* Multiply by Qty */ 
+* SVMXC__Actual_Quantity2__c 
+
+/* Next Apply the Service Percent Adjustment */ 
+* IF (ISBLANK(SMAX_PS_ServicePercentAdjustment__c), 
+1.0, 
+IF (ISPICKVAL(SMAX_PS_ServicePercentAdjustmentType__c, &quot;Discount&quot;), 
+1.0 - (SMAX_PS_ServicePercentAdjustment__c / 100), 
+1.0 + (SMAX_PS_ServicePercentAdjustment__c / 100) 
+) 
+) 
+
+/* Next Apply the Service Amount Adjustment */ 
++ IF (ISBLANK(SMAX_PS_ServiceAmountAdjustment__c), 
+0.0, 
+IF (ISPICKVAL(SMAX_PS_ServiceAmountAdjustmentType__c, &quot;Discount&quot;), 
+(-1.0 * SMAX_PS_ServiceAmountAdjustment__c), 
+SMAX_PS_ServiceAmountAdjustment__c 
+) 
+)</formula>
+        <label>Calculated Line Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Calculated_Discount__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (ISPICKVAL(SMAX_PS_ServicePercentAdjustmentType__c, &quot;Discount&quot;), 
+TEXT(SMAX_PS_ServicePercentAdjustment__c) +&quot;%&quot;, 
+IF (ISPICKVAL(SMAX_PS_ServiceAmountAdjustmentType__c, &quot;Discount&quot;), 
+SVMXC__Service_Order__r.SMAX_PS_Currency_Symbol__c +&quot; &quot;+ TEXT(SMAX_PS_ServiceAmountAdjustment__c), 
+NULL 
+) 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Calculated Discount</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Calculated_Line_Discount__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (SVMXC__Total_Line_Price__c - SMAX_PS_CalculatedLinePrice__c &gt;0,
+     SVMXC__Total_Line_Price__c - SMAX_PS_CalculatedLinePrice__c,
+     NULL
+     )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Calculated Line Discount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Calculated_Unit_Price__c</fullName>
+        <description>2018-07-30 VanLoon - Added / Qty for SVMXCFG-683</description>
+        <externalId>false</externalId>
+        <formula>/* Start with the Replacement Base Price if not blank and not 0.. */
+(IF ( AND( NOT(ISBLANK(SMAX_PS_ReplacementBasePrice__c)), 
+                SMAX_PS_ReplacementBasePrice__c &lt;&gt; 0),
+       SMAX_PS_ReplacementBasePrice__c,
+/* OR the Actual Price - Contract Discount */
+       (SVMXC__Actual_Price2__c *
+       (1.0 - (BLANKVALUE(SMAX_PS_ContractPercentDiscount__c, 0.00) / 100)) )
+      )
+ 
+/* Next Apply the Service Amount Adjustment */
+ + IF (ISBLANK(SMAX_PS_ServiceAmountAdjustment__c),
+         0.0,
+         IF (ISPICKVAL(SMAX_PS_ServiceAmountAdjustmentType__c, &quot;Discount&quot;),
+             (-1.0 * SMAX_PS_ServiceAmountAdjustment__c),
+             SMAX_PS_ServiceAmountAdjustment__c
+             ) / SVMXC__Actual_Quantity2__c
+         )
+)
+/* Next Apply the Service Percent Adjustment */
+ * IF (ISBLANK(SMAX_PS_ServicePercentAdjustment__c),
+        1.0,
+        IF (ISPICKVAL(SMAX_PS_ServicePercentAdjustmentType__c, &quot;Discount&quot;),
+             1.0 - (SMAX_PS_ServicePercentAdjustment__c / 100),
+             1.0 + (SMAX_PS_ServicePercentAdjustment__c / 100)
+            )
+        )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Calculated Unit Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Calibrated_Tool__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Calibrated Tool</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>SVMXC__Installed_Product__c.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Calibrated Tools</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>SVMXC__Installed_Product__c</referenceTo>
+        <relationshipLabel>Work Details (Calibrated Tool)</relationshipLabel>
+        <relationshipName>Work_Details</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Cancel_Line__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used for indicating that a line should be cancelled in SAP.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used for indicating that a line should be cancelled in SAP.</inlineHelpText>
+        <label>Cancel Line</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Cancel_Reason__c</fullName>
+        <description>Denotes the cancel reason for the lines</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes the cancel reason for the lines</inlineHelpText>
+        <label>Cancel Reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Incorrect Dates/times</fullName>
+                    <default>false</default>
+                    <label>Incorrect Dates/times</label>
+                </value>
+                <value>
+                    <fullName>Incorrect Hours</fullName>
+                    <default>false</default>
+                    <label>Incorrect Hours</label>
+                </value>
+                <value>
+                    <fullName>Incorrect Activity type</fullName>
+                    <default>false</default>
+                    <label>Incorrect Activity type</label>
+                </value>
+                <value>
+                    <fullName>Incorrect Work Description</fullName>
+                    <default>false</default>
+                    <label>Incorrect Work Description</label>
+                </value>
+                <value>
+                    <fullName>Customer complaint</fullName>
+                    <default>false</default>
+                    <label>Customer complaint</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_CancellationNumber__c</fullName>
+        <description>Cancellation Number</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Cancellation Number</inlineHelpText>
+        <label>Cancellation Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Cancellation_Description__c</fullName>
+        <description>Denotes the description for a line cancelation</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes the description for a line cancelation</inlineHelpText>
+        <label>Cancellation Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Code_Group__c</fullName>
+        <externalId>false</externalId>
+        <formula>SVMXC__Service_Order__r.Code_Group__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Code Group</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_CompletionFaultCode__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Completion Code</label>
+        <referenceTo>SMAX_PS_Fault_Code__c</referenceTo>
+        <relationshipLabel>Work Details (Completion Fault Code)</relationshipLabel>
+        <relationshipName>Work_Details_Completions</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Completion_Code__c</fullName>
+        <description>Completion Codes</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Completion Codes</inlineHelpText>
+        <label>Completion Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>JC01 ~ Job Completed</fullName>
+                    <default>false</default>
+                    <label>JC01 ~ Job Completed</label>
+                </value>
+                <value>
+                    <fullName>JC02 ~ Additional Parts Required</fullName>
+                    <default>false</default>
+                    <label>JC02 ~ Additional Parts Required</label>
+                </value>
+                <value>
+                    <fullName>JC03 ~ Confidence Testing</fullName>
+                    <default>false</default>
+                    <label>JC03 ~ Confidence Testing</label>
+                </value>
+                <value>
+                    <fullName>JC04 ~ Customer Action Required</fullName>
+                    <default>false</default>
+                    <label>JC04 ~ Customer Action Required</label>
+                </value>
+                <value>
+                    <fullName>JC05 ~ Defective Spare Parts</fullName>
+                    <default>false</default>
+                    <label>JC05 ~ Defective Spare Parts</label>
+                </value>
+                <value>
+                    <fullName>JC06 ~ Further Troubleshooting Required</fullName>
+                    <default>false</default>
+                    <label>JC06 ~ Further Troubleshooting Required</label>
+                </value>
+                <value>
+                    <fullName>JC07 ~ Insufficient Technical Information</fullName>
+                    <default>false</default>
+                    <label>JC07 ~ Insufficient Technical Information</label>
+                </value>
+                <value>
+                    <fullName>JC08 ~ Insufficient Time to Complete</fullName>
+                    <default>false</default>
+                    <label>JC08 ~ Insufficient Time to Complete</label>
+                </value>
+                <value>
+                    <fullName>JC09 ~ Insufficient Training</fullName>
+                    <default>false</default>
+                    <label>JC09 ~ Insufficient Training</label>
+                </value>
+                <value>
+                    <fullName>JC10 ~ Intermittent Problem</fullName>
+                    <default>false</default>
+                    <label>JC10 ~ Intermittent Problem</label>
+                </value>
+                <value>
+                    <fullName>JC12 ~ Parts Availability Delay</fullName>
+                    <default>false</default>
+                    <label>JC12 ~ Parts Availability Delay</label>
+                </value>
+                <value>
+                    <fullName>JC13 ~ Tools &amp; Jigs</fullName>
+                    <default>false</default>
+                    <label>JC13 ~ Tools &amp; Jigs</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Concat_Part_Work_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Concat Part + Work Description</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ContractPercentDiscount__c</fullName>
+        <description>Contract Percent Discount</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Contract Percent Discount</inlineHelpText>
+        <label>Contract Discount</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Discount_Percentage__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(TEXT(SMAX_PS_ServicePercentAdjustmentType__c)==&quot;Discount&quot;,(0.01 * SMAX_PS_ServicePercentAdjustment__c), NULL)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Discount Percentage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_EInvoice_Code_1__c</fullName>
+        <externalId>false</externalId>
+        <label>E-Invoice Code 1</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_EInvoice_Code_2__c</fullName>
+        <externalId>false</externalId>
+        <label>E-Invoice Code 2</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_EInvoice_Code_3__c</fullName>
+        <externalId>false</externalId>
+        <label>E-Invoice Code 3</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Fault_Code_Action__c</fullName>
+        <externalId>false</externalId>
+        <label>Fault Code Action</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Advised~AC01</fullName>
+                    <default>false</default>
+                    <label>Advised~AC01</label>
+                </value>
+                <value>
+                    <fullName>Adjusted~AC02</fullName>
+                    <default>false</default>
+                    <label>Adjusted~AC02</label>
+                </value>
+                <value>
+                    <fullName>Aligned~AC03</fullName>
+                    <default>false</default>
+                    <label>Aligned~AC03</label>
+                </value>
+                <value>
+                    <fullName>Calibrated~AC04</fullName>
+                    <default>false</default>
+                    <label>Calibrated~AC04</label>
+                </value>
+                <value>
+                    <fullName>Cleaned~AC05</fullName>
+                    <default>false</default>
+                    <label>Cleaned~AC05</label>
+                </value>
+                <value>
+                    <fullName>Customer Action Required~AC06</fullName>
+                    <default>false</default>
+                    <label>Customer Action Required~AC06</label>
+                </value>
+                <value>
+                    <fullName>Follow Up Required~AC07</fullName>
+                    <default>false</default>
+                    <label>Follow Up Required~AC07</label>
+                </value>
+                <value>
+                    <fullName>Lubricated~AC08</fullName>
+                    <default>false</default>
+                    <label>Lubricated~AC08</label>
+                </value>
+                <value>
+                    <fullName>Monitored~AC09</fullName>
+                    <default>false</default>
+                    <label>Monitored~AC09</label>
+                </value>
+                <value>
+                    <fullName>Rebuilt~AC10</fullName>
+                    <default>false</default>
+                    <label>Rebuilt~AC10</label>
+                </value>
+                <value>
+                    <fullName>Reconfigured~AC11</fullName>
+                    <default>false</default>
+                    <label>Reconfigured~AC11</label>
+                </value>
+                <value>
+                    <fullName>Referred to Specialist~AC12</fullName>
+                    <default>false</default>
+                    <label>Referred to Specialist~AC12</label>
+                </value>
+                <value>
+                    <fullName>Reload Software~AC13</fullName>
+                    <default>false</default>
+                    <label>Reload Software~AC13</label>
+                </value>
+                <value>
+                    <fullName>Repaired Item~AC14</fullName>
+                    <default>false</default>
+                    <label>Repaired Item~AC14</label>
+                </value>
+                <value>
+                    <fullName>Replaced~AC15</fullName>
+                    <default>false</default>
+                    <label>Replaced~AC15</label>
+                </value>
+                <value>
+                    <fullName>Reseat / Reconnected~AC16</fullName>
+                    <default>false</default>
+                    <label>Reseat / Reconnected~AC16</label>
+                </value>
+                <value>
+                    <fullName>Reset Power~AC17</fullName>
+                    <default>false</default>
+                    <label>Reset Power~AC17</label>
+                </value>
+                <value>
+                    <fullName>Resoldered~AC18</fullName>
+                    <default>false</default>
+                    <label>Resoldered~AC18</label>
+                </value>
+                <value>
+                    <fullName>Routine Maintenance~AC19</fullName>
+                    <default>false</default>
+                    <label>Routine Maintenance~AC19</label>
+                </value>
+                <value>
+                    <fullName>SDB Modification~AC20</fullName>
+                    <default>false</default>
+                    <label>SDB Modification~AC20</label>
+                </value>
+                <value>
+                    <fullName>Tested~AC21</fullName>
+                    <default>false</default>
+                    <label>Tested~AC21</label>
+                </value>
+                <value>
+                    <fullName>Tightened~AC22</fullName>
+                    <default>false</default>
+                    <label>Tightened~AC22</label>
+                </value>
+                <value>
+                    <fullName>Trained / Instructed~AC23</fullName>
+                    <default>false</default>
+                    <label>Trained / Instructed~AC23</label>
+                </value>
+                <value>
+                    <fullName>Updated to Latest Version~AC24</fullName>
+                    <default>false</default>
+                    <label>Updated to Latest Version~AC24</label>
+                </value>
+                <value>
+                    <fullName>Upgraded~AC25</fullName>
+                    <default>false</default>
+                    <label>Upgraded~AC25</label>
+                </value>
+                <value>
+                    <fullName>Verified~AC26</fullName>
+                    <default>false</default>
+                    <label>Verified~AC26</label>
+                </value>
+                <value>
+                    <fullName>Scheduled Event~AC27</fullName>
+                    <default>false</default>
+                    <label>Scheduled Event~AC27</label>
+                </value>
+                <value>
+                    <fullName>Reprogrammed~AC28</fullName>
+                    <default>false</default>
+                    <label>Reprogrammed~AC28</label>
+                </value>
+                <value>
+                    <fullName>Return to Vendor~AC30</fullName>
+                    <default>false</default>
+                    <label>Return to Vendor~AC30</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Fault_Code_Complaint_Required__c</fullName>
+        <description>Gets the related Fault Code complaint required field and sets this. Can&apos;t use formula field as we need this as a rollup.</description>
+        <externalId>false</externalId>
+        <label>Fault Code Complaint Required</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Fault_Code_Description__c</fullName>
+        <description>The Description of the Fault Code</description>
+        <externalId>false</externalId>
+        <label>Problem Notes</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Fault_Code_Group__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Problem Group</label>
+        <referenceTo>SMAX_PS_Fault_Code_Group__c</referenceTo>
+        <relationshipLabel>Work Details</relationshipLabel>
+        <relationshipName>Work_Details</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Fault_Code_Product_Family__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(LEN(TEXT(SVMXC__Service_Order__r.SVMXC__Component__r.SVMXC__Product__r.Family)) = 5,  RIGHT(TEXT(SVMXC__Service_Order__r.SVMXC__Component__r.SVMXC__Product__r.Family), 2) , 
+RIGHT(TEXT(SVMXC__Service_Order__r.SVMXC__Component__r.SVMXC__Product__r.Family), 3 ) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Fault Code Product Family</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Fault_Code__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Link from Fault Code to Work Detail</description>
+        <externalId>false</externalId>
+        <label>Problem Code</label>
+        <referenceTo>SMAX_PS_Fault_Code__c</referenceTo>
+        <relationshipLabel>Work Details</relationshipLabel>
+        <relationshipName>Work_Details</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Install_Problem_Code_Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is true if the Problem Code is required.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is true if the Problem Code is required.</inlineHelpText>
+        <label>Install Problem Code Required</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_InstallationFaultCode__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Install Code</label>
+        <referenceTo>SMAX_PS_Fault_Code__c</referenceTo>
+        <relationshipLabel>Work Details (Installation Fault Code)</relationshipLabel>
+        <relationshipName>Work_Details_Installations</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Installation_Code__c</fullName>
+        <description>Installation Codes</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Installation Codes</inlineHelpText>
+        <label>Installation Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>IN01 ~ Application Problems</fullName>
+                    <default>false</default>
+                    <label>IN01 ~ Application Problems</label>
+                </value>
+                <value>
+                    <fullName>IN02 ~ Computer problem PKI</fullName>
+                    <default>false</default>
+                    <label>IN02 ~ Computer problem PKI</label>
+                </value>
+                <value>
+                    <fullName>IN03 ~ Customer site unready or problem</fullName>
+                    <default>false</default>
+                    <label>IN03 ~ Customer site unready or problem</label>
+                </value>
+                <value>
+                    <fullName>IN04 ~ Delivery Incomplete</fullName>
+                    <default>false</default>
+                    <label>IN04 ~ Delivery Incomplete</label>
+                </value>
+                <value>
+                    <fullName>IN05 ~ Installation with no problem</fullName>
+                    <default>false</default>
+                    <label>IN05 ~ Installation with no problem</label>
+                </value>
+                <value>
+                    <fullName>IN06 ~ Major Adjustment</fullName>
+                    <default>false</default>
+                    <label>IN06 ~ Major Adjustment</label>
+                </value>
+                <value>
+                    <fullName>IN07 ~ Major parts replacement</fullName>
+                    <default>false</default>
+                    <label>IN07 ~ Major parts replacement</label>
+                </value>
+                <value>
+                    <fullName>IN08 ~ Major repair carried out</fullName>
+                    <default>false</default>
+                    <label>IN08 ~ Major repair carried out</label>
+                </value>
+                <value>
+                    <fullName>IN09 ~ Minor installation problem-no follow up</fullName>
+                    <default>false</default>
+                    <label>IN09 ~ Minor installation problem-no follow up</label>
+                </value>
+                <value>
+                    <fullName>IN10 ~ Sales Order Incorrect/Incomplete</fullName>
+                    <default>false</default>
+                    <label>IN10 ~ Sales Order Incorrect/Incomplete</label>
+                </value>
+                <value>
+                    <fullName>IN11 ~ Shipping Damage</fullName>
+                    <default>false</default>
+                    <label>IN11 ~ Shipping Damage</label>
+                </value>
+                <value>
+                    <fullName>IN12 ~ Accessory Problem</fullName>
+                    <default>false</default>
+                    <label>IN12 ~ Accessory Problem</label>
+                </value>
+                <value>
+                    <fullName>IN13 ~ Software Issue PKI</fullName>
+                    <default>false</default>
+                    <label>IN13 ~ Software Issue PKI</label>
+                </value>
+                <value>
+                    <fullName>IN14 ~ Software Issue non-PKI</fullName>
+                    <default>false</default>
+                    <label>IN14 ~ Software Issue non-PKI</label>
+                </value>
+                <value>
+                    <fullName>IN15 ~ Computer problem non-PKI</fullName>
+                    <default>false</default>
+                    <label>IN15 ~ Computer problem non-PKI</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_IntegrationStatus__c</fullName>
+        <externalId>false</externalId>
+        <label>Integration Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>SMAX_PS_IntegrationStatus</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Is_Calibrated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Denotes that a calibrated tool is calibrated</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes that a calibrated tool is calibrated</inlineHelpText>
+        <label>Is Calibrated</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Is_Entitled_By_Warranty__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Field mapped via literal from work order header on debrief. Used in validation rule in Work Order Debrief</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field mapped via literal from work order header on debrief. Used in validation rule in Work Order Debrief</inlineHelpText>
+        <label>Is Entitled By Warranty</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Material_Part_Description__c</fullName>
+        <description>Part Description value that end user can manually input product name</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Part Description value that end user can manually input product name</inlineHelpText>
+        <label>Material Part Description</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_My_Work_Detail_Line__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( $User.Id == SVMXC__Service_Order__r.OwnerId &amp;&amp; (Today() - DATEVALUE(CreatedDate)) &lt;= 90 , true, false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>My Work Detail Line</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Next_Calibration_Date__c</fullName>
+        <description>Used in calibrated tool tracking on work order debrief to help ensure the calibration is valid.</description>
+        <externalId>false</externalId>
+        <label>Next Calibration Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Offline_Currency__c</fullName>
+        <description>Currency Code copied from Product Stock or Product Sales. Must match Work Detail Currency Code to use Offline Pricing.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Currency Code copied from Product Stock or Product Sales. Must match Work Detail Currency Code to use Offline Pricing.</inlineHelpText>
+        <label>Offline Currency</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Offline_Price__c</fullName>
+        <description>Price used for Offline calculation, copied from Product Stock or Product Sales records.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Price used for Offline calculation, copied from Product Stock or Product Sales records.</inlineHelpText>
+        <label>Offline Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Offline_SalesOrg__c</fullName>
+        <description>Sales Org copied from Product Sales or Product Stock for use with Offline Pricing.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Sales Org copied from Product Sales or Product Stock for use with Offline Pricing.</inlineHelpText>
+        <label>Offline Sales Org</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Part_Number__c</fullName>
+        <description>Displays the Part number from the Product Stock record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Displays the Part number from the Product Stock record</inlineHelpText>
+        <label>Part Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Parts_Qty__c</fullName>
+        <description>Denotes the quantity of submitted lines of line type parts</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes the quantity of submitted lines of line type parts</inlineHelpText>
+        <label>Parts Submitted Qty</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Problem_Group_Name__c</fullName>
+        <description>Problem Group Name is used in the Work Order Debrief  to support validation for Entitled Warranty and Super Business Unit</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Problem Group Name is used in the Work Order Debrief  to support validation for Entitled Warranty and Super Business Unit</inlineHelpText>
+        <label>Problem Group Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Product_Family__c</fullName>
+        <description>Formula field used to display the Product Family field used for reporting purposes</description>
+        <externalId>false</externalId>
+        <formula>TEXT(SVMXC__Product__r.Family)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Formula field used to display the Product Family field used for reporting purposes</inlineHelpText>
+        <label>Product Family</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Product_Type__c</fullName>
+        <description>The Product Type of the associated Part.  Needed for Offline Pricing.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Product Type of the associated Part.  Needed for Offline Pricing.</inlineHelpText>
+        <label>Product Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ReplacementBasePrice__c</fullName>
+        <description>Replacement Base Price</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Replacement Base Price</inlineHelpText>
+        <label>Replacement Base Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_SAP_ActivityType__c</fullName>
+        <externalId>false</externalId>
+        <label>SAP Activity Type</label>
+        <length>6</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_SAP_Confirmation__c</fullName>
+        <externalId>false</externalId>
+        <label>SAP Confirmation</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Senior_Technician__c</fullName>
+        <description>Indicates that this Work Detail line was performed by the Senior Technician. If the Technician of this Work Detail is the same as the Technician assigned to the Work Order, then this box is checked.</description>
+        <externalId>false</externalId>
+        <formula>IF(SVMXC__Group_Member__r.Id=SVMXC__Service_Order__r.SVMXC__Group_Member__r.Id, TRUE,FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Indicates that this Work Detail line was performed by the Senior Technician. If the Technician of this Work Detail is the same as the Technician assigned to the Work Order, then this box is checked.</inlineHelpText>
+        <label>Senior Technician</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ServiceAmountAdjustmentType__c</fullName>
+        <description>Service Amount Adjustment Type</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Service Amount Adjustment Type</inlineHelpText>
+        <label>Service Amount Adjustment Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Uplift</fullName>
+                    <default>false</default>
+                    <label>Uplift</label>
+                </value>
+                <value>
+                    <fullName>Discount</fullName>
+                    <default>false</default>
+                    <label>Discount</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ServiceAmountAdjustment__c</fullName>
+        <description>Service Amount Adjustment</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Service Amount Adjustment</inlineHelpText>
+        <label>Service Amount Adjustment</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ServicePercentAdjustmentType__c</fullName>
+        <description>Service Percent Adjustment Type</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Service Percent Adjustment Type</inlineHelpText>
+        <label>Service Percent Adjustment Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Uplift</fullName>
+                    <default>false</default>
+                    <label>Uplift</label>
+                </value>
+                <value>
+                    <fullName>Discount</fullName>
+                    <default>false</default>
+                    <label>Discount</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ServicePercentAdjustment__c</fullName>
+        <description>Service Percent Adjustment</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Service Percent Adjustment</inlineHelpText>
+        <label>Service Percent Adjustment</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_SubmitTxnId__c</fullName>
+        <description>System generated identifier for the Submit Transaction.. used to prevent duplicate processing.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>System generated identifier for the Submit Transaction.. used to prevent duplicate processing.</inlineHelpText>
+        <label>Submit Transaction Id</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Super_Business_Unit__c</fullName>
+        <description>Text field to pull the detail from the work order header using a literal on the debrief. This is used to support a validation rule for fault codes in the Debrief SFM</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Text field to pull the detail from the work order header using a literal on the debrief. This is used to support a validation rule for fault codes in the Debrief SFM</inlineHelpText>
+        <label>Super Business Unit</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Tool_Notes__c</fullName>
+        <description>Used to capture additional details on a calibrated tool line in work order debrief.</description>
+        <externalId>false</externalId>
+        <label>Tool Notes</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Total_List_Price__c</fullName>
+        <description>Calculates price of line before any discounts.</description>
+        <externalId>false</externalId>
+        <formula>SVMXC__Actual_Quantity2__c * SVMXC__Actual_Price2__c</formula>
+        <label>Total List Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Total_Time__c</fullName>
+        <description>Allows the Technician to enter the Total hours consumed.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Allows the Technician to enter the Total hours consumed.</inlineHelpText>
+        <label>Total Time</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Translation__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Translation</label>
+        <referenceTo>SMAX_PS_Translation__c</referenceTo>
+        <relationshipLabel>Work Details</relationshipLabel>
+        <relationshipName>Work_Details</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Travel_Labor_Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup to Product Sales</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Lookup to Product Sales</inlineHelpText>
+        <label>Travel/Labor Product</label>
+        <referenceTo>SMAX_PS_ProductSales__c</referenceTo>
+        <relationshipLabel>Work Details</relationshipLabel>
+        <relationshipName>Work_Details</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_UOM_Code__c</fullName>
+        <description>Unit of Measurement code</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Unit of Measurement code</inlineHelpText>
+        <label>UOM Code</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_UnitOfMeasure__c</fullName>
+        <externalId>false</externalId>
+        <label>Unit Of Measure</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Use_Product_Sales_UOM__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If this checkbox is true, the Product Sales UOM is used.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If this checkbox is true, the Product Sales UOM is used.</inlineHelpText>
+        <label>Use Product Sales UOM</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_WO_Created_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>WO Created Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_WorkSummary__c</fullName>
+        <externalId>false</externalId>
+        <label>Work Summary</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Work_Order_Status__c</fullName>
+        <description>Denotes the work order header order status. This is used in the fault code debrief validation rule.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes the work order header order status. This is used in the fault code debrief validation rule.</inlineHelpText>
+        <label>Billing Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_is_Serialized__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Denotes that a product is serialized</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes that a product is Serialized</inlineHelpText>
+        <label>is Serialized</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Action_Performed__c</fullName>
+        <description>Used for Parts Swap</description>
+        <externalId>false</externalId>
+        <label>Action Performed</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Repaired</fullName>
+                    <default>false</default>
+                    <label>Repaired</label>
+                </value>
+                <value>
+                    <fullName>Replaced</fullName>
+                    <default>false</default>
+                    <label>Replaced</label>
+                </value>
+                <value>
+                    <fullName>Removed</fullName>
+                    <default>false</default>
+                    <label>Removed</label>
+                </value>
+                <value>
+                    <fullName>New Configuration</fullName>
+                    <default>false</default>
+                    <label>New Configuration</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_As_Found_Status__c</fullName>
+        <description>Denotes the as found status for the installed product</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes the as found status for the installed product</inlineHelpText>
+        <label>As-Found Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Normal</fullName>
+                    <default>false</default>
+                    <label>Normal</label>
+                </value>
+                <value>
+                    <fullName>Environmental Condition</fullName>
+                    <default>false</default>
+                    <label>Environmental Condition</label>
+                </value>
+                <value>
+                    <fullName>Training</fullName>
+                    <default>false</default>
+                    <label>Training</label>
+                </value>
+                <value>
+                    <fullName>Outside Intended Spec</fullName>
+                    <default>false</default>
+                    <label>Outside Intended Spec</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_DOA_Installed_Product__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Denotes that the Installed Product is Dead On Arrival</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes that the Installed Product is Dead On Arrival</inlineHelpText>
+        <label>Installed Product is DOA</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_External_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Labor_For2__c</fullName>
+        <externalId>false</externalId>
+        <formula>SVMXC__Service_Order__r.OwnerId</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Labor For2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Miles_Driven__c</fullName>
+        <externalId>false</externalId>
+        <label>Miles Driven</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_VS_Consumed_Part_Code__c</fullName>
+        <description>The field indicates the Serial Number in Text form. This will be used to find the proper Stock Serial under the consumed product stock. Either this field or &quot;Consumed Stock Serial&quot; need to be populated in case if product is Serialized in order to get proper data.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The field indicates the Serial Number in Text form. This will be used to find the proper Stock Serial under the consumed product stock. Either this field or &quot;Consumed Stock Serial&quot; need to be populated in case if product is Serialized in order to get prop</inlineHelpText>
+        <label>Consumed Serial Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_VS_Consumed_Product_Stock__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This field indicates the product stock consumed. It is necessary to provide a reference of Stock Serial or a Serial number in case the product is Serialized for proper consumption</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field indicates the product stock consumed. It is necessary to provide a reference of Stock Serial or a Serial number in case the product is Serialized for proper consumption</inlineHelpText>
+        <label>Consumed Product Stock</label>
+        <referenceTo>SVMXC__Product_Stock__c</referenceTo>
+        <relationshipLabel>Work Details (Consumed Product Stock)</relationshipLabel>
+        <relationshipName>SVMX_PS_VS_Consumed_Product_Stock</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_VS_Consumed_Status__c</fullName>
+        <description>The status of the Part In process</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The status of the Part In process</inlineHelpText>
+        <label>Consumed Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_VS_Consumed_Stocked_Serial__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The field indicates reference to Stock Serial. This will be used to find the proper Stock Serial under the consumed product stock. Either this field or &quot;Consumed Serial Number&quot; need to be populated in case if product is Serialized in order to get data.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The field indicates reference to Stock Serial. This will be used to find the proper Stock Serial under the consumed product stock. Either this field or &quot;Consumed Serial Number&quot; need to be populated in case if product is Serialized in order to get data.</inlineHelpText>
+        <label>Consumed Stock Serial</label>
+        <referenceTo>SVMXC__Product_Serial__c</referenceTo>
+        <relationshipLabel>Work Details (Consumed Stock Serial)</relationshipLabel>
+        <relationshipName>SVMX_PS_VS_Consumed_Stocked_Serial</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_VS_Is_Create_Install_Product__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Flag to indicate if creation of Installed Product needs to be done or not</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Flag to indicate if creation of Installed Product needs to be done or not</inlineHelpText>
+        <label>Is Create Install Product</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_VS_Is_Part_Out__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field indicates that there is a part out and van stock code needs to process part out process</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field indicates that there is a part out and van stock code needs to process part out process</inlineHelpText>
+        <label>Is Part Out</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_VS_Part_Out_Status__c</fullName>
+        <description>The status of the Part out process</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The status of the Part out process</inlineHelpText>
+        <label>Part Out Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_VS_Product_Tracking__c</fullName>
+        <description>This field helps to determine the Product Tracking (If Serialized/Non-Serialized)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field helps to determine the Product Tracking (If Serialized/Non-Serialized)</inlineHelpText>
+        <label>Product Tracking</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_VS_Return_Installed_Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Installed Product which is removed as a part of Part Out Process</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Installed Product which is removed as a part of Part Out Process</inlineHelpText>
+        <label>Return Installed Product</label>
+        <referenceTo>SVMXC__Installed_Product__c</referenceTo>
+        <relationshipLabel>Work Details (Return Installed Product)</relationshipLabel>
+        <relationshipName>SVMX_PS_VS_Return_Installed_Product</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_VS_Return_Part_Product_Tracking__c</fullName>
+        <description>This field helps to determine the Product Tracking (If Serialized/Non-Serialized) for Returned Part</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field helps to determine the Product Tracking (If Serialized/Non-Serialized) for Returned Part</inlineHelpText>
+        <label>Return Part Product Tracking</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_VS_Return_Part__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Reference of Product which is removed as a part of Part Out Process. If Serialized, provide &quot;Return Serial Number&quot;. This will be used in Part Out Process to locate the Installed Product to be removed. Populate &quot;Return Installed Product&quot; or this field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Reference of Product which is removed as a part of Part Out Process. If Serialized, provide &quot;Return Serial Number&quot;. This will be used in Part Out Process to locate the Installed Product to be removed. Populate &quot;Return Installed Product&quot; or this field.</inlineHelpText>
+        <label>Return Part</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Work Details (Return Part)</relationshipLabel>
+        <relationshipName>SVMX_PS_VS_Return_Part</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_VS_Return_Serial_Number__c</fullName>
+        <description>This field needs to be populated in case if the &quot;Return Part&quot; is &quot;Serialized&quot;. Using info from &quot;Return Part&quot; and this Serial Number, Installed Product will be found which will be then used for Part Out Process</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field needs to be populated in case if the &quot;Return Part&quot; is &quot;Serialized&quot;. Using info from &quot;Return Part&quot; and this Serial Number, Installed Product will be found which will be then used for Part Out Process</inlineHelpText>
+        <label>Return Serial Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_VS_Returned_Qty__c</fullName>
+        <description>This field indicates the qty of Non-Serialized Products returned while Part Out Process. This field is necessary to populated in case the product is Non-Serialized</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field indicates the qty of Non-Serialized Products returned while Part Out Process. This field is necessary to populated in case the product is Non-Serialized</inlineHelpText>
+        <label>Returned Qty</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Work_Time_in_Minutes__c</fullName>
+        <description>This is used in support of MTTR reporting.  Do Not place on page layout or in any SFMs.</description>
+        <externalId>false</externalId>
+        <formula>(((SVMXC__End_Date_and_Time__c - SVMXC__Start_Date_and_Time__c )*24)*60)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Work Time in Minutes</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <recordTypes>
+        <fullName>SMAX_PS_Remote_Support</fullName>
+        <active>true</active>
+        <description>Remote Support Record Type used for easily Debriefing Remote Work Orders</description>
+        <label>Remote Support</label>
+        <picklistValues>
+            <picklist>SMAX_PS_Cancel_Reason__c</picklist>
+            <values>
+                <fullName>Customer complaint</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Activity type</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Dates%2Ftimes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Work Description</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SMAX_PS_Completion_Code__c</picklist>
+            <values>
+                <fullName>JC01 %7E Job Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JC02 %7E Additional Parts Required</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JC03 %7E Confidence Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JC04 %7E Customer Action Required</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JC05 %7E Defective Spare Parts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JC06 %7E Further Troubleshooting Required</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JC07 %7E Insufficient Technical Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JC08 %7E Insufficient Time to Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JC09 %7E Insufficient Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JC10 %7E Intermittent Problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JC12 %7E Parts Availability Delay</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JC13 %7E Tools %26 Jigs</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SMAX_PS_Fault_Code_Action__c</picklist>
+            <values>
+                <fullName>Adjusted%7EAC02</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Advised%7EAC01</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aligned%7EAC03</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Calibrated%7EAC04</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cleaned%7EAC05</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Action Required%7EAC06</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up Required%7EAC07</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lubricated%7EAC08</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monitored%7EAC09</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rebuilt%7EAC10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reconfigured%7EAC11</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Referred to Specialist%7EAC12</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reload Software%7EAC13</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Repaired Item%7EAC14</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Replaced%7EAC15</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reprogrammed%7EAC28</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reseat %2F Reconnected%7EAC16</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reset Power%7EAC17</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resoldered%7EAC18</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Return to Vendor%7EAC30</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Routine Maintenance%7EAC19</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SDB Modification%7EAC20</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scheduled Event%7EAC27</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tested%7EAC21</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tightened%7EAC22</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trained %2F Instructed%7EAC23</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Updated to Latest Version%7EAC24</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Upgraded%7EAC25</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Verified%7EAC26</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SMAX_PS_Installation_Code__c</picklist>
+            <values>
+                <fullName>IN01 %7E Application Problems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN02 %7E Computer problem PKI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN03 %7E Customer site unready or problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN04 %7E Delivery Incomplete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN05 %7E Installation with no problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN06 %7E Major Adjustment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN07 %7E Major parts replacement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN08 %7E Major repair carried out</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN09 %7E Minor installation problem-no follow up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN10 %7E Sales Order Incorrect%2FIncomplete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN11 %7E Shipping Damage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN12 %7E Accessory Problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN13 %7E Software Issue PKI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN14 %7E Software Issue non-PKI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN15 %7E Computer problem non-PKI</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SMAX_PS_IntegrationStatus__c</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>InProcess</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SMAX_PS_ServiceAmountAdjustmentType__c</picklist>
+            <values>
+                <fullName>Discount</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uplift</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SMAX_PS_ServicePercentAdjustmentType__c</picklist>
+            <values>
+                <fullName>Discount</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uplift</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SVMX_PS_Action_Performed__c</picklist>
+            <values>
+                <fullName>New Configuration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Removed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Repaired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Replaced</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SVMX_PS_As_Found_Status__c</picklist>
+            <values>
+                <fullName>Environmental Condition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outside Intended Spec</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>SMAX_PS_Tools</fullName>
+        <active>true</active>
+        <description>Used for tracking tools used during service delivery.</description>
+        <label>Tools</label>
+        <picklistValues>
+            <picklist>SMAX_PS_Cancel_Reason__c</picklist>
+            <values>
+                <fullName>Customer complaint</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Activity type</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Dates%2Ftimes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Hours</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Work Description</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SMAX_PS_Completion_Code__c</picklist>
+            <values>
+                <fullName>JC01 %7E Job Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JC02 %7E Additional Parts Required</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JC03 %7E Confidence Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JC04 %7E Customer Action Required</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JC05 %7E Defective Spare Parts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JC06 %7E Further Troubleshooting Required</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JC07 %7E Insufficient Technical Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JC08 %7E Insufficient Time to Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JC09 %7E Insufficient Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JC10 %7E Intermittent Problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JC12 %7E Parts Availability Delay</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JC13 %7E Tools %26 Jigs</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SMAX_PS_Fault_Code_Action__c</picklist>
+            <values>
+                <fullName>Adjusted%7EAC02</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Advised%7EAC01</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aligned%7EAC03</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Calibrated%7EAC04</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cleaned%7EAC05</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Action Required%7EAC06</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up Required%7EAC07</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lubricated%7EAC08</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monitored%7EAC09</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rebuilt%7EAC10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reconfigured%7EAC11</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Referred to Specialist%7EAC12</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reload Software%7EAC13</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Repaired Item%7EAC14</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Replaced%7EAC15</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reprogrammed%7EAC28</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reseat %2F Reconnected%7EAC16</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reset Power%7EAC17</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resoldered%7EAC18</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Return to Vendor%7EAC30</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Routine Maintenance%7EAC19</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SDB Modification%7EAC20</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scheduled Event%7EAC27</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tested%7EAC21</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tightened%7EAC22</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trained %2F Instructed%7EAC23</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Updated to Latest Version%7EAC24</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Upgraded%7EAC25</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Verified%7EAC26</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SMAX_PS_Installation_Code__c</picklist>
+            <values>
+                <fullName>IN01 %7E Application Problems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN02 %7E Computer problem PKI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN03 %7E Customer site unready or problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN04 %7E Delivery Incomplete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN05 %7E Installation with no problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN06 %7E Major Adjustment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN07 %7E Major parts replacement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN08 %7E Major repair carried out</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN09 %7E Minor installation problem-no follow up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN10 %7E Sales Order Incorrect%2FIncomplete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN11 %7E Shipping Damage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN12 %7E Accessory Problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN13 %7E Software Issue PKI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN14 %7E Software Issue non-PKI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IN15 %7E Computer problem non-PKI</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SMAX_PS_IntegrationStatus__c</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Error</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>InProcess</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SMAX_PS_ServiceAmountAdjustmentType__c</picklist>
+            <values>
+                <fullName>Discount</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uplift</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SMAX_PS_ServicePercentAdjustmentType__c</picklist>
+            <values>
+                <fullName>Discount</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uplift</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SVMX_PS_Action_Performed__c</picklist>
+            <values>
+                <fullName>New Configuration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Removed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Repaired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Replaced</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SVMX_PS_As_Found_Status__c</picklist>
+            <values>
+                <fullName>Environmental Condition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outside Intended Spec</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+</CustomObject>

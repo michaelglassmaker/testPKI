@@ -28,6 +28,10 @@ global class Configero_Framework extends PowerLoader.Configero_Base {
         return null;
     }
     @RemoteAction
+    global static String getLookupAutocomplete(Map<String,String> params) {
+        return null;
+    }
+    @RemoteAction
     global static List<Note> getNotesForObjectId(Id id) {
         return null;
     }
@@ -42,6 +46,10 @@ global class Configero_Framework extends PowerLoader.Configero_Base {
     @RemoteAction
     global static List<Task> getTasksForObjectId(Id id) {
         return null;
+    }
+    @RemoteAction
+    global static void noop() {
+
     }
     @RemoteAction
     global static Id savePagePreferences(String pageName, List<Decimal> widths, List<Boolean> collapsed) {

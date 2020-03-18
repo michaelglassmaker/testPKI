@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <label>Work Order Metrics</label>
+    <nameField>
+        <label>Work Order Metrics Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Work Order Metrics</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>SMAX_PS_Remote_Fix__c</fullName>
+        <externalId>false</externalId>
+        <label>Remote Fix?</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Work_Order__c</fullName>
+        <externalId>false</externalId>
+        <label>Work Order</label>
+        <referenceTo>SVMXC__Service_Order__c</referenceTo>
+        <relationshipLabel>Work Order Metrics</relationshipLabel>
+        <relationshipName>Work_Order_Metrics</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_External_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>The External Id is system populated and should be of the form:  [WO-NUMBER]__[RecordType]</description>
+        <externalId>true</externalId>
+        <inlineHelpText>The External Id is system populated and should be of the form:  [WO-NUMBER]__[RecordType]</inlineHelpText>
+        <label>External Id</label>
+        <length>100</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Metrics_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Metrics Type</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Field_Service</fullName>
+                    <default>false</default>
+                    <label>Field Service</label>
+                </value>
+                <value>
+                    <fullName>Remote</fullName>
+                    <default>false</default>
+                    <label>Remote</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Invoiced_DateTime__c</fullName>
+        <description>Denotes the datetime that a work order was invoiced</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes the datetime that a work order was invoiced</inlineHelpText>
+        <label>Invoiced DateTime</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Is_First_Time_Fix__c</fullName>
+        <externalId>false</externalId>
+        <label>Is First Time Fix?</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Completed_Datetime__c</fullName>
+        <description>Copied from wo.SVMXC__Completed_Date_Time__c</description>
+        <externalId>false</externalId>
+        <label>Completed Datetime</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Calculated_Downtime__c</fullName>
+        <description>Denotes the calculation between case opened datetime to TECO</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes the calculation between case opened datetime to TECO</inlineHelpText>
+        <label>Calculated Downtime</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Last_Labor_Datetime__c</fullName>
+        <description>The MAX of the Labor line End Date Time values. Auto-calculated when the WO enters TECO or Remote/Closed.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The MAX of the Labor line End Date Time values. Auto-calculated when the WO enters TECO or Remote/Closed.</inlineHelpText>
+        <label>Last Labor Datetime</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Calc_Days_to_Invoice__c</fullName>
+        <description>Calculated from Ready for Completed DateTime to Ready for Review DateTime</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Calculated from Ready for Completed DateTime to Ready for Review DateTime</inlineHelpText>
+        <label>Calculated Days to Invoice</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Case_Opened_Datetime__c</fullName>
+        <description>Copied from the WO.SVMX_PS_Case_Opened_Date_Time__c</description>
+        <externalId>false</externalId>
+        <label>Case Opened Datetime</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_First_Labor_DateTime__c</fullName>
+        <description>The MIN of the Labor line Start Date Time values. Auto-calculated when the WO enters TECO or Remote/Closed.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The MIN of the Labor line Start Date Time values. Auto-calculated when the WO enters TECO or Remote/Closed.</inlineHelpText>
+        <label>First Labor DateTime</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Calc_Call_Upload_Time__c</fullName>
+        <description>Denotes the Calculated Call Upload Time by Last Labor DateTime to the Completed DateTime</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes the Calculated Call Upload Time by Last Labor DateTime to the Completed DateTime</inlineHelpText>
+        <label>Calculated Call Upload Time</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Number_of_Assignments__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Assignments</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_First_Assigned_Datetime__c</fullName>
+        <description>Copied from the WO.SVMXC__First_Assigned_DateTime__c</description>
+        <externalId>false</externalId>
+        <label>First Assigned Datetime</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Calculated_Dispatch_Time__c</fullName>
+        <description>Calculates the time from created date to to first assigned datetime</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Calculates the time from created date to to first assigned datetime</inlineHelpText>
+        <label>Calculated Dispatch Time</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Ready_to_Review_Datetime__c</fullName>
+        <description>Copied from the WO.SVMX_PS_Ready_to_Review_Date_Time__c</description>
+        <externalId>false</externalId>
+        <label>Ready to Review Datetime</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Repair_Callback_Required__c</fullName>
+        <description>Denotes a 1 or 0 for if a previous work order</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes a 1 or 0 for if a previous work order</inlineHelpText>
+        <label>Repair Callback Required?</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Calc_Onsite_Response_Time__c</fullName>
+        <description>For non remote work orders this is a calculation between case created date time and onsite response time</description>
+        <externalId>false</externalId>
+        <inlineHelpText>For non remote work orders this is a calculation between case created date time and onsite response time</inlineHelpText>
+        <label>Calculated Onsite Response Time</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Calc_Tech_Support_Response_Time__c</fullName>
+        <description>Denotes the time between case opened time and TECO</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes the time between case opened time and TECO</inlineHelpText>
+        <label>Calculated Tech Support Response Time</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

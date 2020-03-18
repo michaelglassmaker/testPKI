@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ConvertLead</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ConvertLead</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ConvertLead</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CreateOpportunity</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CreateOpportunity</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CreateOpportunity</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <sharingModel>ControlledByCampaign</sharingModel>
+    <fields>
+        <fullName>Genomics__c</fullName>
+        <description>required for Informatics profiling</description>
+        <externalId>false</externalId>
+        <label>Genomics</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LegacyID__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <externalId>true</externalId>
+        <label>LegacyID</label>
+        <length>20</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Chemistry__c</fullName>
+        <description>required for Informatics targeting</description>
+        <externalId>false</externalId>
+        <label>Chemistry</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Global_Region__c</fullName>
+        <description>Lookup to Country for Global region - Americas, EMEA, APAC</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(Country), &quot;None&quot;,
+
+IF(CONTAINS(&quot;US:CA:PR:VI:PM:AR:BZ:BO:BR:CL:CO:CR:EC:SV:FK:GF:GT:GY:HN:MX:NI:PA:PY:PE:SR:UY:VE:AI:AG:AW:BS:BB:BM:KY:CU:DM:DO:GL:GD:GP:HT:JM:MQ:MS:KN:LC:VC:TC:VG:&quot;, Country), &quot;Americas&quot;,
+
+IF(CONTAINS(&quot;AT:BE:CH:DE:DK:ES:FI:FR:GB:IE:IT:LU:NL:NO:PL:SE:AF:BH:BD:BT:BV:IO:KM:IN:IR:KW:MV:NP:OM:PK:QA:SA:LK:AE:YE:DZ:AD:AO:BJ:BW:BF:BI:CM:CV:CF:TD:CG:DJ:EG:GQ:ER:ET:FX:GF:GA:GM:GH:GI:GN:GW:IQ:CI:JO:KE:LB:LS:LR:LY:NU:MG:MW:KZ:LK:MV:SC:ML:MR:MU:YT:MC:MA:MZ:NA:NE:NG:PT:RW:SM:ST:SN:SC:SL:SO:ZA:ES:SH:SD:SZ:TZ:TG:TN:UG:EH:ZM:ZW:CD:VA:AL:AM:AZ:BY:BA:BV:BG:HR:CY:CZ:EE:FO:MK:GE:GR:GL:HU:IS:IL:KZ:KG:LV:LI:LT:MT:MD:ME:RS:RO:RU:SK:SI:SY:TJ:TR:TM:UA:UZ:PS&quot;, Country), &quot;EMEA&quot;,
+
+IF(CONTAINS(&quot;JP:AS:AQ:AU:BN:KH:CN:CX:CC:CK:TP:FJ:PF:TF:GU:HM:HK:ID:KI:LA:MO:MY:MH:FM:MN:MM:NR:NC:NZ:NU:NF:KP:MP:PW:PG:PH:PN:WS:SG:SB:KR:TW:TH:TK:TO:TM:TV:UM:VU:VN:WF&quot;, Country), &quot;APAC&quot;, &quot;Other&quot;))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Global Region</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Attended_Event__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Check denotes Member ATTENDED this event</inlineHelpText>
+        <label>Attended Event</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Interest_Level__c</fullName>
+        <description>Telemarketing Interest Value-VoiceCentric</description>
+        <externalId>false</externalId>
+        <label>Interest Level</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No Interest</fullName>
+                    <default>false</default>
+                    <label>No Interest</label>
+                </value>
+                <value>
+                    <fullName>Educational (Referral)</fullName>
+                    <default>false</default>
+                    <label>Educational (Referral)</label>
+                </value>
+                <value>
+                    <fullName>Long Term Interest</fullName>
+                    <default>false</default>
+                    <label>Long Term Interest</label>
+                </value>
+                <value>
+                    <fullName>Active Interest (Research)</fullName>
+                    <default>false</default>
+                    <label>Active Interest (Research)</label>
+                </value>
+                <value>
+                    <fullName>Committed to Buy</fullName>
+                    <default>false</default>
+                    <label>Committed to Buy</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Member_Comments__c</fullName>
+        <description>Campaign Specific Member Comments</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter any details specific to this campaign member.</inlineHelpText>
+        <label>Member Comments</label>
+        <length>600</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Original_Source__c</fullName>
+        <description>Identify List Source</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Identify List that supplied name</inlineHelpText>
+        <label>Original Source</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Follow_Up_Process__c</fullName>
+        <description>Telemarketing Category for VoiceCentric</description>
+        <externalId>false</externalId>
+        <label>Follow Up Process</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AA - Agree to Appointment</fullName>
+                    <default>false</default>
+                    <label>AA - Agree to Appointment</label>
+                </value>
+                <value>
+                    <fullName>Email - Send Email w/Fufillment</fullName>
+                    <default>false</default>
+                    <label>Email - Send Email w/Fufillment</label>
+                </value>
+                <value>
+                    <fullName>General Inquiry - Other Product</fullName>
+                    <default>false</default>
+                    <label>General Inquiry - Other Product</label>
+                </value>
+                <value>
+                    <fullName>Lit Fulfillment - Print</fullName>
+                    <default>false</default>
+                    <label>Lit Fulfillment - Print</label>
+                </value>
+                <value>
+                    <fullName>Called-Left Message</fullName>
+                    <default>false</default>
+                    <label>Called-Left Message</label>
+                </value>
+                <value>
+                    <fullName>Called- Bad Number</fullName>
+                    <default>false</default>
+                    <label>Called- Bad Number</label>
+                </value>
+                <value>
+                    <fullName>Called-Spoke to</fullName>
+                    <default>false</default>
+                    <label>Called-Spoke to</label>
+                </value>
+                <value>
+                    <fullName>Emailed-Received Response</fullName>
+                    <default>false</default>
+                    <label>Emailed-Received Response</label>
+                </value>
+                <value>
+                    <fullName>Emailed-Bounced</fullName>
+                    <default>false</default>
+                    <label>Emailed-Bounced</label>
+                </value>
+                <value>
+                    <fullName>Emailed-No Response</fullName>
+                    <default>false</default>
+                    <label>Emailed-No Response</label>
+                </value>
+                <value>
+                    <fullName>Converted to Lead</fullName>
+                    <default>false</default>
+                    <label>Converted to Lead</label>
+                </value>
+                <value>
+                    <fullName>No Response/Deadend</fullName>
+                    <default>false</default>
+                    <label>No Response/Deadend</label>
+                </value>
+                <value>
+                    <fullName>No Interest</fullName>
+                    <default>false</default>
+                    <label>No Interest</label>
+                </value>
+                <value>
+                    <fullName>Emailed Information</fullName>
+                    <default>false</default>
+                    <label>Emailed Information</label>
+                </value>
+                <value>
+                    <fullName>Left VM &amp; Emailed</fullName>
+                    <default>false</default>
+                    <label>Left VM &amp; Emailed</label>
+                </value>
+                <value>
+                    <fullName>Not the right person</fullName>
+                    <default>false</default>
+                    <label>Not the right person</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PKI_Glb_Lead_Status__c</fullName>
+        <description>This captures the Lead Status on Leads and reflects in Campaign Members.</description>
+        <externalId>false</externalId>
+        <formula>TEXT(Lead.Status)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Lead Status</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PKI_GBL_Job_Function__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( Lead.Job_Function__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Job Function</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Send_Survey_Qualtrics__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used for workflow rules to send survey to a campaign member.  Qualtrics GloriaM</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check when this person should receive the designated survey</inlineHelpText>
+        <label>Send Survey</label>
+        <type>Checkbox</type>
+    </fields>
+    <webLinks>
+        <fullName>Create_a_Lead</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Create a Lead</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+
+var connection = sforce.connection;
+
+//Declare Opportunity variable
+var campaignMemberLead =&quot;{!CampaignMember.LeadId}&quot;;
+
+
+//If an lead ID is populated then the redirection should not happen
+if (campaignMemberLead == &apos;NULL&apos; || campaignMemberLead == &apos;&apos;)
+ {
+       open(&apos;/00Q/e?name_firstlea2={!CampaignMember.FirstName}&amp;name_lastlea2={!CampaignMember.LastName}&amp;lea3={!CampaignMember.CompanyOrAccount}&amp;lea8={!CampaignMember.Phone}&amp;lea11={!CampaignMember.Email}&amp;lea4={!CampaignMember.Title}&amp;lea20={!CampaignMember.Campaign}&apos;)
+ }
+else
+ {
+       alert(&quot;Sorry cannot create a lead from a lead campaign member, click on lead record to track details&quot;)
+ }</url>
+    </webLinks>
+</CustomObject>

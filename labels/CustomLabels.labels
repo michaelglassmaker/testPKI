@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>BD_No_AutoReply_Email_Values</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No AutoReply Email Values</shortDescription>
+        <value>donotreply, noreply</value>
+    </labels>
+    <labels>
+        <fullName>BD_No_AutoReply_Subjects_Values</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No AutoReply Subjects Values</shortDescription>
+        <value>do not reply, no reply</value>
+    </labels>
+    <labels>
+        <fullName>CaseBaseURL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CaseBaseURL</shortDescription>
+        <value>5003000000</value>
+    </labels>
+    <labels>
+        <fullName>CaseThrashid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CaseThrashid</shortDescription>
+        <value>00G30000004OgRF</value>
+    </labels>
+    <labels>
+        <fullName>Collaboration_Campaign</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Collaboration Campaign</shortDescription>
+        <value>7013A000001yhoy</value>
+    </labels>
+    <labels>
+        <fullName>CountryEmailInclude</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CountryEmailInclude</shortDescription>
+        <value>UK,GB,FR,IE,BE,IT,ES,LU,PL,DE,AT,NL,NO,SE,FI,DK,CH,IS,IL,ZA,TR,Italy</value>
+    </labels>
+    <labels>
+        <fullName>CreatedDateCeil</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CreatedDateCeil</shortDescription>
+        <value>2014-02-01T00:00:00.000Z</value>
+    </labels>
+    <labels>
+        <fullName>EMPTY_FILE</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CSV file is empty.</shortDescription>
+        <value>CSV file is empty.</value>
+    </labels>
+    <labels>
+        <fullName>ERROR_JSON_BAD_FORMAT</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The provided Json String was badly formatted.</shortDescription>
+        <value>The provided Json String was badly formatted.</value>
+    </labels>
+    <labels>
+        <fullName>ERROR_JSON_EMPTY</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No field values were found in the Json String.</shortDescription>
+        <value>No field values were found in the Json String.</value>
+    </labels>
+    <labels>
+        <fullName>ERROR_OP_FAILED</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Operation failed, please check messages!</shortDescription>
+        <value>Operation failed, please check messages!</value>
+    </labels>
+    <labels>
+        <fullName>ERROR_REQUEST_FAILED_NO_ERROR</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Request failed with no specified error.</shortDescription>
+        <value>Request failed with no specified error.</value>
+    </labels>
+    <labels>
+        <fullName>ERROR_UNAUTHORIZED_ENDPOINT</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Unauthorized endpoint, please check Setup</shortDescription>
+        <value>Unauthorized endpoint, please check Setup</value>
+    </labels>
+    <labels>
+        <fullName>EmailBodylimit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EmailBodylimit</shortDescription>
+        <value>31900</value>
+    </labels>
+    <labels>
+        <fullName>EmailMessageStatus</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EmailMessageStatus</shortDescription>
+        <value>3</value>
+    </labels>
+    <labels>
+        <fullName>External_Email_Inbox_update</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>External Email Inbox update</shortDescription>
+        <value>Dx Software Services;Dx Software Services EMEA L2;	Dx Support;Informatics</value>
+    </labels>
+    <labels>
+        <fullName>FILE_MISSING</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Please provide a comma separated file.</shortDescription>
+        <value>Please provide a comma separated file.</value>
+    </labels>
+    <labels>
+        <fullName>FlurryappforServiceLeadPage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The label captures the key used in the flurry app for service lead page</shortDescription>
+        <value>T699N8JBHDZGRFG7YGPJ</value>
+    </labels>
+    <labels>
+        <fullName>INVALID_FILE_ROW_SIZE_DOESNT_MATCH</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The number of field values does not match the number of header fields on line</shortDescription>
+        <value>The number of field values does not match the number of header fields on line</value>
+    </labels>
+    <labels>
+        <fullName>Jill_team_member_User_names_V1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Jill team member User names V1</shortDescription>
+        <value>andrews.ahiabu@perkinelmer.com.pkisbxfull,matthew.benton@perkinelmer.com.pkisbxfull,jose.malaret@perkinelmer.com.pkisbxfull,lance.jarvis@perkinelmer.com.pkisbxfull,april.hartwig@perkinelmer.com.pkisbxfull,serge.pineault@perkinelmer.com.pkisbxfull,ron.andrae@perkinelmer.com.pkisbxfull,andrew.martin@perkinelmer.com.pkisbxfull,betsy.hansen@perkinelmer.com.pkisbxfull,jack.quade@perkinelmer.com.pkisbxfull,kevin.tyvoll@perkinelmer.com.pkisbxfull,jerry.maine@perkinelmer.com.pkisbxfull,timothy.williams@perkinelmer.com.pkisbxfull,anthony.chalou@perkinelmer.com.pkisbxfull,jeff.brewer@perkinelmer.com.pkisbxfull,julia.casagrande@perkinelmer.com.pkisbxfull,tom.jacobs@perkinelmer.com.pkisbxfull,anastasia.kalli@perkinelmer.com.pkisbxfull,sameena.hussain@perkinelmer.com.pkisbxfull,brian.wong2@perkinelmer.com.pkisbxfull,thomas.kapral@perkinelmer.com.pkisbxfull,richard.wilson@perkinelmer.com.pkisbxfull,raymond.thompson@perkinelmer.com.pkisbxfull,robert.stroyne@perkinelmer.com.pkisbxfull</value>
+    </labels>
+    <labels>
+        <fullName>Jill_team_member_User_names_V2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Jill team member User names V2</shortDescription>
+        <value>craig.smith@perkinelmer.com.pkisbxfull,scott.poythress@perkinelmer.com.pkisbxfull,corey.lea@perkinelmer.com.pkisbxfull,tom.swenson@perkinelmer.com.pkisbxfull,andrew.rodman@perkinelmer.com.pkisbxfull,robert.hope@perkinelmer.com.pkisbxfull,tina.gong2@perkinelmer.com.pkisbxfull,mari.wooldridge@perkinelmer.com.pkisbxfull,chris.marshall@perkinelmer.com.pkisbxfull,vincent.bragaglia@perkinelmer.com.pkisbxfull,melinda.vandeusen@perkinelmer.com.pkisbxfull,jeff.eubanks@perkinelmer.com.pkisbxfull,anthony.palermo@perkinelmer.com.pkisbxfull,robert.barker@perkinelmer.com.pkisbxfull,andrew.saksaiii@perkinelmer.com.pkisbxfull,diane.allen@perkinelmer.com.pkisbxfull,marie-jeanne.abandja@perkinelmer.com.pkisbxfull,justin.lang@perkinelmer.com.pkisbxfull</value>
+    </labels>
+    <labels>
+        <fullName>LST_AM_Opp_won_Owner_Usernames</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LST_AM_Opp_won_Owner_Usernames</shortDescription>
+        <value>mark.griswold@perkinelmer.com,bill.ortiz@perkinelmer.com,robert.galagan@perkinelmer.com,carl.apgar@perkinelmer.com,jimmy.barbee@perkinelmer.com,edith.beaulieu@perkinelmer.com,paul.fletcher@perkinelmer.com,yvonna.jones@perkinelmer.com,thomas.nicholson@perkinelmer.com,patrick.mccreary@perkinelmer.com,leonard.maziarski@perkinelmer.com,simon.ng@perkinelmer.com,leslie.sun@perkinelmer.com,greg.warner@perkinelmer.com,stacey.stevens@perkinelmer.com,kevin.lewis@perkinelmer.com,matthew.reuter@perkinelmer.com,barbara.clark@perkinelmer.com,rachel.mendes@perkinelmer.com,leonard.maziarski@perkinelmer.com,christina.landry@perkinelmer.com,bill.ortiz@perkinelmer.com,stacey.stevens@perkinelmer.com,rosemarie.connolly@perkinelmer.com,adolfo.gonzalez@perkinelmer.com,david.semanske@perkinelmer.com</value>
+    </labels>
+    <labels>
+        <fullName>LST_AM_Opp_won_Owner_Usernames2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LST_AM_Opp_won_Owner_Usernames2</shortDescription>
+        <value>mark.griswold@perkinelmer.com,khalil.sheikh@perkinelmer.com,christine.bortnyk@perkinelmer.com,michelle.seng@perkinelmer.com,patrick.mccreary@perkinelmer.com,phil.rogers@perkinelmer.com,yvonna.jones@perkinelmer.com,heidi.davis@perkinelmer.com,edith.beaulieu@perkinelmer.com,tim.masters@perkinelmer.com,rick.troyer@perkinelmer.com,paul.fletcher@perkinelmer.com,carl.apgar@perkinelmer.com,ashish.chougule@perkinelmer.com,simon.ng@perkinelmer.com,thomas.nicholson@perkinelmer.com,grace.perez@perkinelmer.com,john.locklear@perkinelmer.com,allan.atkinson@perkinelmer.com,debra.preis@perkinelmer.com,catherine.sweeny@perkinelmer.com,matthew.reuter@perkinelmer.com,bruce.thompsonjr@perkinelmer.com,charles.ursajr@perkinelmer.com</value>
+    </labels>
+    <labels>
+        <fullName>MSG_CHECK_API_NAMES</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Please check the Api names!</shortDescription>
+        <value>Please check the Api names!</value>
+    </labels>
+    <labels>
+        <fullName>MSG_CS_MDT_EXISTS</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Make sure Custom Setting and Custom Metadata Types exists in the org!</shortDescription>
+        <value>Make sure Custom Setting and Custom Metadata Types exists in the org!</value>
+    </labels>
+    <labels>
+        <fullName>MSG_CS_MDT_FIELD_NAME_FORMAT</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Please check the format, Custom Setting.field and Custom Metadata Types.field</shortDescription>
+        <value>Please check the format, Custom Setting.field and Custom Metadata Types.field</value>
+    </labels>
+    <labels>
+        <fullName>MSG_CS_MDT_FIELD_NAME_REQ</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom Setting Name/Field Name and CMT/Field Name names are required!</shortDescription>
+        <value>Custom Setting Name/Field Name and CMT/Field Name names are required!</value>
+    </labels>
+    <labels>
+        <fullName>MSG_CS_MDT_MAPPING_REQ</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom Setting Name, Custom Metadata Types and Json Mapping names are required!</shortDescription>
+        <value>Custom Setting Name, Custom Metadata Types and Json Mapping names are required!</value>
+    </labels>
+    <labels>
+        <fullName>MSG_CS_MDT_REQ</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom Setting Api Name and Custom Metadata Types Api names are required!</shortDescription>
+        <value>Custom Setting Api Name and Custom Metadata Types Api names are required!</value>
+    </labels>
+    <labels>
+        <fullName>MSG_CUSTOM_SETTINGS_EXISTS</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Make sure Custom Setting exists in the org!</shortDescription>
+        <value>Make sure Custom Setting exists in the org!</value>
+    </labels>
+    <labels>
+        <fullName>MSG_JSON_API_NAMES</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Please check the Api names in Json!</shortDescription>
+        <value>Please check the Api names in Json!</value>
+    </labels>
+    <labels>
+        <fullName>MSG_JSON_FORMAT</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Please check the Json format!</shortDescription>
+        <value>Please check the Json format!</value>
+    </labels>
+    <labels>
+        <fullName>MSG_MDT_END</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom Metadata Types name should end with</shortDescription>
+        <value>Custom Metadata Types name should end with</value>
+    </labels>
+    <labels>
+        <fullName>MSG_MIGRATION_COMPLETED</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Migration Completed!</shortDescription>
+        <value>Migration Completed!</value>
+    </labels>
+    <labels>
+        <fullName>MSG_MIGRATION_IN_PROGRESS</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Migration In Progress, check status under Deploy -&gt; Deployment Status, Job Id:</shortDescription>
+        <value>Migration In Progress, check status under Deploy -&gt; Deployment Status, Job Id:</value>
+    </labels>
+    <labels>
+        <fullName>MSG_NOT_SUPPORTED</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Not Supported!!!</shortDescription>
+        <value>Not Supported!!!</value>
+    </labels>
+    <labels>
+        <fullName>Open_Lead_Notification_Start_Date</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Open Lead Notification Start Date</shortDescription>
+        <value>2014-03-19T00:00:00.000Z</value>
+    </labels>
+    <labels>
+        <fullName>PRODCaseBaseURL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PRODCaseBaseURL</shortDescription>
+        <value>5003A00000</value>
+    </labels>
+    <labels>
+        <fullName>Pardot_User_Role</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Pardot User Role</shortDescription>
+        <value>Global Sales and Service</value>
+    </labels>
+    <labels>
+        <fullName>RenewalEmailService</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RenewalEmailService</shortDescription>
+        <value>renewalemailservice@2twn2xgu3it8axgsy5qq9n93groykgejkalxz8verri6nbzp4x.29-wzueaa.cs19.apex.sandbox.salesforce.com</value>
+    </labels>
+    <labels>
+        <fullName>SMAX_PS_Discount_Percent_allowed_for_a_single_line</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Discount Percent allowed for a single line</shortDescription>
+        <value>5</value>
+    </labels>
+    <labels>
+        <fullName>SMAX_PS_WOLine_Discount_Amount</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Discount amount allowed for a single line</shortDescription>
+        <value>200</value>
+    </labels>
+    <labels>
+        <fullName>Sales_Rep_Lookup_Cert</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sales Rep Lookup Cert</shortDescription>
+        <value>SalesRepProd_Cert2018</value>
+    </labels>
+    <labels>
+        <fullName>ServiceLeadURL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ServiceLeadURL</shortDescription>
+        <value>http://info.perkinelmer.com/LP=1061</value>
+    </labels>
+    <labels>
+        <fullName>SupportPortalURL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SupportPortalURL</shortDescription>
+        <value>supportportal@4-204er0g37v7fass1fctqjugnp.3-liqeau.na1.apex.salesforce.com</value>
+    </labels>
+    <labels>
+        <fullName>TYPE_OPTION_NOT_SELECTED</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Please choose a valid custom metadata type.</shortDescription>
+        <value>Please choose a valid custom metadata type.</value>
+    </labels>
+    <labels>
+        <fullName>Trigger_validation_rule_for_users</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Trigger_validation_rule_for_users</shortDescription>
+        <value>&apos;00530000004zmAR&apos;,&apos;00530000001CUSu&apos;,&apos;00530000006rBBC&apos;,&apos;0053A00000CsseA&apos;,&apos;0053A00000DUSUW&apos;,&apos;00530000000yPLT&apos;,&apos;0053A00000DU1vS&apos;,&apos;0053A00000Csr59&apos;,&apos;005300000041qRh&apos;,&apos;00530000008x7XV&apos;</value>
+    </labels>
+</CustomLabels>

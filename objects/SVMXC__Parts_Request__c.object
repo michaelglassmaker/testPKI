@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>SMAX_PS_Date_Shipped__c</fullName>
+        <description>Denotes the date shipped</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes the date shipped</inlineHelpText>
+        <label>Date Shipped</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Tracking_Number__c</fullName>
+        <description>Denotes the tracking number of parts request</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes the tracking number of parts request</inlineHelpText>
+        <label>Tracking Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Shipping_Courier__c</fullName>
+        <description>Indicates the shipping courier to be used for the shipment</description>
+        <externalId>false</externalId>
+        <label>Shipping Courier</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fed Ex</fullName>
+                    <default>false</default>
+                    <label>Fed Ex</label>
+                </value>
+                <value>
+                    <fullName>UPS</fullName>
+                    <default>false</default>
+                    <label>UPS</label>
+                </value>
+                <value>
+                    <fullName>USPS</fullName>
+                    <default>false</default>
+                    <label>USPS</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Shipping_Method__c</fullName>
+        <description>Indicates method of shipment request: Ground, 2nd Day, Next Day</description>
+        <externalId>false</externalId>
+        <label>Shipping Method</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Ground</fullName>
+                    <default>false</default>
+                    <label>Ground</label>
+                </value>
+                <value>
+                    <fullName>2nd Day</fullName>
+                    <default>false</default>
+                    <label>2nd Day</label>
+                </value>
+                <value>
+                    <fullName>Next Day</fullName>
+                    <default>false</default>
+                    <label>Next Day</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Work_Order__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Work Order</label>
+        <referenceTo>SVMXC__Service_Order__c</referenceTo>
+        <relationshipLabel>Parts Requests</relationshipLabel>
+        <relationshipName>Parts_Requests</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+</CustomObject>

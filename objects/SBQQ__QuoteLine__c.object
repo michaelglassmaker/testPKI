@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>CPQ_Approvals_List_Price_Decrease__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF((SBQQ__ListPrice__c &lt;  SBQQ__OriginalPrice__c ), true, false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Approvals List Price Decrease</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Average_Services_Price__c</fullName>
+        <description>Used to populate services amount on parent quote line.</description>
+        <externalId>false</externalId>
+        <label>Average Services Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Discounted_By_Parent__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Simplus - Override to &quot;Component Discounted By Package&quot; field. Allows this functionality to be added to the &quot;Standard Line Item Drawer&quot; field set.</description>
+        <externalId>false</externalId>
+        <label>Discounted By Parent</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Effective_End_Date__c</fullName>
+        <description>Calculated end date based on start date plus term.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Calculated end date based on start date plus term.</inlineHelpText>
+        <label>Effective End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Effective_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK(SBQQ__StartDate__c)),
+SBQQ__StartDate__c,
+IF(NOT(ISBLANK(SBQQ__Group__r.SBQQ__StartDate__c)),
+SBQQ__Group__r.SBQQ__StartDate__c,
+SBQQ__Quote__r.SBQQ__StartDate__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Effective Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Is_Bundle__c</fullName>
+        <externalId>false</externalId>
+        <formula>ISPICKVAL(SBQQ__Product__r.CPQ_Bundle_or_A_La_Carte__c, &quot;Bundle&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Bundle</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Is_First_Time_Price_Rules_Fire__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Simplus - This is a control field to distinguish initialized default values from override values entered by users. It should be set to false in the last price action in the calculation sequence.</description>
+        <externalId>false</externalId>
+        <label>Is First Time Price Rules Fire</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_License_Agreement_Name__c</fullName>
+        <description>Used to populate conditional agreement checkboxes on quote object.</description>
+        <externalId>false</externalId>
+        <label>License Agreement Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>PE</fullName>
+                    <default>false</default>
+                    <label>PE</label>
+                </value>
+                <value>
+                    <fullName>PE + IFX</fullName>
+                    <default>false</default>
+                    <label>PE + IFX</label>
+                </value>
+                <value>
+                    <fullName>Cloud</fullName>
+                    <default>false</default>
+                    <label>Cloud</label>
+                </value>
+                <value>
+                    <fullName>SaaS</fullName>
+                    <default>false</default>
+                    <label>SaaS</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CPQ_License_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>SBQQ__Product__r.License_Type_INF__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>License Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CPQ_Maintenance_Is_Required__c</fullName>
+        <externalId>false</externalId>
+        <formula>(CPQ_License_Type__c = &quot;Perpetual&quot; || CPQ_License_Type__c = &quot;Term&quot;) &amp;&amp; !SBQQ__Product__r.CPQ_Maintenance_Optional__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Maintenance Is Required</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Original_List_Price__c</fullName>
+        <externalId>false</externalId>
+        <formula>SBQQ__OriginalPrice__c</formula>
+        <label>Original List Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Parent_Is_Maintenance_Required__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(SBQQ__RequiredBy__c),FALSE,SBQQ__RequiredBy__r.CPQ_Maintenance_Is_Required__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Parent Is Maintenance Required</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Product_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( SBQQ__Product__r.Product_Type_INF__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CPQ_Quantity_Controlled_By_Parent__c</fullName>
+        <externalId>false</externalId>
+        <formula>SBQQ__ProductOption__r.CPQ_Quantity_Controlled_By_Parent__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Quantity Controlled By Parent</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Quantity_Is_Below_Minimum_Quantity__c</fullName>
+        <externalId>false</externalId>
+        <formula>SBQQ__Quantity__c &lt;  SBQQ__Product__r.SBQQ__DefaultQuantity__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Quantity Is Below Minimum Quantity</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Renewal_Net_Price_Decrease__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+AND(NOT(ISBLANK(SBQQ__RenewedSubscription__c )),( SBQQ__NetPrice__c &lt; Renewal_Net_Price__c )),true, false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Renewal Net Price Decrease</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Renewal_Quantity_Decrease__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+AND(NOT(ISBLANK(SBQQ__RenewedSubscription__c )),( SBQQ__Quantity__c &lt; SBQQ__PriorQuantity__c )),true, false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Renewal Quantity Decrease</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Required_By_Product_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>SBQQ__RequiredBy__r.SBQQ__ProductCode__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Required By Product Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CPQ_Services_Discount__c</fullName>
+        <description>Used to populate services amount on parent quote line.</description>
+        <externalId>false</externalId>
+        <label>Services Discount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Services_Gross_Price__c</fullName>
+        <description>Used to populate services amount on parent quote line.</description>
+        <externalId>false</externalId>
+        <label>Services Gross Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Services_Net_Price__c</fullName>
+        <description>Used to populate services amount on parent quote line.</description>
+        <externalId>false</externalId>
+        <label>Services Net Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Services_Quantity__c</fullName>
+        <description>Used to populate services amount on parent quote line.</description>
+        <externalId>false</externalId>
+        <label>Services Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CPQ_Special__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Special</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Term_Display_Field__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(CPQ_Effective_End_Date__c),
+&quot;n/a&quot;,
+TEXT(MONTH(CPQ_Effective_Start_Date__c)) 
+&amp; &quot;/&quot; 
+&amp; TEXT(DAY(CPQ_Effective_Start_Date__c)) 
+&amp; &quot;/&quot; 
+&amp; TEXT(YEAR(CPQ_Effective_Start_Date__c))
+&amp; &quot; - &quot; 
+&amp; TEXT(MONTH(CPQ_Effective_End_Date__c)) 
+&amp; &quot;/&quot; 
+&amp; TEXT(DAY(CPQ_Effective_End_Date__c)) 
+&amp; &quot;/&quot; 
+&amp; TEXT(YEAR(CPQ_Effective_End_Date__c)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Start/End Dates</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CPQ_USD_List_Total__c</fullName>
+        <description>For Approvals - USD version of List Total field, for multicurrency.</description>
+        <externalId>false</externalId>
+        <label>USD List Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CPQ_USD_Net_Total__c</fullName>
+        <description>For Approvals - USD version of Net Total field, for multicurrency.</description>
+        <externalId>false</externalId>
+        <label>USD Net Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>End_Date_INF__c</fullName>
+        <externalId>false</externalId>
+        <formula>CPQ_Effective_End_Date__c</formula>
+        <label>End Date INF</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>INF_Product_Family__c</fullName>
+        <externalId>false</externalId>
+        <label>INF Product Family</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Attivio</fullName>
+                    <default>false</default>
+                    <label>Attivio</label>
+                </value>
+                <value>
+                    <fullName>CBOE</fullName>
+                    <default>false</default>
+                    <label>CBOE</label>
+                </value>
+                <value>
+                    <fullName>ChemDraw Cloud</fullName>
+                    <default>false</default>
+                    <label>ChemDraw Cloud</label>
+                </value>
+                <value>
+                    <fullName>ChemOffice</fullName>
+                    <default>false</default>
+                    <label>ChemOffice</label>
+                </value>
+                <value>
+                    <fullName>Clinical</fullName>
+                    <default>false</default>
+                    <label>Clinical</label>
+                </value>
+                <value>
+                    <fullName>Content</fullName>
+                    <default>false</default>
+                    <label>Content</label>
+                </value>
+                <value>
+                    <fullName>Elements</fullName>
+                    <default>false</default>
+                    <label>Elements</label>
+                </value>
+                <value>
+                    <fullName>E-Notebook</fullName>
+                    <default>false</default>
+                    <label>E-Notebook</label>
+                </value>
+                <value>
+                    <fullName>High Content Profiler</fullName>
+                    <default>false</default>
+                    <label>High Content Profiler</label>
+                </value>
+                <value>
+                    <fullName>iLab</fullName>
+                    <default>false</default>
+                    <label>iLab</label>
+                </value>
+                <value>
+                    <fullName>Imaging</fullName>
+                    <default>false</default>
+                    <label>Imaging</label>
+                </value>
+                <value>
+                    <fullName>InfomatiX</fullName>
+                    <default>false</default>
+                    <label>InfomatiX</label>
+                </value>
+                <value>
+                    <fullName>Lead Discovery Research</fullName>
+                    <default>false</default>
+                    <label>Lead Discovery Research</label>
+                </value>
+                <value>
+                    <fullName>Not Applicable</fullName>
+                    <default>false</default>
+                    <label>Not Applicable</label>
+                </value>
+                <value>
+                    <fullName>Research</fullName>
+                    <default>false</default>
+                    <label>Research</label>
+                </value>
+                <value>
+                    <fullName>Signals Lead Discovery</fullName>
+                    <default>false</default>
+                    <label>Signals Lead Discovery</label>
+                </value>
+                <value>
+                    <fullName>Signals Notebook</fullName>
+                    <default>false</default>
+                    <label>Signals Notebook</label>
+                </value>
+                <value>
+                    <fullName>Signals Screening</fullName>
+                    <default>false</default>
+                    <label>Signals Screening</label>
+                </value>
+                <value>
+                    <fullName>Signals Translational</fullName>
+                    <default>false</default>
+                    <label>Signals Translational</label>
+                </value>
+                <value>
+                    <fullName>Special License</fullName>
+                    <default>false</default>
+                    <label>Special License</label>
+                </value>
+                <value>
+                    <fullName>Special Maintenance</fullName>
+                    <default>false</default>
+                    <label>Special Maintenance</label>
+                </value>
+                <value>
+                    <fullName>Special SAAS</fullName>
+                    <default>false</default>
+                    <label>Special SAAS</label>
+                </value>
+                <value>
+                    <fullName>StreamBase</fullName>
+                    <default>false</default>
+                    <label>StreamBase</label>
+                </value>
+                <value>
+                    <fullName>Special Subscription</fullName>
+                    <default>false</default>
+                    <label>Special Subscription</label>
+                </value>
+                <value>
+                    <fullName>Special Term</fullName>
+                    <default>false</default>
+                    <label>Special Term</label>
+                </value>
+                <value>
+                    <fullName>ChemDraw Professional</fullName>
+                    <default>false</default>
+                    <label>ChemDraw Professional</label>
+                </value>
+                <value>
+                    <fullName>ChemDraw Prime</fullName>
+                    <default>false</default>
+                    <label>ChemDraw Prime</label>
+                </value>
+                <value>
+                    <fullName>Translational</fullName>
+                    <default>false</default>
+                    <label>Translational</label>
+                </value>
+                <value>
+                    <fullName>Spotfire</fullName>
+                    <default>false</default>
+                    <label>Spotfire</label>
+                </value>
+                <value>
+                    <fullName>Lead Discovery Biologics</fullName>
+                    <default>false</default>
+                    <label>Lead Discovery Biologics</label>
+                </value>
+                <value>
+                    <fullName>TIBCO Spotfire PaaS</fullName>
+                    <default>false</default>
+                    <label>TIBCO Spotfire PaaS</label>
+                </value>
+                <value>
+                    <fullName>Signals Clinical</fullName>
+                    <default>false</default>
+                    <label>Signals Clinical</label>
+                </value>
+                <value>
+                    <fullName>Special Services</fullName>
+                    <default>false</default>
+                    <label>Special Services</label>
+                </value>
+                <value>
+                    <fullName>Columbus</fullName>
+                    <default>false</default>
+                    <label>Columbus</label>
+                </value>
+                <value>
+                    <fullName>Enterprise</fullName>
+                    <default>false</default>
+                    <label>Enterprise</label>
+                </value>
+                <value>
+                    <fullName>QAQC</fullName>
+                    <default>false</default>
+                    <label>QAQC</label>
+                </value>
+                <value>
+                    <fullName>Signals</fullName>
+                    <default>false</default>
+                    <label>Signals</label>
+                </value>
+                <value>
+                    <fullName>Services</fullName>
+                    <default>false</default>
+                    <label>Services</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Renewal_Net_Price__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK(SBQQ__RenewedSubscription__c)), SBQQ__RenewedSubscription__r.SBQQ__NetPrice__c, null)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Renewal Net Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Start_Date_INF__c</fullName>
+        <externalId>false</externalId>
+        <formula>CPQ_Effective_Start_Date__c</formula>
+        <label>Start Date INF</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+</CustomObject>

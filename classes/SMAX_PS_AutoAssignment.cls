@@ -403,7 +403,6 @@ public with sharing class SMAX_PS_AutoAssignment {
 
 		return evt;
 	}
-
 	/**
 	 *	Finishes Assignment when custom is logic is used to partially assign.
 	 *	Should be called from BEFORE UPDATE
@@ -683,7 +682,7 @@ public with sharing class SMAX_PS_AutoAssignment {
 			User u = userMap.get(wo.OwnerId);
 			SVMXC__Service_Group_Members__c tech = userTechMap.get(wo.OwnerId);
 			// SVMXCFG-1107 Null protect the User variable (could be a Group or Queue)
-			if (u != null && u.Profile.Name.contains('Field Engineer') && tech != null)
+			if (u != null && tech != null) // && u.Profile.Name.contains('Field Engineer')
 			{
 				Event evt = assignTechnician(wo, tech, Date.today(), null);
 				events.add(evt);

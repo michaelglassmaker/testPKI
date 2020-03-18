@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>overrideNewButton_CR</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Informatics contract request</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <label>Contract Request</label>
+    <nameField>
+        <label>Old Contracts Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Contracts Requests</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>Status_INF__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Purpose__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>MSA_INF__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Assigned_To__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Status_INF__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Purpose__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Assigned_To__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>MSA_INF__c</lookupPhoneDialogsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>Stage__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( Opportunity_Name_INF__r.StageName)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Stage</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MSA_INF__c</fullName>
+        <externalId>false</externalId>
+        <label>MSA</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>NDAOnly__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>NDA only: General Nature of discussion</inlineHelpText>
+        <label>NDAOnly</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Demo/Sales Presentation</fullName>
+                    <default>false</default>
+                    <label>Demo/Sales Presentation</label>
+                </value>
+                <value>
+                    <fullName>Product Development/Consulting</fullName>
+                    <default>false</default>
+                    <label>Product Development/Consulting</label>
+                </value>
+                <value>
+                    <fullName>Human Resources</fullName>
+                    <default>false</default>
+                    <label>Human Resources</label>
+                </value>
+                <value>
+                    <fullName>Corporate</fullName>
+                    <default>false</default>
+                    <label>Corporate</label>
+                </value>
+                <value>
+                    <fullName>RFP/RFQ</fullName>
+                    <default>false</default>
+                    <label>RFP/RFQ</label>
+                </value>
+                <value>
+                    <fullName>Finance Customer</fullName>
+                    <default>false</default>
+                    <label>Finance Customer</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Purpose__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Purpose: (New licenses; Renewal; NDA; Prof. Services etc.) *IF NDA SKIP TO # 7 BELOW and complete #7-16*</inlineHelpText>
+        <label>Purpose</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New licenses</fullName>
+                    <default>false</default>
+                    <label>New licenses</label>
+                </value>
+                <value>
+                    <fullName>Renewal</fullName>
+                    <default>false</default>
+                    <label>Renewal</label>
+                </value>
+                <value>
+                    <fullName>NDA</fullName>
+                    <default>false</default>
+                    <label>NDA</label>
+                </value>
+                <value>
+                    <fullName>Prof. Services</fullName>
+                    <default>false</default>
+                    <label>Prof. Services</label>
+                </value>
+                <value>
+                    <fullName>RFI</fullName>
+                    <default>false</default>
+                    <label>RFI</label>
+                </value>
+                <value>
+                    <fullName>RFP</fullName>
+                    <default>false</default>
+                    <label>RFP</label>
+                </value>
+                <value>
+                    <fullName>RFQ</fullName>
+                    <default>false</default>
+                    <label>RFQ</label>
+                </value>
+                <value>
+                    <fullName>Vendor Form</fullName>
+                    <default>false</default>
+                    <label>Vendor Form</label>
+                </value>
+                <value>
+                    <fullName>Tax certificate</fullName>
+                    <default>false</default>
+                    <label>Tax certificate</label>
+                </value>
+                <value>
+                    <fullName>Cert. Ltr.</fullName>
+                    <default>false</default>
+                    <label>Cert. Ltr.</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>NDA_only__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>NDA only: Other Party’s role</inlineHelpText>
+        <label>NDA only</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Prospective Customer/Client</fullName>
+                    <default>false</default>
+                    <label>Prospective Customer/Client</label>
+                </value>
+                <value>
+                    <fullName>Consultant    Vendor/Contractor</fullName>
+                    <default>false</default>
+                    <label>Consultant    Vendor/Contractor</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Spotfire__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Spotfire: Has this been approved by Exceptions Approval
+(Attach approval email to your request)</inlineHelpText>
+        <label>Spotfire</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>YES</fullName>
+                    <default>false</default>
+                    <label>YES</label>
+                </value>
+                <value>
+                    <fullName>NO</fullName>
+                    <default>false</default>
+                    <label>NO</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Countries__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Countries where software will be used and professional services rendered:</inlineHelpText>
+        <label>Countries</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Status_INF__c</fullName>
+        <externalId>false</externalId>
+        <label>Status (Contract Team use only)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Initial Request</fullName>
+                    <default>true</default>
+                    <label>Initial Request</label>
+                </value>
+                <value>
+                    <fullName>Request Acknowledged</fullName>
+                    <default>false</default>
+                    <label>Request Acknowledged</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Internal Review</fullName>
+                    <default>false</default>
+                    <label>Internal Review</label>
+                </value>
+                <value>
+                    <fullName>On Hold</fullName>
+                    <default>false</default>
+                    <label>On Hold</label>
+                </value>
+                <value>
+                    <fullName>Request Cancelled</fullName>
+                    <default>false</default>
+                    <label>Request Cancelled</label>
+                </value>
+                <value>
+                    <fullName>Closed</fullName>
+                    <default>false</default>
+                    <label>Closed</label>
+                </value>
+                <value>
+                    <fullName>Sent to Sales</fullName>
+                    <default>false</default>
+                    <label>Sent to Sales</label>
+                </value>
+                <value>
+                    <fullName>Sent to Customer</fullName>
+                    <default>false</default>
+                    <label>Sent to Customer</label>
+                </value>
+                <value>
+                    <fullName>Sent to Services</fullName>
+                    <default>false</default>
+                    <label>Sent to Services</label>
+                </value>
+                <value>
+                    <fullName>In signature PKI</fullName>
+                    <default>false</default>
+                    <label>In signature PKI</label>
+                </value>
+                <value>
+                    <fullName>In signature Customer</fullName>
+                    <default>false</default>
+                    <label>In signature Customer</label>
+                </value>
+                <value>
+                    <fullName>Sent to Contracts</fullName>
+                    <default>false</default>
+                    <label>Sent to Contracts</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Assigned_To__c</fullName>
+        <externalId>false</externalId>
+        <label>Assigned To (Contract Team use only)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Ray Lowe</fullName>
+                    <default>false</default>
+                    <label>Ray Lowe</label>
+                </value>
+                <value>
+                    <fullName>Darlene Willard</fullName>
+                    <default>false</default>
+                    <label>Darlene Willard</label>
+                </value>
+                <value>
+                    <fullName>Brendan Melvin</fullName>
+                    <default>false</default>
+                    <label>Brendan Melvin</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Comment_INF__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Order_Value__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity_Name_INF__r.Amount</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Order Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity_Name_INF__r.Account.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Customer Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Expected_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity_Name_INF__r.CloseDate</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Expected Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Contracts_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Contracts Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>MSA/PSA</fullName>
+                    <default>false</default>
+                    <label>MSA/PSA</label>
+                </value>
+                <value>
+                    <fullName>License Agreement</fullName>
+                    <default>false</default>
+                    <label>License Agreement</label>
+                </value>
+                <value>
+                    <fullName>NDA</fullName>
+                    <default>false</default>
+                    <label>NDA</label>
+                </value>
+                <value>
+                    <fullName>Quote</fullName>
+                    <default>false</default>
+                    <label>Quote</label>
+                </value>
+                <value>
+                    <fullName>W-9</fullName>
+                    <default>false</default>
+                    <label>W-9</label>
+                </value>
+                <value>
+                    <fullName>Audit form</fullName>
+                    <default>false</default>
+                    <label>Audit form</label>
+                </value>
+                <value>
+                    <fullName>Cert. Ltr.</fullName>
+                    <default>false</default>
+                    <label>Cert. Ltr.</label>
+                </value>
+                <value>
+                    <fullName>PO</fullName>
+                    <default>false</default>
+                    <label>PO</label>
+                </value>
+                <value>
+                    <fullName>Amendment</fullName>
+                    <default>false</default>
+                    <label>Amendment</label>
+                </value>
+                <value>
+                    <fullName>Sole Source</fullName>
+                    <default>false</default>
+                    <label>Sole Source</label>
+                </value>
+                <value>
+                    <fullName>Cert. of Ins.</fullName>
+                    <default>false</default>
+                    <label>Cert. of Ins.</label>
+                </value>
+                <value>
+                    <fullName>RFI</fullName>
+                    <default>false</default>
+                    <label>RFI</label>
+                </value>
+                <value>
+                    <fullName>RFP</fullName>
+                    <default>false</default>
+                    <label>RFP</label>
+                </value>
+                <value>
+                    <fullName>RFQ</fullName>
+                    <default>false</default>
+                    <label>RFQ</label>
+                </value>
+                <value>
+                    <fullName>Vendor Form</fullName>
+                    <default>false</default>
+                    <label>Vendor Form</label>
+                </value>
+                <value>
+                    <fullName>Tax Cert.</fullName>
+                    <default>false</default>
+                    <label>Tax Cert.</label>
+                </value>
+                <value>
+                    <fullName>SOW</fullName>
+                    <default>false</default>
+                    <label>SOW</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Distributor Agreement</fullName>
+                    <default>false</default>
+                    <label>Distributor Agreement</label>
+                </value>
+                <value>
+                    <fullName>Review for Team</fullName>
+                    <default>false</default>
+                    <label>Review for Team</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Company_Details__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Address required</inlineHelpText>
+        <label>Customer Address (full address required)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Details__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact Details</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Order_Background__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Order Background (provide any pertinent information contracts should be aware of)</inlineHelpText>
+        <label>Order Background</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Request_Date_INF__c</fullName>
+        <externalId>false</externalId>
+        <label>Request Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Contract_Document__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>If Customer requires their contract document: Have you already requested the customer to use our document?</inlineHelpText>
+        <label>Contract Document:</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Other_Party_s_Role__c</fullName>
+        <externalId>false</externalId>
+        <label>Other Party’s Role</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Prospective Customer</fullName>
+                    <default>false</default>
+                    <label>Prospective Customer</label>
+                </value>
+                <value>
+                    <fullName>Consultant</fullName>
+                    <default>false</default>
+                    <label>Consultant</label>
+                </value>
+                <value>
+                    <fullName>Vendor</fullName>
+                    <default>false</default>
+                    <label>Vendor</label>
+                </value>
+                <value>
+                    <fullName>Contractor</fullName>
+                    <default>false</default>
+                    <label>Contractor</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product_or_services__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Product(s) to be licensed or services to be provided.</inlineHelpText>
+        <label>Product or services</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Application__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Customer Application: (How will customer utilize the software?  If Spotfire: is use only for customer internal use or will external users have access to Spotfire or Webplayer?)</inlineHelpText>
+        <label>Customer Application</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Name_INF__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Opportunity Name</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Contracts Requests</relationshipLabel>
+        <relationshipName>Contracts_Requests</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contract_Request_Email__c</fullName>
+        <defaultValue>&quot;Informatics.ContractsRequest@PERKINELMER.COM&quot;</defaultValue>
+        <externalId>false</externalId>
+        <label>Contract Request Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Internal_Sales_Contact__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity_Name_INF__r.Owner.FirstName + &quot; &quot; + Opportunity_Name_INF__r.Owner.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Internal Sales Contact</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NDA_only_General_nature__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>NDA only: General nature/description of confidential information that other Party may disclose to you if any:</inlineHelpText>
+        <label>NDA only General nature</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Demo</fullName>
+                    <default>false</default>
+                    <label>Demo</label>
+                </value>
+                <value>
+                    <fullName>Sales presentation</fullName>
+                    <default>false</default>
+                    <label>Sales presentation</label>
+                </value>
+                <value>
+                    <fullName>Product Development</fullName>
+                    <default>false</default>
+                    <label>Product Development</label>
+                </value>
+                <value>
+                    <fullName>Consulting</fullName>
+                    <default>false</default>
+                    <label>Consulting</label>
+                </value>
+                <value>
+                    <fullName>Marketing</fullName>
+                    <default>false</default>
+                    <label>Marketing</label>
+                </value>
+                <value>
+                    <fullName>Human Resources</fullName>
+                    <default>false</default>
+                    <label>Human Resources</label>
+                </value>
+                <value>
+                    <fullName>Corporate</fullName>
+                    <default>false</default>
+                    <label>Corporate</label>
+                </value>
+                <value>
+                    <fullName>RFP</fullName>
+                    <default>false</default>
+                    <label>RFP</label>
+                </value>
+                <value>
+                    <fullName>Finance</fullName>
+                    <default>false</default>
+                    <label>Finance</label>
+                </value>
+                <value>
+                    <fullName>Customer Audit</fullName>
+                    <default>false</default>
+                    <label>Customer Audit</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>NDA_Only_General_Discription__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>NDA only: General nature/description of confidential information that you may disclose to the other Party, if any (please include products you may discuss during your meetings):</inlineHelpText>
+        <label>NDA Only General Discription</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>NDA_only_Over_how_long_a_period__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>NDA only: Over how long a period (# of months/years) do you believe confidential information will be exchanged with the other party?</inlineHelpText>
+        <label>NDA only Over how long a period</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+</CustomObject>

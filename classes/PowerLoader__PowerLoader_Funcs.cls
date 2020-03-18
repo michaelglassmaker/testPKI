@@ -28,4 +28,8 @@ global class PowerLoader_Funcs extends PowerLoader.Configero_Base {
     global static Map<String,String> getCSVHeaderMap(String attachId) {
         return null;
     }
+    @RemoteAction
+    global static Map<String,Object> getFileContent(String attachId, Integer offset, Integer len) {
+        return null;
+    }
 }

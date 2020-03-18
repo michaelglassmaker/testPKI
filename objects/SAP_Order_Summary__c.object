@@ -1,0 +1,2029 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>SAP_Order_Summary_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>SAP_Order_Summary_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>Custom_Compact_Layout</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This will store read only Order Details form SAP (pushed using Boomi)
+There data will upsert. API names should not change or integration with Boomi will fail</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <label>PKI Order Summary</label>
+    <nameField>
+        <label>SAP Order Number</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>PKI Order Summary</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Order_Net_Value__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Order_Path__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Current_Global_Delivery_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Current_CER_date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Actual_Customer_Date__c</customTabListAdditionalFields>
+        <searchResultsAdditionalFields>Order_Net_Value__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Actual_Order_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Current_Global_Delivery_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Current_CER_date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Opportunity__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Customer_PO_Number__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+    <visibility>Public</visibility>
+    <compactLayouts>
+        <fullName>Custom_Compact_Layout</fullName>
+        <fields>Opportunity__c</fields>
+        <fields>Name</fields>
+        <fields>Order_Net_Value__c</fields>
+        <fields>Current_Global_Delivery_Date__c</fields>
+        <fields>Current_CER_date__c</fields>
+        <fields>Actual_Customer_Date__c</fields>
+        <fields>Customer_PO_Number__c</fields>
+        <fields>Actual_Order_Date__c</fields>
+        <label>Custom Compact Layout</label>
+    </compactLayouts>
+    <fieldSets>
+        <fullName>orderSummary_systemInfo</fullName>
+        <description>Used to group system info fields together</description>
+        <displayedFields>
+            <field>Replacement_Customer_Name__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Bill_To_Customer_Id__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Ship_To_Customer_Id__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Sold_To_Customer_Id__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>idocId__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>order_Contact_Id__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Id</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Add_RR__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Add_RR_Description__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Source_Type__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Quote_Number__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Order_Number__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>fxAccountName__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>fxOppName__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>fxOrderPath__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>orderSummary_systemInfo</label>
+    </fieldSets>
+    <fields>
+        <fullName>iRep__c</fullName>
+        <description>This fields is a Boolean that will look at the current user&apos;s email address and the sales rep email and evaluate if it is the same.</description>
+        <externalId>false</externalId>
+        <formula>sales_Rep_Email__c =  $User.Email ||  Opportunity__r.OwnerId = $User.Id</formula>
+        <label>iRep</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>isNew__c</fullName>
+        <description>This is to help for a report that shows how many orders were updated by day. If it&apos;s new, then the number is more accurate</description>
+        <externalId>false</externalId>
+        <formula>DATEVALUE(CreatedDate) =  DATEVALUE(LastModifiedDate)
+&amp;&amp;
+
+/*We are new if the date is the same and the hours are roughly 4 hours apart*/
+ value(fxHourUpdated__c) -value(fxHourCreated__c) &lt;=4</formula>
+        <label>isNew</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Add_RR__c</fullName>
+        <externalId>false</externalId>
+        <label>Add RR</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>idocId__c</fullName>
+        <externalId>false</externalId>
+        <label>idocId</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>SAP_Order_Summary</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Opp_Owner__c</fullName>
+        <description>This pulls the current Opportunity Owner (or the order sales rep email if not linked to an opp)</description>
+        <externalId>false</externalId>
+        <formula>SUBSTITUTE(SUBSTITUTE(BLANKVALUE(Opportunity__r.Owner.Username,  sales_Rep_Email__c ),&quot;@perkinelmer.com&quot;,&quot;&quot;),&quot;.&quot;,&quot; &quot;)</formula>
+        <label>Opp Owner</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Org__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Org</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Rep__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>mapped using the sales rep  email and an L.FLOW</description>
+        <externalId>false</externalId>
+        <label>Sales Rep</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>PKI_Order_Summary</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>fxOppName__c</fullName>
+        <description>text for Opp name for search</description>
+        <externalId>false</externalId>
+        <label>fxOppName</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>isSame1up__c</fullName>
+        <description>Looks at the Linked Opportunity owner&apos;s Direct manager and the current user</description>
+        <externalId>false</externalId>
+        <formula>BLANKVALUE(Opportunity__r.Owner.Direct_Manager__c,&quot;NO MANAGER&quot;)  = $User.Direct_Manager__c</formula>
+        <label>isSame1up</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Order_Path__c</fullName>
+        <externalId>false</externalId>
+        <label>Order Path</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>G_PICK_000_order_path</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>fxPathDays__c</fullName>
+        <description>This will display a string of text with dates and days of the path</description>
+        <externalId>false</externalId>
+        <formula>/*
+ Path_Date_All_Block__c 
+ Path_Date_Order_Started__c        Days_Order_to_Hold__c 
+ Path_Date_Order_Hold__c           Days_Hold_to_Clear__c 
+ Path_Date_Order_Clear__c          Days_Clear_to_Global_Delivery__c 
+ Path_Date_Global_Delivery__c      Days_Global_Delivery_to_Read_to_Ship__c 
+ Path_Date_Ready_for_Shipping__c   Days_Ready_to_Ship_to_Shipped__c 
+ Path_Date_Order_Shipped__c        Days_Open_to_Ship__c 
+
+&quot;Path Name: &quot; &amp; 
+LPAD(TEXT(DAY(Field_name__c)),2,&quot;0&quot;) &amp; &quot;-&quot; &amp; 
+CASE(MONTH(Field_name__c), 1, &quot;JAN&quot;, 2, &quot;FEB&quot;, 3, &quot;MAR&quot;, 4, &quot;APR&quot;, 5, &quot;MAY&quot;, 6, &quot;JUN&quot;, 7, &quot;JUL&quot;, 8, &quot;AUG&quot;, 9, &quot;SEP&quot;, 10, &quot;OCT&quot;, 11, &quot;NOV&quot;, 12, &quot;DEC&quot;, &quot;None&quot;) &amp; &quot;-&quot; &amp; TEXT(YEAR(Field_name__c)) &amp; &quot; (&quot; &amp; TEXT(field2_name__c) &amp; &quot;d) &gt; &quot; &amp; 
+*/
+
+
+LPAD(TEXT(DAY(Path_Date_Order_Started__c)),2,&quot;0&quot;) &amp; &quot;-&quot; &amp; 
+CASE(MONTH(Path_Date_Order_Started__c), 1, &quot;JAN&quot;, 2, &quot;FEB&quot;, 3, &quot;MAR&quot;, 4, &quot;APR&quot;, 5, &quot;MAY&quot;, 6, &quot;JUN&quot;, 7, &quot;JUL&quot;, 8, &quot;AUG&quot;, 9, &quot;SEP&quot;, 10, &quot;OCT&quot;, 11, &quot;NOV&quot;, 12, &quot;DEC&quot;, &quot;None&quot;) &amp; &quot;-&quot; &amp; TEXT(YEAR(Path_Date_Order_Started__c))  &amp; &quot; Order Started (&quot; &amp; TEXT(Days_Order_to_Hold__c ) &amp; &quot; days) &gt; &quot; &amp; BR() &amp;
+
+
+LPAD(TEXT(DAY(Path_Date_Order_Hold__c )),2,&quot;0&quot;) &amp; &quot;-&quot; &amp; 
+CASE(MONTH(Path_Date_Order_Hold__c ), 1, &quot;JAN&quot;, 2, &quot;FEB&quot;, 3, &quot;MAR&quot;, 4, &quot;APR&quot;, 5, &quot;MAY&quot;, 6, &quot;JUN&quot;, 7, &quot;JUL&quot;, 8, &quot;AUG&quot;, 9, &quot;SEP&quot;, 10, &quot;OCT&quot;, 11, &quot;NOV&quot;, 12, &quot;DEC&quot;, &quot;None&quot;) &amp; &quot;-&quot; &amp; TEXT(YEAR(Path_Date_Order_Hold__c ))  &amp; &quot; Processing Hold (&quot; &amp; TEXT(Days_Hold_to_Clear__c ) &amp; &quot; days) &gt; &quot; &amp;  BR() &amp;
+
+
+LPAD(TEXT(DAY(Path_Date_Order_Clear__c )),2,&quot;0&quot;) &amp; &quot;-&quot; &amp; 
+CASE(MONTH(Path_Date_Order_Clear__c ), 1, &quot;JAN&quot;, 2, &quot;FEB&quot;, 3, &quot;MAR&quot;, 4, &quot;APR&quot;, 5, &quot;MAY&quot;, 6, &quot;JUN&quot;, 7, &quot;JUL&quot;, 8, &quot;AUG&quot;, 9, &quot;SEP&quot;, 10, &quot;OCT&quot;, 11, &quot;NOV&quot;, 12, &quot;DEC&quot;, &quot;None&quot;) &amp; &quot;-&quot; &amp; TEXT(YEAR(Path_Date_Order_Clear__c )) &amp; &quot; Order Clear (&quot; &amp; TEXT(Days_Clear_to_Global_Delivery__c ) &amp; &quot; days) &gt; &quot; &amp; BR() &amp;
+
+
+LPAD(TEXT(DAY(Path_Date_Global_Delivery__c )),2,&quot;0&quot;) &amp; &quot;-&quot; &amp; 
+CASE(MONTH(Path_Date_Global_Delivery__c ), 1, &quot;JAN&quot;, 2, &quot;FEB&quot;, 3, &quot;MAR&quot;, 4, &quot;APR&quot;, 5, &quot;MAY&quot;, 6, &quot;JUN&quot;, 7, &quot;JUL&quot;, 8, &quot;AUG&quot;, 9, &quot;SEP&quot;, 10, &quot;OCT&quot;, 11, &quot;NOV&quot;, 12, &quot;DEC&quot;, &quot;None&quot;) &amp; &quot;-&quot; &amp; TEXT(YEAR(Path_Date_Global_Delivery__c ))  &amp; &quot; Mfg Date Committed (&quot; &amp; TEXT(Days_Global_Delivery_to_Read_to_Ship__c ) &amp; &quot; days) &gt; &quot; &amp;  BR() &amp;
+
+
+LPAD(TEXT(DAY(Path_Date_Ready_for_Shipping__c   )),2,&quot;0&quot;) &amp; &quot;-&quot; &amp; 
+CASE(MONTH(Path_Date_Ready_for_Shipping__c   ), 1, &quot;JAN&quot;, 2, &quot;FEB&quot;, 3, &quot;MAR&quot;, 4, &quot;APR&quot;, 5, &quot;MAY&quot;, 6, &quot;JUN&quot;, 7, &quot;JUL&quot;, 8, &quot;AUG&quot;, 9, &quot;SEP&quot;, 10, &quot;OCT&quot;, 11, &quot;NOV&quot;, 12, &quot;DEC&quot;, &quot;None&quot;) &amp; &quot;-&quot; &amp; TEXT(YEAR(Path_Date_Ready_for_Shipping__c   )) &amp; &quot; Ready for Shipping (&quot; &amp; TEXT(Days_Ready_to_Ship_to_Shipped__c ) &amp; &quot; days) &gt; &quot; &amp; BR() &amp;
+
+
+LPAD(TEXT(DAY(Path_Date_Order_Shipped__c)),2,&quot;0&quot;) &amp; &quot;-&quot; &amp; 
+CASE(MONTH(Path_Date_Order_Shipped__c), 1, &quot;JAN&quot;, 2, &quot;FEB&quot;, 3, &quot;MAR&quot;, 4, &quot;APR&quot;, 5, &quot;MAY&quot;, 6, &quot;JUN&quot;, 7, &quot;JUL&quot;, 8, &quot;AUG&quot;, 9, &quot;SEP&quot;, 10, &quot;OCT&quot;, 11, &quot;NOV&quot;, 12, &quot;DEC&quot;, &quot;None&quot;) &amp; &quot;-&quot; &amp; TEXT(YEAR(Path_Date_Order_Shipped__c))  &amp; &quot; Order Shipped (&quot; &amp; TEXT(Days_Open_to_Ship__c ) &amp; &quot; overall days)&quot;</formula>
+        <inlineHelpText>A snapshot of when the dates where received and how long until we received each date. (this is not using the actual value of the date)</inlineHelpText>
+        <label>fxPathDays</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipName>SAP_Order_Summary</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Source_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Source Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>fxBlockedBy__c</fullName>
+        <description>This will create image to let user know of one or more blocks. 
+Source ticket: https://perkinelmer.atlassian.net/browse/OV-511
+(How to: https://perkinelmer--PKIQAFULL2.cs19.my.salesforce.com/sfc/p/290000000wzu/a/290000008hLa/dvXe4UX3Vh.37NxJvVOWfdZ_v73llqMgeGgkQEl28cE)</description>
+        <externalId>false</externalId>
+        <formula>/*
+First upload a Public Asset Image:
+(How to: https://perkinelmer--PKIQAFULL2.cs19.my.salesforce.com/sfc/p/290000000wzu/a/290000008hLa/dvXe4UX3Vh.37NxJvVOWfdZ_v73llqMgeGgkQEl28cE)
+
+To get the VERSION ID (different than the image ID) in new orgs, or when updating an image,
+1.open the image and then right click on the image,
+2.choose &quot;Copy Image Link&quot;,
+3.paste the link in a notepad and copy the Id between &quot;versionId=&quot; amd &quot;&amp;operationContext=&quot;
+(i.e.: versionId=068290000015Epe&amp;operationContext=...)
+
+Here is our last know Version IDs, we use them below
+FULL2:
+,&quot;yn&quot;, &quot;068290000015EpL&quot;
+,&quot;yy&quot;, &quot;068290000015EpU&quot;
+,&quot;ny&quot;, &quot;068290000015EpP&quot;
+,&quot;nn&quot;, &quot;068290000015Epe&quot;
+/*Else should be same as nn
+, &quot;068290000015Epe&quot;
+
+FULL:
+,&quot;yn&quot;, &quot;068190000010zc6&quot;
+,&quot;yy&quot;, &quot;068190000010zcB&quot;
+,&quot;ny&quot;, &quot;068190000010zc1&quot;
+,&quot;nn&quot;, &quot;068190000010zbw&quot;
+/*Else should be same as nn
+, &quot;068190000010zbw&quot;
+
+PROD:
+,&quot;yn&quot;, &quot;0683A0000095GgQ&quot;
+,&quot;yy&quot;, &quot;0683A0000095GgV&quot;
+,&quot;ny&quot;, &quot;0683A0000095GgG&quot;
+,&quot;nn&quot;, &quot;0683A0000095Gfm&quot;
+/*Else should be same as nn
+, &quot;0683A0000095Gfm&quot;
+
+*/
+
+
+IMAGE (&quot;/sfc/servlet.shepherd/version/download/&quot; &amp;
+
+CASE(
+/* We make credit/delivery read as nn, ny, yn, yy so then we can apply the correct image */
+IF(Credit_Status_Name__c =&quot;Approved&quot; || ISBLANK(Credit_Status_Name__c),&quot;n&quot;,&quot;y&quot;)
+&amp; IF(ISBLANK(Delivery_Block__c) &amp;&amp; fxBlockedItems__c =0 ,&quot;n&quot;,&quot;y&quot;)
+,&quot;yn&quot;, &quot;068190000010zc6&quot;
+,&quot;yy&quot;, &quot;068190000010zcB&quot;
+,&quot;ny&quot;, &quot;068190000010zc1&quot;
+,&quot;nn&quot;, &quot;068190000010zbw&quot;
+/*Else should be same as nn */
+, &quot;068190000010zbw&quot;
+),&quot;&quot;)</formula>
+        <label>Blocked By</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>fxOrderPath__c</fullName>
+        <externalId>false</externalId>
+        <formula>/*jirs ov-336   SAP Actual Ship Date - Data Mapping ID#31 is present then show status CR with dates*/
+IF(NOT(ISBLANK(Actual_Customer_Date__c )) &amp;&amp; NOT(ISBLANK(Actual_CER_date__c)), &quot;Order Shipped&quot;,
+
+/*SAP Estimated Ship Date - Data Mapping ID#29 is present then show status OS with dates*/
+IF(NOT(ISBLANK(Current_Global_Delivery_Date__c)) &amp;&amp; NOT(ISBLANK(Actual_Global_Delivery_Date__c)), &quot;Ready for Shipping&quot;,
+
+/*SAP Order Id is present and Credit Status is Not equal to Credit Hold and Global Delivery Date is present*/
+IF(NOT(ISBLANK(Current_Global_Delivery_Date__c)), &quot;Mfg Date Committed&quot;,
+
+/*When SAP Order Id is present and Credit Status is Not equal to Credit Hold*/
+IF(Credit_Status_Name__c=&quot;Approved&quot;  &amp;&amp; ISBLANK(Delivery_Block__c) &amp;&amp; ISBLANK(Delivery_Block_Description__c) &amp;&amp;  fxBlockedItems__c=0, &quot;Order Clear&quot;,
+
+/*Order status when its “Closed”, “Won” opportunity with SAP Order Id*/
+IF(NOT(ISBLANK(Name)), &quot;Processing Hold&quot;, &quot;&quot;)
+)
+)
+)
+)</formula>
+        <label>fxOrderPath</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>isSame1down__c</fullName>
+        <description>Look at the Direct manager of the Opportunity owner and see if it&apos;s the same as the current user</description>
+        <externalId>false</externalId>
+        <formula>BLANKVALUE(Opportunity__r.Owner.Direct_Manager__c,&quot;NO MANAGER&quot;) =  $User.Id</formula>
+        <label>isSame1down</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>isSame2Down__c</fullName>
+        <description>For each Order+Opp, if the direct manager&apos;s(1up) direct manager (2up) is the same as the logged in user, then this person is 2up and should see all those recordsas &quot;My Team for 2 up)</description>
+        <externalId>false</externalId>
+        <formula>BLANKVALUE(Opportunity__r.Owner.Direct_Manager__r.Direct_Manager__c,&quot;NO MANAGER&quot;) = $User.Id</formula>
+        <label>isSame2Down</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CountofSites__c</fullName>
+        <description>This will count the number of Sites related to this order</description>
+        <externalId>false</externalId>
+        <label>Count of Sites</label>
+        <summaryForeignKey>SAP_Order_Sites__c.PKI_Order_Summary__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Order_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Order Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quote_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>SAP Quote #</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ext_order_id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Ext Order Id</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>fxRevRecDate__c</fullName>
+        <description>This is to pull the Revenue Recognized Date from the Opp</description>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.Revenue_Rec_Date__c</formula>
+        <label>Revenue Rec Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Name1__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact Name1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Name2__c</fullName>
+        <description>the api name must change to match the Boomi feed once timing can be matched to make changes on both sides simultaneously</description>
+        <externalId>false</externalId>
+        <label>Contact Name2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact Phone</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>fxAccountName__c</fullName>
+        <description>holds text version of account for search</description>
+        <externalId>false</externalId>
+        <label>fxAccountName</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>fxBlockedType__c</fullName>
+        <description>/*Returns yy,yn,ny,nn
+yy: Credit Block and Delivery Block
+yn: Credit Block only
+ny: Delivery Block Only
+nn: No Blocks
+*/</description>
+        <externalId>false</externalId>
+        <formula>/*Returns yy,yn,ny,nn
+yy: Credit Block and Delivery Block
+yn: Credit Block only
+ny: Delivery Block Only
+nn: No Blocks
+*/
+
+/*If Credit status is Approved or blank, then it is Not Blocked by credit*/
+IF(Credit_Status_Name__c =&quot;Approved&quot; || ISBLANK(Credit_Status_Name__c),&quot;n&quot;,&quot;y&quot;)
+
+&amp; 
+/*If delivery block on Summary is blank AND total blocked items is zero, then Not blocked by Delivery */
+IF(ISBLANK(Delivery_Block__c) &amp;&amp; fxBlockedItems__c =0 ,&quot;n&quot;,&quot;y&quot;)</formula>
+        <inlineHelpText>yy: Credit Block and Delivery Block
+yn: Credit Block only
+ny: Delivery Block Only
+nn: No Blocks</inlineHelpText>
+        <label>fxBlockedType</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>fxDaysInStage__c</fullName>
+        <description>We calculate the days at the current stage.</description>
+        <externalId>false</externalId>
+        <formula>/*We want to calculate the days of the current stage*/
+
+
+CASE ( fxOrderPath__c ,
+
+&quot;Processing Hold&quot;, TODAY() - Actual_Order_Date__c ,
+
+&quot;Order Clear&quot;, TODAY() - Actual_Order_Date__c ,
+
+&quot;Mfg Date Committed&quot;,  Current_Global_Delivery_Date__c - TODAY(),
+
+&quot;Ready for Shipping&quot;,  TODAY() - Actual_Global_Delivery_Date__c ,
+
+&quot;Order Shipped&quot;, Actual_Global_Delivery_Date__c  - Actual_Order_Date__c ,
+
+/*ELSE*/
+ Actual_Global_Delivery_Date__c - Actual_Order_Date__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days In Stage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>fxHourCreated__c</fullName>
+        <description>This is the Hour that the record was created (for metrics)</description>
+        <externalId>false</externalId>
+        <formula>/*RIGHT(&quot;0&quot; &amp; TEXT(HOUR(TIMEVALUE(CreatedDate))-5),2)*/
+
+RIGHT(&quot;0&quot; &amp; MID( TEXT(CreatedDate + ($User.UserTimezoneOffset__c/24)), 12, 2 ),2 )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>fxHourCreated</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>fxHourUpdated__c</fullName>
+        <description>The Hour the record was updated (for metrics)</description>
+        <externalId>false</externalId>
+        <formula>/*RIGHT(&quot;0&quot; &amp; TEXT(HOUR(TIMEVALUE(LastModifiedDate   ))-5),2)*/
+
+RIGHT(&quot;0&quot; &amp;  MID( TEXT(LastModifiedDate + ($User.UserTimezoneOffset__c/24)), 12, 2 ),2 )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>fxHourUpdated</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Count_of_Items__c</fullName>
+        <description>The total count of items relatedto this order</description>
+        <externalId>false</externalId>
+        <label>Count of Items</label>
+        <summaryFilterItems>
+            <field>SAP_Order_Items__c.isRemoved__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </summaryFilterItems>
+        <summaryForeignKey>SAP_Order_Items__c.PKI_Order_Summary__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Delivery_Block__c</fullName>
+        <description>mapped from: orderDeliveryBlock</description>
+        <externalId>false</externalId>
+        <label>Delivery Block</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Order_Currency__c</fullName>
+        <externalId>false</externalId>
+        <label>Order Currency</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>fxBlockedItems__c</fullName>
+        <description>This calculates how many line items are blocked</description>
+        <externalId>false</externalId>
+        <formula>Count_of_Items__c - Count_of_unblocked_items__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>fxBlockedItems</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Bill_To__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Bill To Customer Id</description>
+        <externalId>false</externalId>
+        <label>Account Bill To</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>PKI Order Summary (Account Bill To)</relationshipLabel>
+        <relationshipName>PKI_Order_Summary_BillTo</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Account_Ship_To__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Ship To Customer Id</description>
+        <externalId>false</externalId>
+        <label>Account Ship To</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>PKI Order Summary (Account Ship To)</relationshipLabel>
+        <relationshipName>PKI_Order_Summary_ShipTo</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Account_Sold_To__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Sold To Customer Id</description>
+        <externalId>false</externalId>
+        <label>Account Sold To</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>PKI Order Summary (Account Sold To)</relationshipLabel>
+        <relationshipName>PKI_Order_Summary_SoldTo</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Actual_CER_date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Based on delivery information an actual CER date when PKI order was shipped from PKI facility for single site order or from crossdoc or DC for multisite order</inlineHelpText>
+        <label>Actual Consolidation</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Inco_Terms_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Inco Terms Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Order_Level_Tax__c</fullName>
+        <description>mapped from: orderLevelTax</description>
+        <externalId>false</externalId>
+        <label>Order Level Tax</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Order_Net_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Net Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>fxSoldToAddress__c</fullName>
+        <externalId>false</externalId>
+        <formula>Sold_To_Address_Street__c &amp; &quot;, &quot; &amp;  Sold_To_Address_City__c &amp; &quot;, &quot; &amp;  Sold_To_Address_Region__c &amp; &quot; &quot; &amp;  Sold_To_Address_Postal_Code__c &amp; &quot; &quot; &amp;  Sold_To_Address_Country__c</formula>
+        <label>Sold To Address</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sales_Rep_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Rep Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bill_to_Customer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Mapped using the Bill to Customer Id and an L.FLOW</description>
+        <externalId>false</externalId>
+        <label>Bill to Customer</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>PKI Order Summary (Bill to Customer)</relationshipLabel>
+        <relationshipName>PKI_Order_Summary2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Current_CER_date__c</fullName>
+        <description>CER Date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>CER Date is an estimated date when shipment leaves PKI facility or for multisite shipment it leaves the last PKI facility typically DC</inlineHelpText>
+        <label>Consolidation Est.</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Delivery_Charges__c</fullName>
+        <description>mapped from: orderDeliveryCharges</description>
+        <externalId>false</externalId>
+        <label>Delivery Charges</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Handling_Charges__c</fullName>
+        <description>mapped from: orderHandlingCharges</description>
+        <externalId>false</externalId>
+        <label>Handling Charges</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ship_To_Customer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Mapped using the Ship to Customer Id and an L.FLOW</description>
+        <externalId>false</externalId>
+        <label>Ship To Customer</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>PKI Order Summary (Ship To Customer)</relationshipLabel>
+        <relationshipName>PKI_Order_Summary1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Sold_to_Customer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Mapped using the Sold to Customer Id and an L.FLOW</description>
+        <externalId>false</externalId>
+        <label>Sold to Customer</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>PKI Order Summary (Sold to Customer)</relationshipLabel>
+        <relationshipName>PKI_Order_Summary</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>order_Contact_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>order Contact Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Actual_Order_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Order Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Bill_To_Attention__c</fullName>
+        <externalId>false</externalId>
+        <label>Bill To Attention</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Days_Open_to_Ship__c</fullName>
+        <description>The days between these to stages</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The days between these to stages</inlineHelpText>
+        <label>Days Open to Ship</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Order_Status_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Order Status Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Order_Status_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Order Status Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Order_Total_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Order Total Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Original_CER_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Original CER date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Term_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Term Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ship_To_Attention__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To Attention</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Replace_To__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>ReplacementId</description>
+        <externalId>false</externalId>
+        <label>Account Replace To</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>PKI Order Summary (Account Replace To)</relationshipLabel>
+        <relationshipName>PKI_Order_Summary_RepalceTo</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Add_RR_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Add RR Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Credit_Status_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Credit Status Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Credit_Status_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Credit Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_PO_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>PO Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Days_Hold_to_Clear__c</fullName>
+        <description>The days between these to stages</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The days between these to stages</inlineHelpText>
+        <label>Days Hold to Clear</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Days_Order_to_Hold__c</fullName>
+        <description>The days between these to stages</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The days between these to stages</inlineHelpText>
+        <label>Days Order to Hold</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Modified_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>SAP Modified Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Order_Net_Currency__c</fullName>
+        <externalId>false</externalId>
+        <label>Net Currency</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Penalty_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Penalty Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Bill_To_Customer_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>Bill To Customer Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Path_Date_All_Block__c</fullName>
+        <description>The date we received a block on either the order or an item</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date we received a block on either the order or an item</inlineHelpText>
+        <label>Path Date All Block</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Rep_Last_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Rep Last Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ship_To_Customer_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To Customer Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sold_To_Customer_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>Sold To Customer Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>fxOrder_Is_Rejected__c</fullName>
+        <externalId>false</externalId>
+        <formula>Count_of_Items__c  =  Count_of_rejected_items__c  
+&amp;&amp;
+Order_Net_Value__c = 0</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Order Is Rejected</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Actual_Customer_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Customer Date is an estimated date when customer will receive PKI Shipment</inlineHelpText>
+        <label>Cust Delivery Est</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Bill_To_Address_City__c</fullName>
+        <externalId>false</externalId>
+        <label>Bill To Address City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Accept_Date__c</fullName>
+        <description>Customer will Accept Date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Customer will accept date</inlineHelpText>
+        <label>CWA Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Delivery_Status_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Delivery Status Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Path_Date_Item_Block__c</fullName>
+        <description>The date when the first item was blocked</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date when the first item was blocked</inlineHelpText>
+        <label>Path Date Item Block</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Path_Date_Order_Hold__c</fullName>
+        <description>Calculated in SQL, as the 1st date at which this value appeared.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Calculated in SQL, as the 1st date at which this value appeared.</inlineHelpText>
+        <label>Path Date Order Hold</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Rep_First_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Rep Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ship_To_Address_City__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To Address City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sold_To_Address_City__c</fullName>
+        <externalId>false</externalId>
+        <label>Sold To Address City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>fxBillToOrderAddress__c</fullName>
+        <externalId>false</externalId>
+        <formula>Bill_To_Address_Street__c &amp; &quot;, &quot; &amp; Bill_To_Address_City__c &amp; &quot;, &quot; &amp; Bill_To_Address_Region__c &amp; &quot; &quot; &amp; Bill_To_Address_Postal_Code__c &amp; &quot; &quot; &amp; Bill_To_Address_Country__c</formula>
+        <label>Bill To Address</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>fxShipToOrderAddress__c</fullName>
+        <externalId>false</externalId>
+        <formula>Ship_To_Address_Street__c &amp; &quot;, &quot; &amp; Ship_To_Address_City__c &amp; &quot;, &quot; &amp; Ship_To_Address_Region__c &amp; &quot; &quot; &amp; Ship_To_Address_Postal_Code__c &amp; &quot; &quot; &amp; Ship_To_Address_Country__c</formula>
+        <label>Ship To Address</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Additional_Order_Info__c</fullName>
+        <description>mapped from: orderAdditionalInfo</description>
+        <externalId>false</externalId>
+        <label>Additional Order Info</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Bill_To_Customer_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Bill To Customer Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>First_Time_Clear_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>First Time Clear Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Path_Date_Order_Block__c</fullName>
+        <description>The date the Order first received a block (excluding blocked items)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date the Order first received a block (excluding blocked items)</inlineHelpText>
+        <label>Path Date Order Block</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Path_Date_Order_Clear__c</fullName>
+        <description>Calculated in SQL, as the 1st date at which this value appeared.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Calculated in SQL, as the 1st date at which this value appeared.</inlineHelpText>
+        <label>Path Date Order Clear</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Replacement_Attention__c</fullName>
+        <description>mapped from: ReplacementAttention</description>
+        <externalId>false</externalId>
+        <label>Replacement Attention</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ship_To_Customer_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To Customer Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sold_To_Customer_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Sold To Customer Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bill_To_Address_Region__c</fullName>
+        <externalId>false</externalId>
+        <label>Bill To Address Region</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bill_To_Address_Street__c</fullName>
+        <externalId>false</externalId>
+        <label>Bill To Address Street</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Expected_Delivery_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Expected Delivery Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Inco_Terms_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Inco Terms Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Original_Customer_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Original Customer Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Ship_To_Address_Region__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To Address Region</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ship_To_Address_Street__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To Address Street</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sold_To_Address_Region__c</fullName>
+        <externalId>false</externalId>
+        <label>Sold To Address Region</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sold_To_Address_Street__c</fullName>
+        <externalId>false</externalId>
+        <label>Sold To Address Street</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>fxReplacementToAddress__c</fullName>
+        <description>This is the concated address for replacement address</description>
+        <externalId>false</externalId>
+        <formula>Replacement_Address_Street__c &amp; &quot;, &quot; &amp; Replacement_Address_City__c &amp; &quot;, &quot; &amp; Replacement_Address_Region__c &amp; &quot; &quot; &amp; Replacement_Address_Postal_Code__c &amp; &quot; &quot; &amp; Replacement_Address_Country__c</formula>
+        <label>Replacement Address</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bill_To_Address_Country__c</fullName>
+        <externalId>false</externalId>
+        <label>Bill To Address Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bill_To_Address_Geocode__c</fullName>
+        <description>mapped from: BillToAddressLatitude &amp; BillToAddressLongitude</description>
+        <displayLocationInDecimal>true</displayLocationInDecimal>
+        <externalId>false</externalId>
+        <label>Bill To Address Geocode</label>
+        <required>false</required>
+        <scale>7</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Location</type>
+    </fields>
+    <fields>
+        <fullName>Count_of_rejected_items__c</fullName>
+        <externalId>false</externalId>
+        <label>Count of rejected items</label>
+        <summaryFilterItems>
+            <field>SAP_Order_Items__c.Line_Is_Rejected__c</field>
+            <operation>notEqual</operation>
+            <value/>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>SAP_Order_Items__c.isRemoved__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </summaryFilterItems>
+        <summaryForeignKey>SAP_Order_Items__c.PKI_Order_Summary__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Path_Date_Order_Shipped__c</fullName>
+        <description>Calculated in SQL, as the 1st date at which this value appeared.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Calculated in SQL, as the 1st date at which this value appeared.</inlineHelpText>
+        <label>Path Date Order Shipped</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Path_Date_Order_Started__c</fullName>
+        <description>Calculated in SQL, as the 1st date at which this value appeared.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Calculated in SQL, as the 1st date at which this value appeared.</inlineHelpText>
+        <label>Path Date Order Started</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Replacement_Customer_Id__c</fullName>
+        <description>mapped from: ReplacementCustomerId</description>
+        <externalId>false</externalId>
+        <label>Replacement Customer Id</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Replacement_to_Customer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Mapped using the Replacement to Customer Id and an L.FLOW</description>
+        <externalId>false</externalId>
+        <label>Replacement to Customer</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>PKI Order Summary (Replacement to Customer)</relationshipLabel>
+        <relationshipName>PKI_Order_Summary3</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Ship_To_Address_Country__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To Address Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ship_To_Address_Geocode__c</fullName>
+        <description>mapped from: ShipToAddressLongitude &amp; ShipToAddressLatitude</description>
+        <displayLocationInDecimal>true</displayLocationInDecimal>
+        <externalId>false</externalId>
+        <label>Ship To Address Geocode</label>
+        <required>false</required>
+        <scale>7</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Location</type>
+    </fields>
+    <fields>
+        <fullName>Sold_To_Address_Country__c</fullName>
+        <externalId>false</externalId>
+        <label>Sold To Address Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Count_of_unblocked_items__c</fullName>
+        <description>this totals the items that are not blocked (its complicated to count where not null)</description>
+        <externalId>false</externalId>
+        <label>Count of unblocked items</label>
+        <summaryFilterItems>
+            <field>SAP_Order_Items__c.fxIsBlocked__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </summaryFilterItems>
+        <summaryForeignKey>SAP_Order_Items__c.PKI_Order_Summary__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Term_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Term Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Replacement_Address_City__c</fullName>
+        <description>mapped from: ReplacementAddressCity</description>
+        <externalId>false</externalId>
+        <label>Replacement Address City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Path_Date_Global_Delivery__c</fullName>
+        <description>Calculated in SQL, as the 1st date at which this value appeared.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Calculated in SQL, as the 1st date at which this value appeared.</inlineHelpText>
+        <label>Path Date Global Delivery</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Replacement_Customer_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Replacement Customer Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Delivery_Block_Description__c</fullName>
+        <description>mapped from: orderDeliverBlockDescription</description>
+        <externalId>false</externalId>
+        <label>Delivery Block Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Replacement_Address_Region__c</fullName>
+        <description>mapped from: ReplacementAddressRegion</description>
+        <externalId>false</externalId>
+        <label>Replacement Address Region</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Replacement_Address_Street__c</fullName>
+        <description>mapped from: ReplacementAddressStreet1</description>
+        <externalId>false</externalId>
+        <label>Replacement Address Street</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Actual_Global_Delivery_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Based on delivery information an actual date when PKI order was ready at manufacturing site or at crossdoc DC for multi site order</inlineHelpText>
+        <label>Actual Mfg. Commit Date(GD)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Bill_To_Address_Postal_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Bill To Address Postal Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Replacement_Address_Country__c</fullName>
+        <description>mapped from: ReplacementAddressCountry</description>
+        <externalId>false</externalId>
+        <label>Replacement Address Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Replacement_Address_Geocode__c</fullName>
+        <description>mapped from: ReplacementAddressLatitude &amp; ReplacementAddressLongitude</description>
+        <displayLocationInDecimal>true</displayLocationInDecimal>
+        <externalId>false</externalId>
+        <label>Replacement Address Geocode</label>
+        <required>false</required>
+        <scale>7</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Location</type>
+    </fields>
+    <fields>
+        <fullName>Ship_To_Address_Postal_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To Address Postal Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sold_To_Address_Postal_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Sold To Address Postal Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Current_Global_Delivery_Date__c</fullName>
+        <description>The Global Delivery Date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Estimated date when manufacturing will be ready with Customer order. In case of multi manufacturing site order the date is when customer order will be at the DC or crossdoc.</inlineHelpText>
+        <label>Mfg. Commit Date(GD)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Path_Date_Ready_for_Shipping__c</fullName>
+        <description>Calculated in SQL, as the 1st date at which this value appeared.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Calculated in SQL, as the 1st date at which this value appeared.</inlineHelpText>
+        <label>Path Date Ready for Shipping</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Ultimate_Destination_Country__c</fullName>
+        <externalId>false</externalId>
+        <label>Ultimate Destination Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Days_Clear_to_Global_Delivery__c</fullName>
+        <description>The days between these to stages</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The days between these to stages</inlineHelpText>
+        <label>Days Clear to Global Delivery</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Days_Ready_to_Ship_to_Shipped__c</fullName>
+        <description>The days between these to stages</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The days between these to stages</inlineHelpText>
+        <label>Days Ready to Ship to Shipped</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Original_Global_Delivery_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Original Global Delivery Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Special_Handling_Instructions__c</fullName>
+        <description>mapped from; orderSpecialHandlingInstructions</description>
+        <externalId>false</externalId>
+        <label>Special Handling Instructions</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Replacement_Address_Postal_Code__c</fullName>
+        <description>mapped from: ReplacementAddressPostalCode</description>
+        <externalId>false</externalId>
+        <label>Replacement Address Postal Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Delivery_Status_Code_Description__c</fullName>
+        <description>mapped from: deliveryStatusCodeDescription</description>
+        <externalId>false</externalId>
+        <label>Delivery Status Code Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Days_Global_Delivery_to_Read_to_Ship__c</fullName>
+        <description>The days between these to stages</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The days between these to stages</inlineHelpText>
+        <label>Days Global Delivery to Read to Ship</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

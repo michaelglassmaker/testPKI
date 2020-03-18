@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <externalSharingModel>Read</externalSharingModel>
+    <searchLayouts>
+        <customTabListAdditionalFields>CONTRACT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTRACT.STARTDATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTRACT.ENDDATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTRACT.STATUS</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTRACT.STATUSINDICATOR</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTRACT.LINEITEMCOUNT</customTabListAdditionalFields>
+        <searchFilterFields>OWNER.NAME</searchFilterFields>
+        <searchFilterFields>ACCOUNT.NAME</searchFilterFields>
+        <searchFilterFields>Contract_Type__c</searchFilterFields>
+        <searchFilterFields>Contract_Stage__c</searchFilterFields>
+        <searchFilterFields>CONTRACT.LINEITEMCOUNT</searchFilterFields>
+        <searchFilterFields>CONTRACT.STARTDATE</searchFilterFields>
+        <searchFilterFields>CONTRACT.ENDDATE</searchFilterFields>
+        <searchFilterFields>CONTRACT.STATUS</searchFilterFields>
+        <searchResultsAdditionalFields>CONTRACT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTRACT.STARTDATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTRACT.ENDDATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTRACT.STATUS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTRACT.STATUSINDICATOR</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Contract_Type__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+    <fields>
+        <fullName>Legacy_ID__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>Caliper Service Contract Opportunity legacy id for reference purposes only.  Remove after 1 year or less.</description>
+        <externalId>true</externalId>
+        <label>Legacy ID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>System_Id__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Link contract to System ID if applicable</description>
+        <externalId>false</externalId>
+        <label>System Id</label>
+        <referenceTo>Asset</referenceTo>
+        <relationshipLabel>Service Contracts</relationshipLabel>
+        <relationshipName>Service_Contracts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Close_Date__c</fullName>
+        <description>Date contract PO expected - used by LST Service contract sales</description>
+        <externalId>false</externalId>
+        <label>Close Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Contract_PO__c</fullName>
+        <description>Service contract customer PO #</description>
+        <externalId>false</externalId>
+        <label>Contract PO #</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Contact_City__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact.MailingCity &amp; &quot;, &quot; &amp;  Contact.MailingState &amp;&quot; &quot; &amp; Contact.MailingPostalCode</formula>
+        <label>Contact City</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Clone_From_ID__c</fullName>
+        <description>A hidden field to be used with Clone with Line Items button.</description>
+        <externalId>false</externalId>
+        <label>Clone From ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact.Email</formula>
+        <label>Contact Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contract_Type__c</fullName>
+        <description>LST Service Contract sales, measure Warranty. Renewals, New Business</description>
+        <externalId>false</externalId>
+        <label>Contract Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Warranty Conversion</fullName>
+                    <default>false</default>
+                    <label>Warranty Conversion</label>
+                </value>
+                <value>
+                    <fullName>Contract Renewal</fullName>
+                    <default>false</default>
+                    <label>Contract Renewal</label>
+                </value>
+                <value>
+                    <fullName>New Contract</fullName>
+                    <default>false</default>
+                    <label>New Contract</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Contract_Stage__c</fullName>
+        <description>LST Service Contract sales process</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&gt; Stage 5  = Rev Fcst</inlineHelpText>
+        <label>Contract Stage</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Stage 1 - Qualification</fullName>
+                    <default>false</default>
+                    <label>Stage 1 - Qualification</label>
+                </value>
+                <value>
+                    <fullName>Stage 2 - Needs Analysis</fullName>
+                    <default>false</default>
+                    <label>Stage 2 - Needs Analysis</label>
+                </value>
+                <value>
+                    <fullName>Stage 3 - Solution Differentiation</fullName>
+                    <default>false</default>
+                    <label>Stage 3 - Solution Differentiation</label>
+                </value>
+                <value>
+                    <fullName>Stage 4 - Objection Handling</fullName>
+                    <default>false</default>
+                    <label>Stage 4 - Objection Handling</label>
+                </value>
+                <value>
+                    <fullName>Stage 5 - Preferred</fullName>
+                    <default>false</default>
+                    <label>Stage 5 - Preferred</label>
+                </value>
+                <value>
+                    <fullName>Stage 6 - Negotiating/Forecast</fullName>
+                    <default>false</default>
+                    <label>Stage 6 - Negotiating/Forecast</label>
+                </value>
+                <value>
+                    <fullName>Closed Won</fullName>
+                    <default>false</default>
+                    <label>Closed Won</label>
+                </value>
+                <value>
+                    <fullName>Closed Lost</fullName>
+                    <default>false</default>
+                    <label>Closed Lost</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sales_Order_No__c</fullName>
+        <description>Sales Order for Contract LST</description>
+        <externalId>false</externalId>
+        <label>Sales Order No.</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Clone_Line_Items__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>A hidden field to be used with Clone with Line Items button.</description>
+        <externalId>false</externalId>
+        <label>Clone Line Items</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Phone_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact.Phone</formula>
+        <label>Contact Phone Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Mailling_Address__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact.MailingStreet</formula>
+        <label>Contact Mailling Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <webLinks>
+        <fullName>Activate</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Activate</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>/flow/ActivateServiceContract?serviceContractId={!ServiceContract.Id}&amp;retURL={!ServiceContract.Link}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Clone_with_Line_Items</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Clone with Line Items</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/apex.js&quot;)}
+
+var objID = &quot;{!ServiceContract.Id}&quot;;
+
+var finishedLocation;
+
+if (window.parent.location.href==&quot;/ui/desktop/DesktopPage&quot;) { 
+finishedLocation = &apos;/{!ServiceContract.Id}&amp;isdtp=mn&apos;; 
+} else { 
+finishedLocation = &apos;/&apos; + objID; 
+}; 
+
+if (objID.length != 0) {
+
+// Make a synchronous call to Apex Web service method
+var result = sforce.apex.execute(
+&quot;ServiceContractButton&quot;, // Class
+&quot;cloneServiceContract&quot;, // method
+{serviceContractId: objID});
+
+// createAttempt() returns new Service Contract page
+if (result != &apos;&apos;) {
+window.location.href = &apos;/&apos; + result;
+}
+
+} else if (objID.length == 0) {
+
+alert(&quot;No Service Contract has been cloned.&quot;);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Service_Contract_Quote</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>false</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Service Contract Quote</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://www.appextremes.com/apps/Conga/PointMerge.aspx
+?SessionId={!API.Session_ID}
+&amp;ServerUrl={!API.Partner_Server_URL_80}
+&amp;Id={!ServiceContract.Id}
+&amp;QueryId=[LineItems]a2f300000004RCZ
+&amp;TemplateId=a2e300000004CZO
+&amp;ofn=Service+Contract+Quote+{!Today}</url>
+        <width>700</width>
+    </webLinks>
+</CustomObject>

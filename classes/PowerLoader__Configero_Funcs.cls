@@ -72,4 +72,7 @@ global class Configero_Funcs {
     global static String removeConfigeroNamespace(String fqdn) {
         return null;
     }
+    global static String stringToHash(String s) {
+        return null;
+    }
 }

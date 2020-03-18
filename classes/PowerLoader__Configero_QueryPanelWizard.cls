@@ -12,6 +12,9 @@ global class Configero_QueryPanelWizard {
     global List<List<System.SelectOption>> objectListMulti {
         get;
     }
+    global Configero_QueryPanelWizard(ApexPages.StandardController c) {
+
+    }
     global Configero_QueryPanelWizard(ApexPages.StandardSetController c) {
 
     }
@@ -19,6 +22,11 @@ global class Configero_QueryPanelWizard {
     global static Boolean checkQueryPanelExists(String name) {
         return null;
     }
+    @RemoteAction
+    global static Id createQueryPanelGeneric(Map<String,Object> pageParams, List<Map<String,String>> params) {
+        return null;
+    }
+    @Deprecated
     @RemoteAction
     global static Id createQueryPanel(String name, Integer numPerRow, List<Map<String,String>> params) {
         return null;

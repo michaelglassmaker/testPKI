@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <label>Inventory Count Line</label>
+    <nameField>
+        <label>Inventory Count Line Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Inventory Count Lines</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>SMAX_PS_Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Inventory Count Lines</relationshipLabel>
+        <relationshipName>Inventory_Count_Lines</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_EntryQty__c</fullName>
+        <externalId>false</externalId>
+        <label>Entry Qty</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_BookedQty__c</fullName>
+        <externalId>false</externalId>
+        <label>Booked Qty</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_StockType__c</fullName>
+        <externalId>false</externalId>
+        <label>Stock Type</label>
+        <length>1</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Unit_Cost__c</fullName>
+        <description>Denotes the unit cost for the Inventory count line</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes the unit cost for the Inventory count line</inlineHelpText>
+        <label>Unit Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_CountedQty__c</fullName>
+        <externalId>false</externalId>
+        <label>Counted Qty</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Counted_By__c</fullName>
+        <description>Denotes the user that counted the stock</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes the user that counted the stock</inlineHelpText>
+        <label>Counted By</label>
+        <length>12</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Found_Item__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Denotes that the item is a found item and was not on the inventory count document.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes that the item is a found item and was not on the inventory count document.</inlineHelpText>
+        <label>Is Found Item</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Is_Deleted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Denotes that an inventory count line has been deleted</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes that an inventory count line has been deleted</inlineHelpText>
+        <label>Is Deleted</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_BatchNumber__c</fullName>
+        <externalId>false</externalId>
+        <label>Batch Number</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_External_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Is_Zero_Qty__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Denotes that there is a zero qty for an inventory count line</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes that there is a zero qty for an inventory count line</inlineHelpText>
+        <label>Is Zero Qty</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ProductCost__c</fullName>
+        <externalId>false</externalId>
+        <formula>SMAX_PS_ProductStock__r.SVMXC__Product_Cost__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Stock Cost Per Unit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ProductStock__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Product Stock</label>
+        <referenceTo>SVMXC__Product_Stock__c</referenceTo>
+        <relationshipLabel>Inventory Count Lines</relationshipLabel>
+        <relationshipName>Inventory_Count_Lines</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Product_Code__c</fullName>
+        <description>Pulls product code from the product record.</description>
+        <externalId>false</externalId>
+        <formula>SMAX_PS_Product__r.ProductCode</formula>
+        <label>Product Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_InvCnt_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Inventory Count Line Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Open</fullName>
+                    <default>false</default>
+                    <label>Open</label>
+                </value>
+                <value>
+                    <fullName>Counted</fullName>
+                    <default>false</default>
+                    <label>Counted</label>
+                </value>
+                <value>
+                    <fullName>Submitted</fullName>
+                    <default>false</default>
+                    <label>Submitted</label>
+                </value>
+                <value>
+                    <fullName>Recount</fullName>
+                    <default>false</default>
+                    <label>Recount</label>
+                </value>
+                <value>
+                    <fullName>Confirmed</fullName>
+                    <default>false</default>
+                    <label>Confirmed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Is_Serialized__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Denotes that the inventory count line is serialized</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes that the inventory count line is serialized</inlineHelpText>
+        <label>Is Serialized</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_InventoryCount__c</fullName>
+        <externalId>false</externalId>
+        <label>Inventory Count</label>
+        <referenceTo>SMAX_PS_InventoryCount__c</referenceTo>
+        <relationshipLabel>Inventory Count Lines</relationshipLabel>
+        <relationshipName>Inventory_Count_Lines</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_DifferenceValue__c</fullName>
+        <externalId>false</externalId>
+        <formula>( SMAX_PS_CountedQty__c -  SMAX_PS_BookedQty__c ) * SMAX_PS_ProductCost__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Difference Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_DifferencePosted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Denotes the difference between count posted for an Inventory Count Line</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes the difference between count posted for an Inventory Count Line</inlineHelpText>
+        <label>Difference Posted</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ValueofBookedQty__c</fullName>
+        <description>Denotes the overall value of the booked qty</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes the overall value of the booked qty</inlineHelpText>
+        <label>Value of Booked Qty</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_BaseUnitOfMeasure__c</fullName>
+        <externalId>false</externalId>
+        <label>Base Unit Of Measure</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Difference_in_Cost__c</fullName>
+        <externalId>false</externalId>
+        <formula>SMAX_PS_SAP_Calcualted_Stock_Cost__c-SMAX_PS_Counted_Product_Cost__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Difference in Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_EntryUnitOfMeasure__c</fullName>
+        <externalId>false</externalId>
+        <label>Entry Unit Of Measure</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Why_Recount_Needed__c</fullName>
+        <externalId>false</externalId>
+        <label>Why Recount Needed</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Counted_Product_Cost__c</fullName>
+        <externalId>false</externalId>
+        <formula>SMAX_PS_ProductCost__c*SMAX_PS_CountedQty__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Counted Stock Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Actual_Serial_Numbers__c</fullName>
+        <description>Denotes the actual serial numbers that are captured in an inventory count line</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes the actual serial numbers that are captured in an inventory count line</inlineHelpText>
+        <label>Actual Serial Numbers</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Item_has_been_counted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Denotes that the inventory count line has been counted</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes that the inventory count line has been counted</inlineHelpText>
+        <label>Item Has Been Counted</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Reason_for_Difference__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason for Difference</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Expected_Serial_Numbers__c</fullName>
+        <description>Denotes the expected serial numbers that should be received for an inventory count line</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes the expected serial numbers that should be received for an inventory count line</inlineHelpText>
+        <label>Expected Serial Numbers</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_SAP_Calcualted_Stock_Cost__c</fullName>
+        <externalId>false</externalId>
+        <formula>SMAX_PS_ProductCost__c*SMAX_PS_BookedQty__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SAP Calcualted Stock Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Inventory_Stock_Count_Number__c</fullName>
+        <description>Inventory count auto number</description>
+        <displayFormat>{0000000000}</displayFormat>
+        <externalId>false</externalId>
+        <inlineHelpText>Inventory count auto number</inlineHelpText>
+        <label>Inventory Stock Count Number</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Value_of_PhysicalInventoryCount__c</fullName>
+        <description>Denotes the value of a physical count for an inventory count line</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes the value of a physical count for an inventory count line</inlineHelpText>
+        <label>Value of Physical Inventory Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+</CustomObject>

@@ -14,7 +14,11 @@ public class CompleteOrderController {
     if(validate==true){
     currentRecord.StageName='Closed Won';
     currentRecord.Order_Processing_Status_INF__c='Completed';
-   try{ Update currentRecord;if(currentRecord.StageName=='Closed Won'){ ApexPages.addmessage(new ApexPages.message(ApexPages.severity.CONFIRM,'Order Submitted Successfully.'));
+   try{
+       Update currentRecord;
+       if(currentRecord.StageName=='Closed Won'){
+          ApexPages.addmessage(new ApexPages.message(ApexPages.severity.CONFIRM,'Order Submitted Successfully.'));
+
        }
    }
    catch(Exception e){ApexPages.addmessage(new ApexPages.message(ApexPages.severity.CONFIRM,'Error in Submission: '+e.getmessage()));}

@@ -51,7 +51,7 @@ Inbound Email Handler --> Captures customer responses
         Messaging.InboundEmail email = new Messaging.InboundEmail();
         Messaging.InboundEnvelope envelope = new Messaging.InboundEnvelope();
         
-        String subject = 'Re: Sandbox: PerkinElmer Informatics Contract Renewal Quotation - 1st Notice (' + informaticsOpp.Id + ')';
+        String subject = 'Re: Sandbox: PerkinElmer Informatics Contract Renewal Quotation - 1st Notice [' + informaticsOpp.Id + ']';
         String subjectReply = 'Re: ';
         List<String> ccAddress = new List<String>();
         ccAddress.add('TestContact1@testemail.com');
@@ -63,7 +63,7 @@ Inbound Email Handler --> Captures customer responses
         email.plainTextBody = '';     
         email.subject = subject;
         email.ccAddresses = ccAddress;
-        String oppId = subject.substringBetween('(', ')');
+        String oppId = subject.substringBetween('[', ']');
         
         EmailMessage emailMessage = new EmailMessage();
         emailMessage.status = '0'; // email was sent

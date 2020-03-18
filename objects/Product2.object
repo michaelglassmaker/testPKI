@@ -1,0 +1,1725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Add</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Add</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Add</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <searchLayouts>
+        <customTabListAdditionalFields>PRODUCT2.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PRODUCT2.ACTIVE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>obsolete__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PRODUCT2.FAMILY</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Item_Class__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>IGOR_PAC__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.ACTIVE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.FAMILY</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Item_Class__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>IGOR_PAC__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.ACTIVE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.DESCRIPTION</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.FAMILY</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.ACTIVE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>obsolete__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.FAMILY</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>product_line__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Item_Class__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>IGOR_PAC__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Top200__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Top200_Desc__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <fieldSets>
+        <fullName>Metrics_that_Matter_Filters</fullName>
+        <description>List of fields that are filter-able in the Metrics that Matter page.</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>ProductCode</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Family</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>product_line__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Product_Line_Name__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Product_Type_INF__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SMAX_PS_Super_Business_Unit__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>BUSINESS_UNIT_FORMULA__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SUB_BUSINESS_UNIT_FORMULA__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Metrics that Matter Filters</label>
+    </fieldSets>
+    <fields>
+        <fullName>SBE__c</fullName>
+        <externalId>false</externalId>
+        <label>SBE</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Analytical Sciences</fullName>
+                    <default>false</default>
+                    <label>Analytical Sciences</label>
+                </value>
+                <value>
+                    <fullName>GDS</fullName>
+                    <default>false</default>
+                    <label>GDS</label>
+                </value>
+                <value>
+                    <fullName>LST</fullName>
+                    <default>false</default>
+                    <label>LST</label>
+                </value>
+                <value>
+                    <fullName>Molecular Medicine</fullName>
+                    <default>false</default>
+                    <label>Molecular Medicine</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Test__c</fullName>
+        <externalId>false</externalId>
+        <formula>case( Family ,&quot;12-ESS&quot;, if ( Item_Class__c =&quot;1&quot;, IGOR_Description__c ,if( Item_Class__c =&quot;4&quot;,&quot;Accessories&quot;,if( Item_Class__c =&quot;A&quot;,&quot;Software&quot;,if( Item_Class__c =&quot;E&quot;,&quot;Custom Software&quot;,if( Item_Class__c =&quot;H&quot;,&quot;Support,Training,Consult&quot;,&quot;Other&quot;))))),if ( Item_Class__c =&quot;1&quot;, IGOR_Description__c ,if( Item_Class__c =&quot;2&quot;,IGOR_Description__c,if( Item_Class__c =&quot;3&quot;,&quot;Consumable&quot;,if( Item_Class__c =&quot;4&quot;,&quot;Accessories&quot;,if( Item_Class__c =&quot;B&quot;,&quot;Reagents&quot;,if( Item_Class__c =&quot;0&quot;,IGOR_Description__c,&quot;Other&quot;)))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Test</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>In_SAP__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Field to identify if a product is in SAP</description>
+        <externalId>false</externalId>
+        <label>In SAP</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Top200__c</fullName>
+        <externalId>false</externalId>
+        <label>Top200</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partnum__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Unique External Id that stores the Material ID from QS3 . Same as SAP Product code.
+Same as Material Number from SAP.</description>
+        <externalId>true</externalId>
+        <label>Part Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>updated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>use this field to show data that is updated in a batch mode</description>
+        <externalId>false</externalId>
+        <label>updated</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IGOR_PAC__c</fullName>
+        <externalId>false</externalId>
+        <label>IGOR_PAC</label>
+        <length>5</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>obsolete__c</fullName>
+        <description>designation of product status</description>
+        <externalId>false</externalId>
+        <label>obsolete</label>
+        <length>16</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>INF_Split__c</fullName>
+        <externalId>false</externalId>
+        <label>Split</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Legacy_ID__c</fullName>
+        <description>CALP product legacy ID needed for data load</description>
+        <externalId>true</externalId>
+        <label>Legacy ID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Part_Type__c</fullName>
+        <description>Field created for BigMachines Implementation as part of Caliper migration.</description>
+        <externalId>false</externalId>
+        <label>Part Type</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Direct_Buy__c</fullName>
+        <description>This field is created per request from Big Machines in order to keep those who use the quoting application from selecting certain parts to add to the quote.</description>
+        <externalId>false</externalId>
+        <label>Direct Buy</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Item_Class__c</fullName>
+        <externalId>false</externalId>
+        <label>IGOR Item Class</label>
+        <length>5</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Id</formula>
+        <label>Product ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SIOP_Model__c</fullName>
+        <externalId>false</externalId>
+        <label>SIOP Model</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>U_of_M_INF__c</fullName>
+        <externalId>false</externalId>
+        <label>U of M</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CPQ_Special__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Special</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Top200_Desc__c</fullName>
+        <externalId>false</externalId>
+        <label>Top200_Desc</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Frozen_Costs__c</fullName>
+        <description>CALP products to be loaded with Oracle fully loaded cost, Frozen Cost</description>
+        <externalId>false</externalId>
+        <label>Frozen Costs</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>NPI_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>NPI End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Platform_INF__c</fullName>
+        <externalId>false</externalId>
+        <label>Platform</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>product_line__c</fullName>
+        <description>Product Line code from SAP</description>
+        <externalId>false</externalId>
+        <label>Product Line</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Business_Unit__c</fullName>
+        <externalId>false</externalId>
+        <label>Business Unit</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Report_Level1__c</fullName>
+        <externalId>false</externalId>
+        <formula>case( Family ,&quot;12-ESS&quot;,if ( Item_Class__c =&quot;1&quot;, IGOR_Description__c ,if( Item_Class__c =&quot;4&quot;,&quot;Accessories&quot;,if( Item_Class__c =&quot;A&quot;,&quot;Software&quot;,if( Item_Class__c =&quot;E&quot;,&quot;Custom Software&quot;,if( Item_Class__c =&quot;H&quot;,&quot;Support,Training,Consult&quot;,&quot;Other&quot;))))),if ( Item_Class__c =&quot;1&quot;, IGOR_Description__c ,if( Item_Class__c =&quot;2&quot;,&quot;Accessories&quot;,if( Item_Class__c =&quot;3&quot;,&quot;Consumable&quot;,if( Item_Class__c =&quot;4&quot;,&quot;Accessories&quot;,if( Item_Class__c =&quot;B&quot;,&quot;Reagents&quot;,&quot;Other&quot;))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Fcst Group 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Is_SF_Products__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is SF Products?</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>NPI_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>NPI Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Is_DAS_Products__c</fullName>
+        <externalId>false</externalId>
+        <formula>OR ( 
+product_line__c = &quot;APS&quot;, product_line__c = &quot;ARS&quot;, product_line__c = &quot;AWS&quot;, product_line__c = &quot;CLH&quot;, product_line__c = &quot;CLR&quot;, product_line__c = &quot;DIS&quot;, product_line__c = &quot;FAP&quot;, product_line__c = &quot;HCS&quot;, product_line__c = &quot;HTS&quot;, product_line__c = &quot;IAS&quot;, product_line__c = &quot;INV&quot;, product_line__c = &quot;LVI&quot;, product_line__c = &quot;MFT&quot;, product_line__c = &quot;MLD&quot;, product_line__c = &quot;MOL&quot;, product_line__c = &quot;MOX&quot;, product_line__c = &quot;NMO&quot;, product_line__c = &quot;NVS&quot;, product_line__c = &quot;PBR&quot;, product_line__c = &quot;PGI&quot;, product_line__c = &quot;QTS&quot;, product_line__c = &quot;RRD&quot;, product_line__c = &quot;RRS&quot;, product_line__c = &quot;SPS&quot;, product_line__c = &quot;TBR&quot;, product_line__c = &quot;TIS&quot;, product_line__c = &quot;TSC&quot;, product_line__c = &quot;EZR&quot;, product_line__c = &quot;AA&quot;, product_line__c = &quot;ICP&quot;, product_line__c = &quot;MAS&quot;, product_line__c = &quot;GC&quot;, product_line__c = &quot;LC&quot;, product_line__c = &quot;LCM&quot;, product_line__c = &quot;IR&quot;, product_line__c = &quot;UVS&quot;, product_line__c = &quot;TEA&quot;, product_line__c = &quot;MMS&quot;, product_line__c = &quot;MBA&quot;, product_line__c = &quot;RAM&quot;, product_line__c = &quot;PER&quot;,product_line__c = &quot;HCA&quot;, product_line__c = &quot;AMP&quot;, product_line__c = &quot;DAB&quot;, product_line__c = &quot;DAO&quot;, product_line__c = &quot;DLP&quot;, product_line__c = &quot;EXT&quot;, product_line__c = &quot;FNP&quot;, product_line__c = &quot;GMP&quot;, product_line__c = &quot;IMF&quot;, product_line__c = &quot;IMG&quot;, product_line__c = &quot;LMP&quot;, product_line__c = &quot;RVA&quot;, product_line__c = &quot;SKC&quot;, product_line__c = &quot;TXV&quot;, product_line__c = &quot;CBS&quot;,product_line__c = &quot;AM&quot;, product_line__c = &quot;LM&quot;, text(Family)=&quot;72-PER&quot;,product_line__c = &quot;GCM&quot; 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is DAS Products?</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_LST_Products__c</fullName>
+        <description>REMOVE THIS FIELD AFTER LST FORECAST SETTINGS CHANGES MOVED</description>
+        <externalId>false</externalId>
+        <formula>OR (
+product_line__c = &quot;APS&quot;,product_line__c = &quot;AIG&quot;, product_line__c = &quot;ARS&quot;, product_line__c = &quot;EZR&quot;,product_line__c = &quot;AWS&quot;, product_line__c = &quot;CLH&quot;, product_line__c = &quot;CLR&quot;, product_line__c = &quot;DIS&quot;, product_line__c = &quot;DNA&quot;, product_line__c = &quot;FAP&quot;,product_line__c = &quot;HCA&quot;, product_line__c = &quot;HCS&quot;, product_line__c = &quot;HTS&quot;, product_line__c = &quot;IAS&quot;, product_line__c = &quot;INV&quot;, product_line__c = &quot;LVI&quot;, product_line__c = &quot;MFT&quot;, product_line__c = &quot;MLD&quot;, product_line__c = &quot;MOL&quot;, product_line__c = &quot;MOX&quot;, product_line__c = &quot;NMO&quot;, product_line__c = &quot;NVS&quot;, product_line__c = &quot;PBR&quot;, product_line__c = &quot;PGI&quot;, product_line__c = &quot;QTS&quot;, product_line__c = &quot;RRD&quot;, product_line__c = &quot;RRS&quot;, product_line__c = &quot;SPS&quot;, product_line__c = &quot;TIS&quot;, product_line__c = &quot;TSC&quot;, product_line__c = &quot;ANP&quot;, product_line__c = &quot;GPZ&quot;, product_line__c = &quot;TBR&quot;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is LST Products?</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_EAN_UPC__c</fullName>
+        <externalId>false</externalId>
+        <label>EAN UPC</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Term_Length_INF__c</fullName>
+        <externalId>false</externalId>
+        <label>Term Length</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Default_Discount__c</fullName>
+        <description>Field created for BigMachines Implementation as part of Caliper migration.</description>
+        <externalId>false</externalId>
+        <label>Default Discount %</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>IGOR_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>IGOR_PAC Description</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>License_Type_INF__c</fullName>
+        <externalId>false</externalId>
+        <label>License Type</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PKI_Qty_UOM_Code__c</fullName>
+        <description>Used for Boomi and SAP integration only.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used for Boomi and SAP integration only.</inlineHelpText>
+        <label>Qty UOM Code</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PricebookEntryID__c</fullName>
+        <description>used for webmethods API</description>
+        <externalId>false</externalId>
+        <label>PricebookEntryID</label>
+        <length>32</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Type_INF__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>License</fullName>
+                    <default>false</default>
+                    <label>License</label>
+                </value>
+                <value>
+                    <fullName>Maintenance</fullName>
+                    <default>false</default>
+                    <label>Maintenance</label>
+                </value>
+                <value>
+                    <fullName>Services</fullName>
+                    <default>false</default>
+                    <label>Services</label>
+                </value>
+                <value>
+                    <fullName>Training</fullName>
+                    <default>false</default>
+                    <label>Training</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Division__c</fullName>
+        <externalId>false</externalId>
+        <label>Divison</label>
+        <length>2</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>INF_Pricing_Model__c</fullName>
+        <externalId>false</externalId>
+        <label>Pricing Model</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Named User</fullName>
+                    <default>false</default>
+                    <label>Named User</label>
+                </value>
+                <value>
+                    <fullName>Site</fullName>
+                    <default>false</default>
+                    <label>Site</label>
+                </value>
+                <value>
+                    <fullName>Instance</fullName>
+                    <default>false</default>
+                    <label>Instance</label>
+                </value>
+                <value>
+                    <fullName>Bundle</fullName>
+                    <default>false</default>
+                    <label>Bundle</label>
+                </value>
+                <value>
+                    <fullName>Basic</fullName>
+                    <default>false</default>
+                    <label>Basic</label>
+                </value>
+                <value>
+                    <fullName>Module</fullName>
+                    <default>false</default>
+                    <label>Module</label>
+                </value>
+                <value>
+                    <fullName>Personal Subscription</fullName>
+                    <default>false</default>
+                    <label>Personal Subscription</label>
+                </value>
+                <value>
+                    <fullName>Renewals Only</fullName>
+                    <default>false</default>
+                    <label>Renewals Only</label>
+                </value>
+                <value>
+                    <fullName>Private</fullName>
+                    <default>false</default>
+                    <label>Private</label>
+                </value>
+                <value>
+                    <fullName>Special</fullName>
+                    <default>false</default>
+                    <label>Special</label>
+                </value>
+                <value>
+                    <fullName>Study</fullName>
+                    <default>false</default>
+                    <label>Study</label>
+                </value>
+                <value>
+                    <fullName>TIBCO Included</fullName>
+                    <default>false</default>
+                    <label>TIBCO Included</label>
+                </value>
+                <value>
+                    <fullName>TIBCO Not Included</fullName>
+                    <default>false</default>
+                    <label>TIBCO Not Included</label>
+                </value>
+                <value>
+                    <fullName>Training</fullName>
+                    <default>false</default>
+                    <label>Training</label>
+                </value>
+                <value>
+                    <fullName>Concurrent</fullName>
+                    <default>false</default>
+                    <label>Concurrent</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product_Line_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Line Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_NetWeight__c</fullName>
+        <externalId>false</externalId>
+        <label>Net Weight</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sub_Business_Unit__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub Business Unit</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>APPLIED GENOMICS</fullName>
+                    <default>false</default>
+                    <label>APPLIED GENOMICS</label>
+                </value>
+                <value>
+                    <fullName>BIO-D DISCO OPS</fullName>
+                    <default>false</default>
+                    <label>BIO-D DISCO OPS</label>
+                </value>
+                <value>
+                    <fullName>CLINICAL DIAGNOSTICS</fullName>
+                    <default>false</default>
+                    <label>CLINICAL DIAGNOSTICS</label>
+                </value>
+                <value>
+                    <fullName>EMERGING DIAGNOSTICS</fullName>
+                    <default>false</default>
+                    <label>EMERGING DIAGNOSTICS</label>
+                </value>
+                <value>
+                    <fullName>EUROIMMUN</fullName>
+                    <default>false</default>
+                    <label>EUROIMMUN</label>
+                </value>
+                <value>
+                    <fullName>FOOD</fullName>
+                    <default>false</default>
+                    <label>FOOD</label>
+                </value>
+                <value>
+                    <fullName>GENETIC TESTING SERVICES</fullName>
+                    <default>false</default>
+                    <label>GENETIC TESTING SERVICES</label>
+                </value>
+                <value>
+                    <fullName>IMAGING &amp; DETECTION</fullName>
+                    <default>false</default>
+                    <label>IMAGING &amp; DETECTION</label>
+                </value>
+                <value>
+                    <fullName>INFORMATICS</fullName>
+                    <default>false</default>
+                    <label>INFORMATICS</label>
+                </value>
+                <value>
+                    <fullName>INORGANIC</fullName>
+                    <default>false</default>
+                    <label>INORGANIC</label>
+                </value>
+                <value>
+                    <fullName>LIGHTING</fullName>
+                    <default>false</default>
+                    <label>LIGHTING</label>
+                </value>
+                <value>
+                    <fullName>MATERNAL FETAL HEALTH</fullName>
+                    <default>false</default>
+                    <label>MATERNAL FETAL HEALTH</label>
+                </value>
+                <value>
+                    <fullName>MEDICAL IMAGING</fullName>
+                    <default>false</default>
+                    <label>MEDICAL IMAGING</label>
+                </value>
+                <value>
+                    <fullName>MULTI-VENDOR</fullName>
+                    <default>false</default>
+                    <label>MULTI-VENDOR</label>
+                </value>
+                <value>
+                    <fullName>NEONATAL</fullName>
+                    <default>false</default>
+                    <label>NEONATAL</label>
+                </value>
+                <value>
+                    <fullName>NTD LABS</fullName>
+                    <default>false</default>
+                    <label>NTD LABS</label>
+                </value>
+                <value>
+                    <fullName>ONCOLOGY</fullName>
+                    <default>false</default>
+                    <label>ONCOLOGY</label>
+                </value>
+                <value>
+                    <fullName>ORGANIC</fullName>
+                    <default>false</default>
+                    <label>ORGANIC</label>
+                </value>
+                <value>
+                    <fullName>OTHER</fullName>
+                    <default>false</default>
+                    <label>OTHER</label>
+                </value>
+                <value>
+                    <fullName>PRODUCT LINE IN QUESTION</fullName>
+                    <default>false</default>
+                    <label>PRODUCT LINE IN QUESTION</label>
+                </value>
+                <value>
+                    <fullName>QUANTITATIVE PATHOLOGY</fullName>
+                    <default>false</default>
+                    <label>QUANTITATIVE PATHOLOGY</label>
+                </value>
+                <value>
+                    <fullName>RADS &amp; SERVICE</fullName>
+                    <default>false</default>
+                    <label>RADS &amp; SERVICE</label>
+                </value>
+                <value>
+                    <fullName>SERVICE</fullName>
+                    <default>false</default>
+                    <label>SERVICE</label>
+                </value>
+                <value>
+                    <fullName>SIGNATURE GENOMICS LAB</fullName>
+                    <default>false</default>
+                    <label>SIGNATURE GENOMICS LAB</label>
+                </value>
+                <value>
+                    <fullName>UNCODED</fullName>
+                    <default>false</default>
+                    <label>UNCODED</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>INF_Product_Family__c</fullName>
+        <externalId>false</externalId>
+        <label>INF Product Family</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Attivio</fullName>
+                    <default>false</default>
+                    <label>Attivio</label>
+                </value>
+                <value>
+                    <fullName>CBOE</fullName>
+                    <default>false</default>
+                    <label>CBOE</label>
+                </value>
+                <value>
+                    <fullName>ChemDraw Cloud</fullName>
+                    <default>false</default>
+                    <label>ChemDraw Cloud</label>
+                </value>
+                <value>
+                    <fullName>ChemDraw Prime</fullName>
+                    <default>false</default>
+                    <label>ChemDraw Prime</label>
+                </value>
+                <value>
+                    <fullName>ChemDraw Professional</fullName>
+                    <default>false</default>
+                    <label>ChemDraw Professional</label>
+                </value>
+                <value>
+                    <fullName>ChemOffice</fullName>
+                    <default>false</default>
+                    <label>ChemOffice</label>
+                </value>
+                <value>
+                    <fullName>Clinical</fullName>
+                    <default>false</default>
+                    <label>Clinical</label>
+                </value>
+                <value>
+                    <fullName>Columbus</fullName>
+                    <default>false</default>
+                    <label>Columbus</label>
+                </value>
+                <value>
+                    <fullName>Content</fullName>
+                    <default>false</default>
+                    <label>Content</label>
+                </value>
+                <value>
+                    <fullName>Elements</fullName>
+                    <default>false</default>
+                    <label>Elements</label>
+                </value>
+                <value>
+                    <fullName>E-Notebook</fullName>
+                    <default>false</default>
+                    <label>E-Notebook</label>
+                </value>
+                <value>
+                    <fullName>Enterprise</fullName>
+                    <default>false</default>
+                    <label>Enterprise</label>
+                </value>
+                <value>
+                    <fullName>High Content Profiler</fullName>
+                    <default>false</default>
+                    <label>High Content Profiler</label>
+                </value>
+                <value>
+                    <fullName>iLab</fullName>
+                    <default>false</default>
+                    <label>iLab</label>
+                </value>
+                <value>
+                    <fullName>Imaging</fullName>
+                    <default>false</default>
+                    <label>Imaging</label>
+                </value>
+                <value>
+                    <fullName>InfomatiX</fullName>
+                    <default>false</default>
+                    <label>InfomatiX</label>
+                </value>
+                <value>
+                    <fullName>Lead Discovery Biologics</fullName>
+                    <default>false</default>
+                    <label>Lead Discovery Biologics</label>
+                </value>
+                <value>
+                    <fullName>Lead Discovery Research</fullName>
+                    <default>false</default>
+                    <label>Lead Discovery Research</label>
+                </value>
+                <value>
+                    <fullName>Not Applicable</fullName>
+                    <default>false</default>
+                    <label>Not Applicable</label>
+                </value>
+                <value>
+                    <fullName>QAQC</fullName>
+                    <default>false</default>
+                    <label>QAQC</label>
+                </value>
+                <value>
+                    <fullName>Research</fullName>
+                    <default>false</default>
+                    <label>Research</label>
+                </value>
+                <value>
+                    <fullName>Signals</fullName>
+                    <default>false</default>
+                    <label>Signals</label>
+                </value>
+                <value>
+                    <fullName>Signals Clinical</fullName>
+                    <default>false</default>
+                    <label>Signals Clinical</label>
+                </value>
+                <value>
+                    <fullName>Signals Lead Discovery</fullName>
+                    <default>false</default>
+                    <label>Signals Lead Discovery</label>
+                </value>
+                <value>
+                    <fullName>Signals Notebook</fullName>
+                    <default>false</default>
+                    <label>Signals Notebook</label>
+                </value>
+                <value>
+                    <fullName>Signals Screening</fullName>
+                    <default>false</default>
+                    <label>Signals Screening</label>
+                </value>
+                <value>
+                    <fullName>Signals Translational</fullName>
+                    <default>false</default>
+                    <label>Signals Translational</label>
+                </value>
+                <value>
+                    <fullName>Special License</fullName>
+                    <default>false</default>
+                    <label>Special License</label>
+                </value>
+                <value>
+                    <fullName>Special Maintenance</fullName>
+                    <default>false</default>
+                    <label>Special Maintenance</label>
+                </value>
+                <value>
+                    <fullName>Special SAAS</fullName>
+                    <default>false</default>
+                    <label>Special SAAS</label>
+                </value>
+                <value>
+                    <fullName>Special Services</fullName>
+                    <default>false</default>
+                    <label>Special Services</label>
+                </value>
+                <value>
+                    <fullName>Special Subscription</fullName>
+                    <default>false</default>
+                    <label>Special Subscription</label>
+                </value>
+                <value>
+                    <fullName>Special Term</fullName>
+                    <default>false</default>
+                    <label>Special Term</label>
+                </value>
+                <value>
+                    <fullName>Spotfire</fullName>
+                    <default>false</default>
+                    <label>Spotfire</label>
+                </value>
+                <value>
+                    <fullName>StreamBase</fullName>
+                    <default>false</default>
+                    <label>StreamBase</label>
+                </value>
+                <value>
+                    <fullName>TIBCO Spotfire PaaS</fullName>
+                    <default>false</default>
+                    <label>TIBCO Spotfire PaaS</label>
+                </value>
+                <value>
+                    <fullName>Translational</fullName>
+                    <default>false</default>
+                    <label>Translational</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PKI_Flag_for_dedup__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>To identify the problematic products during the dedup process</description>
+        <externalId>false</externalId>
+        <label>PKI Flag for dedup</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SIOP_Product_Group__c</fullName>
+        <externalId>false</externalId>
+        <label>SIOP Product Group</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_LastTxnNum__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Transaction Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_WeightUnit__c</fullName>
+        <externalId>false</externalId>
+        <label>Weight Unit</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_GrossWeight__c</fullName>
+        <externalId>false</externalId>
+        <label>Gross Weight</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_External_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Duplicate_Identifier__c</fullName>
+        <externalId>false</externalId>
+        <formula>&apos;T&apos;&amp; ProductCode</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Duplicate Identifier</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IGOR_Item_Class_Desc__c</fullName>
+        <externalId>false</externalId>
+        <label>IGOR Item Class Desc</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Name_Dealers__c</fullName>
+        <description>Product Name for Dealers</description>
+        <externalId>false</externalId>
+        <label>Product Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ActivityType__c</fullName>
+        <externalId>false</externalId>
+        <label>Activity Type</label>
+        <length>6</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_DeletionFlag__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Deletion Flag</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_UnitOfWeight__c</fullName>
+        <description>Unit of weight (allowed packaging weight)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Unit of weight (allowed packaging weight)</inlineHelpText>
+        <label>Unit of Weight</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Schedule_B_for_Print__c</fullName>
+        <description>Field created for BigMachines Implementation as part of Caliper migration.</description>
+        <externalId>false</externalId>
+        <label>Schedule B for Print</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>BUSINESS_UNIT_FORMULA__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK( product_line__c), &quot;&quot;, 
+IF(CONTAINS(&quot;DL:AIG:ECO:FAB:LOP:OTH:PHM:IR:PUF:UVP:UVS:ICP:LAA:TA:TEA:ABG:AGP:BLC:CDS:CE:CHM:DNH:DNP:DNV:DU:HID:ASO:LCM:MGA:MIG:MMB:NIR:OCC:PBC:PBG:PCS:PHV:PSN:SDS:TRX:UPA:LHO:WEB:UV:LC:MAS:AGN:BIZ:BMC:CPC:DNE:DNS:ESI:SVC:GCM:PER:EMV:DCS:DLS:DSS:PIV:FLR:AA:-DU:BLS:DDV:DEL:MMS:MBA:IMG:AM:DAB:DAO:EXT:FN:GM:IMF:LM:RVA:SKC:TXV:CHD:GC:BIM:CRS:RAM:MCO:SVO:SVA:FTF:MET:CHO:BIO:ASE:CDI&quot;, product_line__c), &quot;ENVIRONMENTAL&quot;, 
+IF(CONTAINS(&quot;MAO:CRT:NEO:PRE:APS:AWS:SPS:CSC:MDX:CRD:NLB:GSO:RES:BAR:DIAC:DLF:NTD:EIM:VNT:NAP:NMO:MOX:CLH:MFT:SGL:ILB:BBT:GSG:CCM:ONC:GEN:DIA:ICL:CMG:DNA:SDO:CHS:SBD:EDO:PCR:TLP:VIR:ARS:NEX:MSD:AGO:RHS&quot;, product_line__c), &quot;DIAGNOSTICS&quot;, 
+IF(CONTAINS(&quot;ASY&quot;,product_line__c), &quot;ILLUMINATION &amp; DETECTION SERVICES&quot;,
+IF(CONTAINS(&quot;CHE:ESS:LIM:ELM:GPZ:ENT:QAS:AVS:AVC:ISS:DSK:SIG:IFO:ATT:SPL&quot;,product_line__c), &quot;INFORMATICS&quot;,
+IF(CONTAINS(&quot;IDO:RSO:MPS:TIP:TKS:ANP:FGP:ARI:ARP:CSA:GIP:LVI:MLD:PGI:PRD:SCN:SPT:TOF:MOL:RRC:RRS:PBR:HCS:IAS:PCL:MMO:LSB:MCB:TIS:INV:CLR:NVS:TSC:EZR:QPS:TBR:RRD:HTS:DIS:CKP:LSO:SER:NUC:FAP:QTS:HCA&quot;,product_line__c), &quot;LIFE SCIENCES&quot;,
+IF(CONTAINS(&quot;SCI:DEX:CMS:ASG:ASP:MIO&quot;,product_line__c), &quot;MEDICAL IMAGING&quot;,
+IF(CONTAINS(&quot;ABI:AGT:OMV:TMO:OSO:WAT:OSAM:OSC:OSSS:OSIS:OSRL:OSAI&quot;,product_line__c), &quot;ONESOURCE&quot;,
+IF(CONTAINS(&quot;HTSC:ZZZ:HHO:EHO:BEA&quot;,product_line__c), &quot;UNCODED&quot;,
+&quot;PRODUCT LINE IN QUESTION&quot;)))))))))</formula>
+        <label>BUSINESS UNIT</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CPQ_Product_Hierarchy__c</fullName>
+        <externalId>false</externalId>
+        <label>CPQ Product Hierarchy</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_BasicMaterial__c</fullName>
+        <externalId>false</externalId>
+        <label>Basic Material</label>
+        <length>48</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Discount_Type__c</fullName>
+        <description>This field indicates a Product Type to be used for Contract discounting when different from the actual Product Type.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field indicates a Product Type to be used for Contract discounting when different from the actual Product Type.</inlineHelpText>
+        <label>Discount Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Consumable</fullName>
+                    <default>false</default>
+                    <label>Consumable</label>
+                </value>
+                <value>
+                    <fullName>Labor</fullName>
+                    <default>false</default>
+                    <label>Labor</label>
+                </value>
+                <value>
+                    <fullName>Travel</fullName>
+                    <default>false</default>
+                    <label>Travel</label>
+                </value>
+                <value>
+                    <fullName>Service Parts</fullName>
+                    <default>false</default>
+                    <label>Service Parts</label>
+                </value>
+                <value>
+                    <fullName>Other Parts</fullName>
+                    <default>false</default>
+                    <label>Other Parts</label>
+                </value>
+                <value>
+                    <fullName>Expenses</fullName>
+                    <default>false</default>
+                    <label>Expenses</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Big_Machines_Prod_Desc__c</fullName>
+        <externalId>false</externalId>
+        <label>Big Machines Prod Desc</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Advanced_Training_Price__c</fullName>
+        <description>Field created for BigMachines Implementation as part of Caliper migration.</description>
+        <externalId>false</externalId>
+        <label>Advanced Training Price</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Family_Numbered__c</fullName>
+        <description>This field is created for reporting by Product Family for EH. This is in conjunction to the decision  taken on merging all EH product lines into one EH Product family (09/12/2013)</description>
+        <externalId>false</externalId>
+        <label>Product Family Numbered</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_CompletedTxnNum__c</fullName>
+        <externalId>false</externalId>
+        <label>Completed Transaction Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_CurrentRevision__c</fullName>
+        <externalId>false</externalId>
+        <label>Current Revision</label>
+        <length>2</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Shipping_Handling_Price__c</fullName>
+        <description>Field created for BigMachines Implementation as part of Caliper migration.</description>
+        <externalId>false</externalId>
+        <label>Shipping/Handling Price</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CPQ_Bundle_or_A_La_Carte__c</fullName>
+        <description>Defines how products are filtered on the product selection screen.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Defines how products are filtered on the product selection screen.</inlineHelpText>
+        <label>Bundle or A La Carte</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Bundle</fullName>
+                    <default>false</default>
+                    <label>Bundle</label>
+                </value>
+                <value>
+                    <fullName>A La Carte</fullName>
+                    <default>false</default>
+                    <label>A La Carte</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CPQ_Fulfillment_Quantity__c</fullName>
+        <description>Used for fulfillment purposes. Should be multiplied by the quantity to arrive at the actual quantity to provision to the customer.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used for fulfillment purposes. Should be multiplied by the quantity to arrive at the actual quantity to provision to the customer.</inlineHelpText>
+        <label>Fulfillment Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CPQ_Maintenance_Optional__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Prevents this product from triggering required approval if associated maintenance is removed</inlineHelpText>
+        <label>Maintenance Optional</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ProductHierarchy__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Hierarchy</label>
+        <length>8</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SUB_BUSINESS_UNIT_FORMULA__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK( product_line__c), &quot;&quot;, 
+IF(CONTAINS(&quot;MDX:NAP:ARS:AWS:APS:CLH:MOX:NEX:MFT:SPS:AGO:RHS&quot;, product_line__c), &quot;APPLIED GENOMICS&quot;, 
+IF(CONTAINS(&quot;NEO:CCM:PRE:DIA:CHS:MSD:VIR:NPT&quot;, product_line__c), &quot;REPRODUCTIVE HEALTH&quot;, 
+IF(CONTAINS(&quot;MPS:TIP:TKS:ANP:FGP:ARI:ARP:CSA:GIP:PGI:PRD:SCN:SPT:TOF:RRC:PCL:MCB:NUC&quot;, product_line__c), &quot;BIO-D DISCO OPS&quot;, 
+IF(CONTAINS(&quot;GEN&quot;, product_line__c), &quot;CORD BLOOD BANKING&quot;, 
+IF(CONTAINS(&quot;UVP:UVS:TEA:FLR:MCO:RAM:IR:ICP:MAS:AA&quot;,product_line__c),&quot;SPECTROSCOPY&quot;, 
+IF(CONTAINS(&quot;EIM&quot;, product_line__c), &quot;EUROIMMUN&quot;, 
+IF(CONTAINS(&quot;PER:DCS:DLS:DSS:PIV:DEL:IMG:AM:DAB:DAO:DL:EXT:FN:GM:IMF:LM:RVA:SKC:TXV:FTF:BIO:CDI&quot;, product_line__c), &quot;FOOD&quot;, 
+IF(CONTAINS(&quot;ILB:ICL &quot;, product_line__c), &quot;GENETIC TESTING SERVICES&quot;, 
+IF(CONTAINS(&quot;GSG&quot;, product_line__c), &quot;GOOD START GENETICS&quot;, 
+IF(CONTAINS(&quot;IDO:LVI:MLD:PBR:HCS:IAS:LSB:INV:EZR:QTS&quot;, product_line__c), &quot;IMAGING &amp; DETECTION&quot;, 
+IF(CONTAINS(&quot;CHE:ESS:LIM:ELM:GPZ:ENT:QAS:AVS:AVC:ISS:DSK:SIG:IFO:ATT:SPL&quot;, product_line__c), &quot;INFORMATICS&quot;, 
+IF(CONTAINS(&quot;ASY&quot;, product_line__c), &quot;LIGHTING&quot;, 
+IF(CONTAINS(&quot;SER&quot;, product_line__c), &quot;LS SERVICE&quot;, 
+IF(CONTAINS(&quot;SCI:DEX:CMS:ASG:ASP:MIO&quot;, product_line__c), &quot;MEDICAL IMAGING&quot;, 
+IF(CONTAINS(&quot;PUF:UV&quot;, product_line__c), &quot;MOLECULAR SPECTROSCOPY&quot;, 
+IF(CONTAINS(&quot;ABI:AGT:OMV:TMO:OSO:WAT:OSAM:OSC:OSSS:OSIS:OSRL:OSAI&quot;, product_line__c), &quot;MULTI-VENDOR&quot;, 
+IF(CONTAINS(&quot;NTD&quot;, product_line__c), &quot;NTD LABS&quot;, 
+IF(CONTAINS(&quot;ONC&quot;, product_line__c), &quot;ONCOLOGY&quot;, 
+IF(CONTAINS(&quot;CHD:CHO:GC:GCM:LC:LCM:MMS:MBA&quot;,product_line__c),&quot;CHROMATOGRAPHY&quot;, 
+IF(CONTAINS(&quot;CSC:GSO:RES:BAR:DIAC:DLF:SDO:CRT:CRD:NLB:DNA:NMO:EDO:AIG:ECO:FAB:LOP:OTH:PHM:LAA:ABG:AGP:BLC:CDS:CE:CHM:DNH:DNP:DNV:DU:HID:ASO:MGA:MIG:MMB:NIR:OCC:PBC:PBG:PCS:PHV:PSN:SDS:TRX:UPA:LHO:WEB:AGN:BIZ:BMC:CPC:DNE:DNS:ESI:SVC:-DU:BLS:DDV:BIM:CRS:MMO:DIS:LSO:ASE&quot;, product_line__c), &quot;OTHER&quot;, 
+IF(CONTAINS(&quot;TIS:NVS:TSC:QPS:TBR&quot;, product_line__c), &quot;QUANTITATIVE PATHOLOGY&quot;, 
+IF(CONTAINS(&quot;RSO:MOL:RRS:CLR:RRD:HTS:CKP:FAP&quot;, product_line__c), &quot;RADS &amp; SERVICE&quot;, 
+IF(CONTAINS(&quot;EMV:SVO:SVA:MET&quot;, product_line__c), &quot;SERVICE&quot;, 
+IF(CONTAINS(&quot;SGL&quot;, product_line__c), &quot;SIGNATURE GENOMICS LAB&quot;, 
+IF(CONTAINS(&quot;TA&quot;, product_line__c), &quot;THERMAL/ELEMENTAL&quot;, 
+IF(CONTAINS(&quot;TLP&quot;, product_line__c), &quot;TULIP DIAGNOSTICS&quot;, 
+IF(CONTAINS(&quot;HTSC:ZZZ:HHO:EHO:BEA&quot;, product_line__c), &quot;UNCODED&quot;, 
+IF(CONTAINS(&quot;VNT&quot;, product_line__c), &quot;VERINATA HEALTH&quot;, 
+&quot;PRODUCT LINE IN QUESTION&quot;)))))))))))))))))))))))))))))</formula>
+        <label>SUB BUSINESS UNIT</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CPQ_License_Agreement_Name__c</fullName>
+        <description>Used to check conditional agreement checkboxes on quote.</description>
+        <externalId>false</externalId>
+        <label>License Agreement Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>PE</fullName>
+                    <default>false</default>
+                    <label>PE</label>
+                </value>
+                <value>
+                    <fullName>PE + IFX</fullName>
+                    <default>false</default>
+                    <label>PE + IFX</label>
+                </value>
+                <value>
+                    <fullName>Cloud</fullName>
+                    <default>false</default>
+                    <label>Cloud</label>
+                </value>
+                <value>
+                    <fullName>SaaS</fullName>
+                    <default>false</default>
+                    <label>SaaS</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product_Line_Equals_Family__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+ product_line__c = RIGHT( TEXT(Family),LEN(product_line__c)),
+&quot;True&quot;,
+&quot;False&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Line Equals Family</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Product_Life_Cycle__c</fullName>
+        <description>Denotes the serviceability of a product</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes the serviceability of a product</inlineHelpText>
+        <label>Product Life Cycle</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Limited Support</fullName>
+                    <default>false</default>
+                    <label>Limited Support</label>
+                </value>
+                <value>
+                    <fullName>End of Life</fullName>
+                    <default>false</default>
+                    <label>End of Life</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_RevLevelAssignment__c</fullName>
+        <externalId>false</externalId>
+        <label>Rev Level Assignment</label>
+        <length>1</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Installation_Training_Price__c</fullName>
+        <description>Field created for BigMachines Implementation as part of Caliper migration.</description>
+        <externalId>false</externalId>
+        <label>Installation Training Price</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_CurrentRevisionDate__c</fullName>
+        <externalId>false</externalId>
+        <label>Current Revision Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Include_in_Download__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Include in Download</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Super_Business_Unit__c</fullName>
+        <description>The Super Business Unit Code</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Super Business Unit Code</inlineHelpText>
+        <label>Super Business Unit</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_TransportationGroup__c</fullName>
+        <externalId>false</externalId>
+        <label>Transportation Group</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ConfigurableMaterial__c</fullName>
+        <externalId>false</externalId>
+        <label>Configurable Material</label>
+        <length>1</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ExternalMaterialGroup__c</fullName>
+        <externalId>false</externalId>
+        <label>External Material Group</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_LaboratoryDesignOffice__c</fullName>
+        <externalId>false</externalId>
+        <label>Laboratory Design Office</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Medical_Classification__c</fullName>
+        <description>Medical Classification copied from a Product Classification with Characteristic of PE Medical Device</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Medical Classification copied from a Product Classification with Characteristic of PE Medical Device</inlineHelpText>
+        <label>Medical Classification</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Products_Invivo_updated_Dec_26_2013_VB__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>To identify the products updated for the 6 fields related to Big Machines integration</description>
+        <externalId>false</externalId>
+        <label>Products Invivo updated03242014VB</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_BatchManagementRequirementIndi__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Batch Management Requirement Indicator</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_DangerousGoodsIndicatorProfile__c</fullName>
+        <externalId>false</externalId>
+        <label>Dangerous Goods Indicator Profile</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Requires_Decontamination_Forms__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Denotes that decontamination forms are required forms for the product</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes that decontamination forms are required forms for the product</inlineHelpText>
+        <label>Requires Decontamination Forms</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_TemperatureConditionsIndicator__c</fullName>
+        <externalId>false</externalId>
+        <label>Temperature Conditions Indicator</label>
+        <length>2</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Super_Business_Unit_Description__c</fullName>
+        <description>The Description of the Super Business Unit</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Description of the Super Business Unit</inlineHelpText>
+        <label>Super Business Unit Description</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Family_Equals_Product_Family_Num__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Family) = Product_Family_Numbered__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Family Equals Product Family Num</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+</CustomObject>

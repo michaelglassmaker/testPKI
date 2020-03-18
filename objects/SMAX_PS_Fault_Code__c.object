@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Fault Codes for SMAX_PS_Fault_Codes</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <label>Fault Code</label>
+    <nameField>
+        <label>Fault Code Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Fault Codes</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>SMAX_PS_Code__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SMAX_PS_Code_Description__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SMAX_PS_Code_Family__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SMAX_PS_Code_Group__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SMAX_PS_IsComplaintRequired__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>SMAX_PS_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Code</label>
+        <length>5</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Code_Group__c</fullName>
+        <externalId>false</externalId>
+        <label>Code Group</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Code_Family__c</fullName>
+        <externalId>false</externalId>
+        <label>Code Family</label>
+        <length>5</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_External_ID__c</fullName>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>25</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Fault_Action__c</fullName>
+        <externalId>false</externalId>
+        <label>Fault Action</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Advised~AC01</fullName>
+                    <default>false</default>
+                    <label>Advised~AC01</label>
+                </value>
+                <value>
+                    <fullName>Adjusted~AC02</fullName>
+                    <default>false</default>
+                    <label>Adjusted~AC02</label>
+                </value>
+                <value>
+                    <fullName>Aligned~AC03</fullName>
+                    <default>false</default>
+                    <label>Aligned~AC03</label>
+                </value>
+                <value>
+                    <fullName>Calibrated~AC04</fullName>
+                    <default>false</default>
+                    <label>Calibrated~AC04</label>
+                </value>
+                <value>
+                    <fullName>Cleaned~AC05</fullName>
+                    <default>false</default>
+                    <label>Cleaned~AC05</label>
+                </value>
+                <value>
+                    <fullName>Customer Action Req~AC06</fullName>
+                    <default>false</default>
+                    <label>Customer Action Req~AC06</label>
+                </value>
+                <value>
+                    <fullName>Follow Up Required~AC07</fullName>
+                    <default>false</default>
+                    <label>Follow Up Required~AC07</label>
+                </value>
+                <value>
+                    <fullName>Lubricated~AC08</fullName>
+                    <default>false</default>
+                    <label>Lubricated~AC08</label>
+                </value>
+                <value>
+                    <fullName>Monitored~AC09</fullName>
+                    <default>false</default>
+                    <label>Monitored~AC09</label>
+                </value>
+                <value>
+                    <fullName>Rebuilt~AC10</fullName>
+                    <default>false</default>
+                    <label>Rebuilt~AC10</label>
+                </value>
+                <value>
+                    <fullName>Reconfigured~AC11</fullName>
+                    <default>false</default>
+                    <label>Reconfigured~AC11</label>
+                </value>
+                <value>
+                    <fullName>Referred to Specialist~AC12</fullName>
+                    <default>false</default>
+                    <label>Referred to Specialist~AC12</label>
+                </value>
+                <value>
+                    <fullName>Reload Software~AC13</fullName>
+                    <default>false</default>
+                    <label>Reload Software~AC13</label>
+                </value>
+                <value>
+                    <fullName>Repaired Item~AC14</fullName>
+                    <default>false</default>
+                    <label>Repaired Item~AC14</label>
+                </value>
+                <value>
+                    <fullName>Replaced~AC15</fullName>
+                    <default>false</default>
+                    <label>Replaced~AC15</label>
+                </value>
+                <value>
+                    <fullName>Reseat / Reconnected~AC16</fullName>
+                    <default>false</default>
+                    <label>Reseat / Reconnected~AC16</label>
+                </value>
+                <value>
+                    <fullName>Reset Power~AC17</fullName>
+                    <default>false</default>
+                    <label>Reset Power~AC17</label>
+                </value>
+                <value>
+                    <fullName>Resoldered~AC18</fullName>
+                    <default>false</default>
+                    <label>Resoldered~AC18</label>
+                </value>
+                <value>
+                    <fullName>Routine Maintenance~AC19</fullName>
+                    <default>false</default>
+                    <label>Routine Maintenance~AC19</label>
+                </value>
+                <value>
+                    <fullName>SDB Modification~AC20</fullName>
+                    <default>false</default>
+                    <label>SDB Modification~AC20</label>
+                </value>
+                <value>
+                    <fullName>Tested~AC21</fullName>
+                    <default>false</default>
+                    <label>Tested~AC21</label>
+                </value>
+                <value>
+                    <fullName>Tightened~AC22</fullName>
+                    <default>false</default>
+                    <label>Tightened~AC22</label>
+                </value>
+                <value>
+                    <fullName>Trained / Instructed~AC23</fullName>
+                    <default>false</default>
+                    <label>Trained / Instructed~AC23</label>
+                </value>
+                <value>
+                    <fullName>Updated to Latest Vers~AC24</fullName>
+                    <default>false</default>
+                    <label>Updated to Latest Vers~AC24</label>
+                </value>
+                <value>
+                    <fullName>Upgraded~AC25</fullName>
+                    <default>false</default>
+                    <label>Upgraded~AC25</label>
+                </value>
+                <value>
+                    <fullName>Verified~AC26</fullName>
+                    <default>false</default>
+                    <label>Verified~AC26</label>
+                </value>
+                <value>
+                    <fullName>Scheduled Event~AC27</fullName>
+                    <default>false</default>
+                    <label>Scheduled Event~AC27</label>
+                </value>
+                <value>
+                    <fullName>Reprogrammed~AC28</fullName>
+                    <default>false</default>
+                    <label>Reprogrammed~AC28</label>
+                </value>
+                <value>
+                    <fullName>Return to Vendor~AC30</fullName>
+                    <default>false</default>
+                    <label>Return to Vendor~AC30</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_CodeGroupType__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(SMAX_PS_Fault_Code_Group__r.SMAX_PS_Code_Group_Type__c)</formula>
+        <label>Code Group Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Completion_Code__c</fullName>
+        <description>Completion Codes</description>
+        <externalId>false</externalId>
+        <label>Completion Code</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>JC01 - Job Completed</fullName>
+                    <default>false</default>
+                    <label>JC01 - Job Completed</label>
+                </value>
+                <value>
+                    <fullName>JC02 - Additional Parts Required</fullName>
+                    <default>false</default>
+                    <label>JC02 - Additional Parts Required</label>
+                </value>
+                <value>
+                    <fullName>JC03 - Confidence Testing</fullName>
+                    <default>false</default>
+                    <label>JC03 - Confidence Testing</label>
+                </value>
+                <value>
+                    <fullName>JC04 - Customer Action Required</fullName>
+                    <default>false</default>
+                    <label>JC04 - Customer Action Required</label>
+                </value>
+                <value>
+                    <fullName>JC05 - Defective Spare Parts</fullName>
+                    <default>false</default>
+                    <label>JC05 - Defective Spare Parts</label>
+                </value>
+                <value>
+                    <fullName>JC06 - Further Troubleshooting Required</fullName>
+                    <default>false</default>
+                    <label>JC06 - Further Troubleshooting Required</label>
+                </value>
+                <value>
+                    <fullName>JC07 - Insufficient Technical Information</fullName>
+                    <default>false</default>
+                    <label>JC07 - Insufficient Technical Information</label>
+                </value>
+                <value>
+                    <fullName>JC08 - Insufficient Time to Complete</fullName>
+                    <default>false</default>
+                    <label>JC08 - Insufficient Time to Complete</label>
+                </value>
+                <value>
+                    <fullName>JC09 - Insufficient Training</fullName>
+                    <default>false</default>
+                    <label>JC09 - Insufficient Training</label>
+                </value>
+                <value>
+                    <fullName>JC10 - Intermittent Problem</fullName>
+                    <default>false</default>
+                    <label>JC10 - Intermittent Problem</label>
+                </value>
+                <value>
+                    <fullName>JC12 - Parts Availability Delay</fullName>
+                    <default>false</default>
+                    <label>JC12 - Parts Availability Delay</label>
+                </value>
+                <value>
+                    <fullName>JC13 - Tools &amp; Jigs</fullName>
+                    <default>false</default>
+                    <label>JC13 - Tools &amp; Jigs</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Code_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Code Description</label>
+        <length>60</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Fault_Code_Group__c</fullName>
+        <externalId>false</externalId>
+        <label>Fault Code Group</label>
+        <referenceTo>SMAX_PS_Fault_Code_Group__c</referenceTo>
+        <relationshipLabel>Fault Codes</relationshipLabel>
+        <relationshipName>Fault_Codes</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Installation_Code__c</fullName>
+        <description>Installation Codes</description>
+        <externalId>false</externalId>
+        <label>Installation Code</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>IN01 - Application Problems</fullName>
+                    <default>false</default>
+                    <label>IN01 - Application Problems</label>
+                </value>
+                <value>
+                    <fullName>IN02 - Computer problem PKI</fullName>
+                    <default>false</default>
+                    <label>IN02 - Computer problem PKI</label>
+                </value>
+                <value>
+                    <fullName>IN03 - Customer site unready or problem</fullName>
+                    <default>false</default>
+                    <label>IN03 - Customer site unready or problem</label>
+                </value>
+                <value>
+                    <fullName>IN04 - Delivery Incomplete</fullName>
+                    <default>false</default>
+                    <label>IN04 - Delivery Incomplete</label>
+                </value>
+                <value>
+                    <fullName>IN05 - Installation with no problem</fullName>
+                    <default>false</default>
+                    <label>IN05 - Installation with no problem</label>
+                </value>
+                <value>
+                    <fullName>IN06 - Major Adjustment</fullName>
+                    <default>false</default>
+                    <label>IN06 - Major Adjustment</label>
+                </value>
+                <value>
+                    <fullName>IN07 - Major parts replacement</fullName>
+                    <default>false</default>
+                    <label>IN07 - Major parts replacement</label>
+                </value>
+                <value>
+                    <fullName>IN08 - Major repair carried out</fullName>
+                    <default>false</default>
+                    <label>IN08 - Major repair carried out</label>
+                </value>
+                <value>
+                    <fullName>IN09 - Minor installation problem-no follow up</fullName>
+                    <default>false</default>
+                    <label>IN09 - Minor installation problem-no follow up</label>
+                </value>
+                <value>
+                    <fullName>IN10 - Sales Order Incorrect/Incomplete</fullName>
+                    <default>false</default>
+                    <label>IN10 - Sales Order Incorrect/Incomplete</label>
+                </value>
+                <value>
+                    <fullName>IN11 - Shipping Damage</fullName>
+                    <default>false</default>
+                    <label>IN11 - Shipping Damage</label>
+                </value>
+                <value>
+                    <fullName>IN12 - Accessory Problem</fullName>
+                    <default>false</default>
+                    <label>IN12 - Accessory Problem</label>
+                </value>
+                <value>
+                    <fullName>IN13 - Software Issue PKI</fullName>
+                    <default>false</default>
+                    <label>IN13 - Software Issue PKI</label>
+                </value>
+                <value>
+                    <fullName>IN14 - Software Issue non-PKI</fullName>
+                    <default>false</default>
+                    <label>IN14 - Software Issue non-PKI</label>
+                </value>
+                <value>
+                    <fullName>IN15 - Computer problem non-PKI</fullName>
+                    <default>false</default>
+                    <label>IN15 - Computer problem non-PKI</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Complaint_Required__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Complaint Required</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_IsComplaintRequired__c</fullName>
+        <externalId>false</externalId>
+        <formula>SMAX_PS_Complaint_Required__c = 1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Complaint Required</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Problem_Code_Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicates whether the selection of this Fault Code requires a Problem Code to also be selected.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates whether the selection of this Fault Code requires a Problem Code to also be selected.</inlineHelpText>
+        <label>Is Problem Code Required</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Code_Group_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Code Group Description</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Fault_Code_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Fault Code Description</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+</CustomObject>

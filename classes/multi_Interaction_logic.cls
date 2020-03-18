@@ -244,7 +244,7 @@ Developed by ANNUITAS
                             
                         }
                         
-                        else if (!Des_is_not_empty && UpdateRecord){
+                        else if (!Des_is_not_empty){// Removed "UpdatedRecord" 02-25-20
                             randStr = 'ANN';
                             while (randStr.length() < 18) {
                                 Integer idx = Math.mod(Math.abs(Crypto.getRandomInteger()), chars.length());
@@ -358,6 +358,7 @@ system.debug('[Class] <multi_Interaction_logic> :' + a.Description);
                 map <id,Contact> Contact_Ids = new map <id,Contact>();
                 List <Contact> new_Contact = new List<Contact>();                
                 for(Contact a :  newList_Contact){
+                    
                     UpdateRecord = (a.Eloqua_List_Upload_Date__c != oldList_Contact.get(a.id).Eloqua_List_Upload_Date__c);
                     system.debug('[Class] <multi_Interaction_logic> : Dates -' + a.Eloqua_List_Upload_Date__c + ' : ' + oldList_Contact.get(a.id).Eloqua_List_Upload_Date__c);
                     system.debug('[Class] <multi_Interaction_logic> : Dates are different = ' + UpdateRecord);
@@ -434,7 +435,7 @@ system.debug('[Class] <multi_Interaction_logic> :' + a.Description);
                         system.debug('[Class] <multi_Interaction_logic> : Dates are different 2 = ' + UpdateRecord);
                         system.debug('[Class] <multi_Interaction_logic> : Dates are = ' + c.Eloqua_List_Upload_Date__c + ' : ' + oldList_Contact.get(c.id).Eloqua_List_Upload_Date__c);
                         if(ListUploadDateNotEmpty){
-                            if(Des_is_not_empty && UpdateRecord){ 
+                            if(Des_is_not_empty){// Removed "UpdatedRecord" 02-25-20
                                 randStr = 'ANN';
                                 while (randStr.length() < 18) {
                                     Integer idx = Math.mod(Math.abs(Crypto.getRandomInteger()), chars.length());
@@ -448,7 +449,7 @@ system.debug('[Class] <multi_Interaction_logic> :' + a.Description);
                                 updateList_C.add(c);
                                 
                             }
-                            else if (!Des_is_not_empty && UpdateRecord){
+                            else if (!Des_is_not_empty){ // Removed "UpdatedRecord" 02-25-20
                                 randStr = 'ANN';
                                 while (randStr.length() < 18) {
                                     Integer idx = Math.mod(Math.abs(Crypto.getRandomInteger()), chars.length());

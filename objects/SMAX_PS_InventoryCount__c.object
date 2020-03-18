@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>Inventory Count</label>
+    <nameField>
+        <displayFormat>INVC-{00000000}</displayFormat>
+        <label>Inventory Count Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Inventory Counts</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>SMAX_PS_Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SMAX_PS_Technician__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SMAX_PS_PlannedDate__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SMAX_PS_IsBlockedForPosting__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SMAX_PS_Recount_Required__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SMAX_PS_RequestedFrom__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>SMAX_PS_Year__c</fullName>
+        <externalId>false</externalId>
+        <label>Year</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Open</fullName>
+                    <default>false</default>
+                    <label>Open</label>
+                </value>
+                <value>
+                    <fullName>Tech Complete</fullName>
+                    <default>false</default>
+                    <label>Tech Complete</label>
+                </value>
+                <value>
+                    <fullName>Submitted</fullName>
+                    <default>false</default>
+                    <label>Submitted</label>
+                </value>
+                <value>
+                    <fullName>Confirmed</fullName>
+                    <default>false</default>
+                    <label>Confirmed</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>Recount Required</fullName>
+                    <default>false</default>
+                    <label>Recount Required</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_EventType__c</fullName>
+        <externalId>false</externalId>
+        <label>Event Type</label>
+        <length>2</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Count_Date__c</fullName>
+        <description>Date that the inventory count was done</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date that the inventory count was done</inlineHelpText>
+        <label>Count Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Is_Deleted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Denotes that the inventory count record is deleted</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes that the inventory count record is deleted</inlineHelpText>
+        <label>Is Deleted</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Technician__c</fullName>
+        <description>Shows the Preferred Technician from a location denoted as Stocking Location</description>
+        <externalId>false</externalId>
+        <formula>SMAX_PS_RequestedFrom__r.SVMX_PS_Preferred_Technician__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Shows the Preferred Technician from a location denoted as Stocking Location</inlineHelpText>
+        <label>Technician</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_External_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_PlannedDate__c</fullName>
+        <externalId>false</externalId>
+        <label>Planned Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_DocumentDate__c</fullName>
+        <externalId>false</externalId>
+        <label>Document Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>BD_Platform_Event_Log__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/apex/SMAX_PS_PlatformEventLog?RelatedID=&quot; &amp; Id &amp; &quot;&amp;RelatedName=&quot; &amp; Name, &quot;View&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Platform Event Log</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_RequestedFrom__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Requested From</label>
+        <referenceTo>SVMXC__Site__c</referenceTo>
+        <relationshipLabel>Inventory Counts</relationshipLabel>
+        <relationshipName>Inventory_Counts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_StatusOfCount__c</fullName>
+        <description>Status A means that only some items have been counted. Status X means that all items have been counted.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Status A means that only some items have been counted. Status X means that all items have been counted.</inlineHelpText>
+        <label>Status of Count</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>A</fullName>
+                    <default>false</default>
+                    <label>A</label>
+                </value>
+                <value>
+                    <fullName>X</fullName>
+                    <default>false</default>
+                    <label>X</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Recount_Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Denotes that there is a recount required for the inventory count</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes that there is a recount required for the inventory count</inlineHelpText>
+        <label>Recount Required</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Service_Engineer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Service Engineer</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Inventory_Counts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_IsBlockedForPosting__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Blocked For Posting</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_RequestedTechnician__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Requested Technician</label>
+        <referenceTo>SVMXC__Service_Group_Members__c</referenceTo>
+        <relationshipLabel>Inventory Counts</relationshipLabel>
+        <relationshipName>Inventory_Counts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Freeze_Book_Inventory__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Freezes the Book Inventory for Inventory Count</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes that the inventory count record is deleted</inlineHelpText>
+        <label>Freeze Book Inventory</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Special_Stock_Indicator__c</fullName>
+        <description>Denotes a list of special stock indicators</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes a list of special stock indicators</inlineHelpText>
+        <label>Special Stock Indicator</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>&quot;E Orders on hand</fullName>
+                    <default>false</default>
+                    <label>&quot;E Orders on hand</label>
+                </value>
+                <value>
+                    <fullName>K Consignment (vendor)</fullName>
+                    <default>false</default>
+                    <label>K Consignment (vendor)</label>
+                </value>
+                <value>
+                    <fullName>M Ret.trans.pkg vendor</fullName>
+                    <default>false</default>
+                    <label>M Ret.trans.pkg vendor</label>
+                </value>
+                <value>
+                    <fullName>O Parts prov. vendor</fullName>
+                    <default>false</default>
+                    <label>O Parts prov. vendor</label>
+                </value>
+                <value>
+                    <fullName>P Pipeline material</fullName>
+                    <default>false</default>
+                    <label>P Pipeline material</label>
+                </value>
+                <value>
+                    <fullName>Q Project stock</fullName>
+                    <default>false</default>
+                    <label>Q Project stock</label>
+                </value>
+                <value>
+                    <fullName>V Ret. pkg w. customer</fullName>
+                    <default>false</default>
+                    <label>V Ret. pkg w. customer</label>
+                </value>
+                <value>
+                    <fullName>W Consignment (cust.)</fullName>
+                    <default>false</default>
+                    <label>W Consignment (cust.)</label>
+                </value>
+                <value>
+                    <fullName>Y Shipping unit (whse)&quot;</fullName>
+                    <default>false</default>
+                    <label>Y Shipping unit (whse)&quot;</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Is_Found_Item_True_Count__c</fullName>
+        <description>Count of Inventory Count Lines where Is Found Item field is TRUE. Used in Work Flow Email Alert</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Count of Inventory Count Lines where Is Found Item field is TRUE. Used in Work Flow Email Alert</inlineHelpText>
+        <label>Is Found Item True Count</label>
+        <summaryFilterItems>
+            <field>SMAX_PS_InventoryCountLine__c.SMAX_PS_Found_Item__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryForeignKey>SMAX_PS_InventoryCountLine__c.SMAX_PS_InventoryCount__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_StatusOfAdjustmentPosting__c</fullName>
+        <description>Status A means that inventory differences have been posted for some of the items of the physical inventory document only. For these items, the physical inventory has been completed. Status X means that differences have been posted for all items of the physical inventory document. The document can now be archived.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Status A means that inventory differences have been posted for some of the items of the physical inventory document only. For these items, the physical inventory has been completed. Status X means that differences have been posted for all items.</inlineHelpText>
+        <label>Status of Adjustment Posting</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>A</fullName>
+                    <default>false</default>
+                    <label>A</label>
+                </value>
+                <value>
+                    <fullName>X</fullName>
+                    <default>false</default>
+                    <label>X</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+</CustomObject>

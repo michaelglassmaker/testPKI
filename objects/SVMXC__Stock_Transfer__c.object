@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>SMAX_PS_Company_Code__c</fullName>
+        <description>Company code related to the location</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Company code related to the location</inlineHelpText>
+        <label>Company Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Open</fullName>
+                    <default>true</default>
+                    <label>Open</label>
+                </value>
+                <value>
+                    <fullName>Submitted</fullName>
+                    <default>false</default>
+                    <label>Submitted</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_VS_Perform_Stock_Transfer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field indicates if Stock Transfer needs to be performed or not. If set to true, Van Stock Transfer code will kick in and perform stock transfer</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field indicates if Stock Transfer needs to be performed or not. If set to true, Van Stock Transfer code will kick in and perform stock transfer</inlineHelpText>
+        <label>Perform Stock Transfer</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <validationRules>
+        <fullName>BD_Sales_Org_Validation</fullName>
+        <active>true</active>
+        <description>The Sales Org on the From Location and To Location should match.</description>
+        <errorConditionFormula>SVMXC__Source_Location__r.SMAX_PS_SalesOrg__c &lt;&gt; SVMXC__Destination_Location__r.SMAX_PS_SalesOrg__c</errorConditionFormula>
+        <errorMessage>Cannot transfer stock between Locations in different Sales Orgs. Please select a different Destination.</errorMessage>
+    </validationRules>
+</CustomObject>

@@ -372,8 +372,8 @@ Developed by ANNUITAS
                 else{
                     StatusChanged_Store_Leads_C.put(a.id, a);
                 }
-                
-                if(a.OwnerId != oldList_Contact.get(a.id).OwnerId && !SAI.Contains(a.Solution_Area_of_Interest__c) && (a.PDG_Does_Warm_Record_Route__c || a.PDG_Does_Hot_Record_Route__c)){
+            system.debug('oldList'+a.id+a.Solution_Area_of_Interest__c+a.PDG_Does_Warm_Record_Route__c+a.PDG_Does_Hot_Record_Route__c);
+               if(a.OwnerId != oldList_Contact.get(a.id).OwnerId && !SAI.Contains(a.Solution_Area_of_Interest__c) && (a.PDG_Does_Warm_Record_Route__c || a.PDG_Does_Hot_Record_Route__c)){
                     a.First_Owner_Changed__c ='Yes';
                     system.debug('[Class] <PDG_Routing> Owner Changed : Yes' + ' = ' + a.OwnerId + ' : ' + oldList_Contact.get(a.id).OwnerId);
                     

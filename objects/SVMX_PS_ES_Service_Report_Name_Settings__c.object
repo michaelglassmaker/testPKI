@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Stores mapping of Service Report Names</description>
+    <enableFeeds>false</enableFeeds>
+    <label>Email Service Report Name Settings</label>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>SVMX_PS_ES_Object_API_Name__c</fullName>
+        <description>This field carries the Object API Name</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field carries the Object API Name</inlineHelpText>
+        <label>Object API Name</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_ES_Record_Type_Name__c</fullName>
+        <description>This field carries the name of record type</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field carries the name of record type</inlineHelpText>
+        <label>Record Type Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_ES_Service_Report_Name__c</fullName>
+        <description>This field stores the names of service reports which need to be send. This should contain a unique set of characters which can be in attachment name and uniquely identify the document for sending. This can contain many names separated by comma</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field stores the names of service reports which need to be send. This should contain a unique set of characters which can be in attachment name and uniquely identify the document for sending. This can contain many names separated by comma</inlineHelpText>
+        <label>Service Report Name</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

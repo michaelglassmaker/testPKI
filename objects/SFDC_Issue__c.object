@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Issue related to a Project</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <label>Issue</label>
+    <nameField>
+        <displayFormat>ISS - {0000}</displayFormat>
+        <label>Issue Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Issues</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>SFDC_Issue_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SFDC_Issue_Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SFDC_Issue_Priority__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Issue Owner</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>R00N30000001ERKtEAO</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Due_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Due Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Issue_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Relates to</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sales Automation</fullName>
+                    <default>false</default>
+                    <label>Sales Automation</label>
+                </value>
+                <value>
+                    <fullName>Marketing Automation</fullName>
+                    <default>false</default>
+                    <label>Marketing Automation</label>
+                </value>
+                <value>
+                    <fullName>Support Automation</fullName>
+                    <default>false</default>
+                    <label>Support Automation</label>
+                </value>
+                <value>
+                    <fullName>User Adoption</fullName>
+                    <default>false</default>
+                    <label>User Adoption</label>
+                </value>
+                <value>
+                    <fullName>Data Hygiene</fullName>
+                    <default>false</default>
+                    <label>Data Hygiene</label>
+                </value>
+                <value>
+                    <fullName>User Training</fullName>
+                    <default>false</default>
+                    <label>User Training</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SFDC_Object__c</fullName>
+        <externalId>false</externalId>
+        <label>SFDC Object</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Lead</fullName>
+                    <default>false</default>
+                    <label>Lead</label>
+                </value>
+                <value>
+                    <fullName>Account</fullName>
+                    <default>false</default>
+                    <label>Account</label>
+                </value>
+                <value>
+                    <fullName>Contact</fullName>
+                    <default>false</default>
+                    <label>Contact</label>
+                </value>
+                <value>
+                    <fullName>Opportunity</fullName>
+                    <default>false</default>
+                    <label>Opportunity</label>
+                </value>
+                <value>
+                    <fullName>Tasks</fullName>
+                    <default>false</default>
+                    <label>Tasks</label>
+                </value>
+                <value>
+                    <fullName>Events</fullName>
+                    <default>false</default>
+                    <label>Events</label>
+                </value>
+                <value>
+                    <fullName>Assets</fullName>
+                    <default>false</default>
+                    <label>Assets</label>
+                </value>
+                <value>
+                    <fullName>Products</fullName>
+                    <default>false</default>
+                    <label>Products</label>
+                </value>
+                <value>
+                    <fullName>Documents</fullName>
+                    <default>false</default>
+                    <label>Documents</label>
+                </value>
+                <value>
+                    <fullName>Contracts</fullName>
+                    <default>false</default>
+                    <label>Contracts</label>
+                </value>
+                <value>
+                    <fullName>Cases</fullName>
+                    <default>false</default>
+                    <label>Cases</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SFDC_Issue_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Issue Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SFDC_Issue_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Issue Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>0 - Open</fullName>
+                    <default>false</default>
+                    <label>0 - Open</label>
+                </value>
+                <value>
+                    <fullName>1 - Being Addressed</fullName>
+                    <default>false</default>
+                    <label>1 - Being Addressed</label>
+                </value>
+                <value>
+                    <fullName>2 - In Escalation</fullName>
+                    <default>false</default>
+                    <label>2 - In Escalation</label>
+                </value>
+                <value>
+                    <fullName>3 - Closed</fullName>
+                    <default>false</default>
+                    <label>3 - Closed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SFDC_Issue_Priority__c</fullName>
+        <externalId>false</externalId>
+        <label>Issue Priority</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1 - Low</fullName>
+                    <default>false</default>
+                    <label>1 - Low</label>
+                </value>
+                <value>
+                    <fullName>2 - Medium</fullName>
+                    <default>false</default>
+                    <label>2 - Medium</label>
+                </value>
+                <value>
+                    <fullName>3 - High</fullName>
+                    <default>false</default>
+                    <label>3 - High</label>
+                </value>
+                <value>
+                    <fullName>4 - Very Urgent</fullName>
+                    <default>false</default>
+                    <label>4 - Very Urgent</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SFDC_Issue_Description__c</fullName>
+        <description>Description of the Issue in detail.</description>
+        <externalId>false</externalId>
+        <label>Issue Description</label>
+        <length>32000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+</CustomObject>

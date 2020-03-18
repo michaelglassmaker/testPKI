@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>SMAX_PS_Sum_of_Duration__c</fullName>
+        <externalId>false</externalId>
+        <label>Sum of Duration</label>
+        <summarizedField>SVMXC__Timesheet_Entry__c.SVMXC__Duration__c</summarizedField>
+        <summaryForeignKey>SVMXC__Timesheet_Entry__c.SVMXC__Timesheet_Day__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+</CustomObject>

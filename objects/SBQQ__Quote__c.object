@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>APAC_Quote_Template__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISPICKVAL(Legal_Entity__c,&apos;&apos;)), false,
+IF(AND (ISPICKVAL(Legal_Entity__c,&apos;&apos;),CPQ_Sales_Rep_Territory__c = &quot;JAPAN&quot;), TRUE, FALSE))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>APAC Quote Template</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ApprovalStatus__c</fullName>
+        <externalId>false</externalId>
+        <label>Approval Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+                <value>
+                    <fullName>Recalled</fullName>
+                    <default>false</default>
+                    <label>Recalled</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Approval_Locked__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Approval Locked</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Austria_Quote_Template__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Legal_Entity__c,&quot;AUSTRIA&quot;),TRUE,FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Austria Quote Template</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Belgium_Quote_Template__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Legal_Entity__c,&quot;BELGIUM&quot;),TRUE,FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Belgium Quote Template</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Account_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>SBQQ__Account__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CPQ_Alias__c</fullName>
+        <description>Used as an internal identifier for the quote.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used as an internal identifier for the quote.</inlineHelpText>
+        <label>Alias</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CPQ_Approvals_Region__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(SBQQ__SalesRep__r.Region__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Approvals Region</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CPQ_Cloud_Discount__c</fullName>
+        <description>Used for summary display on quote document.</description>
+        <externalId>false</externalId>
+        <label>Cloud Discount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Cloud_Gross_Price__c</fullName>
+        <description>Used for summary display on quote document.</description>
+        <externalId>false</externalId>
+        <label>Cloud Gross Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Cloud_Net_Price__c</fullName>
+        <description>Used for summary display on quote document.</description>
+        <externalId>false</externalId>
+        <label>Cloud Net Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Currency_Rate__c</fullName>
+        <externalId>false</externalId>
+        <formula>CURRENCYRATE(TEXT(CurrencyIsoCode))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Currency Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>10</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CPQ_Discount_Grand_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(CONTAINS(TEXT(CurrencyIsoCode),&quot;JPY&quot;), ROUND(CPQ_License_Discount__c,0) + ROUND(CPQ_Maintenance_Discount__c,0) + ROUND(CPQ_Services_Discount__c,0) + ROUND(CPQ_Cloud_Discount__c,0), ROUND(CPQ_License_Discount__c,2) + ROUND(CPQ_Maintenance_Discount__c,2) + ROUND(CPQ_Services_Discount__c,2) + ROUND(CPQ_Cloud_Discount__c,2))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Discount Grand Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Has_Cloud_Quote_Lines__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used to conditionally display cloud quote line section on output document.</description>
+        <externalId>false</externalId>
+        <label>Has Cloud Quote Lines</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Has_License_Quote_Lines__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used to conditionally display license quote line section on output document.</description>
+        <externalId>false</externalId>
+        <label>Has License Quote Lines</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Has_Maintenance_Quote_Lines__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used to conditionally display maintenance quote lines on output document.</description>
+        <externalId>false</externalId>
+        <label>Has Maintenance Quote Lines</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Has_Services_Quote_Lines__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used to conditionally display services quote lines on output document.</description>
+        <externalId>false</externalId>
+        <label>Has Services Quote Lines</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Hide_Discounts__c</fullName>
+        <externalId>false</externalId>
+        <formula>!CPQ_Show_Discounts__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Hide Discounts</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Hide_Line_Item_Prices__c</fullName>
+        <externalId>false</externalId>
+        <formula>!CPQ_Show_Line_Item_Prices__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Hide Line Item Prices</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Include_Cloud_Agreement__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Conditional checkbox for inclusion of the Cloud agreement additional document.</description>
+        <externalId>false</externalId>
+        <label>Include Cloud Agreement</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Include_InfomatiX_Agreement__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Conditional checkbox for inclusion of the InfomatiX agreement additional document.</description>
+        <externalId>false</externalId>
+        <label>Include InfomatiX Agreement</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Include_Informatics_Agreement_Japan__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(AND(CPQ_Include_Informatics_Agreement__c = TRUE,APAC_Quote_Template__c = TRUE), TRUE, FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Include Informatics Agreement Japan</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Include_Informatics_Agreement__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Conditional checkbox for inclusion of the Informatics agreement additional document.</description>
+        <externalId>false</externalId>
+        <label>Include Informatics Agreement</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Include_Informatics_Agrmt_Non_APAC__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(AND(Non_APAC_Quote_Template__c=TRUE, CPQ_Include_Informatics_Agreement__c=TRUE),TRUE,FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Include Informatics Agreement Non-APAC</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Include_SaaS_Agreement__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Include SaaS Agreement</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Level_1_Approver_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>SBQQ__SalesRep__r.Manager.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Level 1 Approver ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CPQ_License_Discount__c</fullName>
+        <description>Used for summary display on quote document.</description>
+        <externalId>false</externalId>
+        <label>License Discount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_License_Gross_Price__c</fullName>
+        <description>Used for summary display on quote document.</description>
+        <externalId>false</externalId>
+        <label>License Gross Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_License_Net_Price__c</fullName>
+        <description>Used for summary display on quote document.</description>
+        <externalId>false</externalId>
+        <label>License Net Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_List_Grand_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>SBQQ__ListAmount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>List Grand Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Maintenance_Discount__c</fullName>
+        <description>Used for summary display on quote document.</description>
+        <externalId>false</externalId>
+        <label>Maintenance Discount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Maintenance_Gross_Price__c</fullName>
+        <description>Used for summary display on quote document.</description>
+        <externalId>false</externalId>
+        <label>Maintenance Gross Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Maintenance_Net_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Maintenance Net Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Net_Grand_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(CONTAINS(TEXT(CurrencyIsoCode),&quot;JPY&quot;), ROUND(CPQ_License_Net_Price__c,0) + ROUND(CPQ_Maintenance_Net_Price__c,0) + ROUND(CPQ_Services_Net_Price__c,0) + ROUND(CPQ_Cloud_Net_Price__c,0), ROUND(CPQ_License_Net_Price__c,2) + ROUND(CPQ_Maintenance_Net_Price__c,2) + ROUND(CPQ_Services_Net_Price__c,2) + ROUND(CPQ_Cloud_Net_Price__c,2))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Net Grand Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Notes_Were_Changed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used to determine approvals if notes were changed.</description>
+        <externalId>false</externalId>
+        <label>Notes Were Changed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Reason_for_Request__c</fullName>
+        <description>Used to enter reasons for quote exceptions that will be displayed to approvers upon submission.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to enter reasons for quote exceptions that will be displayed to approvers upon submission.</inlineHelpText>
+        <label>Reason for Request</label>
+        <length>1000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CPQ_Sales_Rep_Sub_Region__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(SBQQ__SalesRep__r.Sub_Region__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sales Rep Sub Region</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CPQ_Sales_Rep_Territory__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(SBQQ__SalesRep__r.Territory__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sales Rep Territory</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CPQ_Segmented_Months__c</fullName>
+        <description>Used to define the period of coverage for segmented line items.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to define the period of coverage for segmented line items.</inlineHelpText>
+        <label>Segmented Months</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CPQ_Services_Discount__c</fullName>
+        <description>Used for summary display on quote document.</description>
+        <externalId>false</externalId>
+        <label>Services Discount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Services_Gross_Price__c</fullName>
+        <description>Used for summary display on quote document.</description>
+        <externalId>false</externalId>
+        <label>Services Gross Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Services_Net_Price__c</fullName>
+        <description>Used for summary display on quote document.</description>
+        <externalId>false</externalId>
+        <label>Services Net Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Show_Descriptions__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Show product descriptions on quote document.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Show product descriptions on quote document.</inlineHelpText>
+        <label>Show Descriptions</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Show_Discounts__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Used for quote document display.</description>
+        <externalId>false</externalId>
+        <label>Show Discounts</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Show_Line_Item_Prices__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Used for quote document display purposes.</description>
+        <externalId>false</externalId>
+        <label>Show Line Item Prices</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Show_Signature_Block__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used for quote document display purposes.</description>
+        <externalId>false</externalId>
+        <label>Show Signature Block</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Denmark_Quote_Template__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Legal_Entity__c,&quot;DENMARK&quot;),TRUE,FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Denmark Quote Template</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Direct_Manager__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner:User.Direct_Manager__r.FirstName&amp;&quot; &quot;&amp;Owner:User.Direct_Manager__r.LastName</formula>
+        <label>Direct Manager</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DocumentCurrencySymbol__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(CurrencyIsoCode,
+&quot;CHF&quot;,&quot;Fr.&quot;,
+&quot;EUR&quot;,&quot;€&quot;,
+&quot;GBP&quot;,&quot;£&quot;,
+&quot;JPY&quot;,&quot;¥&quot;,
+&quot;USD&quot;,&quot;$&quot;,
+&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>DocumentCurrencySymbol</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Finland_Quote_Template__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Legal_Entity__c,&quot;FINLAND&quot;),TRUE,FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Finland Quote Template</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>France_Quote_Template__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Legal_Entity__c,&quot;FRANCE&quot;),TRUE,FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>France Quote Template</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Germany_Quote_Template__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Legal_Entity__c,&quot;GERMANY&quot;),TRUE,FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Germany Quote Template</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Global_Region__c</fullName>
+        <externalId>false</externalId>
+        <formula>SBQQ__Account__r.PKI_Global_Region__c</formula>
+        <label>Global Region</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ireland_Quote_Template__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Legal_Entity__c,&quot;IRELAND&quot;),TRUE,FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Ireland Quote Template</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Israel_Quote_Template__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Legal_Entity__c,&quot;ISRAEL&quot;),TRUE,FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Israel Quote Template</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Legal_Entity__c</fullName>
+        <externalId>false</externalId>
+        <label>Legal Entity</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AUSTRIA</fullName>
+                    <default>false</default>
+                    <label>AUSTRIA</label>
+                </value>
+                <value>
+                    <fullName>BELGIUM</fullName>
+                    <default>false</default>
+                    <label>BELGIUM</label>
+                </value>
+                <value>
+                    <fullName>DENMARK</fullName>
+                    <default>false</default>
+                    <label>DENMARK</label>
+                </value>
+                <value>
+                    <fullName>FINLAND</fullName>
+                    <default>false</default>
+                    <label>FINLAND</label>
+                </value>
+                <value>
+                    <fullName>GERMANY</fullName>
+                    <default>false</default>
+                    <label>GERMANY</label>
+                </value>
+                <value>
+                    <fullName>NETHERLANDS</fullName>
+                    <default>false</default>
+                    <label>NETHERLANDS</label>
+                </value>
+                <value>
+                    <fullName>NORWAY</fullName>
+                    <default>false</default>
+                    <label>NORWAY</label>
+                </value>
+                <value>
+                    <fullName>SWEDEN</fullName>
+                    <default>false</default>
+                    <label>SWEDEN</label>
+                </value>
+                <value>
+                    <fullName>SWITZERLAND</fullName>
+                    <default>false</default>
+                    <label>SWITZERLAND</label>
+                </value>
+                <value>
+                    <fullName>UNITEDKING</fullName>
+                    <default>false</default>
+                    <label>UNITEDKING</label>
+                </value>
+                <value>
+                    <fullName>FRANCE</fullName>
+                    <default>false</default>
+                    <label>FRANCE</label>
+                </value>
+                <value>
+                    <fullName>SPAIN</fullName>
+                    <default>false</default>
+                    <label>SPAIN</label>
+                </value>
+                <value>
+                    <fullName>IRELAND</fullName>
+                    <default>false</default>
+                    <label>IRELAND</label>
+                </value>
+                <value>
+                    <fullName>ISRAEL</fullName>
+                    <default>false</default>
+                    <label>ISRAEL</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Netherlands_Quote_Template__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Legal_Entity__c,&quot;NETHERLANDS&quot;),TRUE,FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Netherlands Quote Template</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Non_APAC_Quote_Template__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISPICKVAL(Legal_Entity__c,&apos;&apos;)), false,
+if(AND(ISPICKVAL(Legal_Entity__c,&apos;&apos;),NOT(CPQ_Sales_Rep_Territory__c=&apos;JAPAN&apos;)),true,
+ false))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Non-APAC Quote Template</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Norway_Quote_Template__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Legal_Entity__c,&quot;NORWAY&quot;),TRUE,FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Norway Quote Template</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Oppt_Pricebook__c</fullName>
+        <externalId>false</externalId>
+        <formula>SBQQ__Opportunity2__r.Pricebook2.Name</formula>
+        <label>Oppt Pricebook</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quote_Count__c</fullName>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <label>Quote Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quote_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Quote Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quote_Template_Header__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(AND(CPQ_Sales_Rep_Territory__c= &quot;JAPAN&quot;, ISPICKVAL(Legal_Entity__c, &apos;&apos;)) , &quot;PerkinElmer Japan Co. Ltd.&quot;, 
+if(AND(ISPICKVAL(Legal_Entity__c, &quot;AUSTRIA&quot;), NOT(ISPICKVAL(Legal_Entity__c, &apos;&apos;))),&apos;PerkinElmer Vertriebs GmbH&apos;,
+if(AND(ISPICKVAL(Legal_Entity__c , &quot;BELGIUM&quot;), NOT(ISPICKVAL(Legal_Entity__c, &apos;&apos;))),&apos;PerkinElmer bvba/sprl&apos;,
+if(AND(ISPICKVAL(Legal_Entity__c , &quot;DENMARK&quot;), NOT(ISPICKVAL(Legal_Entity__c, &apos;&apos;))),&apos;PerkinElmer Danmark A/S&apos;,
+if(AND(ISPICKVAL(Legal_Entity__c , &quot;FINLAND&quot;), NOT(ISPICKVAL(Legal_Entity__c, &apos;&apos;))),&apos;PerkinElmer Finland OY&apos;,
+if(AND(ISPICKVAL(Legal_Entity__c , &quot;GERMANY&quot;), NOT(ISPICKVAL(Legal_Entity__c, &apos;&apos;))),&apos;PerkinElmer LAS (Germany) GmbH&apos;,
+if(AND(ISPICKVAL(Legal_Entity__c , &quot;NETHERLANDS&quot;), NOT(ISPICKVAL(Legal_Entity__c, &apos;&apos;))),&apos;PerkinElmer Nederland B.V.&apos;,
+if(AND(ISPICKVAL(Legal_Entity__c , &quot;SWEDEN&quot;), NOT(ISPICKVAL(Legal_Entity__c, &apos;&apos;))),&apos;PerkinElmer Sverige AB&apos;,
+if(AND(ISPICKVAL(Legal_Entity__c , &quot;SWITZERLAND&quot;), NOT(ISPICKVAL(Legal_Entity__c, &apos;&apos;))),&apos;PerkinElmer (Schweiz) AG&apos;,
+if(AND(ISPICKVAL(Legal_Entity__c , &quot;UNITEDKING&quot;), NOT(ISPICKVAL(Legal_Entity__c, &apos;&apos;))),&apos;PerkinElmer LAS (UK) Ltd&apos;,
+if(AND(ISPICKVAL(Legal_Entity__c , &quot;FRANCE&quot;), NOT(ISPICKVAL(Legal_Entity__c, &apos;&apos;))),&apos;PerkinElmer SAS&apos;,
+if(AND(ISPICKVAL(Legal_Entity__c , &quot;SPAIN&quot;), NOT(ISPICKVAL(Legal_Entity__c, &apos;&apos;))),&apos;PerkinElmer Espana S.L&apos;,
+if(AND(ISPICKVAL(Legal_Entity__c , &quot;IRELAND&quot;), NOT(ISPICKVAL(Legal_Entity__c, &apos;&apos;))),&apos;PerkinElmer Ireland Limited&apos;,
+if(AND(ISPICKVAL(Legal_Entity__c , &quot;ISRAEL&quot;), NOT(ISPICKVAL(Legal_Entity__c, &apos;&apos;))),&apos;PerkinElmer Israel&apos;,
+if(AND(ISPICKVAL(Legal_Entity__c , &quot;NORWAY&quot;), NOT(ISPICKVAL(Legal_Entity__c, &apos;&apos;))),&apos;PerkinElmer Norge AS&apos;,
+&quot;PerkinElmer Informatics, Inc.&quot; )))))))))))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Quote Template Header</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Show_Discount_Price_Column__c</fullName>
+        <externalId>false</externalId>
+        <formula>AND(CPQ_Show_Discounts__c, CPQ_Show_Line_Item_Prices__c)</formula>
+        <label>Show Discount Price Column</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Show_Extended_Price_Column__c</fullName>
+        <externalId>false</externalId>
+        <formula>AND(CPQ_Show_Discounts__c, CPQ_Show_Line_Item_Prices__c)</formula>
+        <label>Show Extended Price Column</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Show_List_Price_Column__c</fullName>
+        <externalId>false</externalId>
+        <formula>AND(CPQ_Show_Discounts__c, CPQ_Show_Line_Item_Prices__c)</formula>
+        <label>Show List Price Column</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Show_Net_Price_Column__c</fullName>
+        <externalId>false</externalId>
+        <formula>CPQ_Show_Line_Item_Prices__c</formula>
+        <label>Show Net Price Column</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Spain_Quote_Template__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Legal_Entity__c,&quot;SPAIN&quot;),TRUE,FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Spain Quote Template</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SubmittedDate__c</fullName>
+        <externalId>false</externalId>
+        <label>Submitted Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SubmittedUser__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Submitted User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Quotes</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Sweden_Quote_Template__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Legal_Entity__c,&quot;SWEDEN&quot;),TRUE,FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sweden Quote Template</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Switzerland_Quote_Template__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Legal_Entity__c,&quot;SWITZERLAND&quot;),TRUE,FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Switzerland Quote Template</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Terms_Notes__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>For Contracts Use Only</inlineHelpText>
+        <label>Terms Notes</label>
+        <length>10000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Test_Record__c</fullName>
+        <externalId>false</externalId>
+        <formula>SBQQ__Account__r.PKI_Test_Record__c</formula>
+        <label>Test Record</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>United_King_Quote_Template__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Legal_Entity__c,&quot;UNITEDKING&quot;),TRUE,FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>United King Quote Template</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <validationRules>
+        <fullName>Cannot_Create_Quote_on_Closed_Oppty</fullName>
+        <active>false</active>
+        <errorConditionFormula>ISNEW()
+&amp;&amp;
+ISPICKVAL(SBQQ__Opportunity2__r.StageName, &apos;Closed Won&apos;)</errorConditionFormula>
+        <errorMessage>You cannot create a quote on a closed opportunity.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>No_Updates_After_Pending_and_Approved</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF( 
+AND(PRIORVALUE(SBQQ__NetAmount__c)!=SBQQ__NetAmount__c,Approval_Locked__c!=TRUE, 
+OR(ISPICKVAL(ApprovalStatus__c,&apos;Pending&apos;),ISPICKVAL(ApprovalStatus__c,&apos;Approved&apos;)) 
+),TRUE,FALSE)</errorConditionFormula>
+        <errorMessage>To make additional changes, you must “Recall” the Quote approval</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>No_Updates_after_Quote_Locked</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF( 
+AND(PRIORVALUE(SBQQ__NetAmount__c)!=SBQQ__NetAmount__c,Approval_Locked__c==TRUE),TRUE,FALSE)</errorConditionFormula>
+        <errorMessage>Quote is Locked.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Notes_cannot_be_changed</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF( 
+AND(
+  OR(ISCHANGED(SBQQ__Notes__c),ISCHANGED(Terms_Notes__c)),
+     ISPICKVAL(ApprovalStatus__c,&apos;Approved&apos;)
+   ),TRUE,FALSE)</errorConditionFormula>
+        <errorMessage>To make additional changes, you must “Recall” the Quote approval</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Preview_Approval</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Preview Approval</masterLabel>
+        <openType>noSidebar</openType>
+        <protected>false</protected>
+        <url>/apex/sbaa__PreviewApprovals?Id={!SBQQ__Quote__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Recall_Approval</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Recall Approval</masterLabel>
+        <openType>noSidebar</openType>
+        <page>RecallQuote</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>Submit_for_Approval</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Submit for Approval</masterLabel>
+        <openType>noSidebar</openType>
+        <page>SubmitQuote</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

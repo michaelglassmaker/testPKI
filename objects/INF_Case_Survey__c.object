@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <label>Case Survey</label>
+    <nameField>
+        <displayFormat>Survey-{0000}</displayFormat>
+        <label>Case Survey Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Case Surveys</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>Case__c</fullName>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Case Surveys</relationshipLabel>
+        <relationshipName>Case_Surveys</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Case_Survey_Year__c</fullName>
+        <externalId>false</externalId>
+        <formula>Case_Survey_Month__c+&apos; &apos;+TEXT(YEAR(DATEVALUE(CreatedDate)))</formula>
+        <label>Case Survey Year</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Survey_Month__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(Month(DATEVALUE(CreatedDate)), 
+1,&quot;Jan&quot;, 
+2,&quot;Feb&quot;, 
+3,&quot;Mar&quot;, 
+4,&quot;Apr&quot;, 
+5,&quot;May&quot;, 
+6,&quot;Jun&quot;, 
+7,&quot;Jul&quot;, 
+8,&quot;Aug&quot;, 
+9,&quot;Sep&quot;, 
+10,&quot;Oct&quot;, 
+11,&quot;Nov&quot;, 
+12,&quot;Dec&quot;, 
+&quot;None&quot;)</formula>
+        <label>Case Survey Month</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>INF_Support_Sat_No__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Support Satisfaction No</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>INF_Support_Sat_Bin__c</fullName>
+        <externalId>false</externalId>
+        <label>Support Satisfaction Bin</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No Solution</fullName>
+                    <default>false</default>
+                    <label>No Solution</label>
+                </value>
+                <value>
+                    <fullName>Phone Issues</fullName>
+                    <default>false</default>
+                    <label>Phone Issues</label>
+                </value>
+                <value>
+                    <fullName>Rep Communication Skills</fullName>
+                    <default>false</default>
+                    <label>Rep Communication Skills</label>
+                </value>
+                <value>
+                    <fullName>SDK</fullName>
+                    <default>false</default>
+                    <label>SDK</label>
+                </value>
+                <value>
+                    <fullName>Software Activation</fullName>
+                    <default>false</default>
+                    <label>Software Activation</label>
+                </value>
+                <value>
+                    <fullName>Software Defect</fullName>
+                    <default>false</default>
+                    <label>Software Defect</label>
+                </value>
+                <value>
+                    <fullName>Took too long</fullName>
+                    <default>false</default>
+                    <label>Took too long</label>
+                </value>
+                <value>
+                    <fullName>Unsupported Environment</fullName>
+                    <default>false</default>
+                    <label>Unsupported Environment</label>
+                </value>
+                <value>
+                    <fullName>Others</fullName>
+                    <default>false</default>
+                    <label>Others</label>
+                </value>
+                <value>
+                    <fullName>Problem Solved</fullName>
+                    <default>false</default>
+                    <label>Problem Solved</label>
+                </value>
+                <value>
+                    <fullName>Fast Resolution</fullName>
+                    <default>false</default>
+                    <label>Fast Resolution</label>
+                </value>
+                <value>
+                    <fullName>Rep Understanding of the Problem</fullName>
+                    <default>false</default>
+                    <label>Rep Understanding of the Problem</label>
+                </value>
+                <value>
+                    <fullName>Frequency of Updates</fullName>
+                    <default>false</default>
+                    <label>Frequency of Updates</label>
+                </value>
+                <value>
+                    <fullName>Excellent Service</fullName>
+                    <default>false</default>
+                    <label>Excellent Service</label>
+                </value>
+                <value>
+                    <fullName>Excellent Product</fullName>
+                    <default>false</default>
+                    <label>Excellent Product</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>INF_Support_Sat_Yes__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Support Satisfaction Yes</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>INF_Support_sat_Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Support Satisfaction Comments</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>INF_Recently_Created_Survey__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Recently Created Survey</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+</CustomObject>

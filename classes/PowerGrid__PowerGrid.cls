@@ -32,6 +32,14 @@ global class PowerGrid extends PowerLoader.Configero_Base {
         return null;
     }
     @RemoteAction
+    global static void noop() {
+
+    }
+    @RemoteAction
+    global static void saveCurrentPagePreference(String url, Map<String,String> prefMap) {
+
+    }
+    @RemoteAction
     global static Map<String,Map<String,Set<String>>> submitForApproval(List<Id> objIds) {
         return null;
     }

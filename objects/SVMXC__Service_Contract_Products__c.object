@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>SMAX_PS_Active__c</fullName>
+        <externalId>false</externalId>
+        <formula>SVMXC__Service_Contract__r.SVMXC__Active__c  &amp;&amp; 
+ NOT(SVMXC__Service_Contract__r.SMAX_PS_IsDeleted__c) &amp;&amp; 
+ NOT(SMAX_PS_IsDeleted__c)</formula>
+        <label>Is Active</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_External_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Covered Product Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_IsDeleted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Deleted</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_LastTxnNum__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Transaction Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Next_PM_Date__c</fullName>
+        <description>This custom date field is the next PM date for the covered product. This date is filled via process builder using the recommended PM Date from the Parent IP</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This custom date field is the next PM date for the covered product. This date is filled via process builder using the recommended PM Date from the Parent IP</inlineHelpText>
+        <label>Next PM Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Parent_Contract__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Look up to the Parent contract, if applicable</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Look up to the Parent contract, if applicable</inlineHelpText>
+        <label>Parent Contract</label>
+        <referenceTo>SVMXC__Service_Contract__c</referenceTo>
+        <relationshipLabel>Covered Products (Parent Contract)</relationshipLabel>
+        <relationshipName>Covered_Products</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_SAP_Equipment_Number__c</fullName>
+        <description>Displays the SAP Equipment Number from the Installed Product</description>
+        <externalId>false</externalId>
+        <formula>SVMXC__Installed_Product__r.SVMX_PS_External_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Displays the SAP Equipment Number from the Installed Product</inlineHelpText>
+        <label>SAP Equipment Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_SLA_Terms_Notes__c</fullName>
+        <description>Phase 0.1</description>
+        <externalId>false</externalId>
+        <label>SLA Terms Notes</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(SVMXC__Installed_Product__r.SVMXC__Status__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Contract_Active__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(SMAX_PS_IsDeleted__c = true,IMAGE(&quot;/servlet/servlet.FileDownload?file=0153A000004IFeR&quot;, &quot;Red&quot;), SVMXC__Service_Contract__r.SVMX_PS_Item_Status__c)</formula>
+        <inlineHelpText>A green symbol will display if the Contract Item is within the Contract Detail Start and End Dates.</inlineHelpText>
+        <label>Item Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

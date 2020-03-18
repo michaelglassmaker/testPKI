@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>This lists all settings required for emailing the service report</description>
+    <enableFeeds>false</enableFeeds>
+    <label>Email Service Report Settings</label>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>SVMX_PS_ES_Value__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This holds if the functionality is on or off</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This holds if the functionality is on or off</inlineHelpText>
+        <label>Value</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_ES_Text_Value__c</fullName>
+        <description>This holds the value for functionality</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This holds the value for functionality</inlineHelpText>
+        <label>Text Value</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

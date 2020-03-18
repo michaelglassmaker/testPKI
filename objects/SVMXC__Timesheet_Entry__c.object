@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>SMAX_PS_Link_to_SFDC_Event__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK( &quot;/&quot; &amp; SVMXC__Salesforce_Event__c, 
+                  BLANKVALUE(SVMXC__Salesforce_Event__c, &quot;N/A&quot;)
+                )</formula>
+        <label>Link to SFDC Event</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Reported_Service_Time__c</fullName>
+        <description>Will be populated for Labor and Travel from the Line Quantity field on the WO Line.  This would be used to show time on the WO and not just a Start/End of the specific Entry</description>
+        <externalId>false</externalId>
+        <label>Reported Service Time</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Productive_Time__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Productive Time</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_TS_Time_Entry_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Time Entry End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_TS_Time_Entry_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Time Entry Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_TS_Timesheet_Daily_Summary_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Timesheet Daily Summary Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+</CustomObject>

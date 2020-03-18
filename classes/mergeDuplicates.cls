@@ -347,8 +347,12 @@ public void mergeContacts() {
     // Get Master record with child records list.
         for(myWrapperClass selectedMergeObj: accSelectedResults){
         
-                if(selectedMergeObj.isMasterselected == true)
-                {
+            //MG commented out lines 354-363  testing w Vibha to omit Merge Flag logic - non-result, will refer to AccountMethods
+            // line 210   where Merged_Flag__c is considered   comment that method as well and reComment 354-363 herein as well.
+            //Then  TEST  Territory ReAlignmewnt on Accounts without using Merged Flag  boolean logic
+             
+       /*      if(selectedMergeObj.isMasterselected == true)
+               {
                       //myaccReq.masterRecord = selectedMergeObj.acc; 
                        if(selectedMergeObj.RecordType == 'Customer')
                              {
@@ -356,7 +360,7 @@ public void mergeContacts() {
                                selectedMergeObj.acc.IsExcludedFromRealign= false;
                              }
                       masterRecObject.add(selectedMergeObj.acc);   
-                }
+                }   */
                
            }     
              

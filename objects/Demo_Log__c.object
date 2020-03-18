@@ -1,0 +1,3584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <label>Demo Log</label>
+    <nameField>
+        <displayFormat>INF-RML-{000000000}</displayFormat>
+        <label>Demo Request No#</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Demo Log</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>Demo_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Opportunity__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>OWNER.LAST_NAME</lookupDialogsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>OS__c</fullName>
+        <externalId>false</externalId>
+        <label>Operating system required instead of OS</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>MS 2008 R2 64bit</fullName>
+                    <default>false</default>
+                    <label>MS 2008 R2 64bit</label>
+                </value>
+                <value>
+                    <fullName>MS 2012 R2 64bit</fullName>
+                    <default>false</default>
+                    <label>MS 2012 R2 64bit</label>
+                </value>
+                <value>
+                    <fullName>Linux</fullName>
+                    <default>false</default>
+                    <label>Linux</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Instrument Demonstration</fullName>
+                    <default>true</default>
+                    <label>Instrument Demonstration</label>
+                </value>
+                <value>
+                    <fullName>Training-PKI</fullName>
+                    <default>false</default>
+                    <label>Training-PKI</label>
+                </value>
+                <value>
+                    <fullName>Training-Customer</fullName>
+                    <default>false</default>
+                    <label>Training-Customer</label>
+                </value>
+                <value>
+                    <fullName>Reagent Evaluation</fullName>
+                    <default>false</default>
+                    <label>Reagent Evaluation</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Type2__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Parked</fullName>
+                    <default>false</default>
+                    <label>Parked</label>
+                </value>
+                <value>
+                    <fullName>Internal Use</fullName>
+                    <default>false</default>
+                    <label>Internal Use</label>
+                </value>
+                <value>
+                    <fullName>Template</fullName>
+                    <default>false</default>
+                    <label>Template</label>
+                </value>
+                <value>
+                    <fullName>Cloud Parked</fullName>
+                    <default>false</default>
+                    <label>Cloud Parked</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Comment__c</fullName>
+        <externalId>false</externalId>
+        <label>Comment</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <externalId>false</externalId>
+        <label>Other Products of Interest</label>
+        <length>32</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Retired__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Retired?</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Urgency__c</fullName>
+        <externalId>false</externalId>
+        <label>Urgency</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Industry__c</fullName>
+        <description>the industry field from the Demonstration Information Form</description>
+        <externalId>false</externalId>
+        <label>Industry</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Academic/Research</fullName>
+                    <default>false</default>
+                    <label>Academic/Research</label>
+                </value>
+                <value>
+                    <fullName>Agricultural</fullName>
+                    <default>false</default>
+                    <label>Agricultural</label>
+                </value>
+                <value>
+                    <fullName>Biotech</fullName>
+                    <default>false</default>
+                    <label>Biotech</label>
+                </value>
+                <value>
+                    <fullName>Chemical</fullName>
+                    <default>false</default>
+                    <label>Chemical</label>
+                </value>
+                <value>
+                    <fullName>Chemistry</fullName>
+                    <default>false</default>
+                    <label>Chemistry</label>
+                </value>
+                <value>
+                    <fullName>Clinical</fullName>
+                    <default>false</default>
+                    <label>Clinical</label>
+                </value>
+                <value>
+                    <fullName>Contract Research Labs.</fullName>
+                    <default>false</default>
+                    <label>Contract Research Labs.</label>
+                </value>
+                <value>
+                    <fullName>CRO</fullName>
+                    <default>false</default>
+                    <label>CRO</label>
+                </value>
+                <value>
+                    <fullName>Dealer</fullName>
+                    <default>false</default>
+                    <label>Dealer</label>
+                </value>
+                <value>
+                    <fullName>Distributor</fullName>
+                    <default>false</default>
+                    <label>Distributor</label>
+                </value>
+                <value>
+                    <fullName>Electronic</fullName>
+                    <default>false</default>
+                    <label>Electronic</label>
+                </value>
+                <value>
+                    <fullName>Energy</fullName>
+                    <default>false</default>
+                    <label>Energy</label>
+                </value>
+                <value>
+                    <fullName>Environmental</fullName>
+                    <default>false</default>
+                    <label>Environmental</label>
+                </value>
+                <value>
+                    <fullName>Food &amp; Fragrance</fullName>
+                    <default>false</default>
+                    <label>Food &amp; Fragrance</label>
+                </value>
+                <value>
+                    <fullName>Forensics</fullName>
+                    <default>false</default>
+                    <label>Forensics</label>
+                </value>
+                <value>
+                    <fullName>Government</fullName>
+                    <default>false</default>
+                    <label>Government</label>
+                </value>
+                <value>
+                    <fullName>Health Services</fullName>
+                    <default>false</default>
+                    <label>Health Services</label>
+                </value>
+                <value>
+                    <fullName>Incubator</fullName>
+                    <default>false</default>
+                    <label>Incubator</label>
+                </value>
+                <value>
+                    <fullName>Lubricating/Used Oils</fullName>
+                    <default>false</default>
+                    <label>Lubricating/Used Oils</label>
+                </value>
+                <value>
+                    <fullName>Medical Device</fullName>
+                    <default>false</default>
+                    <label>Medical Device</label>
+                </value>
+                <value>
+                    <fullName>Mining</fullName>
+                    <default>false</default>
+                    <label>Mining</label>
+                </value>
+                <value>
+                    <fullName>Pharmceutical</fullName>
+                    <default>false</default>
+                    <label>Pharmceutical</label>
+                </value>
+                <value>
+                    <fullName>Scientific Equipment</fullName>
+                    <default>false</default>
+                    <label>Scientific Equipment</label>
+                </value>
+                <value>
+                    <fullName>Software</fullName>
+                    <default>false</default>
+                    <label>Software</label>
+                </value>
+                <value>
+                    <fullName>Speciality Chemicals</fullName>
+                    <default>false</default>
+                    <label>Speciality Chemicals</label>
+                </value>
+                <value>
+                    <fullName>Supplier</fullName>
+                    <default>false</default>
+                    <label>Supplier</label>
+                </value>
+                <value>
+                    <fullName>Water/Wastewater</fullName>
+                    <default>false</default>
+                    <label>Water/Wastewater</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Location__c</fullName>
+        <externalId>false</externalId>
+        <label>Location</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AWS</fullName>
+                    <default>false</default>
+                    <label>AWS</label>
+                </value>
+                <value>
+                    <fullName>DMZ</fullName>
+                    <default>false</default>
+                    <label>DMZ</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Password__c</fullName>
+        <externalId>false</externalId>
+        <label>Password</label>
+        <length>15</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Template__c</fullName>
+        <externalId>false</externalId>
+        <label>Template</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ENotebook 2014 R6 + COE 12.6.2 OOTB [C1262E2014R6Tem]</fullName>
+                    <default>false</default>
+                    <label>ENotebook 2014 R6 + COE 12.6.2 OOTB [C1262E2014R6Tem]</label>
+                </value>
+                <value>
+                    <fullName>ENotebook 2014 R5.1 + COE 12.6.2 (190) [EUC1261E2014Tem]</fullName>
+                    <default>false</default>
+                    <label>ENotebook 2014 R5.1 + COE 12.6.2 (190) [EUC1261E2014Tem]</label>
+                </value>
+                <value>
+                    <fullName>European CBOE 12.5.1 + EN 12.1.X System (165) [EUCOE125D1]</fullName>
+                    <default>false</default>
+                    <label>European CBOE 12.5.1 + EN 12.1.X System (165) [EUCOE125D1]</label>
+                </value>
+                <value>
+                    <fullName>CBOE 12.5.1 + ELN 12.1.X OOTB [CRCOE1251Tem]</fullName>
+                    <default>false</default>
+                    <label>CBOE 12.5.1 + ELN 12.1.X OOTB [CRCOE1251Tem]</label>
+                </value>
+                <value>
+                    <fullName>Win 2012 + Ora 11g R2 clean [W2012ORA11Tem]</fullName>
+                    <default>false</default>
+                    <label>Win 2012 + Ora 11g R2 clean [W2012ORA11Tem]</label>
+                </value>
+                <value>
+                    <fullName>Win 2008 + Ora 11g R2 clean [W2K8R2ORA]</fullName>
+                    <default>false</default>
+                    <label>Win 2008 + Ora 11g R2 clean [W2K8R2ORA]</label>
+                </value>
+                <value>
+                    <fullName>Win 2012 clean [W2012Tem]</fullName>
+                    <default>false</default>
+                    <label>Win 2012 clean [W2012Tem]</label>
+                </value>
+                <value>
+                    <fullName>Win 2008 clean [WIN2K8R2Tem]</fullName>
+                    <default>false</default>
+                    <label>Win 2008 clean [WIN2K8R2Tem]</label>
+                </value>
+                <value>
+                    <fullName>Win 2008 + MSSQL 2008 clean [W2K8R2MSSQL]</fullName>
+                    <default>false</default>
+                    <label>Win 2008 + MSSQL 2008 clean [W2K8R2MSSQL]</label>
+                </value>
+                <value>
+                    <fullName>Win 2008 + Ms SharePoint Foundation [AMESHRPNTD120]</fullName>
+                    <default>false</default>
+                    <label>Win 2008 + Ms SharePoint Foundation [AMESHRPNTD120]</label>
+                </value>
+                <value>
+                    <fullName>Spotfire Server [Advise version and add-ons required]</fullName>
+                    <default>false</default>
+                    <label>Spotfire Server [Advise version and add-ons required]</label>
+                </value>
+                <value>
+                    <fullName>New system [Please specify at the comment your needs]</fullName>
+                    <default>false</default>
+                    <label>New system [Please specify at the comment your needs]</label>
+                </value>
+                <value>
+                    <fullName>AWS New System [Please specify at the comment your needs]</fullName>
+                    <default>false</default>
+                    <label>AWS New System [Please specify at the comment your needs]</label>
+                </value>
+                <value>
+                    <fullName>System Configuration [Please specify at the comment your needs]</fullName>
+                    <default>false</default>
+                    <label>System Configuration [Please specify at the comment your needs]</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Demo_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Demo Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Demo_Site__c</fullName>
+        <externalId>false</externalId>
+        <label>Demo Site</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Customer Site</fullName>
+                    <default>true</default>
+                    <label>Customer Site</label>
+                </value>
+                <value>
+                    <fullName>Waltham Technical Center</fullName>
+                    <default>false</default>
+                    <label>Waltham Technical Center</label>
+                </value>
+                <value>
+                    <fullName>Atlanta Technical Center</fullName>
+                    <default>false</default>
+                    <label>Atlanta Technical Center</label>
+                </value>
+                <value>
+                    <fullName>San Jose Technical Center</fullName>
+                    <default>false</default>
+                    <label>San Jose Technical Center</label>
+                </value>
+                <value>
+                    <fullName>Oakbrook Technical Center</fullName>
+                    <default>false</default>
+                    <label>Oakbrook Technical Center</label>
+                </value>
+                <value>
+                    <fullName>Shelton Technical Center</fullName>
+                    <default>false</default>
+                    <label>Shelton Technical Center</label>
+                </value>
+                <value>
+                    <fullName>Jorgenson Machinery/ PKI Houston</fullName>
+                    <default>false</default>
+                    <label>Jorgenson Machinery/ PKI Houston</label>
+                </value>
+                <value>
+                    <fullName>Woodbridge Technical Center</fullName>
+                    <default>false</default>
+                    <label>Woodbridge Technical Center</label>
+                </value>
+                <value>
+                    <fullName>Japan Demo Lab</fullName>
+                    <default>false</default>
+                    <label>Japan Demo Lab</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Demo_Team__c</fullName>
+        <description>All the demo team</description>
+        <externalId>false</externalId>
+        <label>Team Members</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Level_INF__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Estimated effort. Level 1 (&lt;1 day), 2 (1-2 days) 3 (&gt;2 days)</inlineHelpText>
+        <label>Level</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Title_INF__c</fullName>
+        <externalId>false</externalId>
+        <label>Title</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Region_INF__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.Account.ShippingCountry</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Shipping Country</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status_INF__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Scheduled</fullName>
+                    <default>false</default>
+                    <label>Scheduled</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>On Hold</fullName>
+                    <default>false</default>
+                    <label>On Hold</label>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                    <label>Cancelled</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Age_in_Days__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISPICKVAL(Status_INF__c, &quot;Completed&quot;), Completion_Date_INF__c - Scheduled_Date_INF__c , 
+IF( ISPICKVAL(Status_INF__c, &quot;Cancelled&quot;), 0, 
+DATETIMEVALUE(TODAY ())- CreatedDate))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Age in Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Assigned_To__c</fullName>
+        <externalId>false</externalId>
+        <label>Assigned To</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Luis Diaz</fullName>
+                    <default>false</default>
+                    <label>Luis Diaz</label>
+                </value>
+                <value>
+                    <fullName>Franklin Jimenez</fullName>
+                    <default>false</default>
+                    <label>Franklin Jimenez</label>
+                </value>
+                <value>
+                    <fullName>Edgardo Gutierrez</fullName>
+                    <default>false</default>
+                    <label>Edgardo Gutierrez</label>
+                </value>
+                <value>
+                    <fullName>John Baker</fullName>
+                    <default>false</default>
+                    <label>John Baker</label>
+                </value>
+                <value>
+                    <fullName>Stepan Churukanov</fullName>
+                    <default>false</default>
+                    <label>Stepan Churukanov</label>
+                </value>
+                <value>
+                    <fullName>Demo Center</fullName>
+                    <default>true</default>
+                    <label>Demo Center</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Competitors__c</fullName>
+        <externalId>false</externalId>
+        <label>Competitors</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipName>R00N30000001GFdsEAG</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Parent_Demo__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Parent Demo</label>
+        <referenceTo>Demo_Log__c</referenceTo>
+        <relationshipLabel>System Request</relationshipLabel>
+        <relationshipName>System_Demo_Log</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>System_s_IP__c</fullName>
+        <externalId>false</externalId>
+        <label>System&apos;s IP</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.Account.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Activity_INF__c</fullName>
+        <externalId>false</externalId>
+        <label>Activity</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Demo</fullName>
+                    <default>false</default>
+                    <label>Demo</label>
+                </value>
+                <value>
+                    <fullName>Call</fullName>
+                    <default>false</default>
+                    <label>Call</label>
+                </value>
+                <value>
+                    <fullName>Workshop/Pilot</fullName>
+                    <default>false</default>
+                    <label>Workshop/Pilot</label>
+                </value>
+                <value>
+                    <fullName>Customer Outreach</fullName>
+                    <default>false</default>
+                    <label>Customer Outreach</label>
+                </value>
+                <value>
+                    <fullName>Conference/Webinar/Seminar</fullName>
+                    <default>false</default>
+                    <label>Conference/Webinar/Seminar</label>
+                </value>
+                <value>
+                    <fullName>Presentation/Discussion</fullName>
+                    <default>false</default>
+                    <label>Presentation/Discussion</label>
+                </value>
+                <value>
+                    <fullName>Internal</fullName>
+                    <default>false</default>
+                    <label>Internal</label>
+                </value>
+                <value>
+                    <fullName>RFP/RFI/RFQ</fullName>
+                    <default>false</default>
+                    <label>RFP/RFI/RFQ</label>
+                </value>
+                <value>
+                    <fullName>Training</fullName>
+                    <default>false</default>
+                    <label>Training</label>
+                </value>
+                <value>
+                    <fullName>Followup</fullName>
+                    <default>false</default>
+                    <label>Followup</label>
+                </value>
+                <value>
+                    <fullName>Customer Support</fullName>
+                    <default>false</default>
+                    <label>Customer Support</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>System_OppId__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.Id</formula>
+        <label>System OppId</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>System_Owner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>System Owner</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Demo_Log</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Demo_Lead_INF__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Activity Leader</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Demo_Request</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Demo_Location__c</fullName>
+        <externalId>false</externalId>
+        <label>Demo Location</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Customer Location(On-Site)</fullName>
+                    <default>false</default>
+                    <label>Customer Location(On-Site)</label>
+                </value>
+                <value>
+                    <fullName>Remote(Web)</fullName>
+                    <default>false</default>
+                    <label>Remote(Web)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Level_img_inf__c</fullName>
+        <externalId>false</externalId>
+        <formula>IMAGE(
+CASE(Level_INF__c,
+&quot;3&quot;,&quot;/img/samples/light_red.gif&quot;,
+&quot;2&quot;,&quot;img/samples/light_yellow.gif&quot;,
+&quot;1&quot;,&quot;img/samples/light_green.gif&quot;,&quot;&quot;),
+&quot;Level&quot;)</formula>
+        <label>Level</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NextSteps_INF__c</fullName>
+        <description>Next Steps for Demo Log</description>
+        <externalId>false</externalId>
+        <label>Next Steps</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>System_s_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>System&apos;s Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Default_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Default Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ON</fullName>
+                    <default>false</default>
+                    <label>ON</label>
+                </value>
+                <value>
+                    <fullName>OFF</fullName>
+                    <default>false</default>
+                    <label>OFF</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Demo_Inventory__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Demo Inventory</label>
+        <referenceTo>Field_Inventory__c</referenceTo>
+        <relationshipName>R00N30000001FWDfEAO</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Demo_Notes_INF__c</fullName>
+        <externalId>false</externalId>
+        <label>Demo Report</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>7</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Opportunity_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>System_Purpose__c</fullName>
+        <externalId>false</externalId>
+        <label>System Purpose</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Demo</fullName>
+                    <default>false</default>
+                    <label>Demo</label>
+                </value>
+                <value>
+                    <fullName>Pilot</fullName>
+                    <default>false</default>
+                    <label>Pilot</label>
+                </value>
+                <value>
+                    <fullName>POC</fullName>
+                    <default>false</default>
+                    <label>POC</label>
+                </value>
+                <value>
+                    <fullName>Internal Use</fullName>
+                    <default>false</default>
+                    <label>Internal Use</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Demo_Log_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Demo Log Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pending Approval</fullName>
+                    <default>true</default>
+                    <label>Pending Approval</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>Ready</fullName>
+                    <default>false</default>
+                    <label>Ready</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Expiration_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Expiration Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.Name</formula>
+        <label>Opportunity Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Request_Date_INF__c</fullName>
+        <externalId>false</externalId>
+        <formula>DATEVALUE( CreatedDate )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Request Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Deal_Amount_Value__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.Amount</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Deal Amount Value ($)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Decision_Criteria__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Pain Points</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>7</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Demo_Center_Email__c</fullName>
+        <defaultValue>&quot;Informatics.DemoCenter@PERKINELMER.COM&quot;</defaultValue>
+        <externalId>false</externalId>
+        <label>Demo Center Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Stage__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Opportunity__r.StageName)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity Stage</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Business_Objective__c</fullName>
+        <externalId>false</externalId>
+        <label>Business Objective</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Scheduled_Date_INF__c</fullName>
+        <externalId>false</externalId>
+        <label>Scheduled Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>System_Days_Active__c</fullName>
+        <externalId>false</externalId>
+        <label>System Days Active</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>30 days</fullName>
+                    <default>false</default>
+                    <label>30 days</label>
+                </value>
+                <value>
+                    <fullName>60 days</fullName>
+                    <default>false</default>
+                    <label>60 days</label>
+                </value>
+                <value>
+                    <fullName>90 days</fullName>
+                    <default>false</default>
+                    <label>90 days</label>
+                </value>
+                <value>
+                    <fullName>120 days</fullName>
+                    <default>false</default>
+                    <label>120 days</label>
+                </value>
+                <value>
+                    <fullName>150 days</fullName>
+                    <default>false</default>
+                    <label>150 days</label>
+                </value>
+                <value>
+                    <fullName>180 days</fullName>
+                    <default>false</default>
+                    <label>180 days</label>
+                </value>
+                <value>
+                    <fullName>Retire</fullName>
+                    <default>false</default>
+                    <label>Retire</label>
+                </value>
+                <value>
+                    <fullName>15 days</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>15 days</label>
+                </value>
+                <value>
+                    <fullName>360 days</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>360 days</label>
+                </value>
+                <value>
+                    <fullName>7 days</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>7 days</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Completion_Date_INF__c</fullName>
+        <externalId>false</externalId>
+        <label>Completion Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_for_Demo_Pilot__c</fullName>
+        <externalId>false</externalId>
+        <formula>Parent_Demo__r.Scheduled_Date_INF__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Date for Demo/Pilot</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Demo_Lead_Email_INF__c</fullName>
+        <externalId>false</externalId>
+        <label>Demo Lead Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Product_INF__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Product</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Attivio</fullName>
+                    <default>false</default>
+                    <label>Attivio</label>
+                </value>
+                <value>
+                    <fullName>CAFÉ  - Medical Review</fullName>
+                    <default>false</default>
+                    <label>CAFÉ  - Medical Review</label>
+                </value>
+                <value>
+                    <fullName>CAFÉ - RBM</fullName>
+                    <default>false</default>
+                    <label>CAFÉ - RBM</label>
+                </value>
+                <value>
+                    <fullName>CAFÉ - RWE</fullName>
+                    <default>false</default>
+                    <label>CAFÉ - RWE</label>
+                </value>
+                <value>
+                    <fullName>ChemDraw</fullName>
+                    <default>false</default>
+                    <label>ChemDraw</label>
+                </value>
+                <value>
+                    <fullName>Columbus</fullName>
+                    <default>false</default>
+                    <label>Columbus</label>
+                </value>
+                <value>
+                    <fullName>Elements</fullName>
+                    <default>false</default>
+                    <label>Elements</label>
+                </value>
+                <value>
+                    <fullName>E-Notebook Biology</fullName>
+                    <default>false</default>
+                    <label>E-Notebook Biology</label>
+                </value>
+                <value>
+                    <fullName>E-Notebook Chemistry</fullName>
+                    <default>false</default>
+                    <label>E-Notebook Chemistry</label>
+                </value>
+                <value>
+                    <fullName>E-Notebook Formulations</fullName>
+                    <default>false</default>
+                    <label>E-Notebook Formulations</label>
+                </value>
+                <value>
+                    <fullName>iLab</fullName>
+                    <default>false</default>
+                    <label>iLab</label>
+                </value>
+                <value>
+                    <fullName>Inventory</fullName>
+                    <default>false</default>
+                    <label>Inventory</label>
+                </value>
+                <value>
+                    <fullName>Inventory Ent</fullName>
+                    <default>false</default>
+                    <label>Inventory Ent</label>
+                </value>
+                <value>
+                    <fullName>LimsLink</fullName>
+                    <default>false</default>
+                    <label>LimsLink</label>
+                </value>
+                <value>
+                    <fullName>Registration</fullName>
+                    <default>false</default>
+                    <label>Registration</label>
+                </value>
+                <value>
+                    <fullName>Signals Clinical</fullName>
+                    <default>false</default>
+                    <label>Signals Clinical</label>
+                </value>
+                <value>
+                    <fullName>Signals Lead Discovery</fullName>
+                    <default>false</default>
+                    <label>Signals Lead Discovery</label>
+                </value>
+                <value>
+                    <fullName>Signals Medical Review</fullName>
+                    <default>false</default>
+                    <label>Signals Medical Review</label>
+                </value>
+                <value>
+                    <fullName>Signals Notebook</fullName>
+                    <default>false</default>
+                    <label>Signals Notebook</label>
+                </value>
+                <value>
+                    <fullName>Signals Notebook - Biology</fullName>
+                    <default>false</default>
+                    <label>Signals Notebook - Biology</label>
+                </value>
+                <value>
+                    <fullName>Signals Notebook - Chemistry</fullName>
+                    <default>false</default>
+                    <label>Signals Notebook - Chemistry</label>
+                </value>
+                <value>
+                    <fullName>Signals Notebook for ChemDraw</fullName>
+                    <default>false</default>
+                    <label>Signals Notebook for ChemDraw</label>
+                </value>
+                <value>
+                    <fullName>Signals Screening</fullName>
+                    <default>false</default>
+                    <label>Signals Screening</label>
+                </value>
+                <value>
+                    <fullName>Signals Translational</fullName>
+                    <default>false</default>
+                    <label>Signals Translational</label>
+                </value>
+                <value>
+                    <fullName>Spotfire Biology</fullName>
+                    <default>false</default>
+                    <label>Spotfire Biology</label>
+                </value>
+                <value>
+                    <fullName>Spotfire Chemistry</fullName>
+                    <default>false</default>
+                    <label>Spotfire Chemistry</label>
+                </value>
+                <value>
+                    <fullName>Spotfire Clinical</fullName>
+                    <default>false</default>
+                    <label>Spotfire Clinical</label>
+                </value>
+                <value>
+                    <fullName>Spotfire for Manufacturing</fullName>
+                    <default>false</default>
+                    <label>Spotfire for Manufacturing</label>
+                </value>
+                <value>
+                    <fullName>Spotfire High Content Profiler</fullName>
+                    <default>false</default>
+                    <label>Spotfire High Content Profiler</label>
+                </value>
+                <value>
+                    <fullName>Spotfire OmicsOffice</fullName>
+                    <default>false</default>
+                    <label>Spotfire OmicsOffice</label>
+                </value>
+                <value>
+                    <fullName>Spotfire Platform</fullName>
+                    <default>false</default>
+                    <label>Spotfire Platform</label>
+                </value>
+                <value>
+                    <fullName>Spotfire Scistream</fullName>
+                    <default>false</default>
+                    <label>Spotfire Scistream</label>
+                </value>
+                <value>
+                    <fullName>Spotfire tranSMART</fullName>
+                    <default>false</default>
+                    <label>Spotfire tranSMART</label>
+                </value>
+                <value>
+                    <fullName>StreamBase</fullName>
+                    <default>false</default>
+                    <label>StreamBase</label>
+                </value>
+                <value>
+                    <fullName>Unspecified</fullName>
+                    <default>false</default>
+                    <label>Unspecified</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product_Family_Demo__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Family</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>01-NEO</fullName>
+                    <default>false</default>
+                    <label>01-NEO</label>
+                </value>
+                <value>
+                    <fullName>02-PRE</fullName>
+                    <default>false</default>
+                    <label>02-PRE</label>
+                </value>
+                <value>
+                    <fullName>03-DIA</fullName>
+                    <default>false</default>
+                    <label>03-DIA</label>
+                </value>
+                <value>
+                    <fullName>04-AA</fullName>
+                    <default>false</default>
+                    <label>04-AA</label>
+                </value>
+                <value>
+                    <fullName>05-ICP</fullName>
+                    <default>false</default>
+                    <label>05-ICP</label>
+                </value>
+                <value>
+                    <fullName>06-MAS</fullName>
+                    <default>false</default>
+                    <label>06-MAS</label>
+                </value>
+                <value>
+                    <fullName>07-TEA</fullName>
+                    <default>false</default>
+                    <label>07-TEA</label>
+                </value>
+                <value>
+                    <fullName>08-GC</fullName>
+                    <default>false</default>
+                    <label>08-GC</label>
+                </value>
+                <value>
+                    <fullName>09-LC</fullName>
+                    <default>false</default>
+                    <label>09-LC</label>
+                </value>
+                <value>
+                    <fullName>10-IR</fullName>
+                    <default>false</default>
+                    <label>10-IR</label>
+                </value>
+                <value>
+                    <fullName>11-UVS</fullName>
+                    <default>false</default>
+                    <label>11-UVS</label>
+                </value>
+                <value>
+                    <fullName>12-ESS</fullName>
+                    <default>false</default>
+                    <label>12-ESS</label>
+                </value>
+                <value>
+                    <fullName>13-AWS</fullName>
+                    <default>false</default>
+                    <label>13-AWS</label>
+                </value>
+                <value>
+                    <fullName>14-SPS</fullName>
+                    <default>false</default>
+                    <label>14-SPS</label>
+                </value>
+                <value>
+                    <fullName>15-APS</fullName>
+                    <default>false</default>
+                    <label>15-APS</label>
+                </value>
+                <value>
+                    <fullName>16-RRD</fullName>
+                    <default>false</default>
+                    <label>16-RRD</label>
+                </value>
+                <value>
+                    <fullName>17-MLD</fullName>
+                    <default>false</default>
+                    <label>17-MLD</label>
+                </value>
+                <value>
+                    <fullName>18-CSA</fullName>
+                    <default>false</default>
+                    <label>18-CSA</label>
+                </value>
+                <value>
+                    <fullName>19-LVI</fullName>
+                    <default>false</default>
+                    <label>19-LVI</label>
+                </value>
+                <value>
+                    <fullName>20-ANP</fullName>
+                    <default>false</default>
+                    <label>20-ANP</label>
+                </value>
+                <value>
+                    <fullName>21-PGI</fullName>
+                    <default>false</default>
+                    <label>21-PGI</label>
+                </value>
+                <value>
+                    <fullName>22-HTS</fullName>
+                    <default>false</default>
+                    <label>22-HTS</label>
+                </value>
+                <value>
+                    <fullName>23-RRS</fullName>
+                    <default>false</default>
+                    <label>23-RRS</label>
+                </value>
+                <value>
+                    <fullName>24-MOL</fullName>
+                    <default>false</default>
+                    <label>24-MOL</label>
+                </value>
+                <value>
+                    <fullName>25-DIS</fullName>
+                    <default>false</default>
+                    <label>25-DIS</label>
+                </value>
+                <value>
+                    <fullName>26 - OneSource</fullName>
+                    <default>false</default>
+                    <label>26 - OneSource</label>
+                </value>
+                <value>
+                    <fullName>27 - MDX</fullName>
+                    <default>false</default>
+                    <label>27 - MDX</label>
+                </value>
+                <value>
+                    <fullName>28 - NTD</fullName>
+                    <default>false</default>
+                    <label>28 - NTD</label>
+                </value>
+                <value>
+                    <fullName>29 - PBR</fullName>
+                    <default>false</default>
+                    <label>29 - PBR</label>
+                </value>
+                <value>
+                    <fullName>30-RAM</fullName>
+                    <default>false</default>
+                    <label>30-RAM</label>
+                </value>
+                <value>
+                    <fullName>31-CKP</fullName>
+                    <default>false</default>
+                    <label>31-CKP</label>
+                </value>
+                <value>
+                    <fullName>32-HCS</fullName>
+                    <default>false</default>
+                    <label>32-HCS</label>
+                </value>
+                <value>
+                    <fullName>33-IAS</fullName>
+                    <default>false</default>
+                    <label>33-IAS</label>
+                </value>
+                <value>
+                    <fullName>34-NLB</fullName>
+                    <default>false</default>
+                    <label>34-NLB</label>
+                </value>
+                <value>
+                    <fullName>35-ARS</fullName>
+                    <default>false</default>
+                    <label>35-ARS</label>
+                </value>
+                <value>
+                    <fullName>36-FAP</fullName>
+                    <default>false</default>
+                    <label>36-FAP</label>
+                </value>
+                <value>
+                    <fullName>37-QTS</fullName>
+                    <default>false</default>
+                    <label>37-QTS</label>
+                </value>
+                <value>
+                    <fullName>38-SGL</fullName>
+                    <default>false</default>
+                    <label>38-SGL</label>
+                </value>
+                <value>
+                    <fullName>39-VIR</fullName>
+                    <default>false</default>
+                    <label>39-VIR</label>
+                </value>
+                <value>
+                    <fullName>40-LCM</fullName>
+                    <default>false</default>
+                    <label>40-LCM</label>
+                </value>
+                <value>
+                    <fullName>41-NAP</fullName>
+                    <default>false</default>
+                    <label>41-NAP</label>
+                </value>
+                <value>
+                    <fullName>42-TOF</fullName>
+                    <default>false</default>
+                    <label>42-TOF</label>
+                </value>
+                <value>
+                    <fullName>43-VIA</fullName>
+                    <default>false</default>
+                    <label>43-VIA</label>
+                </value>
+                <value>
+                    <fullName>44-CLH</fullName>
+                    <default>false</default>
+                    <label>44-CLH</label>
+                </value>
+                <value>
+                    <fullName>45-MFT</fullName>
+                    <default>false</default>
+                    <label>45-MFT</label>
+                </value>
+                <value>
+                    <fullName>46-INV</fullName>
+                    <default>false</default>
+                    <label>46-INV</label>
+                </value>
+                <value>
+                    <fullName>47-TIS</fullName>
+                    <default>false</default>
+                    <label>47-TIS</label>
+                </value>
+                <value>
+                    <fullName>48-NVS</fullName>
+                    <default>false</default>
+                    <label>48-NVS</label>
+                </value>
+                <value>
+                    <fullName>49-CLR</fullName>
+                    <default>false</default>
+                    <label>49-CLR</label>
+                </value>
+                <value>
+                    <fullName>50-TSC</fullName>
+                    <default>false</default>
+                    <label>50-TSC</label>
+                </value>
+                <value>
+                    <fullName>51-NMO</fullName>
+                    <default>false</default>
+                    <label>51-NMO</label>
+                </value>
+                <value>
+                    <fullName>52-MOX</fullName>
+                    <default>false</default>
+                    <label>52-MOX</label>
+                </value>
+                <value>
+                    <fullName>53-DIS</fullName>
+                    <default>false</default>
+                    <label>53-DIS</label>
+                </value>
+                <value>
+                    <fullName>54-MMO</fullName>
+                    <default>false</default>
+                    <label>54-MMO</label>
+                </value>
+                <value>
+                    <fullName>55-GPZ</fullName>
+                    <default>false</default>
+                    <label>55-GPZ</label>
+                </value>
+                <value>
+                    <fullName>56-VER</fullName>
+                    <default>false</default>
+                    <label>56-VER</label>
+                </value>
+                <value>
+                    <fullName>57-DNA</fullName>
+                    <default>false</default>
+                    <label>57-DNA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Request_Details_INF__c</fullName>
+        <externalId>false</externalId>
+        <label>Request Details</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>7</visibleLines>
+    </fields>
+    <fields>
+        <fullName>System_Created_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>System Created Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Demo_Center_Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Demo Center Comments</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Long_term_Objectives__c</fullName>
+        <externalId>false</externalId>
+        <label>Long term Objectives</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Potential_Demo_Dates__c</fullName>
+        <externalId>false</externalId>
+        <label>Potential Demo Dates</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>System_Configuration__c</fullName>
+        <externalId>false</externalId>
+        <label>System Configuration</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Workflow_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Workflow Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Demo_attendee_Description__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Departments</inlineHelpText>
+        <label>Attendee Job Titles(s)</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Discovery_Agreement_Posted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Discovery Agreement Posted</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PKI_products_currently_own__c</fullName>
+        <description>This is to ensure that the name and version are entered</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter Name and Version</inlineHelpText>
+        <label>PKI products currently own</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>System_Owner_email_if_inactive__c</fullName>
+        <externalId>false</externalId>
+        <label>System Owner email (if inactive)</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <recordTypes>
+        <fullName>Informatics</fullName>
+        <active>true</active>
+        <label>Informatics</label>
+        <picklistValues>
+            <picklist>Activity_INF__c</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conference%2FWebinar%2FSeminar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Outreach</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Followup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presentation%2FDiscussion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RFP%2FRFI%2FRFQ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Workshop%2FPilot</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Default_Status__c</picklist>
+            <values>
+                <fullName>OFF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ON</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Demo_Location__c</picklist>
+            <values>
+                <fullName>Customer Location%28On-Site%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Remote%28Web%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Demo_Site__c</picklist>
+            <values>
+                <fullName>Atlanta Technical Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Site</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Japan Demo Lab</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jorgenson Machinery%2F PKI Houston</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oakbrook Technical Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>San Jose Technical Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shelton Technical Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waltham Technical Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Woodbridge Technical Center</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry__c</picklist>
+            <values>
+                <fullName>Academic%2FResearch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Agricultural</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotech</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemistry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clinical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contract Research Labs%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dealer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Energy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food %26 Fragrance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Forensics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Health Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incubator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lubricating%2FUsed Oils</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical Device</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mining</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pharmceutical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scientific Equipment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speciality Chemicals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Supplier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Water%2FWastewater</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Level_INF__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Location__c</picklist>
+            <values>
+                <fullName>AWS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DMZ</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OS__c</picklist>
+            <values>
+                <fullName>Linux</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MS 2008 R2 64bit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MS 2012 R2 64bit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Product_INF__c</picklist>
+            <values>
+                <fullName>ChemDraw</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Columbus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-Notebook Biology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-Notebook Chemistry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-Notebook Formulations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inventory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LimsLink</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signals Clinical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signals Lead Discovery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signals Medical Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signals Notebook</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signals Notebook - Biology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signals Notebook - Chemistry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signals Notebook for ChemDraw</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signals Screening</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signals Translational</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spotfire Biology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spotfire Chemistry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spotfire Clinical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spotfire High Content Profiler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spotfire Platform</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spotfire Scistream</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>StreamBase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unspecified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>iLab</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Family_Demo__c</picklist>
+            <values>
+                <fullName>01-NEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>02-PRE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>03-DIA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>04-AA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>05-ICP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>06-MAS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>07-TEA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>08-GC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>09-LC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10-IR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11-UVS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>12-ESS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>13-AWS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>14-SPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>15-APS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>16-RRD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>17-MLD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18-CSA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>19-LVI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>20-ANP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>21-PGI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>22-HTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>23-RRS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24-MOL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>25-DIS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>26 - OneSource</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>27 - MDX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>28 - NTD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>29 - PBR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>30-RAM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>31-CKP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>32-HCS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>33-IAS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>34-NLB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>35-ARS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>36-FAP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>37-QTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>38-SGL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>39-VIR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>40-LCM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>41-NAP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>42-TOF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>43-VIA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>44-CLH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>45-MFT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>46-INV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>47-TIS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48-NVS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>49-CLR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>50-TSC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>51-NMO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>52-MOX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>53-DIS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>54-MMO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>55-GPZ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>56-VER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>57-DNA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_INF__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scheduled</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Template__c</picklist>
+            <values>
+                <fullName>AWS New System %5BPlease specify at the comment your needs%5D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CBOE 12%2E5%2E1 %2B ELN 12%2E1%2EX OOTB %5BCRCOE1251Tem%5D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ENotebook 2014 R5%2E1 %2B COE 12%2E6%2E2 %28190%29 %5BEUC1261E2014Tem%5D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ENotebook 2014 R6 %2B COE 12%2E6%2E2 OOTB %5BC1262E2014R6Tem%5D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>European CBOE 12%2E5%2E1 %2B EN 12%2E1%2EX System %28165%29 %5BEUCOE125D1%5D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New system %5BPlease specify at the comment your needs%5D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spotfire Server %5BAdvise version and add-ons required%5D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Configuration %5BPlease specify at the comment your needs%5D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Win 2008 %2B MSSQL 2008 clean %5BW2K8R2MSSQL%5D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Win 2008 %2B Ms SharePoint Foundation %5BAMESHRPNTD120%5D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Win 2008 %2B Ora 11g R2 clean %5BW2K8R2ORA%5D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Win 2008 clean %5BWIN2K8R2Tem%5D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Win 2012 %2B Ora 11g R2 clean %5BW2012ORA11Tem%5D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Win 2012 clean %5BW2012Tem%5D</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type2__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Use</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parked</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Template</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Instrument Demonstration</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Reagent Evaluation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training-Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training-PKI</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>System_Request</fullName>
+        <active>true</active>
+        <label>System Request</label>
+        <picklistValues>
+            <picklist>Activity_INF__c</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conference%2FWebinar%2FSeminar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Outreach</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Followup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presentation%2FDiscussion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RFP%2FRFI%2FRFQ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Workshop%2FPilot</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Assigned_To__c</picklist>
+            <values>
+                <fullName>Demo Center</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Edgardo Gutierrez</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Franklin Jimenez</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>John Baker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Luis Diaz</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stepan Churukanov</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Default_Status__c</picklist>
+            <values>
+                <fullName>OFF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ON</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Demo_Location__c</picklist>
+            <values>
+                <fullName>Customer Location%28On-Site%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Remote%28Web%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Demo_Log_Status__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending Approval</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Ready</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Demo_Site__c</picklist>
+            <values>
+                <fullName>Atlanta Technical Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Site</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Japan Demo Lab</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jorgenson Machinery%2F PKI Houston</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oakbrook Technical Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>San Jose Technical Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shelton Technical Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waltham Technical Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Woodbridge Technical Center</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry__c</picklist>
+            <values>
+                <fullName>Academic%2FResearch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Agricultural</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotech</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemistry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clinical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contract Research Labs%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dealer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Energy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food %26 Fragrance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Forensics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Health Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incubator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lubricating%2FUsed Oils</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical Device</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mining</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pharmceutical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scientific Equipment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Speciality Chemicals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Supplier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Water%2FWastewater</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Level_INF__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Location__c</picklist>
+            <values>
+                <fullName>AWS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DMZ</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OS__c</picklist>
+            <values>
+                <fullName>Linux</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MS 2008 R2 64bit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MS 2012 R2 64bit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Product_INF__c</picklist>
+            <values>
+                <fullName>Attivio</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAFÉ  - Medical Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAFÉ - RBM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAFÉ - RWE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ChemDraw</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Columbus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-Notebook Biology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-Notebook Chemistry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-Notebook Formulations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inventory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inventory Ent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LimsLink</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signals Clinical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signals Lead Discovery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signals Notebook</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signals Notebook for ChemDraw</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signals Screening</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Signals Translational</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spotfire Biology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spotfire Chemistry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spotfire Clinical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spotfire High Content Profiler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spotfire OmicsOffice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spotfire Platform</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spotfire Scistream</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spotfire tranSMART</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>StreamBase</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unspecified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>iLab</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Family_Demo__c</picklist>
+            <values>
+                <fullName>01-NEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>02-PRE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>03-DIA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>04-AA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>05-ICP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>06-MAS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>07-TEA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>08-GC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>09-LC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10-IR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11-UVS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>12-ESS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>13-AWS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>14-SPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>15-APS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>16-RRD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>17-MLD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18-CSA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>19-LVI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>20-ANP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>21-PGI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>22-HTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>23-RRS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24-MOL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>25-DIS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>26 - OneSource</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>27 - MDX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>28 - NTD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>29 - PBR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>30-RAM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>31-CKP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>32-HCS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>33-IAS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>34-NLB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>35-ARS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>36-FAP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>37-QTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>38-SGL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>39-VIR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>40-LCM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>41-NAP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>42-TOF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>43-VIA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>44-CLH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>45-MFT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>46-INV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>47-TIS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48-NVS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>49-CLR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>50-TSC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>51-NMO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>52-MOX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>53-DIS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>54-MMO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>55-GPZ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>56-VER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>57-DNA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_INF__c</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scheduled</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>System_Days_Active__c</picklist>
+            <values>
+                <fullName>120 days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>150 days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>180 days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>30 days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>90 days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retire</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>System_Purpose__c</picklist>
+            <values>
+                <fullName>Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Use</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>POC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pilot</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Template__c</picklist>
+            <values>
+                <fullName>AWS New System %5BPlease specify at the comment your needs%5D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CBOE 12%2E5%2E1 %2B ELN 12%2E1%2EX OOTB %5BCRCOE1251Tem%5D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ENotebook 2014 R5%2E1 %2B COE 12%2E6%2E2 %28190%29 %5BEUC1261E2014Tem%5D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ENotebook 2014 R6 %2B COE 12%2E6%2E2 OOTB %5BC1262E2014R6Tem%5D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>European CBOE 12%2E5%2E1 %2B EN 12%2E1%2EX System %28165%29 %5BEUCOE125D1%5D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New system %5BPlease specify at the comment your needs%5D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spotfire Server %5BAdvise version and add-ons required%5D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System Configuration %5BPlease specify at the comment your needs%5D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Win 2008 %2B MSSQL 2008 clean %5BW2K8R2MSSQL%5D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Win 2008 %2B Ms SharePoint Foundation %5BAMESHRPNTD120%5D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Win 2008 %2B Ora 11g R2 clean %5BW2K8R2ORA%5D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Win 2008 clean %5BWIN2K8R2Tem%5D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Win 2012 %2B Ora 11g R2 clean %5BW2012ORA11Tem%5D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Win 2012 clean %5BW2012Tem%5D</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type2__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cloud Parked</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal Use</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parked</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Template</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Instrument Demonstration</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Reagent Evaluation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training-Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training-PKI</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <validationRules>
+        <fullName>GBL_GBL_Demolog_demoreport_mandatory</fullName>
+        <active>true</active>
+        <description>Ensuring that demo report is filled for completed status</description>
+        <errorConditionFormula>AND(ISPICKVAL( Status_INF__c ,&quot;Completed&quot;),OR(ISBLANK( Demo_Notes_INF__c ),ISPICKVAL( Demo_Location__c,&quot;&quot; ),ISPICKVAL( Level_INF__c,&quot;&quot; )))</errorConditionFormula>
+        <errorDisplayField>Activity_INF__c</errorDisplayField>
+        <errorMessage>Kindly enter Demo Report, Level and Demo Location for Completed Demo Log</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>New_Demo_Log</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Demo Log</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>https://na45.salesforce.com/a0Q/e?CF00N30000001GFds={!Opportunity.Name}&amp;CF00N30000001GFds_lkid={!Opportunity.Id}&amp;retURL=%2F00630000012z4yV&amp;RecordType=01230000001aIiD&amp;ent=01I3000000059Kt</url>
+    </webLinks>
+    <webLinks>
+        <fullName>System_Request</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>System Request</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>https://na45.salesforce.com/a0Q/e?CF00N3A00000CKuAv={!Demo_Log__c.Name}&amp;CF00N3A00000CKuAv_lkid={!Demo_Log__c.Id}&amp;CF00N30000001GFds={!Demo_Log__c.Opportunity_Name__c}&amp;CF00N30000001GFds_lkid={!Demo_Log__c.System_OppId__c}&amp;00N3000000Ba2N4={!Demo_Log__c.Primary_Product_INF__c}&amp;retURL=%2Fa0Q3000000ILRZk&amp;RecordType=0123A0000019VjS&amp;ent=01I3000000059Kt</url>
+    </webLinks>
+</CustomObject>

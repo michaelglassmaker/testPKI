@@ -5,8 +5,8 @@ global class ContractRenewalEmailService implements Messaging.InboundEmailHandle
         myPlainText = email.plainTextBody;     
         Task[] newTask = new Task[0];
         String subject = email.Subject;
-        String oppId = subject.substringBetween('(',')');
-        String subjectReply = 'Re:';
+        String oppId = subject.substringBetween('[', ']');
+        String subjectReply = 'Re: ';
 
         Opportunity opp = [SELECT Id, Customer_Responded__c FROM Opportunity WHERE Id =: oppId];
         try {
@@ -22,10 +22,10 @@ global class ContractRenewalEmailService implements Messaging.InboundEmailHandle
             // Contact, Lead or User Ids of recipients
             // additional recipients who don’t have a corresponding contact, lead or user id in the Salesforce org (optional)
             //emailMessage.toAddress = email.toAddresses[0];
-            if(emailMessage.subject.containsIgnoreCase(subjectReply)){
+            if(emailMessage.subject.contains(subjectReply)){
                 insert emailMessage; // insert            
             }
-            if(emailMessage.subject.containsIgnoreCase(subjectReply)){
+            if(emailMessage.subject.contains(subjectReply)){
                 opp.Customer_Responded__c = true;
             }
             update opp;

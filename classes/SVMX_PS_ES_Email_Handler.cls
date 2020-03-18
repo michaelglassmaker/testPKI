@@ -32,6 +32,7 @@ global without sharing class SVMX_PS_ES_Email_Handler implements Schedulable, Da
   private static final String STOP_EMAIL_TO_CUSTOMER = 'Stop Email to Customer';
   private static final String STOP_EMAIL_TO_OWNER = 'Stop Email to Owner';
   private static final String SAVE_EMAIL_AS_ACTIVTIY = 'Save Send Email as Activity';
+  private static final String SAVE_ERRORS_AS_ACTIVTIY = 'Save Errors as Activity';
   private static final String GROUP_EMAILS = 'Group Emails';
   private static final String DEFAULT_EMAIL_ADDRESS = 'Default Email Address';
   private static final String SEND_TO_DEFAULT_EMAIL_ADDRESS = 'Send To Default Email Address';
@@ -101,8 +102,10 @@ global without sharing class SVMX_PS_ES_Email_Handler implements Schedulable, Da
   global boolean stopEmailToCustomer;
   //Flag to stop sending email to owner. This is read tru custom setting
   global boolean stopEmailToOwner;
-  //Flag to save email send as activity on record. This is read tru custom setting
+  //Flag to save email send as activity on record. This is read thru custom setting
   global boolean saveEmailAsActivity;
+  //Flag to save errors as activity on record. This is read thru custom setting
+  global boolean saveErrorsAsActivity;
   //Flag to group emails or not. This is read tru custom setting
   global boolean groupEmails;
   //Flag to use Default Email Address. Read through custom settings
@@ -349,6 +352,7 @@ global without sharing class SVMX_PS_ES_Email_Handler implements Schedulable, Da
     Map<String,List<Attachment>> validAttachmentMap = new Map<String,List<Attachment>> ();
     //List of email messages to be sent
     List<Messaging.SingleEmailMessage> messagesList = new List<Messaging.SingleEmailMessage>();
+    List<EmailMessageWrapper> wrappedMessagesList = new List<EmailMessageWrapper>();
     //List to store all email message prepared
     List<Task> taskList = new List<Task>();
 
@@ -427,6 +431,7 @@ global without sharing class SVMX_PS_ES_Email_Handler implements Schedulable, Da
         GenericListHolderClass genericListHolder = prepareEmails(idSobjectMap, validAttachmentMap.get(objectName),
                                                                      recordTypeMap, objectName, hasRecordType);
 
+        wrappedMessagesList = genericListHolder.getWrappedMessageList();
         //Store all generated emails in a list
         List<Messaging.SingleEmailMessage> receivedMessagesList = genericListHolder.getMessageList();
         if(receivedMessagesList != null && receivedMessagesList.size() > 0){
@@ -452,7 +457,19 @@ global without sharing class SVMX_PS_ES_Email_Handler implements Schedulable, Da
     //Send Emails
     if (messagesList.size() > 0){
       System.debug('Email handler: Total Emails to be sent : ' + messagesList.size());
-      Messaging.sendEmail(messagesList);
+      // SVMXCFG-926 Process results of "sendEmail", and create "Error" Tasks for failures
+      List<Messaging.SendEmailResult> results = Messaging.sendEmail(messagesList);
+      for (Integer i = 0; i < results.size(); i++)
+      {
+        Messaging.SendEmailResult result = results[i];
+        EmailMessageWrapper wrapper = wrappedMessagesList[i];
+        if (saveErrorsAsActivity != null && saveErrorsAsActivity && !result.isSuccess())
+        {
+          Task task = createActivityForErrors(wrapper.ownerId, wrapper.parentId, wrapper.attachmentName,
+                  'Problem sending Email', 'Error(s) while trying to send email: ' + result.getErrors());
+          taskList.add(task);
+        }
+      }
       System.debug('Email handler: Email Sent');
     }else{
       System.debug('Email handler: No Emails sent');
@@ -491,414 +508,481 @@ global without sharing class SVMX_PS_ES_Email_Handler implements Schedulable, Da
   @TestVisible private GenericListHolderClass prepareEmails(Map<Id, sObject> sObjectMap, List<Attachment> attachmentList,  
                                                               Map<Id,String> recordTypeMap, String objectAPIName, boolean hasRecordType){
     //List to store all email message prepared
-    List<Messaging.SingleEmailMessage> messagesList = new List<Messaging.SingleEmailMessage>();
+    // SVMXCFG-926 Updated to use EmailMessageWrapper
+    List<EmailMessageWrapper> messagesList = new List<EmailMessageWrapper>();
 
     //List to store all email message prepared
     List<Task> taskList = new List<Task>();
 
     //start analyzing the attachments
     for(Attachment attachmentRecord : attachmentList){
-      //get the body of attachment
-      List<Attachment> newAttachmentList = [Select Id, Name, ParentId, Body, OwnerId, Owner.Email From Attachment 
-                                          where Id =: attachmentRecord.Id ORDER BY ParentId];
+      try {
+        //get the body of attachment
+        List<Attachment> newAttachmentList = [
+                Select Id, Name, ParentId, Body, OwnerId, Owner.Email
+                From Attachment
+                where Id = :attachmentRecord.Id
+                ORDER BY ParentId
+        ];
 
-      if(newAttachmentList != null && newAttachmentList.size() > 0){
-         //get the body of attachment
-         attachmentRecord = newAttachmentList.get(0);
-         
-        //get the record associated with the attachment
-        sObject record = sObjectMap.get(attachmentRecord.ParentId);
-        if(record != null) {
-          //get Record Id of the record
-          String recordTypeName = null;
-          if(hasRecordType){
-            String recordTypeId = String.valueOf(record.get('RecordTypeId'));
-            if(recordTypeId != null && !recordTypeId.trim().equals('')){
-              recordTypeName = recordTypeMap.get(recordTypeId);
-            }
-          }
-          //Create Unique Key for Org wide Address
-          String uniqueKey = null;
-          if(recordTypeName != null && !recordTypeName.trim().equals('')){
-            uniqueKey =  objectAPIName + '-' + recordTypeName;
-          }
+        if (newAttachmentList != null && newAttachmentList.size() > 0) {
+          //get the body of attachment
+          attachmentRecord = newAttachmentList.get(0);
 
-          if(!checkAttachmentNameValidity(attachmentRecord.Name, uniqueKey, objectAPIName)){
-            System.debug('Attachment is not a valid attachment as name does not qualify - '
-                     + attachmentRecord.Name);
-            continue;
-          }
-
-          //get Email Org Wide Address for this record
-          String orgWideAddress = null;
-          //check if the address is available for Object-Record Type combination
-          if(uniqueKey != null && !uniqueKey.trim().equals('')){
-            orgWideAddress = emailOrgWideAddressSettingsMap.get(uniqueKey);
-          }
-          //if not, check if the address is available for Object
-          if(orgWideAddress == null){
-            orgWideAddress = emailOrgWideAddressSettingsMap.get(objectAPIName);
-          }
-          //if still not available, use default
-          if(orgWideAddress == null){
-            orgWideAddress = defaultOrgWideAddressID;
-          }
-
-          // SVMXCFG-705 FSR Regional Email Org Wide Address
-          String woPrefix = Schema.SObjectType.SVMXC__Service_Order__c.getKeyPrefix();
-          String objId = attachmentRecord.ParentId + '';
-          if (objId.startsWith(woPrefix))
-          {
-            SVMXC__Service_Order__c wo = [SELECT Id, Name, 
-              SMAX_PS_Translation__c, SMAX_PS_Translation__r.SMAX_PS_Email_Id__c
-              FROM SVMXC__Service_Order__c WHERE Id = :objId];
-            if (wo != null && wo.SMAX_PS_Translation__c != null && wo.SMAX_PS_Translation__r.SMAX_PS_Email_Id__c != null)
-            {
-              orgWideAddress = wo.SMAX_PS_Translation__r.SMAX_PS_Email_Id__c;
-            }
-          }
-
-          if(orgWideAddress != null && !orgWideAddress.trim().equals('')){
-            //get Email Template for this record
-            String emailTemplateName = null;
-
-            for(String uniqueTemplateSettingKey : emailTemplateSettingsMap.keySet()){
-              //This is used so that uniqueKey is not change. uniqueKey is used further in code and should not be changed here.
-              String uniqueKeyValue = uniqueKey;
-
-              //uniqueKey if no RecordType is present. Hence 
-              if(uniqueKeyValue == null){
-                uniqueKeyValue = objectAPIName;
+          //get the record associated with the attachment
+          sObject record = sObjectMap.get(attachmentRecord.ParentId);
+          if (record != null) {
+            //get Record Id of the record
+            String recordTypeName = null;
+            if (hasRecordType) {
+              String recordTypeId = String.valueOf(record.get('RecordTypeId'));
+              if (recordTypeId != null && !recordTypeId.trim().equals('')) {
+                recordTypeName = recordTypeMap.get(recordTypeId);
               }
-              
-              //check if the template setting contains combination of Object API Name and Record Type Name
-              //Also check if the '-#-' is present so that we are sure that the template setting has Service Report Name
-              //If it does not have Service Report Name, ignore the setting
-              if(uniqueTemplateSettingKey.contains(uniqueKeyValue) && uniqueTemplateSettingKey.contains('-#-')){
-                //split the string to get all Service Report Names
-                List<String> templateSettingsList = uniqueTemplateSettingKey.split('-#-');
-                
-                //check if the service report name is valid for the attachment.
-                //if valid, use the email template, else do not.
-                if(templateSettingsList.size() == 2){
-                  String allServiceReportNames = templateSettingsList.get(1);
+            }
+            //Create Unique Key for Org wide Address
+            String uniqueKey = null;
+            if (recordTypeName != null && !recordTypeName.trim().equals('')) {
+              uniqueKey = objectAPIName + '-' + recordTypeName;
+            }
 
-                  List<String> serviceReportNamesList = getCommaSeperatedValues(allServiceReportNames);
+            if (!checkAttachmentNameValidity(attachmentRecord.Name, uniqueKey, objectAPIName)) {
+              // SVMXCFG-926 EmailHandler Error Handling
+              throw new EmailHandlerException('Attachment is not a valid attachment as name does not qualify - '
+                      + attachmentRecord.Name);
+              //continue;
+            }
 
-                  //Check if attachment name is supported in Service Report Name settings
-                  for(String sampleReportName : serviceReportNamesList){
-                    if(attachmentRecord.Name.contains(sampleReportName)){
-                    emailTemplateName = emailTemplateSettingsMap.get(uniqueTemplateSettingKey);
-                    break;
-                    }
-                  }
+            //get Email Org Wide Address for this record
+            String orgWideAddress = null;
+            //check if the address is available for Object-Record Type combination
+            if (uniqueKey != null && !uniqueKey.trim().equals('')) {
+              orgWideAddress = emailOrgWideAddressSettingsMap.get(uniqueKey);
+            }
+            //if not, check if the address is available for Object
+            if (orgWideAddress == null) {
+              orgWideAddress = emailOrgWideAddressSettingsMap.get(objectAPIName);
+            }
+            //if still not available, use default
+            if (orgWideAddress == null) {
+              orgWideAddress = defaultOrgWideAddressID;
+            }
+
+            // SVMXCFG-705 FSR Regional Email Org Wide Address
+            String woPrefix = Schema.SObjectType.SVMXC__Service_Order__c.getKeyPrefix();
+            String objId = attachmentRecord.ParentId + '';
+            if (objId.startsWith(woPrefix)) {
+              SVMXC__Service_Order__c wo = [
+                      SELECT Id, Name,
+                              SMAX_PS_Translation__c, SMAX_PS_Translation__r.SMAX_PS_Email_Id__c
+                      FROM SVMXC__Service_Order__c
+                      WHERE Id = :objId
+              ];
+              if (wo != null && wo.SMAX_PS_Translation__c != null && wo.SMAX_PS_Translation__r.SMAX_PS_Email_Id__c != null) {
+                orgWideAddress = wo.SMAX_PS_Translation__r.SMAX_PS_Email_Id__c;
+              }
+            }
+
+            if (orgWideAddress != null && !orgWideAddress.trim().equals('')) {
+              //get Email Template for this record
+              String emailTemplateName = null;
+
+              for (String uniqueTemplateSettingKey : emailTemplateSettingsMap.keySet()) {
+                //This is used so that uniqueKey is not change. uniqueKey is used further in code and should not be changed here.
+                String uniqueKeyValue = uniqueKey;
+
+                //uniqueKey if no RecordType is present. Hence
+                if (uniqueKeyValue == null) {
+                  uniqueKeyValue = objectAPIName;
                 }
-              }
-
-              //This second round. This is requried only if work order has record type else not.
-              if(emailTemplateName == null && hasRecordType){
-
-                //check if the template setting contains setting only for Object API Name
-                //Also check if the '-#-' is present so that we are sure that the template setting has Service Report Name
-                //If it does not have Service Report Name, ignore the setting
-                uniqueKeyValue = objectAPIName;
 
                 //check if the template setting contains combination of Object API Name and Record Type Name
                 //Also check if the '-#-' is present so that we are sure that the template setting has Service Report Name
                 //If it does not have Service Report Name, ignore the setting
-                if(uniqueTemplateSettingKey.contains(uniqueKeyValue) && uniqueTemplateSettingKey.contains('-#-')){
+                if (uniqueTemplateSettingKey.contains(uniqueKeyValue) && uniqueTemplateSettingKey.contains('-#-')) {
                   //split the string to get all Service Report Names
                   List<String> templateSettingsList = uniqueTemplateSettingKey.split('-#-');
-                
+
                   //check if the service report name is valid for the attachment.
                   //if valid, use the email template, else do not.
-                  if(templateSettingsList.size() == 2){
+                  if (templateSettingsList.size() == 2) {
                     String allServiceReportNames = templateSettingsList.get(1);
 
                     List<String> serviceReportNamesList = getCommaSeperatedValues(allServiceReportNames);
 
                     //Check if attachment name is supported in Service Report Name settings
-                    for(String sampleReportName : serviceReportNamesList){
-                      if(attachmentRecord.Name.contains(sampleReportName)){
-                      emailTemplateName = emailTemplateSettingsMap.get(uniqueTemplateSettingKey);
-                      break;
+                    for (String sampleReportName : serviceReportNamesList) {
+                      if (attachmentRecord.Name.contains(sampleReportName)) {
+                        emailTemplateName = emailTemplateSettingsMap.get(uniqueTemplateSettingKey);
+                        break;
+                      }
+                    }
+                  }
+                }
+
+                //This second round. This is requried only if work order has record type else not.
+                if (emailTemplateName == null && hasRecordType) {
+
+                  //check if the template setting contains setting only for Object API Name
+                  //Also check if the '-#-' is present so that we are sure that the template setting has Service Report Name
+                  //If it does not have Service Report Name, ignore the setting
+                  uniqueKeyValue = objectAPIName;
+
+                  //check if the template setting contains combination of Object API Name and Record Type Name
+                  //Also check if the '-#-' is present so that we are sure that the template setting has Service Report Name
+                  //If it does not have Service Report Name, ignore the setting
+                  if (uniqueTemplateSettingKey.contains(uniqueKeyValue) && uniqueTemplateSettingKey.contains('-#-')) {
+                    //split the string to get all Service Report Names
+                    List<String> templateSettingsList = uniqueTemplateSettingKey.split('-#-');
+
+                    //check if the service report name is valid for the attachment.
+                    //if valid, use the email template, else do not.
+                    if (templateSettingsList.size() == 2) {
+                      String allServiceReportNames = templateSettingsList.get(1);
+
+                      List<String> serviceReportNamesList = getCommaSeperatedValues(allServiceReportNames);
+
+                      //Check if attachment name is supported in Service Report Name settings
+                      for (String sampleReportName : serviceReportNamesList) {
+                        if (attachmentRecord.Name.contains(sampleReportName)) {
+                          emailTemplateName = emailTemplateSettingsMap.get(uniqueTemplateSettingKey);
+                          break;
+                        }
                       }
                     }
                   }
                 }
               }
-            }
 
-            //check if the email Template is available for Object-Record Type combination
-            if(emailTemplateName == null && uniqueKey != null && !uniqueKey.trim().equals('')){
-              emailTemplateName = emailTemplateSettingsMap.get(uniqueKey);
-            }
-            //if not, check if the email Template is available for Object
-            if(emailTemplateName == null){
-              emailTemplateName = emailTemplateSettingsMap.get(objectAPIName);
-            }
-            //if still not available, use default
-            if(emailTemplateName == null){
-              emailTemplateName = defaultEmailTemplateID;
-            }
-
-            String toEmailAddressCust = null;
-            String toOwner = null;
-            String toContact = null;
-            String toBackendAddress = null;
-            String[] additonalEmails = null;
-            Set<String> ccAddressSet = null;
-            Set<String> bccAddressSet = null;
-            boolean checkIfNoToAddress = true;
-            
-            //Check Admin has not stopped emails to customer
-            if(!stopEmailToCustomer){
-              //Now check if Tech has properly filled the values and not stopped emails to customer
-              Boolean sendServiceReportToCust = Boolean.valueOf(record.get('SVMX_PS_ES_Send_Service_Report_To_Cust__c'));
-              String emailAddressForCust = String.valueOf(record.get('SVMX_PS_ES_Email_To_Customer__c'));
-              if(sendServiceReportToCust && emailAddressForCust != null && !emailAddressForCust.trim().equals('')){
-                toEmailAddressCust = emailAddressForCust;
-                if(toEmailAddressCust != null){
-                  checkIfNoToAddress = false;
-                }
+              //check if the email Template is available for Object-Record Type combination
+              if (emailTemplateName == null && uniqueKey != null && !uniqueKey.trim().equals('')) {
+                emailTemplateName = emailTemplateSettingsMap.get(uniqueKey);
               }
-            } 
-
-            //Check if email needs to be sent to Owner
-            if(!stopEmailToOwner){
-              ///Now check if Tech has properly filled the values and not stopped emails to Owner
-              Boolean sendServiceReportToOwner = Boolean.valueOf(record.get('SVMX_PS_ES_Send_Service_Report_To_Owner__c'));
-              if(sendServiceReportToOwner){
-                toOwner = retrieveOwnersEmail(objectAPIName, record);
-                if(toOwner != null){
-                  checkIfNoToAddress = false;
-                }
+              //if not, check if the email Template is available for Object
+              if (emailTemplateName == null) {
+                emailTemplateName = emailTemplateSettingsMap.get(objectAPIName);
               }
-            }
+              //if still not available, use default
+              if (emailTemplateName == null) {
+                emailTemplateName = defaultEmailTemplateID;
+              }
 
-            //Check if email needs to be sent to contact field on object
-            Boolean sendServiceReportToContact = Boolean.valueOf(record.get('SVMX_PS_ES_Send_Service_ReportTo_Contact__c'));
-            if(!stopEmailToContact && sendServiceReportToContact){
-              String emailContactField = emailContactFieldMappingSettingsMap.get(objectAPIName);
-              if(emailContactField != null){
-                toContact = String.valueOf(record.get(emailContactField));
+              String toEmailAddressCust = null;
+              String toOwner = null;
+              String toContact = null;
+              String toBackendAddress = null;
+              String[] additonalEmails = null;
+              Set<String> ccAddressSet = null;
+              Set<String> bccAddressSet = null;
+              boolean checkIfNoToAddress = true;
+              // SVMXCFG-926: Add "ToAddressLog" to log problems in finding to address(es)
+              List<String> toAddressLogs = new List<String>();
 
-                String contactEmailField = null;
-                if(emailContactField.endsWith('__c')){
-                  contactEmailField = emailContactField.replace('__c', '__r');
-                }else if(emailContactField.endsWith('Id')){
-                  contactEmailField = emailContactField.replace('Id', '');
-                }
-
-                Sobject contactObject = record.getSObject(contactEmailField);
-                if(contactObject != null){
-                  String contactEmail = String.valueOf(contactObject.get('Email'));
-                  if(contactEmail != null && !contactEmail.trim().equals('')){
-                    System.debug('Found Contact Email - ' + contactEmail);
-                    toContact = contactEmail;
-                  }else{
-                    System.debug('Could not Found Contact Email, Use Contact Id - ' + toContact);
+              //Check Admin has not stopped emails to customer
+              if (!stopEmailToCustomer) {
+                //Now check if Tech has properly filled the values and not stopped emails to customer
+                Boolean sendServiceReportToCust = Boolean.valueOf(record.get('SVMX_PS_ES_Send_Service_Report_To_Cust__c'));
+                String emailAddressForCust = String.valueOf(record.get('SVMX_PS_ES_Email_To_Customer__c'));
+                if (sendServiceReportToCust) {
+                  if (emailAddressForCust != null && !emailAddressForCust.trim().equals('')) {
+                    toEmailAddressCust = emailAddressForCust;
+                    checkIfNoToAddress = false;
+                  } else {
+                    toAddressLogs.add('"Send Service Report to Customer" is checked, but "Email to Customer" is not populated.');
                   }
-                }else{
-                    System.debug('Could not Found Contact Object, Use Contact Id - ' + toContact);
                 }
+              }
 
-                if(toContact != null){
+              //Check if email needs to be sent to Owner
+              if (!stopEmailToOwner) {
+                ///Now check if Tech has properly filled the values and not stopped emails to Owner
+                Boolean sendServiceReportToOwner = Boolean.valueOf(record.get('SVMX_PS_ES_Send_Service_Report_To_Owner__c'));
+                if (sendServiceReportToOwner) {
+                  toOwner = retrieveOwnersEmail(objectAPIName, record);
+                  if (toOwner != null) {
+                    checkIfNoToAddress = false;
+                  } else {
+                    toAddressLogs.add('"Send Service Report to Owner" is checked, but could not retrieve Owner email.');
+                  }
+                }
+              }
+
+              //Check if email needs to be sent to contact field on object
+              Boolean sendServiceReportToContact = Boolean.valueOf(record.get('SVMX_PS_ES_Send_Service_ReportTo_Contact__c'));
+              if (!stopEmailToContact && sendServiceReportToContact) {
+                String emailContactField = emailContactFieldMappingSettingsMap.get(objectAPIName);
+                if (emailContactField != null) {
+                  toContact = String.valueOf(record.get(emailContactField));
+
+                  String contactEmailField = null;
+                  if (emailContactField.endsWith('__c')) {
+                    contactEmailField = emailContactField.replace('__c', '__r');
+                  } else if (emailContactField.endsWith('Id')) {
+                    contactEmailField = emailContactField.replace('Id', '');
+                  }
+
+                  Sobject contactObject = record.getSObject(contactEmailField);
+                  if (contactObject != null) {
+                    String contactEmail = String.valueOf(contactObject.get('Email'));
+                    if (contactEmail != null && !contactEmail.trim().equals('')) {
+                      System.debug('Found Contact Email - ' + contactEmail);
+                      toContact = contactEmail;
+                    } else {
+                      System.debug('Could not find Contact Email for Contact Id - ' + toContact);
+                      toContact = null;
+                    }
+                  } else {
+                    System.debug('Could not find Contact Object for Contact Id - ' + toContact);
+                    toContact = null;
+                  }
+
+                  if (toContact != null) {
+                    checkIfNoToAddress = false;
+                  } else {
+                    toAddressLogs.add('"Send Service Report to Contact" is checked, but could not retrieve email for Contact.');
+                  }
+                } else {
+                  System.debug('Unable to find Contact Mapping');
+                  toAddressLogs.add('"Send Service Report to Contact" is checked, but no Contact mapping is setup.');
+                }
+              }
+
+              //Check Admin has not stopped emails to additional people
+              if (!stopEmailToAdditional) {
+                //Now check if Tech has properly filled the values and not stopped emails to additional people
+                Boolean sendServiceReportToAdditional = Boolean.valueOf(record.get('SVMX_PS_ES_Send_To_Additional_People__c'));
+                String emailAddressForAdditional = String.valueOf(record.get('SVMX_PS_ES_Email_To_Additional_People__c'));
+                if (sendServiceReportToAdditional) {
+                  if (emailAddressForAdditional != null && !emailAddressForAdditional.trim().equals('')) {
+                    additonalEmails = getCommaSeperatedValues(emailAddressForAdditional);
+                    if (additonalEmails != null && additonalEmails.size() > 0) {
+                      checkIfNoToAddress = false;
+                    } else {
+                      toAddressLogs.add('"Send to Additional People" is checked, but "Email to Additional People" is not populated.');
+                    }
+                  }
+                }
+              }
+
+              //Checks if send to default email address is needed. Validates the default email address field and Sets toBackend Address field if Validation comes back as true.
+              if (sendToDefaultEmailAddress) {
+                if(defaultEmailAddress != null && !defaultEmailAddress.trim().equals('')) {
+                  toBackendAddress = defaultEmailAddress;
                   checkIfNoToAddress = false;
+                } else {
+                  toAddressLogs.add('"Send to Default Email" is checked, but "Default Email Address" is not configured.');
                 }
-              }else{
-                System.debug('Unable to find Contact Mapping');
               }
-            }
 
-            //Check Admin has not stopped emails to additional people
-            if(!stopEmailToAdditional){
-              //Now check if Tech has properly filled the values and not stopped emails to additional people
-              Boolean sendServiceReportToAdditional = Boolean.valueOf(record.get('SVMX_PS_ES_Send_To_Additional_People__c'));
-              String emailAddressForAdditional = String.valueOf(record.get('SVMX_PS_ES_Email_To_Additional_People__c'));
-              if(sendServiceReportToAdditional && emailAddressForAdditional != null
-                                     && !emailAddressForAdditional.trim().equals('')){
-                additonalEmails = getCommaSeperatedValues(emailAddressForAdditional);
-
-                if(additonalEmails != null && additonalEmails.size() > 0){
-                  checkIfNoToAddress = false;
+              if (checkIfNoToAddress) {
+                if (toAddressLogs.isEmpty())
+                {
+                  // SVMXCFG-926 EmailHandler Error Handling
+                  throw new EmailHandlerException('Email handler: No To Address found for sending Attachment. Ensure at least one box is checked: ' +
+                          attachmentRecord.Id);
                 }
-              }  
-            } 
-
-            //Checks if send to default email address is needed. Validates the default email address field and Sets toBackend Address field if Validation comes back as true.
-            if(sendToDefaultEmailAddress && defaultEmailAddress != null && !defaultEmailAddress.trim().equals('')){
-                toBackendAddress = defaultEmailAddress;
-                checkIfNoToAddress = false;
-            }
-
-            if(checkIfNoToAddress){
-              System.debug('Email handler: No To Address found for sending Attachment.' + 
-                              'Hence do not send the email for attachment - ' + attachmentRecord.Id);
-              continue;
-            }
-
-            //get all BCC Email Address
-            if(!stopBCC){
-              bccAddressSet = getAllBCCAddresses(record, attachmentRecord.Owner.Email, objectAPIName);
-            }
-            
-            //get all CC Email Address
-            if(!stopCC){
-              ccAddressSet = getAllCCAddresses(record, attachmentRecord.Owner.Email, objectAPIName);
-            }
-
-            System.debug('Email Template Name to be used -' + emailTemplateName);
-            System.debug('List of Templates available ' + emailTemplateMap);
-
-            //Use information in the most recent Attachment to populate the email message attachment info.
-            Messaging.EmailFileAttachment emailAttachment = new Messaging.EmailFileAttachment();
-            emailAttachment.setFileName(attachmentRecord.Name);
-            emailAttachment.setBody(attachmentRecord.Body);
-            
-            // Construct the Email Message
-            Messaging.SingleEmailMessage message = null;
-            EmailTemplate baseTemplate = null;
-
-            if(emailTemplateName != null && !emailTemplateName.trim().equals('')){
-              baseTemplate = emailTemplateMap.get(emailTemplateName);
-            }
-
-            if(baseTemplate != null){
-              System.debug('Email handler: Create Dummy Email using template : ' + baseTemplate.Name);
-              message = new Messaging.SingleEmailMessage();
-              message.setTemplateId(baseTemplate.Id);
-              message.setTargetObjectId(defaultContactID);  
-              message.setFileAttachments(new Messaging.EmailFileAttachment[] { emailAttachment });
-              message.setSaveAsActivity(false);
-              message.setWhatId(attachmentRecord.ParentId);
-                          
-              // Send the emails in a transaction, then roll it back in order to use the template with external email addresses
-              // This will count against DML limits so we must be certain that an iPad/offline user will sync (insert/update)
-              // no more than 75 Service Report attachments in a single sync.
-              Savepoint sp = Database.setSavepoint();
-              Messaging.sendEmail(new Messaging.SingleEmailMessage[] { message } );
-              Database.rollback(sp);
-            }
-
-            //Array to store all cc Addresses
-            String[] ccAddresses = null;
-            //Array to store all Bcc Addresses
-            String[] bccAddresses = null;
-
-            //Get all Cc Address
-            if(ccAddressSet != null && !ccAddressSet.isEmpty()){
-              System.debug('Email handler: get All Cc Addresses');
-              ccAddresses = new List<String>();
-              ccAddresses.addAll(ccAddressSet);
-            }
-
-            //Get all Bcc Address
-            if(bccAddressSet != null && !bccAddressSet.isEmpty()){
-              System.debug('Email handler: get All Bcc Addresses');
-              bccAddresses = new List<String>();
-              bccAddresses.addAll(bccAddressSet);
-            }
-
-            //Check if mails need to be grouped or not
-            if(groupEmails){
-              System.debug('Email handler: Group All Emails');
-              //If yes, then send a single emails
-              //Array to store all To Addresses
-              String[] toAddresses = new List<String>();
-              //Get all To Address
-              toAddresses = new List<String> ();
-              if(toEmailAddressCust != null){
-                toAddresses.add(toEmailAddressCust);
+                else
+                {
+                  // SVMXCFG-926 EmailHandler Error Handling
+                  throw new EmailHandlerException('Email handler: No To Address found for sending Attachment: ' +
+                          attachmentRecord.Id + ' Detail: ' + toAddressLogs);
+                }
               }
-              if(toOwner != null){
-                toAddresses.add(toOwner);
-              }         
-              if(toContact != null){
-                toAddresses.add(toContact);
+
+              //get all BCC Email Address
+              if (!stopBCC) {
+                bccAddressSet = getAllBCCAddresses(record, attachmentRecord.Owner.Email, objectAPIName);
               }
-              //Validates toBackendAddress and adds it to the Toaddresses list
-              if(toBackendAddress != null){
-                toAddresses.add(toBackendAddress);
-              }   
-              if(additonalEmails != null && additonalEmails.size() > 0){
-                toAddresses.addAll(additonalEmails);
-              }    
-              System.debug('Email handler: To Addresses - ' + toAddresses);     
-              //create message
-              Messaging.SingleEmailMessage message1 = createMessage(toAddresses, 
-                          ccAddresses, bccAddresses, emailAttachment, message, orgWideAddress);
-              messagesList.add(message1);
-              Task task = createActivityForLogging(attachmentRecord.OwnerId, attachmentRecord.ParentId, toAddresses, ccAddresses,
-                                          bccAddresses, attachmentRecord.Name, message1.getPlainTextBody(), message1.getSubject());
-              taskList.add(task);
-            }else{
-              System.debug('Email handler: Do not Group Emails');
-              //If no, then create multiple emails
-              //Create message to send to customer and include Bcc and Cc
-              if(toEmailAddressCust != null){
-                String[] toAddresses = new String[] {toEmailAddressCust};
-                System.debug('Email handler: To Customer - ' + toAddresses);    
-                Messaging.SingleEmailMessage message1 = createMessage(toAddresses, ccAddresses, 
-                                bccAddresses, emailAttachment, message, orgWideAddress);
-                messagesList.add(message1);
+
+              //get all CC Email Address
+              if (!stopCC) {
+                ccAddressSet = getAllCCAddresses(record, attachmentRecord.Owner.Email, objectAPIName);
+              }
+
+              System.debug('Email Template Name to be used -' + emailTemplateName);
+              System.debug('List of Templates available ' + emailTemplateMap);
+
+              //Use information in the most recent Attachment to populate the email message attachment info.
+              Messaging.EmailFileAttachment emailAttachment = new Messaging.EmailFileAttachment();
+              emailAttachment.setFileName(attachmentRecord.Name);
+              emailAttachment.setBody(attachmentRecord.Body);
+
+              // Construct the Email Message
+              Messaging.SingleEmailMessage message = null;
+              EmailTemplate baseTemplate = null;
+
+              if (emailTemplateName != null && !emailTemplateName.trim().equals('')) {
+                baseTemplate = emailTemplateMap.get(emailTemplateName);
+              }
+
+              if (baseTemplate != null) {
+                System.debug('Email handler: Create Dummy Email using template : ' + baseTemplate.Name);
+                message = new Messaging.SingleEmailMessage();
+                message.setTemplateId(baseTemplate.Id);
+                message.setTargetObjectId(defaultContactID);
+                message.setFileAttachments(new Messaging.EmailFileAttachment[]{
+                        emailAttachment
+                });
+                message.setSaveAsActivity(false);
+                message.setWhatId(attachmentRecord.ParentId);
+
+                // Send the emails in a transaction, then roll it back in order to use the template with external email addresses
+                // This will count against DML limits so we must be certain that an iPad/offline user will sync (insert/update)
+                // no more than 75 Service Report attachments in a single sync.
+                Savepoint sp = Database.setSavepoint();
+                Messaging.sendEmail(new Messaging.SingleEmailMessage[]{
+                        message
+                });
+                Database.rollback(sp);
+              }
+
+              //Array to store all cc Addresses
+              String[] ccAddresses = null;
+              //Array to store all Bcc Addresses
+              String[] bccAddresses = null;
+
+              //Get all Cc Address
+              if (ccAddressSet != null && !ccAddressSet.isEmpty()) {
+                System.debug('Email handler: get All Cc Addresses');
+                ccAddresses = new List<String>();
+                ccAddresses.addAll(ccAddressSet);
+              }
+
+              //Get all Bcc Address
+              if (bccAddressSet != null && !bccAddressSet.isEmpty()) {
+                System.debug('Email handler: get All Bcc Addresses');
+                bccAddresses = new List<String>();
+                bccAddresses.addAll(bccAddressSet);
+              }
+
+              //Check if mails need to be grouped or not
+              if (groupEmails) {
+                System.debug('Email handler: Group All Emails');
+                //If yes, then send a single emails
+                //Array to store all To Addresses
+                String[] toAddresses = new List<String>();
+                //Get all To Address
+                toAddresses = new List<String> ();
+                if (toEmailAddressCust != null) {
+                  toAddresses.add(toEmailAddressCust);
+                }
+                if (toOwner != null) {
+                  toAddresses.add(toOwner);
+                }
+                if (toContact != null) {
+                  toAddresses.add(toContact);
+                }
+                //Validates toBackendAddress and adds it to the Toaddresses list
+                if (toBackendAddress != null) {
+                  toAddresses.add(toBackendAddress);
+                }
+                if (additonalEmails != null && additonalEmails.size() > 0) {
+                  toAddresses.addAll(additonalEmails);
+                }
+                System.debug('Email handler: To Addresses - ' + toAddresses);
+                //create message
+                Messaging.SingleEmailMessage message1 = createMessage(toAddresses,
+                        ccAddresses, bccAddresses, emailAttachment, message, orgWideAddress);
+                messagesList.add(new EmailMessageWrapper(message1, attachmentRecord));
                 Task task = createActivityForLogging(attachmentRecord.OwnerId, attachmentRecord.ParentId, toAddresses, ccAddresses,
-                                          bccAddresses, attachmentRecord.Name, message1.getPlainTextBody(), message1.getSubject());
+                        bccAddresses, attachmentRecord.Name, message1.getPlainTextBody(), message1.getSubject());
                 taskList.add(task);
+              } else {
+                System.debug('Email handler: Do not Group Emails');
+                //If no, then create multiple emails
+                //Create message to send to customer and include Bcc and Cc
+                if (toEmailAddressCust != null) {
+                  String[] toAddresses = new String[]{
+                          toEmailAddressCust
+                  };
+                  System.debug('Email handler: To Customer - ' + toAddresses);
+                  Messaging.SingleEmailMessage message1 = createMessage(toAddresses, ccAddresses,
+                          bccAddresses, emailAttachment, message, orgWideAddress);
+                  messagesList.add(new EmailMessageWrapper(message1, attachmentRecord));
+                  Task task = createActivityForLogging(attachmentRecord.OwnerId, attachmentRecord.ParentId, toAddresses, ccAddresses,
+                          bccAddresses, attachmentRecord.Name, message1.getPlainTextBody(), message1.getSubject());
+                  taskList.add(task);
+                }
+                //Create message to send to owner
+                if (toOwner != null) {
+                  String[] toAddresses = new String[]{
+                          toOwner
+                  };
+                  System.debug('Email handler: To Owner - ' + toAddresses);
+                  Messaging.SingleEmailMessage message1 = createMessage(toAddresses, null, null,
+                          emailAttachment, message, orgWideAddress);
+                  messagesList.add(new EmailMessageWrapper(message1, attachmentRecord));
+                  Task task = createActivityForLogging(attachmentRecord.OwnerId, attachmentRecord.ParentId, toAddresses, null,
+                          null, attachmentRecord.Name, message1.getPlainTextBody(), message1.getSubject());
+                  taskList.add(task);
+                }
+                //Creates seperate message to backend address
+                if (toBackendAddress != null) {
+                  String[] toAddresses = new String[]{
+                          toBackendAddress
+                  };
+                  System.debug('Email handler: To Backend Address - ' + toAddresses);
+                  Messaging.SingleEmailMessage message1 = createMessage(toAddresses, null, null,
+                          emailAttachment, message, orgWideAddress);
+                  messagesList.add(new EmailMessageWrapper(message1, attachmentRecord));
+                  Task task = createActivityForLogging(attachmentRecord.OwnerId, attachmentRecord.ParentId, toAddresses, null,
+                          null, attachmentRecord.Name, message1.getPlainTextBody(), message1.getSubject());
+                  taskList.add(task);
+                }
+                //Create message to send to contact
+                if (toContact != null) {
+                  String[] toAddresses = new String[]{
+                          toContact
+                  };
+                  System.debug('Email handler: To Contact - ' + toAddresses);
+                  Messaging.SingleEmailMessage message1 = createMessage(toAddresses, null, null,
+                          emailAttachment, message, orgWideAddress);
+                  messagesList.add(new EmailMessageWrapper(message1, attachmentRecord));
+                  Task task = createActivityForLogging(attachmentRecord.OwnerId, attachmentRecord.ParentId, toAddresses, null,
+                          null, attachmentRecord.Name, message1.getPlainTextBody(), message1.getSubject());
+                  taskList.add(task);
+                }
+                //Create message to send to additional email addresses
+                if (additonalEmails != null && additonalEmails.size() > 0) {
+                  System.debug('Email handler: To additional people - ' + additonalEmails);
+                  Messaging.SingleEmailMessage message1 = createMessage(additonalEmails, null, null,
+                          emailAttachment, message, orgWideAddress);
+                  messagesList.add(new EmailMessageWrapper(message1, attachmentRecord));
+                  Task task = createActivityForLogging(attachmentRecord.OwnerId, attachmentRecord.ParentId, additonalEmails, null,
+                          null, attachmentRecord.Name, message1.getPlainTextBody(), message1.getSubject());
+                  taskList.add(task);
+                }
               }
-              //Create message to send to owner
-              if(toOwner != null){
-                String[] toAddresses = new String[] {toOwner};
-                System.debug('Email handler: To Owner - ' + toAddresses);    
-                Messaging.SingleEmailMessage message1 = createMessage(toAddresses, null, null, 
-                                emailAttachment, message, orgWideAddress);
-                messagesList.add(message1);
-                Task task = createActivityForLogging(attachmentRecord.OwnerId, attachmentRecord.ParentId, toAddresses, null,
-                                          null, attachmentRecord.Name, message1.getPlainTextBody(), message1.getSubject());
-                taskList.add(task);
-              } 
-              //Creates seperate message to backend address
-              if(toBackendAddress != null){
-                String[] toAddresses = new String[] {toBackendAddress};
-                System.debug('Email handler: To Backend Address - ' + toAddresses);    
-                Messaging.SingleEmailMessage message1 = createMessage(toAddresses, null, null, 
-                                emailAttachment, message, orgWideAddress);
-                messagesList.add(message1);
-                Task task = createActivityForLogging(attachmentRecord.OwnerId, attachmentRecord.ParentId, toAddresses, null,
-                                          null, attachmentRecord.Name, message1.getPlainTextBody(), message1.getSubject());
-                taskList.add(task);
-              } 
-              //Create message to send to contact        
-              if(toContact != null){
-                String[] toAddresses = new String[] {toContact};
-                System.debug('Email handler: To Contact - ' + toAddresses);    
-                Messaging.SingleEmailMessage message1 = createMessage(toAddresses, null, null, 
-                                emailAttachment, message, orgWideAddress);
-                messagesList.add(message1);
-                Task task = createActivityForLogging(attachmentRecord.OwnerId, attachmentRecord.ParentId, toAddresses, null,
-                                          null, attachmentRecord.Name, message1.getPlainTextBody(), message1.getSubject());
-                taskList.add(task);
-              }    
-              //Create message to send to additional email addresses        
-              if(additonalEmails != null && additonalEmails.size() > 0){
-                System.debug('Email handler: To additional people - ' + additonalEmails);    
-                Messaging.SingleEmailMessage message1 = createMessage(additonalEmails, null, null, 
-                                emailAttachment, message, orgWideAddress);
-                messagesList.add(message1);
-                Task task = createActivityForLogging(attachmentRecord.OwnerId, attachmentRecord.ParentId, additonalEmails, null,
-                                          null, attachmentRecord.Name, message1.getPlainTextBody(), message1.getSubject());
-                taskList.add(task);
-              }         
+            } else {
+              // SVMXCFG-926 EmailHandler Error Handling
+              throw new EmailHandlerException('Email handler: No Org Wide Address received for Attachment ' + attachmentRecord.Id + '. Hence cannot send it');
             }
-          }else{
-            System.debug('Email handler: no Org Wide Address received for Attachment ' + attachmentRecord.Id + '. Hence cannot send it');
+          } else {
+            // SVMXCFG-926 EmailHandler Error Handling
+            throw new EmailHandlerException('Email handler: No record received for Attachment ' + attachmentRecord.Id + '. Hence Ignore');
           }
-        }else{
-          System.debug('Email handler: no record received for Attachment ' + attachmentRecord.Id + '. Hence Ignore');
+        } else {
+          // SVMXCFG-926 EmailHandler Error Handling
+          throw new EmailHandlerException('Email handler: Attachment ' + attachmentRecord.Id + '. Could not load body');
         }
-      }else{
-         System.debug('Email handler: Attachment ' + attachmentRecord.Id + '. could not load body');
+
+      // SVMXCFG-926: Added try-catch block
+      } catch (EmailHandlerException ehe) {
+        System.debug(ehe.getMessage());
+        if (saveErrorsAsActivity != null && saveErrorsAsActivity == true) {
+          Task task = createActivityForErrors(attachmentRecord.OwnerId, attachmentRecord.ParentId, attachmentRecord.Name,
+                  ehe.getMessage(), null);
+          taskList.add(task);
+        }
+      } catch (Exception e) {
+        System.debug('Email Handler Exception: ' + e.getMessage() + ' -- ' + e.getStackTraceString());
+        if (saveErrorsAsActivity != null && saveErrorsAsActivity == true) {
+          Task task = createActivityForErrors(attachmentRecord.OwnerId, attachmentRecord.ParentId, attachmentRecord.Name,
+                  'Email Handler Exception: ' + e.getMessage(), e.getStackTraceString());
+          taskList.add(task);
+        }
       }
+
     }//End of For Loop of Attachments
 
     GenericListHolderClass genericListHolder = new GenericListHolderClass(messagesList,taskList);
@@ -1172,6 +1256,38 @@ global without sharing class SVMX_PS_ES_Email_Handler implements Schedulable, Da
   }
 
   /*****************************************************************************************************************************************
+  *  Method Name : createActivityForErrors (added for SVMXCFG-926)
+  *  Parameter   : String attachmentOwnerId -- user details of the attachment owner
+  *                String workOrderId -- work order id
+  *                String attachmentName -- name of the attachment sent
+  *                String message -- Error Message
+  *                String stack -- Stack Trace of the Exception
+  *  Returns     : Task -- tasks which needs to be saved
+  *  Description : Creates a salesforce task to store the email as an "Activity History"
+  *******************************************************************************************************************************************/
+  @TestVisible private Task createActivityForErrors(String attachmentOwnerId, String workOrderId,
+          String attachmentName, String message, String stack){
+
+    String comments = 'Attachment: ' + attachmentName + '\r\n\r\n';
+    comments += 'Message: ' + message + '\r\n\r\n';
+    comments += 'Stack Trace: ' + '\r\n\r\n';
+
+    if(stack != null){
+      comments += stack;
+    }
+
+    Task emailTask = new Task();
+    emailTask.Type = 'Email';
+    emailTask.Status = 'Error';
+    emailTask.ActivityDate = Date.today();
+    emailTask.Description = comments;
+    emailTask.OwnerId = attachmentOwnerId;
+    emailTask.WhatId = workOrderId;
+    emailTask.Subject = ('Error: ' + message).abbreviate(255);
+    return emailTask;
+  }
+
+  /*****************************************************************************************************************************************
   *  Method Name : checkAttachmentExtensionValidity
   *  Parameter   : String attachmentName -- Name of the attachment
   *  Returns     : boolean -- true if Attachment Name is valid else false
@@ -1372,6 +1488,10 @@ global without sharing class SVMX_PS_ES_Email_Handler implements Schedulable, Da
         }
         else if(emailService.Name.equals(SAVE_EMAIL_AS_ACTIVTIY)){
           saveEmailAsActivity = emailService.SVMX_PS_ES_Value__c;
+        }
+        else if(emailService.Name.equals(SAVE_ERRORS_AS_ACTIVTIY)){
+          // SVMXCFG-926 Save Errors as Activity
+          saveErrorsAsActivity = emailService.SVMX_PS_ES_Value__c;
         }
       }
     }
@@ -1578,7 +1698,13 @@ global without sharing class SVMX_PS_ES_Email_Handler implements Schedulable, Da
   @TestVisible private List<String> getCommaSeperatedValues(String valueString){
       List<String> valueStringList = new List<String>();
       if(valueString != null && !valueString.trim().equals('')){
-           valueStringList = valueString.split(',');
+           for (String s : valueString.split('[,; ]'))
+           {
+               if (String.isNotBlank(s))
+               {
+                   valueStringList.add(s);
+               }
+           }
       }
       
       if(valueStringList.size() <= 0){
@@ -1619,7 +1745,7 @@ global without sharing class SVMX_PS_ES_Email_Handler implements Schedulable, Da
         System.debug('Could not Found Owner Email, Use Owner Id - ' + toOwner);
       }
     }else{
-        System.debug('Could not Found Owner Object, Use Owner Id - ' + toOwner);
+      System.debug('Could not Found Owner Object, Use Owner Id - ' + toOwner);
     }
     return toOwner;
   }
@@ -1630,20 +1756,30 @@ global without sharing class SVMX_PS_ES_Email_Handler implements Schedulable, Da
   *******************************************************************************************************************************************/  
   @TestVisible private class GenericListHolderClass{
     //List to store all email message prepared
-    List<Messaging.SingleEmailMessage> messagesList = new List<Messaging.SingleEmailMessage>();
+    // SVMXCFG-926 Updated to use the "EmailMessageWrapper"
+    List<EmailMessageWrapper> wrappedMessageList = new List<EmailMessageWrapper>();
 
     //List to store all email message prepared
     List<Task> taskList = new List<Task>();
 
     //constructor for initiliazation fo lists
-    GenericListHolderClass (List<Messaging.SingleEmailMessage> messagesList,List<Task> taskList){
-      this.messagesList = messagesList;
+    GenericListHolderClass (List<EmailMessageWrapper> messagesList,List<Task> taskList){
+      this.wrappedMessageList = messagesList;
       this.taskList = taskList;
+    }
+
+    List<EmailMessageWrapper> getWrappedMessageList() {
+      return this.wrappedMessageList;
     }
 
     //method to return messages list
     List<Messaging.SingleEmailMessage> getMessageList(){
-      return this.messagesList;
+      List<Messaging.SingleEmailMessage> result = new List<Messaging.SingleEmailMessage>();
+      for (EmailMessageWrapper wrapper : this.wrappedMessageList)
+      {
+        result.add(wrapper.message);
+      }
+      return result;
     }
 
     //method to return tasks list
@@ -1651,4 +1787,23 @@ global without sharing class SVMX_PS_ES_Email_Handler implements Schedulable, Da
       return this.taskList;
     }
   }
+
+  // SVMXCFG-926 Correlate which "ParentId" each EmailMessage was associated to so we can create the "Error Task"
+  private class EmailMessageWrapper {
+    Messaging.SingleEmailMessage message;
+    Id ownerId;
+    Id parentId;
+    String attachmentName;
+
+    public EmailMessageWrapper(Messaging.SingleEmailMessage msg, Attachment attachmentRecord)
+    {
+      this.message = msg;
+      this.ownerId = attachmentRecord.OwnerId;
+      this.parentId = attachmentRecord.ParentId;
+      this.attachmentName = attachmentRecord.Name;
+    }
+  }
+
+  private class EmailHandlerException extends Exception {}
+
 }

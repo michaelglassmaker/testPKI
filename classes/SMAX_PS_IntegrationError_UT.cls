@@ -51,7 +51,9 @@ private class SMAX_PS_IntegrationError_UT {
 		Id invDMRRecordTypeId = SMAX_PS_Utility.getRecordType('SVMXC__Proforma_Invoice__c', 'DMR').Id;
 		SVMXC__Proforma_Invoice__c inv = new SVMXC__Proforma_Invoice__c(RecordTypeId=invDMRRecordTypeId, SVMXC__Status__c='Locked');
 		inv.SMAX_PS_SAP_DMR_Number__c = 'DEF0001001001';
-		insert inv;
+		SVMXC__Proforma_Invoice__c inv2 = new SVMXC__Proforma_Invoice__c(RecordTypeId=invDMRRecordTypeId, SVMXC__Status__c='Released');
+		inv2.SMAX_PS_SAP_DMR_Number__c = 'DEF0001001002';
+		insert new List<SVMXC__Proforma_Invoice__c> { inv, inv2 };
 
 		SVMXC__Service_Contract__c sc = SMAX_PS_TestDataFactory.createSvcMaintContract('SC-0001T001', acct.Id, Date.today(), Date.today().addYears(1));
 
@@ -70,6 +72,9 @@ private class SMAX_PS_IntegrationError_UT {
 		SMAX_PS_IntegrationError__c dmrError = createError('InvoiceNumber', inv.SMAX_PS_SAP_DMR_Number__c);
 		dmrError.SMAX_PS_ErrorMessage__c = 'No New values found to update DMR: ' + inv.SMAX_PS_SAP_DMR_Number__c;
 		ieList.add(dmrError);
+		SMAX_PS_IntegrationError__c dmrError2 = createError('InvoiceNumber', inv2.SMAX_PS_SAP_DMR_Number__c);
+		dmrError2.SMAX_PS_ErrorMessage__c = inv.SMAX_PS_SAP_DMR_Number__c + ' is currently being processed (by Joe)';
+		ieList.add(dmrError2);
 		ieList.add(createError('CaseId', cs.Id + ''));
 
 		insert ieList;
@@ -79,12 +84,15 @@ private class SMAX_PS_IntegrationError_UT {
 
 		SVMXC__Proforma_Invoice__c resultInv = [SELECT Id, Name, SVMXC__Status__c FROM SVMXC__Proforma_Invoice__c WHERE Id = :inv.Id];
 		System.assertEquals('Open', resultInv.SVMXC__Status__c);
+		// SVMXCFG-1080 - Move to "error", but only if no invoice number received
+		SVMXC__Proforma_Invoice__c resultInv2 = [SELECT Id, Name, SVMXC__Status__c FROM SVMXC__Proforma_Invoice__c WHERE Id = :inv2.Id];
+		System.assertEquals('Error', resultInv2.SVMXC__Status__c);
 
 		SVMXC__RMA_Shipment_Order__c resultPO = [SELECT Id, Name, SVMXC__Order_Status__c FROM SVMXC__RMA_Shipment_Order__c WHERE Id = :po.Id];
 		System.assertEquals('Error', resultPO.SVMXC__Order_Status__c);
 
-//		SVMXC__Stock_Transfer__c resultST = [SELECT Id, Name, SMAX_PS_Status__c FROM SVMXC__Stock_Transfer__c WHERE Id = :st.Id];
-//		System.assertEquals('Error', resultST.SMAX_PS_Status__c);
+		SVMXC__Stock_Transfer__c resultST = [SELECT Id, Name, SMAX_PS_Status__c FROM SVMXC__Stock_Transfer__c WHERE Id = :st.Id];
+		System.assertEquals('Error', resultST.SMAX_PS_Status__c);
 
 		SMAX_PS_IntegrationError__c ie1 = new SMAX_PS_IntegrationError__c();
 		ie1.Id = ieList[0].Id;

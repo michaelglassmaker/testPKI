@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This is the main field instrument or system record. Linked to this record may be one or more related items which make up the entire package or system.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <label>Field Inventory</label>
+    <nameField>
+        <label>Field Inventory</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Field Inventory</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Material__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>List_Price__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Product_Line__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Age_in_Months__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Product_Line__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>OWNER.ALIAS</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Cost_Center__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Status__c</lookupDialogsAdditionalFields>
+        <searchFilterFields>Sales_Region__c</searchFilterFields>
+        <searchFilterFields>Product_Line__c</searchFilterFields>
+        <searchFilterFields>Status__c</searchFilterFields>
+        <searchResultsAdditionalFields>Product_Line__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Plant__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OWNER.ALIAS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Special_Sell_Price__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>IGOR__c</fullName>
+        <externalId>false</externalId>
+        <label>IGOR</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>DEMO</fullName>
+                    <default>false</default>
+                    <label>DEMO</label>
+                </value>
+                <value>
+                    <fullName>USED</fullName>
+                    <default>false</default>
+                    <label>USED</label>
+                </value>
+                <value>
+                    <fullName>EXPENSED</fullName>
+                    <default>false</default>
+                    <label>EXPENSED</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Assigned To</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>R00N30000000hNukEAE</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Plant__c</fullName>
+        <externalId>false</externalId>
+        <label>Plant</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CA13</fullName>
+                    <default>false</default>
+                    <label>CA13</label>
+                </value>
+                <value>
+                    <fullName>US13</fullName>
+                    <default>false</default>
+                    <label>US13</label>
+                </value>
+                <value>
+                    <fullName>1BE3</fullName>
+                    <default>false</default>
+                    <label>1BE3</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Yet For Sale</fullName>
+                    <default>false</default>
+                    <label>Not Yet For Sale</label>
+                </value>
+                <value>
+                    <fullName>Available for Sale</fullName>
+                    <default>false</default>
+                    <label>Available for Sale</label>
+                </value>
+                <value>
+                    <fullName>Customer Site</fullName>
+                    <default>false</default>
+                    <label>Customer Site</label>
+                </value>
+                <value>
+                    <fullName>Requires Service</fullName>
+                    <default>false</default>
+                    <label>Requires Service</label>
+                </value>
+                <value>
+                    <fullName>Sold - Shipped</fullName>
+                    <default>false</default>
+                    <label>Sold - Shipped</label>
+                </value>
+                <value>
+                    <fullName>Sold - Pending Shipment</fullName>
+                    <default>false</default>
+                    <label>Sold - Pending Shipment</label>
+                </value>
+                <value>
+                    <fullName>On Order</fullName>
+                    <default>false</default>
+                    <label>On Order</label>
+                </value>
+                <value>
+                    <fullName>Not Found</fullName>
+                    <default>false</default>
+                    <label>Not Found</label>
+                </value>
+                <value>
+                    <fullName>Relieved</fullName>
+                    <default>false</default>
+                    <label>Relieved</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Comment__c</fullName>
+        <externalId>false</externalId>
+        <label>Comment</label>
+        <length>5000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Item_Tag__c</fullName>
+        <externalId>false</externalId>
+        <label>Item Tag</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Material__c</fullName>
+        <externalId>false</externalId>
+        <label>Material</label>
+        <length>15</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Warranty__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(ispickval( Type__c,&quot;DEMO&quot;),&quot;INSTALL AND WARRANTY INCLUDED&quot;,&quot;MUST QUOTE SEPARATE INSTALL AND WARRANTY&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Warranty</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date_Sent__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Sent</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Sold__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Sold</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SAP_Order__c</fullName>
+        <externalId>false</externalId>
+        <label>SAP Order #</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Territory__c</fullName>
+        <externalId>false</externalId>
+        <label>Territory</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Americas</fullName>
+                    <default>false</default>
+                    <label>Americas</label>
+                </value>
+                <value>
+                    <fullName>Pac Rim</fullName>
+                    <default>false</default>
+                    <label>Pac Rim</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>List_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>List Price</label>
+        <summarizedField>Inventory_Items__c.List_Price__c</summarizedField>
+        <summaryForeignKey>Inventory_Items__c.Field_Inventory__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Team__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Team</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CA10 ANALYTICAL</fullName>
+                    <default>false</default>
+                    <label>CA10 ANALYTICAL</label>
+                </value>
+                <value>
+                    <fullName>US10 NorthEast</fullName>
+                    <default>false</default>
+                    <label>US10 NorthEast</label>
+                </value>
+                <value>
+                    <fullName>US10 MidAtlantic</fullName>
+                    <default>false</default>
+                    <label>US10 MidAtlantic</label>
+                </value>
+                <value>
+                    <fullName>US10 South</fullName>
+                    <default>false</default>
+                    <label>US10 South</label>
+                </value>
+                <value>
+                    <fullName>US10 MidWest</fullName>
+                    <default>false</default>
+                    <label>US10 MidWest</label>
+                </value>
+                <value>
+                    <fullName>US10 West</fullName>
+                    <default>false</default>
+                    <label>US10 West</label>
+                </value>
+                <value>
+                    <fullName>CA10 LST</fullName>
+                    <default>false</default>
+                    <label>CA10 LST</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Consignment__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Consignment</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Cost_Center__c</fullName>
+        <externalId>false</externalId>
+        <label>Cost Center</label>
+        <length>15</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ShipTo_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>ShipTo Name</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Line__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Line</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Marketing_Business_Unit__c</controllingField>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>AA</fullName>
+                    <default>false</default>
+                    <label>AA</label>
+                </value>
+                <value>
+                    <fullName>ANP</fullName>
+                    <default>false</default>
+                    <label>ANP</label>
+                </value>
+                <value>
+                    <fullName>APS</fullName>
+                    <default>false</default>
+                    <label>APS</label>
+                </value>
+                <value>
+                    <fullName>AWS</fullName>
+                    <default>false</default>
+                    <label>AWS</label>
+                </value>
+                <value>
+                    <fullName>CSA</fullName>
+                    <default>false</default>
+                    <label>CSA</label>
+                </value>
+                <value>
+                    <fullName>DIA</fullName>
+                    <default>false</default>
+                    <label>DIA</label>
+                </value>
+                <value>
+                    <fullName>DIS</fullName>
+                    <default>false</default>
+                    <label>DIS</label>
+                </value>
+                <value>
+                    <fullName>ESS</fullName>
+                    <default>false</default>
+                    <label>ESS</label>
+                </value>
+                <value>
+                    <fullName>GC</fullName>
+                    <default>false</default>
+                    <label>GC</label>
+                </value>
+                <value>
+                    <fullName>HCS</fullName>
+                    <default>false</default>
+                    <label>HCS</label>
+                </value>
+                <value>
+                    <fullName>HTS</fullName>
+                    <default>false</default>
+                    <label>HTS</label>
+                </value>
+                <value>
+                    <fullName>ICP</fullName>
+                    <default>false</default>
+                    <label>ICP</label>
+                </value>
+                <value>
+                    <fullName>IR</fullName>
+                    <default>false</default>
+                    <label>IR</label>
+                </value>
+                <value>
+                    <fullName>LC</fullName>
+                    <default>false</default>
+                    <label>LC</label>
+                </value>
+                <value>
+                    <fullName>LVI</fullName>
+                    <default>false</default>
+                    <label>LVI</label>
+                </value>
+                <value>
+                    <fullName>MAS</fullName>
+                    <default>false</default>
+                    <label>MAS</label>
+                </value>
+                <value>
+                    <fullName>MLD</fullName>
+                    <default>false</default>
+                    <label>MLD</label>
+                </value>
+                <value>
+                    <fullName>NEO</fullName>
+                    <default>false</default>
+                    <label>NEO</label>
+                </value>
+                <value>
+                    <fullName>PGI</fullName>
+                    <default>false</default>
+                    <label>PGI</label>
+                </value>
+                <value>
+                    <fullName>PRE</fullName>
+                    <default>false</default>
+                    <label>PRE</label>
+                </value>
+                <value>
+                    <fullName>RAM</fullName>
+                    <default>false</default>
+                    <label>RAM</label>
+                </value>
+                <value>
+                    <fullName>RRD</fullName>
+                    <default>false</default>
+                    <label>RRD</label>
+                </value>
+                <value>
+                    <fullName>RRS</fullName>
+                    <default>false</default>
+                    <label>RRS</label>
+                </value>
+                <value>
+                    <fullName>SPS</fullName>
+                    <default>false</default>
+                    <label>SPS</label>
+                </value>
+                <value>
+                    <fullName>TEA</fullName>
+                    <default>false</default>
+                    <label>TEA</label>
+                </value>
+                <value>
+                    <fullName>UVS</fullName>
+                    <default>false</default>
+                    <label>UVS</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>ANALYTICAL SCIENCES</controllingFieldValue>
+                <valueName>AA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ANALYTICAL SCIENCES</controllingFieldValue>
+                <valueName>ESS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ANALYTICAL SCIENCES</controllingFieldValue>
+                <valueName>GC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ANALYTICAL SCIENCES</controllingFieldValue>
+                <valueName>ICP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ANALYTICAL SCIENCES</controllingFieldValue>
+                <valueName>IR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ANALYTICAL SCIENCES</controllingFieldValue>
+                <valueName>LC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ANALYTICAL SCIENCES</controllingFieldValue>
+                <valueName>MAS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ANALYTICAL SCIENCES</controllingFieldValue>
+                <controllingFieldValue>LIFE SCIENCE TECHNOLOGIES</controllingFieldValue>
+                <valueName>RAM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ANALYTICAL SCIENCES</controllingFieldValue>
+                <valueName>TEA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ANALYTICAL SCIENCES</controllingFieldValue>
+                <valueName>UVS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SPECIALTY DIAGNOSTICS</controllingFieldValue>
+                <valueName>NEO</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SPECIALTY DIAGNOSTICS</controllingFieldValue>
+                <valueName>PRE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LIFE SCIENCE TECHNOLOGIES</controllingFieldValue>
+                <valueName>ANP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LIFE SCIENCE TECHNOLOGIES</controllingFieldValue>
+                <valueName>APS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LIFE SCIENCE TECHNOLOGIES</controllingFieldValue>
+                <valueName>AWS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LIFE SCIENCE TECHNOLOGIES</controllingFieldValue>
+                <valueName>CSA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LIFE SCIENCE TECHNOLOGIES</controllingFieldValue>
+                <valueName>DIA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LIFE SCIENCE TECHNOLOGIES</controllingFieldValue>
+                <valueName>DIS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LIFE SCIENCE TECHNOLOGIES</controllingFieldValue>
+                <valueName>HTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LIFE SCIENCE TECHNOLOGIES</controllingFieldValue>
+                <valueName>LVI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LIFE SCIENCE TECHNOLOGIES</controllingFieldValue>
+                <valueName>MLD</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LIFE SCIENCE TECHNOLOGIES</controllingFieldValue>
+                <valueName>PGI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LIFE SCIENCE TECHNOLOGIES</controllingFieldValue>
+                <valueName>RRD</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LIFE SCIENCE TECHNOLOGIES</controllingFieldValue>
+                <valueName>RRS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LIFE SCIENCE TECHNOLOGIES</controllingFieldValue>
+                <valueName>SPS</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sales_Region__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Region</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>NORTH AMERICA</fullName>
+                    <default>false</default>
+                    <label>NORTH AMERICA</label>
+                </value>
+                <value>
+                    <fullName>NAAS West</fullName>
+                    <default>false</default>
+                    <label>NAAS West</label>
+                </value>
+                <value>
+                    <fullName>LA South</fullName>
+                    <default>false</default>
+                    <label>LA South</label>
+                </value>
+                <value>
+                    <fullName>LA North</fullName>
+                    <default>false</default>
+                    <label>LA North</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Age_in_Months__c</fullName>
+        <externalId>false</externalId>
+        <formula>(today()-Date_Received__c)/30</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Age</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date_Received__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Received</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Returned__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Returned</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>NumberOfItems__c</fullName>
+        <description>Number of related materials which make up this inventory system</description>
+        <externalId>false</externalId>
+        <label>ItemCnt</label>
+        <summaryForeignKey>Inventory_Items__c.Field_Inventory__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Serial_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Serial Number</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date_Transfered__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Transfered</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Current_Location__c</fullName>
+        <externalId>false</externalId>
+        <label>Current Location</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Customer Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipName>R00N30000000rM6NEAU</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Details__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Details</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Storage_Location__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage Location</label>
+        <length>15</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>System_List_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>System List Price</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>xDiscounted_Price__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(Age_in_Months__c &lt; 6, System_List_Price__c ,
+if(Age_in_Months__c &lt;19, round((System_List_Price__c * (1-Age_in_Months__c *0.015)),0),
+if(Age_in_Months__c &lt;25, round((System_List_Price__c * (1-Age_in_Months__c *0.02)),0),
+round((System_List_Price__c *0.52),0))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>xDiscounted Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Special_Sell_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Special Sell Price</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Material_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Material Description</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Marketing_Business_Unit__c</fullName>
+        <externalId>false</externalId>
+        <label>Marketing Business Unit</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ANALYTICAL SCIENCES</fullName>
+                    <default>false</default>
+                    <label>ANALYTICAL SCIENCES</label>
+                </value>
+                <value>
+                    <fullName>SPECIALTY DIAGNOSTICS</fullName>
+                    <default>false</default>
+                    <label>SPECIALTY DIAGNOSTICS</label>
+                </value>
+                <value>
+                    <fullName>LIFE SCIENCE TECHNOLOGIES</fullName>
+                    <default>false</default>
+                    <label>LIFE SCIENCE TECHNOLOGIES</label>
+                </value>
+                <value>
+                    <fullName>GENERAL</fullName>
+                    <default>false</default>
+                    <label>GENERAL</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <webLinks>
+        <fullName>PackingList</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Packing List</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://na1.salesforce.com/00O30000000ncg2?pv0={!Inventory_ID}</url>
+        <width>800</width>
+    </webLinks>
+    <webLinks>
+        <fullName>CalcSystemTotal</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <height>600</height>
+        <linkType>sControl</linkType>
+        <masterLabel>Calc System Total</masterLabel>
+        <openType>noSidebar</openType>
+        <protected>false</protected>
+        <scontrol>CalcInventoryTotal</scontrol>
+    </webLinks>
+</CustomObject>

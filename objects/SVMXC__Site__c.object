@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>SMAX_PS_Account_Address__c</fullName>
+        <externalId>false</externalId>
+        <formula>SVMXC__Account__r.ShippingStreet +&quot;,  &quot;+
+SVMXC__Account__r.ShippingCity +&quot;, &quot;+ SVMXC__Account__r.ShippingState +&quot;, &quot;+SVMXC__Account__r.ShippingPostalCode +&quot;,  &quot;+
+SVMXC__Account__r.ShippingCountry</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_AltCustomerNumber__c</fullName>
+        <description>An Alternative Customer Number, instead of the Plant+LocationCode, as is typical for Storage Locations.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>An Alternative Customer Number, instead of the Plant+LocationCode, as is typical for Storage Locations.</inlineHelpText>
+        <label>Alternative Customer Number</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_BillToExtID__c</fullName>
+        <description>External ID field used by integration.</description>
+        <externalId>false</externalId>
+        <label>Bill To Customer Number</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_BillTo__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Bill To Customer</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Locations (Bill To Customer)</relationshipLabel>
+        <relationshipName>LocationBillTos</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Client_Ability_to_Resolve_Issues__c</fullName>
+        <description>Tracks the ability of the client to resolve issues on their own with assistance of PKI remote support (Customer Care)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Tracks the ability of the client to resolve issues on their own with assistance of PKI remote support (Customer Care)</inlineHelpText>
+        <label>Client Ability to Resolve Issues</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_CompanyCode__c</fullName>
+        <description>Used by integration.</description>
+        <externalId>false</externalId>
+        <label>Company Code</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_CompanyGroup__c</fullName>
+        <externalId>false</externalId>
+        <label>Company Group</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ContactExtId__c</fullName>
+        <description>External ID field used by integration.</description>
+        <externalId>false</externalId>
+        <label>Primary Contact ID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup to Contact object, used by integration.</description>
+        <externalId>false</externalId>
+        <label>Primary Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Locations (Primary Contact)</relationshipLabel>
+        <relationshipName>LocationsPrimaryContact</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_CostCenter__c</fullName>
+        <externalId>false</externalId>
+        <label>Cost Center</label>
+        <length>9</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_CostCode__c</fullName>
+        <description>Used by integration.</description>
+        <externalId>false</externalId>
+        <label>Cost Code</label>
+        <length>9</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Customer_Location_ID__c</fullName>
+        <description>Used by integration.</description>
+        <externalId>true</externalId>
+        <label>Customer Location ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_DistributionChannel__c</fullName>
+        <description>Used by integration.</description>
+        <externalId>false</externalId>
+        <label>Distribution Channel</label>
+        <length>2</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Division__c</fullName>
+        <description>Used by integration.</description>
+        <externalId>false</externalId>
+        <label>Division</label>
+        <length>2</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Geography__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Related Geography</description>
+        <externalId>false</externalId>
+        <label>Geography</label>
+        <referenceTo>SMAX_PS_Geography__c</referenceTo>
+        <relationshipLabel>Locations</relationshipLabel>
+        <relationshipName>Locations</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_LL_BillToExtID__c</fullName>
+        <externalId>false</externalId>
+        <label>Local Language Bill To Customer Number</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_LL_BillTo__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The Local Language Customer Master Account for Bill To</description>
+        <externalId>false</externalId>
+        <label>Local Language Bill To Customer</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Locations (Local Language Bill To Customer)</relationshipLabel>
+        <relationshipName>LocalLangBillToLocations</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_LL_ShipToExtID__c</fullName>
+        <externalId>false</externalId>
+        <label>Local Language Ship To Customer Number</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_LL_ShipTo__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The Local Language Customer Master Account for Ship To</description>
+        <externalId>false</externalId>
+        <label>Local Language Ship To Customer</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Locations (Local Language Ship To Customer)</relationshipLabel>
+        <relationshipName>LocalLangShipToLocations</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_LocationCategory__c</fullName>
+        <description>Used by integration.</description>
+        <externalId>false</externalId>
+        <label>Location Category</label>
+        <length>1</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_LocationCode__c</fullName>
+        <description>Used by integration.</description>
+        <externalId>false</externalId>
+        <label>Location Code</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_MaintenancePlant__c</fullName>
+        <description>Used by integration.</description>
+        <externalId>false</externalId>
+        <label>Maintenance Plant</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_My_Location__c</fullName>
+        <description>Phase 0.1 SI-00000676 see JIRA SVMXCFG-568 for further detail. This is used for mobile download criteria.</description>
+        <externalId>false</externalId>
+        <formula>IF($User.Id=SVMXC__Service_Engineer__r.Id, TRUE, FALSE)</formula>
+        <inlineHelpText>Indicates if the current user is the Service Engineer of a given location.</inlineHelpText>
+        <label>My Location</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Non_Consumable_Location__c</fullName>
+        <description>Denotes whether or not a non maintenance plant is BR12</description>
+        <externalId>false</externalId>
+        <formula>IF( SMAX_PS_MaintenancePlant__c =&apos;BR12&apos;, true, false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Denotes whether or not a non maintenance plant is BR12</inlineHelpText>
+        <label>Non-Consumable Location</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ParentExtID__c</fullName>
+        <description>Used by integration.</description>
+        <externalId>false</externalId>
+        <label>Parent External ID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_PayerExtId__c</fullName>
+        <description>External ID field used by integration.</description>
+        <externalId>false</externalId>
+        <label>Payer Customer Number</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Payer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Payer</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Locations (Payer)</relationshipLabel>
+        <relationshipName>LocationPayers</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_PlannerGroup__c</fullName>
+        <description>Used by integration.</description>
+        <externalId>false</externalId>
+        <label>Planner Group</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_PlanningPlant__c</fullName>
+        <description>Used by integration.</description>
+        <externalId>false</externalId>
+        <label>Planning Plant</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Region__c</fullName>
+        <description>Used by integration.</description>
+        <externalId>false</externalId>
+        <label>Region</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_SalesOrg__c</fullName>
+        <description>Used by integration.</description>
+        <externalId>false</externalId>
+        <label>Sales Org</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ShipToExtID__c</fullName>
+        <description>External ID field used by integration.</description>
+        <externalId>false</externalId>
+        <label>Ship To Customer Number</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ShipTo__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Ship To Customer</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Locations (Ship To Customer)</relationshipLabel>
+        <relationshipName>LocationShipTos</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_SoldToExtID__c</fullName>
+        <description>External ID field used by integration.</description>
+        <externalId>false</externalId>
+        <label>Sold To Customer Number</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_StorageLocationID__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage Location Id</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ThirdPartyVendorName__c</fullName>
+        <externalId>false</externalId>
+        <label>Third Party Vendor Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ThirdPartyVendorNumber__c</fullName>
+        <externalId>false</externalId>
+        <label>Third Party Vendor Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_VendorID__c</fullName>
+        <externalId>false</externalId>
+        <label>Vendor Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_VendorName__c</fullName>
+        <externalId>false</externalId>
+        <label>Vendor Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Access_Instructions__c</fullName>
+        <description>Denotes the access instructions for a location</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes the access instructions for a location</inlineHelpText>
+        <label>Access Instructions</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Approved_Stocking_Location__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Checkbox that is used to designate whether a stocking location has been approved by a Service Manager or not.</description>
+        <externalId>false</externalId>
+        <label>Approved Stocking Location</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Locations (Contact)</relationshipLabel>
+        <relationshipName>Locations</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_External_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Location_Notes__c</fullName>
+        <description>For additional notes on the likely location(s) where this contact might be: Special instructions, where they may be other than their office, etc. Example: Jane has Lab A and Office 4 listed but in the free text it says she is often in the prep lab B or the data center, Room 21.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>For additional notes on the likely location(s) where this contact might be: Special instructions, where they may be other than their office, etc. Example: Jane has Lab A and Office 4 listed but in the free text it says she is often in the prep lab B or th</inlineHelpText>
+        <label>Location Notes</label>
+        <length>2000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Location_Working_Hours__c</fullName>
+        <description>Denotes the working hours for the location</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes the working hours for the location</inlineHelpText>
+        <label>Location Working Hours</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>9-5</fullName>
+                    <default>false</default>
+                    <label>9-5</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Preferred_Technician__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Preferred Technician</label>
+        <referenceTo>SVMXC__Service_Group_Members__c</referenceTo>
+        <relationshipLabel>Locations</relationshipLabel>
+        <relationshipName>Locations</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Site_Details__c</fullName>
+        <description>Denotes any additional detail related to the location</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes any additional detail related to the location</inlineHelpText>
+        <label>Location Site Details</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <recordTypes>
+        <fullName>SMAX_PS_Storage_Location</fullName>
+        <active>true</active>
+        <description>Used for PKI storage locations.</description>
+        <label>Storage Location</label>
+        <picklistValues>
+            <picklist>SVMX_PS_Location_Working_Hours__c</picklist>
+            <values>
+                <fullName>9-5</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>SVMX_PS_Location</fullName>
+        <active>true</active>
+        <label>SVMX PS - Location</label>
+        <picklistValues>
+            <picklist>SVMX_PS_Location_Working_Hours__c</picklist>
+            <values>
+                <fullName>9-5</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <validationRules>
+        <fullName>Location_Name_is_not_be_Editable</fullName>
+        <active>true</active>
+        <description>Location Name is only editable by System Admin and Integration profiles.</description>
+        <errorConditionFormula>AND( 
+ISCHANGED(Name), 
+( 
+$Profile.Name != &quot;System Administrator&quot; &amp;&amp; 
+$Profile.Name != &quot;Application Integration profiles&quot; 
+) 
+)</errorConditionFormula>
+        <errorMessage>The Location Name cannot be edited.</errorMessage>
+    </validationRules>
+</CustomObject>

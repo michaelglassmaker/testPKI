@@ -129,34 +129,35 @@ public class PDG_Test_Lead_Routing {
             LeadRecord.Country = 'US';  
             LeadRecord.Company = 'Test';
             if(i == 15){
-            LeadRecord.OwnerId = '0053A00000DPNX3QAP';
+            LeadRecord.OwnerId = '0053A00000DPNX3'; // Eloqua User
             }
             else{
             LeadRecord.OwnerId = UserContainer[8].id;
             }
-            ConRecord.FirstName = 'TestUser: '+i;
+            ConRecord.FirstName = 'aTestUser: '+i;
             ConRecord.LastName  = 'Class: '+i;
             ConRecord.Title     =  'UnitTest'+i;
             ConRecord.MailingCountry = 'US';
             ConRecord.OwnerId = UserContainer[8].id;
+           // ConRecord.LQS_Air__c = 'Qualified Lead - Warm';
             
             system.debug('[][][] :' + ConRecord.OwnerId);
             
             if(i == 0){
                 LeadRecord.Email = 'usertest-class-'+i+'@test.com';
-                ConRecord.Email = 'usertest-class-'+i+'@test.com';
+                ConRecord.Email = 'ausertest-class-'+i+'@test.com';
                 LeadRecord.BE__c = 'Dx';
                 ConRecord.BU__c = 'Dx';
             }
             else if(i == 1){
                 LeadRecord.Email = 'usertest-class-'+i+'@test.com';
-                ConRecord.Email = 'usertest-class-'+i+'@test.com';
+                ConRecord.Email = 'ausertest-class-'+i+'@test.com';
                 LeadRecord.Solution_Area_of_Interest__c = 'Applied Genomics';
                 ConRecord.Solution_Area_of_Interest__c = 'Applied Genomics';
             }
             else if(i == 2){
                 LeadRecord.Email = 'usertest-class-'+i+'@test.com';
-                ConRecord.Email = 'usertest-class-'+i+'@test.com';
+                ConRecord.Email = 'ausertest-class-'+i+'@test.com';
                 LeadRecord.Employee_Email__c  = 'usertest-class-'+i+'@test.com';
                 OwnerChangeId = UserContainer[2].id;
                 system.debug('[][][] line 141: ' + OwnerChangeId);
@@ -165,51 +166,51 @@ public class PDG_Test_Lead_Routing {
             }
             else if(i == 3){
                 LeadRecord.Email = 'usertest-class-'+i+'@test.com'; 
-                ConRecord.Email = 'usertest-class-'+i+'@test.com'; 
+                ConRecord.Email = 'ausertest-class-'+i+'@test.com'; 
                 ConRecord.MailingCountry  = 'AT';
 
             }
             else if(i == 4){
                 LeadRecord.Email = 'usertest-class-'+i+'@test.com'; 
-                ConRecord.Email = 'usertest-class-'+i+'@test.com'; 
+                ConRecord.Email = 'ausertest-class-'+i+'@test.com'; 
             }
             else if(i == 5){
                 LeadRecord.Email = 'usertest-class-'+i+'@test.com'; 
-                ConRecord.Email = 'usertest-class-'+i+'@test.com'; 
+                ConRecord.Email = 'ausertest-class-'+i+'@test.com'; 
             }
             else if(i == 6){
                 LeadRecord.Email = 'usertest-class-'+i+'@test.com'; 
-                ConRecord.Email = 'usertest-class-'+i+'@test.com'; 
+                ConRecord.Email = 'ausertest-class-'+i+'@test.com'; 
             }
             else if(i == 7){
                 LeadRecord.Email = 'usertest-class-'+i+'@test.com';
-                ConRecord.Email = 'usertest-class-'+i+'@test.com'; 
+                ConRecord.Email = 'ausertest-class-'+i+'@test.com'; 
                 LeadRecord.Qualified_Lead_Hot_Date__c = Date.today() +1;
 
             }
             else if(i == 8){
                 LeadRecord.Email = 'usertest-class-'+i+'@test.com';
-                ConRecord.Email = 'usertest-class-'+i+'@test.com'; 
+                ConRecord.Email = 'ausertest-class-'+i+'@test.com'; 
                 ConRecord.Qualified_Lead_Hot_Date__c = Date.today() +1;
 
             }
             else if(i == 9){
                 LeadRecord.Email = 'usertest-class-'+i+'@test.com';
-                ConRecord.Email = 'usertest-class-'+i+'@test.com'; 
+                ConRecord.Email = 'ausertest-class-'+i+'@test.com'; 
                 LeadRecord.Employee_Email__c  = 'usertest-class-'+i+'@test.com';
                 LeadRecord.Qualified_Lead_Hot_Date__c = Date.today() +1;
 
             } 
            else if(i == 10){
                 LeadRecord.Email = 'usertest-class-'+i+'@test.com';
-                ConRecord.Email = 'usertest-class-'+i+'@test.com'; 
+                ConRecord.Email = 'ausertest-class-'+i+'@test.com'; 
 				LeadRecord.Eloqua_List_Upload_Date__c = Date.Today();
 				ConRecord.Eloqua_List_Upload_Date__c = Date.Today();
 		
           } 
        		else if(i == 11){
                 LeadRecord.Email = 'usertest-class-'+i+'@test.com';
-                ConRecord.Email = 'usertest-class-'+i+'@test.com'; 
+                ConRecord.Email = 'ausertest-class-'+i+'@test.com'; 
 			    LeadRecord.Solution_Area_of_Interest__c = 'Applied Genomics';
                 ConRecord.Solution_Area_of_Interest__c = 'Applied Genomics';
                 LeadRecord.Qualified_Lead_Hot_Date__c = Date.today() +1;
@@ -217,25 +218,25 @@ public class PDG_Test_Lead_Routing {
           } 
             else if(i == 12){
                 LeadRecord.Email = 'usertest-class-'+i+'@test.com'; 
-                ConRecord.Email = 'usertest-class-'+i+'@test.com'; 
+                ConRecord.Email = 'ausertest-class-'+i+'@test.com'; 
                 LeadRecord.Qualified_Lead_Hot_Date__c = Date.today() +1;
 				ConRecord.Qualified_Lead_Hot_Date__c = Date.Today();
             	ConRecord.OwnerId = UserContainer[2].id;
             }
             else if(i == 13){
                 LeadRecord.Email = 'usertest-class-'+i+'@test.com'; 
-                ConRecord.Email = 'usertest-class-'+i+'@test.com'; 
+                ConRecord.Email = 'ausertest-class-'+i+'@test.com'; 
             }
             else if(i == 14){
                 LeadRecord.Email = 'usertest-class-'+i+'@test.com'; 
            	    LeadRecord.Country = 'AT';  
-                ConRecord.Email = 'usertest-class-'+i+'@test.com';
+                ConRecord.Email = 'ausertest-class-'+i+'@test.com';
                 ConRecord.Converted_QL__c = 'true';
             }  
             else if(i == 15){
                 LeadRecord.Email = 'usertest-class-'+i+'@test.com'; 
            	    LeadRecord.Country = 'AT';  
-                ConRecord.Email = 'usertest-class-'+i+'@test.com'; 
+                ConRecord.Email = 'ausertest-class-'+i+'@test.com'; 
                 ConRecord.Converted_QL__c = 'true';
             }
             else if(i == 16){
@@ -243,7 +244,7 @@ public class PDG_Test_Lead_Routing {
                 LeadRecord.Qualified_Lead_Hot_Date__c = Date.today();
                 LeadRecord.Email = 'usertest-class-'+i+'@test.com'; 
            	    LeadRecord.Country = 'AT';  
-                ConRecord.Email = 'usertest-class-'+i+'@test.com'; 
+                ConRecord.Email = 'ausertest-class-'+i+'@test.com'; 
             }              
             LeadContainer.add(LeadRecord);
             ConContainer.add(ConRecord);            
@@ -268,10 +269,10 @@ public class PDG_Test_Lead_Routing {
         
         
         map <id, Lead> LeadMap =  new map <id, Lead>([
-            Select Id,FirstName,ManagerEmail__c, Description, Qualified_Lead_Warm_Date__c, Status_Chemicals__c, Qualified_Lead_Hot_Date__c, BE__c, Title, Email, Name, Ownerid, Country, Solution_Area_Of_Interest__c From Lead Where Title like '%Unit%' ORDER BY Title]);   
+            Select Id,FirstName,ManagerEmail__c,LQS_Chemicals__c, Description, Qualified_Lead_Warm_Date__c, Status_Chemicals__c, Qualified_Lead_Hot_Date__c, BE__c, Title, Email, Name, Ownerid, Country, Solution_Area_Of_Interest__c From Lead Where Title like '%Unit%' ORDER BY Title]);   
         
         map <id, Contact> ConMap =  new map <id, Contact>([
-            Select Id,FirstName, Converted_QL__c,ConvertedRecordId__c, Description, Qualified_Lead_Warm_Date__c, Status_Chemicals__c, Qualified_Lead_Hot_Date__c, BU__c, Title, Email, Name, Ownerid, Country__c, Solution_Area_Of_Interest__c From Contact Where Title like '%Unit%' ORDER BY Title]);   
+            Select Id,FirstName, Converted_QL__c, LQS_Chemicals__c, ConvertedRecordId__c, Description, Qualified_Lead_Warm_Date__c, Status_Chemicals__c, Qualified_Lead_Hot_Date__c, BU__c, Title, Email, Name, Ownerid, Country__c, Solution_Area_Of_Interest__c From Contact Where Title like '%Unit%' ORDER BY Title]);   
         
         
         for(Lead Record : LeadMap.values()){
@@ -289,7 +290,7 @@ public class PDG_Test_Lead_Routing {
             }
             if(Record.title == 'UnitTest3'){
                 Record.Qualified_Lead_Warm_Date__c = Date.today() + 1;
-                
+
             }
             if(Record.title == 'UnitTest4'){
                 Record.Qualified_Lead_Warm_Date__c = Date.today() + 1;
@@ -328,6 +329,7 @@ public class PDG_Test_Lead_Routing {
             if(Record.title == 'UnitTest13'){
                 Record.OwnerId = OwnerChangeId;
                 Record.Status_Chemicals__c = 'Working';
+                Record.LQS_Chemicals__c = 'Qualified Lead - Hot';
                // system.debug('[][][]Owner user: ' + OwnerChangeId);
             } 
             if(Record.title == 'UnitTest14'){
@@ -355,6 +357,7 @@ public class PDG_Test_Lead_Routing {
                 Record.Qualified_Lead_Warm_Date__c = Date.today() + 1;
                 Record.MailingCountry  = 'US';
                 Record.Status_Chemicals__c = 'Working';
+                Record.LQS_Chemicals__c = 'Qualified Lead - Hot';
             }
             if(Record.title == 'UnitTest3'){
                 Record.Qualified_Lead_Warm_Date__c = Date.today();

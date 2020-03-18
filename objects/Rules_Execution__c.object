@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Settings to Manage the Execution of Validation and Workflow Rules.</description>
+    <enableFeeds>false</enableFeeds>
+    <label>Rules Execution</label>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>Run__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Use in Validation or workflow rules to control whether the rule executes. Default value is TRUE; rule are executed.</inlineHelpText>
+        <label>Run</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Case_Validation_Rules__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>Case Validation Rules</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Account_Billing_Address__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>If TRUE, used to run validation rules on Account&apos;s Billing Address.</description>
+        <externalId>false</externalId>
+        <label>Account Billing Address</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+</CustomObject>

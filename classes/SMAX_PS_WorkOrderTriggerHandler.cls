@@ -43,11 +43,11 @@ public with sharing class SMAX_PS_WorkOrderTriggerHandler implements SMAX_PS_Uti
 		// ITSFDC-509 Auto-Create RMA for Depot WOs
 		SMAX_PS_WorkOrderManager.autoCreateRMA(newList, null);
 
-		// SVMXCFG-1108 Metrics & KPI
-//		SMAX_PS_WorkOrderMetrics.countAssignments(newList, null);
-//		SMAX_PS_WorkOrderMetrics.calculateMetricsOnRemote(newList, null);
-//		SMAX_PS_WorkOrderMetrics.calculateMetricsOnTECO(newList, null);
-//		SMAX_PS_WorkOrderMetrics.calculateMetricsOnCallback(newList);
+		// ITSFDC-1161 (old SVMXCFG-1108) Metrics & KPI
+		SMAX_PS_WorkOrderMetrics.countAssignments(newList, null);
+		SMAX_PS_WorkOrderMetrics.calculateMetricsOnRemote(newList, null);
+		SMAX_PS_WorkOrderMetrics.calculateMetricsOnTECO(newList, null);
+		SMAX_PS_WorkOrderMetrics.calculateMetricsOnCallback(newList);
 	}
 
 	public void beforeUpdate() 
@@ -84,10 +84,10 @@ public with sharing class SMAX_PS_WorkOrderTriggerHandler implements SMAX_PS_Uti
 		SMAX_PS_AutoAssignment.confirmScheduling(newList, oldMap);
 		// SVMXCFG-837 Unassign change back to "Open"
 		SMAX_PS_WorkOrderManager.unassignWO(newList, oldMap);
-		// Added by Frank - Nov 28 2017
-		SMAX_PS_AutoAssignment.performAutoAssignmentCheck(newList, oldMap);
 		// SVMXCFG-1000 - Service Estimate Assignment - Feb 21 2019
 		SMAX_PS_AutoAssignment.autoAssignServiceEstimates(newList, oldMap);
+		// Added by Frank - Nov 28 2017
+		SMAX_PS_AutoAssignment.performAutoAssignmentCheck(newList, oldMap);
 		// ITSFDC-509 Auto-Assign Depot Owner Changes
 		SMAX_PS_AutoAssignment.autoAssignOwnerChanges(newList, oldMap);
 		// SVMXCFG-1109 - Reordered to AFTER autoAssignServiceEstimates
@@ -124,11 +124,11 @@ public with sharing class SMAX_PS_WorkOrderTriggerHandler implements SMAX_PS_Uti
 		// ITSFDC-509 Auto-Create RMA for Depot WOs
 		SMAX_PS_WorkOrderManager.autoCreateRMA(newList, oldMap);
 
-		// SVMXCFG-1108 Metrics & KPI
-//		SMAX_PS_WorkOrderMetrics.countAssignments(newList, oldMap);
-//		SMAX_PS_WorkOrderMetrics.calculateMetricsOnRemote(newList, oldMap);
-//		SMAX_PS_WorkOrderMetrics.calculateMetricsOnTECO(newList, oldMap);
-//		SMAX_PS_WorkOrderMetrics.calculateMetricsOnInvoicing(newList, oldMap);
+		// ITSFDC-1161 (old SVMXCFG-1108) Metrics & KPI
+		SMAX_PS_WorkOrderMetrics.countAssignments(newList, oldMap);
+		SMAX_PS_WorkOrderMetrics.calculateMetricsOnRemote(newList, oldMap);
+		SMAX_PS_WorkOrderMetrics.calculateMetricsOnTECO(newList, oldMap);
+		SMAX_PS_WorkOrderMetrics.calculateMetricsOnInvoicing(newList, oldMap);
 	}
 
 	public void beforeDelete() {}

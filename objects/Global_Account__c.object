@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>GA_Compact_Layout</compactLayoutAssignment>
+    <customHelpPage>Help_Account</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Custom object used to manage and analyze &quot;groups&quot; of standard accounts for the purposes of establishing strategics and tactics for increased revenue growth and margin expansion.
+
+Primarily used by Global Account Managers</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>Global Account</label>
+    <nameField>
+        <label>Global Account Program</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Global Accounts</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <searchLayouts>
+        <customTabListAdditionalFields>GA_Global_Account_Manager__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>GA_FY_Orders_Target__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>GA_FY_Orders_Achieved__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>GA_Current_Pipeline__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>GA_Global_Account_Manager__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>GA_Global_Account_Manager__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>GA_Manager_Phone__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>GA_Global_Account_Manager__c</searchFilterFields>
+        <searchResultsAdditionalFields>GA_Global_Account_Manager__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>GA_FY_Orders_Target__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>GA_FY_Orders_Achieved__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>GA_FY_To_Plan__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>GA_Current_Pipeline__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <compactLayouts>
+        <fullName>GA_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>GA_FY_Orders_Target__c</fields>
+        <fields>GA_FY_Orders_Achieved__c</fields>
+        <fields>GA_FY_To_Plan__c</fields>
+        <label>GA Compact Layout</label>
+    </compactLayouts>
+    <fields>
+        <fullName>GA_FY_To_Plan__c</fullName>
+        <description>Performance to annual plan</description>
+        <externalId>false</externalId>
+        <formula>1-( GA_FY_Orders_Target__c-GA_FY_Orders_Achieved__c )/ GA_FY_Orders_Target__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Performance to annual plan</inlineHelpText>
+        <label>FY % To Plan</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>GA_Objectives__c</fullName>
+        <description>List of plan objectives for this global account program</description>
+        <externalId>false</externalId>
+        <inlineHelpText>List of plan objectives for this global account program</inlineHelpText>
+        <label>Annual Objectives</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>GA_SWOT_Threats__c</fullName>
+        <description>Threats to achieving the annual target</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Threats to achieving the annual target</inlineHelpText>
+        <label>Threats</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>GA_Manager_Phone__c</fullName>
+        <description>Phone number of the GA program manager at PerkinElmer</description>
+        <externalId>false</externalId>
+        <formula>GA_Global_Account_Manager__r.Phone</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Phone number of the GA program manager at PerkinElmer</inlineHelpText>
+        <label>GA Manager Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GA_SWOT_Strengths__c</fullName>
+        <description>Strengths in achieving the annual target</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Strengths in achieving the annual target</inlineHelpText>
+        <label>Strengths</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>GA_SWOT_Weaknesses__c</fullName>
+        <description>What are our current weaknesses at these program accounts?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>What are our current weaknesses at these program accounts?</inlineHelpText>
+        <label>Weaknesses</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>GA_Current_Pipeline__c</fullName>
+        <description>Total amount of open opportunities from all program accounts</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total amount of open opportunities from all program accounts</inlineHelpText>
+        <label>Current Pipeline</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>GA_FY_Orders_Target__c</fullName>
+        <description>The order/booking target for this Global Account program</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The order/booking target for this Global Account program</inlineHelpText>
+        <label>FY Orders Target</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>GA_FY_Orders_Achieved__c</fullName>
+        <description>The amount of Closed Won opportunities in the current fiscal year</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The amount of Closed Won opportunities in the current fiscal year</inlineHelpText>
+        <label>FY Orders Achieved</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>GA_SWOT_Opportunities__c</fullName>
+        <description>Opportunities in achieving the annual target</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Opportunities in achieving the annual target</inlineHelpText>
+        <label>Opportunities</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>GA_Stakeholder_Mgmt_Plan__c</fullName>
+        <description>The approach the Global Account Plan Owner will take to achieving the annual target.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The approach the Global Account Plan Owner will take to achieving the annual target.</inlineHelpText>
+        <label>Stakeholder Management Plan</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>GA_Global_Account_Manager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup of the name of Global Account Manager from the user object</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of Global Account Manager</inlineHelpText>
+        <label>Global Account Manager</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Global_Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <recordTypes>
+        <fullName>Global_Account</fullName>
+        <active>true</active>
+        <description>Recordtype for records which belong to the Global Account Program</description>
+        <label>Global Account</label>
+    </recordTypes>
+    <webLinks>
+        <fullName>Open_Cases_By_Site</fullName>
+        <availability>online</availability>
+        <description>Lists any open cases at accounts listed in the GA program</description>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Open Cases By Site</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/00O3A000008cLpj?pv0={!Global_Account__c.Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GA_Reps_Working_Deals</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Reps Working Deals</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/00O3A000008cLSD?pv0={!Global_Account__c.Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GA_Current_Sales_Funnel</fullName>
+        <availability>online</availability>
+        <description>Reports all open opportunities for accounts listed under this program</description>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Current Sales Funnel</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/00O3A000008cLSC?pv0={!Global_Account__c.Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Global_Account_Dashboard</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Global Account Dashboard</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/01Z3A000000oFJa</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GA_Won_Orders_by_Territory</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>FY Orders Achieved by Territory</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/00O3A000008cLSB?pv0={!Global_Account__c.Name}</url>
+    </webLinks>
+</CustomObject>

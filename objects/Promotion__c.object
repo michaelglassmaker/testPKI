@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>InDevelopment</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <label>Promotion</label>
+    <nameField>
+        <label>Promotion Name</label>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Promotions</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Promotion_Number__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Start_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>End_Date__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Promotion_Number__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Last_Standard_Quote_Date__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Promotion_Number__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Contact_Telephone__c</lookupPhoneDialogsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>Active__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( End_Date__c  &gt;  TODAY() , &quot;Yes&quot;, &quot;No&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Active</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <description>The date the promotion is due to end. This is the last date orders based on this promotion will be accepted.</description>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <defaultValue>TODAY()</defaultValue>
+        <description>Date on which the promotion is due to start. It defaults to the date the promotion is created.</description>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Discount_by__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the way qualifying items will be referenced.
+(Part Number, Igor/PAC Code etc)</inlineHelpText>
+        <label>Discount by:</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Part number</fullName>
+                    <default>false</default>
+                    <label>Part number</label>
+                </value>
+                <value>
+                    <fullName>IGOR/PAC Code</fullName>
+                    <default>false</default>
+                    <label>IGOR/PAC Code</label>
+                </value>
+                <value>
+                    <fullName>Product Line + Item Category</fullName>
+                    <default>false</default>
+                    <label>Product Line + Item Category</label>
+                </value>
+                <value>
+                    <fullName>Material Group</fullName>
+                    <default>false</default>
+                    <label>Material Group</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product_Line__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Line</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>AA	Atomic absorption</fullName>
+                    <default>false</default>
+                    <label>AA	Atomic absorption</label>
+                </value>
+                <value>
+                    <fullName>ABI	Applied biosystems</fullName>
+                    <default>false</default>
+                    <label>ABI	Applied biosystems</label>
+                </value>
+                <value>
+                    <fullName>AGT	Agilent technologies</fullName>
+                    <default>false</default>
+                    <label>AGT	Agilent technologies</label>
+                </value>
+                <value>
+                    <fullName>AIG	Analytical general</fullName>
+                    <default>false</default>
+                    <label>AIG	Analytical general</label>
+                </value>
+                <value>
+                    <fullName>ANP	Analytical proteomics</fullName>
+                    <default>false</default>
+                    <label>ANP	Analytical proteomics</label>
+                </value>
+                <value>
+                    <fullName>APS	Application systems</fullName>
+                    <default>false</default>
+                    <label>APS	Application systems</label>
+                </value>
+                <value>
+                    <fullName>AWS	Automated workstations</fullName>
+                    <default>false</default>
+                    <label>AWS	Automated workstations</label>
+                </value>
+                <value>
+                    <fullName>CKP	Cellular kinetic photoproteins</fullName>
+                    <default>false</default>
+                    <label>CKP	Cellular kinetic photoproteins</label>
+                </value>
+                <value>
+                    <fullName>CSA	Cellular screening &amp; ADME</fullName>
+                    <default>false</default>
+                    <label>CSA	Cellular screening &amp; ADME</label>
+                </value>
+                <value>
+                    <fullName>DIA	Diagnostics</fullName>
+                    <default>false</default>
+                    <label>DIA	Diagnostics</label>
+                </value>
+                <value>
+                    <fullName>DIS	Distributor products / other</fullName>
+                    <default>false</default>
+                    <label>DIS	Distributor products / other</label>
+                </value>
+                <value>
+                    <fullName>ESS	Enterprise software solutions</fullName>
+                    <default>false</default>
+                    <label>ESS	Enterprise software solutions</label>
+                </value>
+                <value>
+                    <fullName>FGP	Functional genomics &amp; proteomics</fullName>
+                    <default>false</default>
+                    <label>FGP	Functional genomics &amp; proteomics</label>
+                </value>
+                <value>
+                    <fullName>GC	Gas chromatography</fullName>
+                    <default>false</default>
+                    <label>GC	Gas chromatography</label>
+                </value>
+                <value>
+                    <fullName>HCS	High content screening</fullName>
+                    <default>false</default>
+                    <label>HCS	High content screening</label>
+                </value>
+                <value>
+                    <fullName>HTS	Drug discovery reagents</fullName>
+                    <default>false</default>
+                    <label>HTS	Drug discovery reagents</label>
+                </value>
+                <value>
+                    <fullName>IAS	Imaging &amp; analysis soln</fullName>
+                    <default>false</default>
+                    <label>IAS	Imaging &amp; analysis soln</label>
+                </value>
+                <value>
+                    <fullName>ICP	ICP-OES</fullName>
+                    <default>false</default>
+                    <label>ICP	ICP-OES</label>
+                </value>
+                <value>
+                    <fullName>IR	IR spectroscopy</fullName>
+                    <default>false</default>
+                    <label>IR	IR spectroscopy</label>
+                </value>
+                <value>
+                    <fullName>LC	Liquid chromatography</fullName>
+                    <default>false</default>
+                    <label>LC	Liquid chromatography</label>
+                </value>
+                <value>
+                    <fullName>LVI	Live cell proteomics</fullName>
+                    <default>false</default>
+                    <label>LVI	Live cell proteomics</label>
+                </value>
+                <value>
+                    <fullName>MAS	ICP-MS</fullName>
+                    <default>false</default>
+                    <label>MAS	ICP-MS</label>
+                </value>
+                <value>
+                    <fullName>MDX	Molecular diagnostics</fullName>
+                    <default>false</default>
+                    <label>MDX	Molecular diagnostics</label>
+                </value>
+                <value>
+                    <fullName>MLD	Multi-label detection</fullName>
+                    <default>false</default>
+                    <label>MLD	Multi-label detection</label>
+                </value>
+                <value>
+                    <fullName>MOL	Research reagents</fullName>
+                    <default>false</default>
+                    <label>MOL	Research reagents</label>
+                </value>
+                <value>
+                    <fullName>NEO	Neonatal</fullName>
+                    <default>false</default>
+                    <label>NEO	Neonatal</label>
+                </value>
+                <value>
+                    <fullName>OMV	Other multi vendor</fullName>
+                    <default>false</default>
+                    <label>OMV	Other multi vendor</label>
+                </value>
+                <value>
+                    <fullName>PBR	Protein biology reagents</fullName>
+                    <default>false</default>
+                    <label>PBR	Protein biology reagents</label>
+                </value>
+                <value>
+                    <fullName>PCL	Photina cell lines</fullName>
+                    <default>false</default>
+                    <label>PCL	Photina cell lines</label>
+                </value>
+                <value>
+                    <fullName>PGI	Proteomics &amp; genomics instruments</fullName>
+                    <default>false</default>
+                    <label>PGI	Proteomics &amp; genomics instruments</label>
+                </value>
+                <value>
+                    <fullName>PRE	Prenatal</fullName>
+                    <default>false</default>
+                    <label>PRE	Prenatal</label>
+                </value>
+                <value>
+                    <fullName>RAM	Raman spectroscopy</fullName>
+                    <default>false</default>
+                    <label>RAM	Raman spectroscopy</label>
+                </value>
+                <value>
+                    <fullName>RES	Research</fullName>
+                    <default>false</default>
+                    <label>RES	Research</label>
+                </value>
+                <value>
+                    <fullName>RRD	Radiometric detection</fullName>
+                    <default>false</default>
+                    <label>RRD	Radiometric detection</label>
+                </value>
+                <value>
+                    <fullName>RRS	Research reagents</fullName>
+                    <default>false</default>
+                    <label>RRS	Research reagents</label>
+                </value>
+                <value>
+                    <fullName>SPS	Sample preparation &amp; HTS systems</fullName>
+                    <default>false</default>
+                    <label>SPS	Sample preparation &amp; HTS systems</label>
+                </value>
+                <value>
+                    <fullName>SVC	Service</fullName>
+                    <default>false</default>
+                    <label>SVC	Service</label>
+                </value>
+                <value>
+                    <fullName>TEA	Thermal &amp; elemental</fullName>
+                    <default>false</default>
+                    <label>TEA	Thermal &amp; elemental</label>
+                </value>
+                <value>
+                    <fullName>TMO	Thermo electron corp</fullName>
+                    <default>false</default>
+                    <label>TMO	Thermo electron corp</label>
+                </value>
+                <value>
+                    <fullName>TRN	Training</fullName>
+                    <default>false</default>
+                    <label>TRN	Training</label>
+                </value>
+                <value>
+                    <fullName>UVS	Uv-Vis spectroscopy</fullName>
+                    <default>false</default>
+                    <label>UVS	Uv-Vis spectroscopy</label>
+                </value>
+                <value>
+                    <fullName>WAT	Waters corporation</fullName>
+                    <default>false</default>
+                    <label>WAT	Waters corporation</label>
+                </value>
+                <value>
+                    <fullName>WCO	West coast optics</fullName>
+                    <default>false</default>
+                    <label>WCO	West coast optics</label>
+                </value>
+                <value>
+                    <fullName>ZZZ	Uncoded item</fullName>
+                    <default>false</default>
+                    <label>ZZZ	Uncoded item</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Contact_E_mail__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact E-mail</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Person__c</fullName>
+        <description>The person to whom to refer questions, issues or concerns.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Contact this person for answers to any questions, issues or concerns.</inlineHelpText>
+        <label>Contact Person</label>
+        <length>80</length>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Promotion_Number__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>false</externalId>
+        <inlineHelpText>The number should be of the format:
+Product Line + Financial Quarter (2 digits) + Year (last 2 digits) + 2 Digit incremental Number
+Example: ICP020714</inlineHelpText>
+        <label>Promotion Number</label>
+        <length>18</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Qualifying_Items__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Add all Part Numbers / IGOR/PAC Codes / Item Categories which qualify for the discount.</inlineHelpText>
+        <label>Qualifying Items</label>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Telephone__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact Telephone:</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Geographic_Coverage__c</fullName>
+        <externalId>false</externalId>
+        <label>Geographic Coverage</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>!GLOBAL</fullName>
+                    <default>false</default>
+                    <label>!GLOBAL</label>
+                </value>
+                <value>
+                    <fullName>*AMERICAS</fullName>
+                    <default>false</default>
+                    <label>*AMERICAS</label>
+                </value>
+                <value>
+                    <fullName>*Europe (PKI)</fullName>
+                    <default>false</default>
+                    <label>*Europe (PKI)</label>
+                </value>
+                <value>
+                    <fullName>*Export (EMEA)</fullName>
+                    <default>false</default>
+                    <label>*Export (EMEA)</label>
+                </value>
+                <value>
+                    <fullName>*Latin America</fullName>
+                    <default>false</default>
+                    <label>*Latin America</label>
+                </value>
+                <value>
+                    <fullName>*PAC-RIM</fullName>
+                    <default>false</default>
+                    <label>*PAC-RIM</label>
+                </value>
+                <value>
+                    <fullName>Australia</fullName>
+                    <default>false</default>
+                    <label>Australia</label>
+                </value>
+                <value>
+                    <fullName>Belgium</fullName>
+                    <default>false</default>
+                    <label>Belgium</label>
+                </value>
+                <value>
+                    <fullName>Canada</fullName>
+                    <default>false</default>
+                    <label>Canada</label>
+                </value>
+                <value>
+                    <fullName>China</fullName>
+                    <default>false</default>
+                    <label>China</label>
+                </value>
+                <value>
+                    <fullName>Denmark</fullName>
+                    <default>false</default>
+                    <label>Denmark</label>
+                </value>
+                <value>
+                    <fullName>Finland</fullName>
+                    <default>false</default>
+                    <label>Finland</label>
+                </value>
+                <value>
+                    <fullName>France</fullName>
+                    <default>false</default>
+                    <label>France</label>
+                </value>
+                <value>
+                    <fullName>Hong Kong</fullName>
+                    <default>false</default>
+                    <label>Hong Kong</label>
+                </value>
+                <value>
+                    <fullName>Indonesia</fullName>
+                    <default>false</default>
+                    <label>Indonesia</label>
+                </value>
+                <value>
+                    <fullName>Italy</fullName>
+                    <default>false</default>
+                    <label>Italy</label>
+                </value>
+                <value>
+                    <fullName>Japan</fullName>
+                    <default>false</default>
+                    <label>Japan</label>
+                </value>
+                <value>
+                    <fullName>Korea</fullName>
+                    <default>false</default>
+                    <label>Korea</label>
+                </value>
+                <value>
+                    <fullName>Latin America</fullName>
+                    <default>false</default>
+                    <label>Latin America</label>
+                </value>
+                <value>
+                    <fullName>Malaysia</fullName>
+                    <default>false</default>
+                    <label>Malaysia</label>
+                </value>
+                <value>
+                    <fullName>Netherlands</fullName>
+                    <default>false</default>
+                    <label>Netherlands</label>
+                </value>
+                <value>
+                    <fullName>Norway</fullName>
+                    <default>false</default>
+                    <label>Norway</label>
+                </value>
+                <value>
+                    <fullName>Philippines</fullName>
+                    <default>false</default>
+                    <label>Philippines</label>
+                </value>
+                <value>
+                    <fullName>Poland</fullName>
+                    <default>false</default>
+                    <label>Poland</label>
+                </value>
+                <value>
+                    <fullName>Singapore</fullName>
+                    <default>false</default>
+                    <label>Singapore</label>
+                </value>
+                <value>
+                    <fullName>Spain</fullName>
+                    <default>false</default>
+                    <label>Spain</label>
+                </value>
+                <value>
+                    <fullName>Sweden</fullName>
+                    <default>false</default>
+                    <label>Sweden</label>
+                </value>
+                <value>
+                    <fullName>Switzerland</fullName>
+                    <default>false</default>
+                    <label>Switzerland</label>
+                </value>
+                <value>
+                    <fullName>Taiwan</fullName>
+                    <default>false</default>
+                    <label>Taiwan</label>
+                </value>
+                <value>
+                    <fullName>Thailand</fullName>
+                    <default>false</default>
+                    <label>Thailand</label>
+                </value>
+                <value>
+                    <fullName>United Kingdom</fullName>
+                    <default>false</default>
+                    <label>United Kingdom</label>
+                </value>
+                <value>
+                    <fullName>USA</fullName>
+                    <default>false</default>
+                    <label>USA</label>
+                </value>
+                <value>
+                    <fullName>Vietnam</fullName>
+                    <default>false</default>
+                    <label>Vietnam</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Discount_Calculation__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Examples:
+-10%
+-$5,000 – this MUST be accompanied by a value for each country, in local currency, where the promotion applies.
+-10% for the first 4, -15% for 5-9, -20% for 10 and above.</inlineHelpText>
+        <label>Discount Calculation</label>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Promotion_Description__c</fullName>
+        <description>A full description of what the Account Managers need to know about the promotion and how to offer it.</description>
+        <externalId>false</externalId>
+        <label>Promotion Description</label>
+        <length>2000</length>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Variable_Discount_Level__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, the discount may be applied on an Up-to basis up to a maximum level detailed in the Discount Calculation field.</inlineHelpText>
+        <label>Variable Discount Level</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Last_Standard_Quote_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>End_Date__c  - 30</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This is a calculated date based on the standard 30 day validity of normal quotations.</inlineHelpText>
+        <label>Last Standard Quote Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Other_Promotions_Allowed__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked more than one discount may be applied to the item.</inlineHelpText>
+        <label>Other Promotions Allowed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Requires_Managerial_Approval__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked the promotion cannot be applied without going through the AM’s manager for approval.</inlineHelpText>
+        <label>Requires Managerial Approval</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+</CustomObject>

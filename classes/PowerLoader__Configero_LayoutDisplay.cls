@@ -17,6 +17,9 @@ global class Configero_LayoutDisplay {
     global List<PowerLoader.Configero_LayoutDisplay.LayoutSection> layoutSections {
         get;
     }
+    global List<PowerLoader.Configero_LayoutDisplay.LayoutSection> multirowLayoutSections {
+        get;
+    }
     global SObject obj {
         get;
         set;
@@ -46,6 +49,9 @@ global class Configero_LayoutDisplay {
 
     }
 global class LayoutItem {
+    global String fieldLabel {
+        get;
+    }
     global String fieldName {
         get;
     }
@@ -58,13 +64,34 @@ global class LayoutItem {
     global Boolean isHtml {
         get;
     }
+    global Boolean isNameField {
+        get;
+    }
     global Boolean isRequired {
+        get;
+    }
+    global List<PowerLoader.Configero_LayoutDisplay.LayoutItem> subItems {
+        get;
+    }
+    global String type {
         get;
     }
     global LayoutItem() {
 
     }
     global LayoutItem(String fieldName) {
+
+    }
+    global void addSubItem(PowerLoader.Configero_LayoutDisplay.LayoutItem item) {
+
+    }
+    global Boolean getIsCompound() {
+        return null;
+    }
+    global void setFieldName(String fieldName) {
+
+    }
+    global void setIsEditable(Boolean isEditable) {
 
     }
 }
@@ -84,6 +111,9 @@ global class LayoutRow {
 }
 global class LayoutSection {
     global String header {
+        get;
+    }
+    global Boolean isPersonAccount {
         get;
     }
     global Integer numCols {

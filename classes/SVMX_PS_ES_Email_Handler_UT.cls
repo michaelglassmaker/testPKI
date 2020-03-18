@@ -20,6 +20,7 @@ private class SVMX_PS_ES_Email_Handler_UT
     private static final String STOP_EMAIL_TO_CUSTOMER = 'Stop Email to Customer';
     private static final String STOP_EMAIL_TO_OWNER = 'Stop Email to Owner';
     private static final String SAVE_EMAIL_AS_ACTIVTIY = 'Save Send Email as Activity';
+    private static final String SAVE_ERRORS_AS_ACTIVTIY = 'Save Errors as Activity';
     private static final String GROUP_EMAILS = 'Group Emails';
     private static final String DEFAULT_EMAIL_ADDRESS = 'Default Email Address';
     private static final String SEND_TO_DEFAULT_EMAIL_ADDRESS = 'Send To Default Email Address';
@@ -2460,6 +2461,11 @@ private class SVMX_PS_ES_Email_Handler_UT
         emailNotification21.Name=SERVICE_REPORT_NAME;
         emailNotification21.SVMX_PS_ES_Text_Value__c = '';
         emailNotificationSettingList.add(emailNotification21);
+
+        SVMX_PS_ES_Service_Report_Settings__c emailNotification22 = new SVMX_PS_ES_Service_Report_Settings__c();
+        emailNotification22.Name=SAVE_ERRORS_AS_ACTIVTIY;
+        emailNotification22.SVMX_PS_ES_Value__c = true;
+        emailNotificationSettingList.add(emailNotification22);
 
         return emailNotificationSettingList;
     }

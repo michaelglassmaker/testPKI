@@ -6,6 +6,12 @@ methods, variables, and properties.
 To enable code to compile, all methods return null.
 */
 global class Configero_LookupName extends PowerLoader.Configero_Base {
+    global String IdFieldName {
+        get;
+    }
+    global String NameFieldName {
+        get;
+    }
     global String objName {
         get;
     }

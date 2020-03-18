@@ -1,0 +1,4104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AdvancedSetup</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AdvancedSetup</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AdvancedSetup</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Campaign_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <content>Campaign_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <externalSharingModel>FullAccess</externalSharingModel>
+    <searchLayouts>
+        <customTabListAdditionalFields>CAMPAIGN.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CAMPAIGN.STATUS</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CAMPAIGN.START_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Campaign_Leader__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CORE.USERS.LAST_NAME</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>CAMPAIGN.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CAMPAIGN.NUM_RESPONSES</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Business_Unit__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PARENT_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CAMPAIGN.STATUS</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CAMPAIGN.CAMPAIGN_TYPE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>AMOUNT_ALL</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CAMPAIGN.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CAMPAIGN.START_DATE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CAMPAIGN.END_DATE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Business_Unit__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Campaign_Leader__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.LAST_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PARENT_NAME</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>CAMPAIGN.NAME</searchFilterFields>
+        <searchFilterFields>Business_Unit__c</searchFilterFields>
+        <searchFilterFields>Product_Line__c</searchFilterFields>
+        <searchFilterFields>Territory__c</searchFilterFields>
+        <searchFilterFields>CAMPAIGN.CAMPAIGN_TYPE</searchFilterFields>
+        <searchFilterFields>CAMPAIGN.START_DATE</searchFilterFields>
+        <searchFilterFields>INF_Campaign_Id__c</searchFilterFields>
+        <searchResultsAdditionalFields>CAMPAIGN.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.STATUS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.START_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.END_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.NUM_RESPONSES</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Business_Unit__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>BU_Alignment__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Campaign_Leader__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CAMPAIGN.CAMPAIGN_TYPE</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>FullAccess</sharingModel>
+    <fields>
+        <fullName>NPI__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>NPI</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <externalId>false</externalId>
+        <label>Region</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Territory__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Americas</fullName>
+                    <default>false</default>
+                    <label>Americas</label>
+                </value>
+                <value>
+                    <fullName>Canada</fullName>
+                    <default>false</default>
+                    <label>Canada</label>
+                </value>
+                <value>
+                    <fullName>US-EAST</fullName>
+                    <default>false</default>
+                    <label>US-EAST</label>
+                </value>
+                <value>
+                    <fullName>US-WEST</fullName>
+                    <default>false</default>
+                    <label>US-WEST</label>
+                </value>
+                <value>
+                    <fullName>LA North</fullName>
+                    <default>false</default>
+                    <label>LA North</label>
+                </value>
+                <value>
+                    <fullName>LA South</fullName>
+                    <default>false</default>
+                    <label>LA South</label>
+                </value>
+                <value>
+                    <fullName>Europe</fullName>
+                    <default>false</default>
+                    <label>Europe</label>
+                </value>
+                <value>
+                    <fullName>AT</fullName>
+                    <default>false</default>
+                    <label>AT</label>
+                </value>
+                <value>
+                    <fullName>BE</fullName>
+                    <default>false</default>
+                    <label>BE</label>
+                </value>
+                <value>
+                    <fullName>CH</fullName>
+                    <default>false</default>
+                    <label>CH</label>
+                </value>
+                <value>
+                    <fullName>DE</fullName>
+                    <default>false</default>
+                    <label>DE</label>
+                </value>
+                <value>
+                    <fullName>DK</fullName>
+                    <default>false</default>
+                    <label>DK</label>
+                </value>
+                <value>
+                    <fullName>ES</fullName>
+                    <default>false</default>
+                    <label>ES</label>
+                </value>
+                <value>
+                    <fullName>FI</fullName>
+                    <default>false</default>
+                    <label>FI</label>
+                </value>
+                <value>
+                    <fullName>FR</fullName>
+                    <default>false</default>
+                    <label>FR</label>
+                </value>
+                <value>
+                    <fullName>IT</fullName>
+                    <default>false</default>
+                    <label>IT</label>
+                </value>
+                <value>
+                    <fullName>NL</fullName>
+                    <default>false</default>
+                    <label>NL</label>
+                </value>
+                <value>
+                    <fullName>NO</fullName>
+                    <default>false</default>
+                    <label>NO</label>
+                </value>
+                <value>
+                    <fullName>SE</fullName>
+                    <default>false</default>
+                    <label>SE</label>
+                </value>
+                <value>
+                    <fullName>UK</fullName>
+                    <default>false</default>
+                    <label>UK</label>
+                </value>
+                <value>
+                    <fullName>Export</fullName>
+                    <default>false</default>
+                    <label>Export</label>
+                </value>
+                <value>
+                    <fullName>PL</fullName>
+                    <default>false</default>
+                    <label>PL</label>
+                </value>
+                <value>
+                    <fullName>IL</fullName>
+                    <default>false</default>
+                    <label>IL</label>
+                </value>
+                <value>
+                    <fullName>TR</fullName>
+                    <default>false</default>
+                    <label>TR</label>
+                </value>
+                <value>
+                    <fullName>ZA</fullName>
+                    <default>false</default>
+                    <label>ZA</label>
+                </value>
+                <value>
+                    <fullName>US-SOUTH</fullName>
+                    <default>false</default>
+                    <label>US-SOUTH</label>
+                </value>
+                <value>
+                    <fullName>US-MIDWEST</fullName>
+                    <default>false</default>
+                    <label>US-MIDWEST</label>
+                </value>
+                <value>
+                    <fullName>CN</fullName>
+                    <default>false</default>
+                    <label>CN</label>
+                </value>
+                <value>
+                    <fullName>HK</fullName>
+                    <default>false</default>
+                    <label>HK</label>
+                </value>
+                <value>
+                    <fullName>TW</fullName>
+                    <default>false</default>
+                    <label>TW</label>
+                </value>
+                <value>
+                    <fullName>AU</fullName>
+                    <default>false</default>
+                    <label>AU</label>
+                </value>
+                <value>
+                    <fullName>ID</fullName>
+                    <default>false</default>
+                    <label>ID</label>
+                </value>
+                <value>
+                    <fullName>MY</fullName>
+                    <default>false</default>
+                    <label>MY</label>
+                </value>
+                <value>
+                    <fullName>PH</fullName>
+                    <default>false</default>
+                    <label>PH</label>
+                </value>
+                <value>
+                    <fullName>SG</fullName>
+                    <default>false</default>
+                    <label>SG</label>
+                </value>
+                <value>
+                    <fullName>TH</fullName>
+                    <default>false</default>
+                    <label>TH</label>
+                </value>
+                <value>
+                    <fullName>VN</fullName>
+                    <default>false</default>
+                    <label>VN</label>
+                </value>
+                <value>
+                    <fullName>N.Amer</fullName>
+                    <default>false</default>
+                    <label>N.Amer</label>
+                </value>
+                <value>
+                    <fullName>S.Amer</fullName>
+                    <default>false</default>
+                    <label>S.Amer</label>
+                </value>
+                <value>
+                    <fullName>C.Amer</fullName>
+                    <default>false</default>
+                    <label>C.Amer</label>
+                </value>
+                <value>
+                    <fullName>IN</fullName>
+                    <default>false</default>
+                    <label>IN</label>
+                </value>
+                <value>
+                    <fullName>JP</fullName>
+                    <default>false</default>
+                    <label>JP</label>
+                </value>
+                <value>
+                    <fullName>KR</fullName>
+                    <default>false</default>
+                    <label>KR</label>
+                </value>
+                <value>
+                    <fullName>Oceania</fullName>
+                    <default>false</default>
+                    <label>Oceania</label>
+                </value>
+                <value>
+                    <fullName>SPAC</fullName>
+                    <default>false</default>
+                    <label>SPAC</label>
+                </value>
+                <value>
+                    <fullName>US</fullName>
+                    <default>false</default>
+                    <label>US</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>AMERICAS</controllingFieldValue>
+                <valueName>Americas</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMERICAS</controllingFieldValue>
+                <valueName>Canada</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMERICAS</controllingFieldValue>
+                <valueName>N.Amer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMERICAS</controllingFieldValue>
+                <valueName>S.Amer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMERICAS</controllingFieldValue>
+                <valueName>C.Amer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMERICAS</controllingFieldValue>
+                <valueName>US</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA</controllingFieldValue>
+                <valueName>Europe</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA</controllingFieldValue>
+                <valueName>AT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA</controllingFieldValue>
+                <valueName>BE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA</controllingFieldValue>
+                <valueName>CH</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA</controllingFieldValue>
+                <valueName>DE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA</controllingFieldValue>
+                <valueName>DK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA</controllingFieldValue>
+                <valueName>ES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA</controllingFieldValue>
+                <valueName>FI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA</controllingFieldValue>
+                <valueName>FR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA</controllingFieldValue>
+                <valueName>IT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA</controllingFieldValue>
+                <valueName>NL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA</controllingFieldValue>
+                <valueName>NO</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA</controllingFieldValue>
+                <valueName>SE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA</controllingFieldValue>
+                <valueName>UK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA</controllingFieldValue>
+                <valueName>Export</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA</controllingFieldValue>
+                <valueName>PL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA</controllingFieldValue>
+                <valueName>IL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA</controllingFieldValue>
+                <valueName>TR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA</controllingFieldValue>
+                <valueName>ZA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APAC</controllingFieldValue>
+                <valueName>CN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APAC</controllingFieldValue>
+                <valueName>HK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APAC</controllingFieldValue>
+                <valueName>TW</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APAC</controllingFieldValue>
+                <valueName>AU</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APAC</controllingFieldValue>
+                <valueName>ID</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APAC</controllingFieldValue>
+                <valueName>MY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APAC</controllingFieldValue>
+                <valueName>PH</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APAC</controllingFieldValue>
+                <valueName>SG</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APAC</controllingFieldValue>
+                <valueName>TH</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APAC</controllingFieldValue>
+                <valueName>VN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APAC</controllingFieldValue>
+                <valueName>IN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APAC</controllingFieldValue>
+                <valueName>JP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APAC</controllingFieldValue>
+                <valueName>KR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APAC</controllingFieldValue>
+                <valueName>Oceania</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APAC</controllingFieldValue>
+                <valueName>SPAC</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Ad_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Ad Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Magazine</fullName>
+                    <default>false</default>
+                    <label>Magazine</label>
+                </value>
+                <value>
+                    <fullName>Online</fullName>
+                    <default>false</default>
+                    <label>Online</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Channel__c</fullName>
+        <externalId>false</externalId>
+        <label>Channel</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Blog</fullName>
+                    <default>false</default>
+                    <label>Blog</label>
+                </value>
+                <value>
+                    <fullName>Display-Ad</fullName>
+                    <default>false</default>
+                    <label>Display-Ad</label>
+                </value>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+                <value>
+                    <fullName>eNewsletter</fullName>
+                    <default>false</default>
+                    <label>eNewsletter</label>
+                </value>
+                <value>
+                    <fullName>Event</fullName>
+                    <default>false</default>
+                    <label>Event</label>
+                </value>
+                <value>
+                    <fullName>Nurture</fullName>
+                    <default>false</default>
+                    <label>Nurture</label>
+                </value>
+                <value>
+                    <fullName>Paid-Social</fullName>
+                    <default>false</default>
+                    <label>Paid-Social</label>
+                </value>
+                <value>
+                    <fullName>PPC</fullName>
+                    <default>false</default>
+                    <label>PPC</label>
+                </value>
+                <value>
+                    <fullName>ProductListing</fullName>
+                    <default>false</default>
+                    <label>ProductListing</label>
+                </value>
+                <value>
+                    <fullName>Social</fullName>
+                    <default>false</default>
+                    <label>Social</label>
+                </value>
+                <value>
+                    <fullName>Telemarketing</fullName>
+                    <default>false</default>
+                    <label>Telemarketing</label>
+                </value>
+                <value>
+                    <fullName>Webinar</fullName>
+                    <default>false</default>
+                    <label>Webinar</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Program__c</fullName>
+        <externalId>false</externalId>
+        <label>Program</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Brand</fullName>
+                    <default>false</default>
+                    <label>Brand</label>
+                </value>
+                <value>
+                    <fullName>Cannabis</fullName>
+                    <default>false</default>
+                    <label>Cannabis</label>
+                </value>
+                <value>
+                    <fullName>Consumables</fullName>
+                    <default>false</default>
+                    <label>Consumables</label>
+                </value>
+                <value>
+                    <fullName>Customer Insights</fullName>
+                    <default>false</default>
+                    <label>Customer Insights</label>
+                </value>
+                <value>
+                    <fullName>Environmental</fullName>
+                    <default>false</default>
+                    <label>Environmental</label>
+                </value>
+                <value>
+                    <fullName>Food</fullName>
+                    <default>false</default>
+                    <label>Food</label>
+                </value>
+                <value>
+                    <fullName>Industrial</fullName>
+                    <default>false</default>
+                    <label>Industrial</label>
+                </value>
+                <value>
+                    <fullName>New product intro</fullName>
+                    <default>false</default>
+                    <label>New product intro</label>
+                </value>
+                <value>
+                    <fullName>Pharma</fullName>
+                    <default>false</default>
+                    <label>Pharma</label>
+                </value>
+                <value>
+                    <fullName>Technology</fullName>
+                    <default>false</default>
+                    <label>Technology</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Website__c</fullName>
+        <externalId>false</externalId>
+        <label>Website</label>
+        <required>false</required>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>AFM_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>AFM Code</label>
+        <length>8</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>32000</length>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Location__c</fullName>
+        <externalId>false</externalId>
+        <label>Location</label>
+        <length>30</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Variance__c</fullName>
+        <description>Calculated difference between the amount budgeted for the event and the actual cost</description>
+        <externalId>false</externalId>
+        <formula>BudgetedCost-ActualCost</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Variance</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Promotion__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>If there is a discount promotion associated with this campaign, add it here.</inlineHelpText>
+        <label>Promotion</label>
+        <referenceTo>Promotion__c</referenceTo>
+        <relationshipLabel>Campaigns</relationshipLabel>
+        <relationshipName>Campaigns</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Territory__c</fullName>
+        <description>Global</description>
+        <externalId>false</externalId>
+        <label>Territory</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AMERICAS</fullName>
+                    <default>false</default>
+                    <label>AMER</label>
+                </value>
+                <value>
+                    <fullName>EMEA</fullName>
+                    <default>false</default>
+                    <label>EMEA</label>
+                </value>
+                <value>
+                    <fullName>APAC</fullName>
+                    <default>false</default>
+                    <label>APAC</label>
+                </value>
+                <value>
+                    <fullName>GLOBAL</fullName>
+                    <default>false</default>
+                    <label>GLOBAL</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sales_Team__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Team</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <controllingField>Region__c</controllingField>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Austria</fullName>
+                    <default>false</default>
+                    <label>Austria</label>
+                </value>
+                <value>
+                    <fullName>Belgium</fullName>
+                    <default>false</default>
+                    <label>Belgium</label>
+                </value>
+                <value>
+                    <fullName>Ben/Nordics GDS</fullName>
+                    <default>false</default>
+                    <label>Ben/Nordics GDS</label>
+                </value>
+                <value>
+                    <fullName>BZ - Team LA South</fullName>
+                    <default>false</default>
+                    <label>BZ - Team LA South</label>
+                </value>
+                <value>
+                    <fullName>CA10 Analytical</fullName>
+                    <default>false</default>
+                    <label>CA10 Analytical</label>
+                </value>
+                <value>
+                    <fullName>CA10 LS Instrument</fullName>
+                    <default>false</default>
+                    <label>CA10 LS Instrument</label>
+                </value>
+                <value>
+                    <fullName>CA10 Reagents</fullName>
+                    <default>false</default>
+                    <label>CA10 Reagents</label>
+                </value>
+                <value>
+                    <fullName>CA - Marcom</fullName>
+                    <default>false</default>
+                    <label>CA - Marcom</label>
+                </value>
+                <value>
+                    <fullName>CA - Team West</fullName>
+                    <default>false</default>
+                    <label>CA - Team West</label>
+                </value>
+                <value>
+                    <fullName>Central - EMEA - Islands</fullName>
+                    <default>false</default>
+                    <label>Central - EMEA - Islands</label>
+                </value>
+                <value>
+                    <fullName>Denmark</fullName>
+                    <default>false</default>
+                    <label>Denmark</label>
+                </value>
+                <value>
+                    <fullName>Export Africa, SEE &amp; ED</fullName>
+                    <default>false</default>
+                    <label>Export Africa, SEE &amp; ED</label>
+                </value>
+                <value>
+                    <fullName>Export CEE</fullName>
+                    <default>false</default>
+                    <label>Export CEE</label>
+                </value>
+                <value>
+                    <fullName>Export CIS</fullName>
+                    <default>false</default>
+                    <label>Export CIS</label>
+                </value>
+                <value>
+                    <fullName>Export Gulf</fullName>
+                    <default>false</default>
+                    <label>Export Gulf</label>
+                </value>
+                <value>
+                    <fullName>Finland</fullName>
+                    <default>false</default>
+                    <label>Finland</label>
+                </value>
+                <value>
+                    <fullName>France &amp; Spain GDS</fullName>
+                    <default>false</default>
+                    <label>France &amp; Spain GDS</label>
+                </value>
+                <value>
+                    <fullName>France North</fullName>
+                    <default>false</default>
+                    <label>France North</label>
+                </value>
+                <value>
+                    <fullName>France South</fullName>
+                    <default>false</default>
+                    <label>France South</label>
+                </value>
+                <value>
+                    <fullName>Germany GDS</fullName>
+                    <default>false</default>
+                    <label>Germany GDS</label>
+                </value>
+                <value>
+                    <fullName>Germany North East</fullName>
+                    <default>false</default>
+                    <label>Germany North East</label>
+                </value>
+                <value>
+                    <fullName>Germany South</fullName>
+                    <default>false</default>
+                    <label>Germany South</label>
+                </value>
+                <value>
+                    <fullName>Germany West</fullName>
+                    <default>false</default>
+                    <label>Germany West</label>
+                </value>
+                <value>
+                    <fullName>Italy Centre</fullName>
+                    <default>false</default>
+                    <label>Italy Centre</label>
+                </value>
+                <value>
+                    <fullName>Italy GDS</fullName>
+                    <default>false</default>
+                    <label>Italy GDS</label>
+                </value>
+                <value>
+                    <fullName>Italy North East</fullName>
+                    <default>false</default>
+                    <label>Italy North East</label>
+                </value>
+                <value>
+                    <fullName>Italy North West</fullName>
+                    <default>false</default>
+                    <label>Italy North West</label>
+                </value>
+                <value>
+                    <fullName>Italy South</fullName>
+                    <default>false</default>
+                    <label>Italy South</label>
+                </value>
+                <value>
+                    <fullName>MX - Team LA North</fullName>
+                    <default>false</default>
+                    <label>MX - Team LA North</label>
+                </value>
+                <value>
+                    <fullName>NA East – Chrome</fullName>
+                    <default>false</default>
+                    <label>NA East – Chrome</label>
+                </value>
+                <value>
+                    <fullName>NA East – Inorganic</fullName>
+                    <default>false</default>
+                    <label>NA East – Inorganic</label>
+                </value>
+                <value>
+                    <fullName>NA East – Mat Char</fullName>
+                    <default>false</default>
+                    <label>NA East – Mat Char</label>
+                </value>
+                <value>
+                    <fullName>NA Midwest– Chrome</fullName>
+                    <default>false</default>
+                    <label>NA Midwest– Chrome</label>
+                </value>
+                <value>
+                    <fullName>NA Midwest– Inorganic</fullName>
+                    <default>false</default>
+                    <label>NA Midwest– Inorganic</label>
+                </value>
+                <value>
+                    <fullName>NA Midwest– Mat Char</fullName>
+                    <default>false</default>
+                    <label>NA Midwest– Mat Char</label>
+                </value>
+                <value>
+                    <fullName>NA South– Chrome</fullName>
+                    <default>false</default>
+                    <label>NA South– Chrome</label>
+                </value>
+                <value>
+                    <fullName>NA South– Inorganic</fullName>
+                    <default>false</default>
+                    <label>NA South– Inorganic</label>
+                </value>
+                <value>
+                    <fullName>NA South– Mat Char</fullName>
+                    <default>false</default>
+                    <label>NA South– Mat Char</label>
+                </value>
+                <value>
+                    <fullName>NA West – Chrome</fullName>
+                    <default>false</default>
+                    <label>NA West – Chrome</label>
+                </value>
+                <value>
+                    <fullName>NA West – Inorganic</fullName>
+                    <default>false</default>
+                    <label>NA West – Inorganic</label>
+                </value>
+                <value>
+                    <fullName>NA West – Mat Char</fullName>
+                    <default>false</default>
+                    <label>NA West – Mat Char</label>
+                </value>
+                <value>
+                    <fullName>Netherlands</fullName>
+                    <default>false</default>
+                    <label>Netherlands</label>
+                </value>
+                <value>
+                    <fullName>Northern - EMEA - Islands</fullName>
+                    <default>false</default>
+                    <label>Northern - EMEA - Islands</label>
+                </value>
+                <value>
+                    <fullName>Norway</fullName>
+                    <default>false</default>
+                    <label>Norway</label>
+                </value>
+                <value>
+                    <fullName>Southern - EMEA - Islands</fullName>
+                    <default>false</default>
+                    <label>Southern - EMEA - Islands</label>
+                </value>
+                <value>
+                    <fullName>Spain</fullName>
+                    <default>false</default>
+                    <label>Spain</label>
+                </value>
+                <value>
+                    <fullName>Sweden</fullName>
+                    <default>false</default>
+                    <label>Sweden</label>
+                </value>
+                <value>
+                    <fullName>Switzerland</fullName>
+                    <default>false</default>
+                    <label>Switzerland</label>
+                </value>
+                <value>
+                    <fullName>UK GDS</fullName>
+                    <default>false</default>
+                    <label>UK GDS</label>
+                </value>
+                <value>
+                    <fullName>US - Marcom</fullName>
+                    <default>false</default>
+                    <label>US - Marcom</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>LA South</controllingFieldValue>
+                <valueName>BZ - Team LA South</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>US-EAST</controllingFieldValue>
+                <valueName>NA East – Chrome</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>US-EAST</controllingFieldValue>
+                <valueName>NA East – Inorganic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>US-EAST</controllingFieldValue>
+                <valueName>NA East – Mat Char</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>US-SOUTH</controllingFieldValue>
+                <valueName>NA South– Chrome</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>US-SOUTH</controllingFieldValue>
+                <valueName>NA South– Inorganic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>US-SOUTH</controllingFieldValue>
+                <valueName>NA South– Mat Char</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas</controllingFieldValue>
+                <valueName>US - Marcom</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Canada</controllingFieldValue>
+                <valueName>CA - Marcom</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Canada</controllingFieldValue>
+                <valueName>CA - Team West</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>US-WEST</controllingFieldValue>
+                <valueName>NA West – Chrome</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>US-WEST</controllingFieldValue>
+                <valueName>NA West – Inorganic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>US-WEST</controllingFieldValue>
+                <valueName>NA West – Mat Char</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LA North</controllingFieldValue>
+                <valueName>MX - Team LA North</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>US-MIDWEST</controllingFieldValue>
+                <valueName>NA Midwest– Chrome</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>US-MIDWEST</controllingFieldValue>
+                <valueName>NA Midwest– Inorganic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>US-MIDWEST</controllingFieldValue>
+                <valueName>NA Midwest– Mat Char</valueName>
+            </valueSettings>
+        </valueSet>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Name_of_NPI__c</fullName>
+        <externalId>false</externalId>
+        <label>Name of NPI</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vendor_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Partner/Vendor</label>
+        <length>40</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BU_Alignment__c</fullName>
+        <description>Represents business group</description>
+        <externalId>false</externalId>
+        <label>Business Unit</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Advanced Diagnostics</fullName>
+                    <default>false</default>
+                    <label>Advanced Diagnostics</label>
+                </value>
+                <value>
+                    <fullName>Applied Genomics (AG)</fullName>
+                    <default>false</default>
+                    <label>Applied Genomics (AG)</label>
+                </value>
+                <value>
+                    <fullName>Automation &amp; Detection Systems (ADS)</fullName>
+                    <default>false</default>
+                    <label>Automation &amp; Detection Systems (ADS)</label>
+                </value>
+                <value>
+                    <fullName>Biotherapeutics</fullName>
+                    <default>false</default>
+                    <label>Biotherapeutics</label>
+                </value>
+                <value>
+                    <fullName>Canada</fullName>
+                    <default>false</default>
+                    <label>Canada</label>
+                </value>
+                <value>
+                    <fullName>Chromatography (contains GC, LC)</fullName>
+                    <default>false</default>
+                    <label>Chromatography (contains GC, LC)</label>
+                </value>
+                <value>
+                    <fullName>Clinical Diagnostics</fullName>
+                    <default>false</default>
+                    <label>Clinical Diagnostics</label>
+                </value>
+                <value>
+                    <fullName>DNA</fullName>
+                    <default>false</default>
+                    <label>DNA</label>
+                </value>
+                <value>
+                    <fullName>Drug Discovery</fullName>
+                    <default>false</default>
+                    <label>Drug Discovery</label>
+                </value>
+                <value>
+                    <fullName>EcoAnalytix</fullName>
+                    <default>false</default>
+                    <label>EcoAnalytix</label>
+                </value>
+                <value>
+                    <fullName>Food</fullName>
+                    <default>false</default>
+                    <label>Food</label>
+                </value>
+                <value>
+                    <fullName>Imaging &amp; Analysis Systems (IAS)</fullName>
+                    <default>false</default>
+                    <label>Imaging &amp; Analysis Systems (IAS)</label>
+                </value>
+                <value>
+                    <fullName>Immuno Diagostics (ID)</fullName>
+                    <default>false</default>
+                    <label>Immuno Diagostics (ID)</label>
+                </value>
+                <value>
+                    <fullName>Independent Clinical Lab (ICL)</fullName>
+                    <default>false</default>
+                    <label>Independent Clinical Lab (ICL)</label>
+                </value>
+                <value>
+                    <fullName>Informatics (INF)</fullName>
+                    <default>false</default>
+                    <label>Informatics (INF)</label>
+                </value>
+                <value>
+                    <fullName>Inorganic (contains AA, ICP, MAS)</fullName>
+                    <default>false</default>
+                    <label>Inorganic (contains AA, ICP, MAS)</label>
+                </value>
+                <value>
+                    <fullName>In Vivo Imaging (INV, QTS)</fullName>
+                    <default>false</default>
+                    <label>In Vivo Imaging (INV, QTS)</label>
+                </value>
+                <value>
+                    <fullName>In Vivo Reagents (FAP, CLR)</fullName>
+                    <default>false</default>
+                    <label>In Vivo Reagents (FAP, CLR)</label>
+                </value>
+                <value>
+                    <fullName>Life Science Research</fullName>
+                    <default>false</default>
+                    <label>Life Science Research</label>
+                </value>
+                <value>
+                    <fullName>Material Charac. (IR, UVS, RAM, TEA)</fullName>
+                    <default>false</default>
+                    <label>Material Charac. (IR, UVS, RAM, TEA)</label>
+                </value>
+                <value>
+                    <fullName>Maternal Fetal Health</fullName>
+                    <default>false</default>
+                    <label>Maternal Fetal Health</label>
+                </value>
+                <value>
+                    <fullName>Microscopy/Tissue Imaging (TSC/TIS)</fullName>
+                    <default>false</default>
+                    <label>Microscopy/Tissue Imaging (TSC/TIS)</label>
+                </value>
+                <value>
+                    <fullName>MI - Medical Imaging</fullName>
+                    <default>false</default>
+                    <label>MI - Medical Imaging</label>
+                </value>
+                <value>
+                    <fullName>MLD/MMD - Multimode Detection</fullName>
+                    <default>false</default>
+                    <label>MLD/MMD - Multimode Detection</label>
+                </value>
+                <value>
+                    <fullName>Molecular Diagnostics</fullName>
+                    <default>false</default>
+                    <label>Molecular Diagnostics</label>
+                </value>
+                <value>
+                    <fullName>Neonatal</fullName>
+                    <default>false</default>
+                    <label>Neonatal</label>
+                </value>
+                <value>
+                    <fullName>NGS - Next Gen Sequencing</fullName>
+                    <default>false</default>
+                    <label>NGS - Next Gen Sequencing</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Preclinical</fullName>
+                    <default>false</default>
+                    <label>Preclinical</label>
+                </value>
+                <value>
+                    <fullName>Prenatal</fullName>
+                    <default>false</default>
+                    <label>Prenatal</label>
+                </value>
+                <value>
+                    <fullName>Protein Biology Reagents</fullName>
+                    <default>false</default>
+                    <label>Protein Biology Reagents</label>
+                </value>
+                <value>
+                    <fullName>Proteomics Solutions</fullName>
+                    <default>false</default>
+                    <label>Proteomics Solutions</label>
+                </value>
+                <value>
+                    <fullName>Quantitative Pathology</fullName>
+                    <default>false</default>
+                    <label>Quantitative Pathology</label>
+                </value>
+                <value>
+                    <fullName>Reagent</fullName>
+                    <default>false</default>
+                    <label>Reagent</label>
+                </value>
+                <value>
+                    <fullName>Reproductive Health(RH)</fullName>
+                    <default>false</default>
+                    <label>Reproductive Health(RH)</label>
+                </value>
+                <value>
+                    <fullName>Service</fullName>
+                    <default>false</default>
+                    <label>Service</label>
+                </value>
+                <value>
+                    <fullName>Thermal/Elemental</fullName>
+                    <default>false</default>
+                    <label>Thermal/Elemental</label>
+                </value>
+                <value>
+                    <fullName>Virology</fullName>
+                    <default>false</default>
+                    <label>Virology</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>8</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Product_Line__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Line</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>AA</fullName>
+                    <default>false</default>
+                    <label>AA</label>
+                </value>
+                <value>
+                    <fullName>AG</fullName>
+                    <default>false</default>
+                    <label>AG</label>
+                </value>
+                <value>
+                    <fullName>AG-ALH</fullName>
+                    <default>false</default>
+                    <label>AG-ALH</label>
+                </value>
+                <value>
+                    <fullName>AG-BIOO</fullName>
+                    <default>false</default>
+                    <label>AG-BIOO</label>
+                </value>
+                <value>
+                    <fullName>AG-MFT</fullName>
+                    <default>false</default>
+                    <label>AG-MFT</label>
+                </value>
+                <value>
+                    <fullName>AG-NAP</fullName>
+                    <default>false</default>
+                    <label>AG-NAP</label>
+                </value>
+                <value>
+                    <fullName>AM</fullName>
+                    <default>false</default>
+                    <label>AM</label>
+                </value>
+                <value>
+                    <fullName>AMS</fullName>
+                    <default>false</default>
+                    <label>AMS</label>
+                </value>
+                <value>
+                    <fullName>ANP</fullName>
+                    <default>false</default>
+                    <label>ANP</label>
+                </value>
+                <value>
+                    <fullName>APS</fullName>
+                    <default>false</default>
+                    <label>APS</label>
+                </value>
+                <value>
+                    <fullName>ARS</fullName>
+                    <default>false</default>
+                    <label>ARS</label>
+                </value>
+                <value>
+                    <fullName>ASO</fullName>
+                    <default>false</default>
+                    <label>ASO</label>
+                </value>
+                <value>
+                    <fullName>ATT</fullName>
+                    <default>false</default>
+                    <label>ATT</label>
+                </value>
+                <value>
+                    <fullName>AVC</fullName>
+                    <default>false</default>
+                    <label>AVC</label>
+                </value>
+                <value>
+                    <fullName>AVS</fullName>
+                    <default>false</default>
+                    <label>AVS</label>
+                </value>
+                <value>
+                    <fullName>AWS</fullName>
+                    <default>false</default>
+                    <label>AWS</label>
+                </value>
+                <value>
+                    <fullName>BBT</fullName>
+                    <default>false</default>
+                    <label>BBT</label>
+                </value>
+                <value>
+                    <fullName>BIO</fullName>
+                    <default>false</default>
+                    <label>BIO</label>
+                </value>
+                <value>
+                    <fullName>BTX</fullName>
+                    <default>false</default>
+                    <label>BTX</label>
+                </value>
+                <value>
+                    <fullName>CDI</fullName>
+                    <default>false</default>
+                    <label>CDI</label>
+                </value>
+                <value>
+                    <fullName>CHO</fullName>
+                    <default>false</default>
+                    <label>CHO</label>
+                </value>
+                <value>
+                    <fullName>CKP</fullName>
+                    <default>false</default>
+                    <label>CKP</label>
+                </value>
+                <value>
+                    <fullName>CLH</fullName>
+                    <default>false</default>
+                    <label>CLH</label>
+                </value>
+                <value>
+                    <fullName>CLR</fullName>
+                    <default>false</default>
+                    <label>CLR</label>
+                </value>
+                <value>
+                    <fullName>CRD</fullName>
+                    <default>false</default>
+                    <label>CRD</label>
+                </value>
+                <value>
+                    <fullName>CSA</fullName>
+                    <default>false</default>
+                    <label>CSA</label>
+                </value>
+                <value>
+                    <fullName>DAB</fullName>
+                    <default>false</default>
+                    <label>DAB</label>
+                </value>
+                <value>
+                    <fullName>DAO</fullName>
+                    <default>false</default>
+                    <label>DAO</label>
+                </value>
+                <value>
+                    <fullName>DCS</fullName>
+                    <default>false</default>
+                    <label>DCS</label>
+                </value>
+                <value>
+                    <fullName>DEL</fullName>
+                    <default>false</default>
+                    <label>DEL</label>
+                </value>
+                <value>
+                    <fullName>DIA</fullName>
+                    <default>false</default>
+                    <label>DIA</label>
+                </value>
+                <value>
+                    <fullName>DIS</fullName>
+                    <default>false</default>
+                    <label>DIS</label>
+                </value>
+                <value>
+                    <fullName>DL</fullName>
+                    <default>false</default>
+                    <label>DL</label>
+                </value>
+                <value>
+                    <fullName>DLS</fullName>
+                    <default>false</default>
+                    <label>DLS</label>
+                </value>
+                <value>
+                    <fullName>DNA</fullName>
+                    <default>false</default>
+                    <label>DNA</label>
+                </value>
+                <value>
+                    <fullName>DSK</fullName>
+                    <default>false</default>
+                    <label>DSK</label>
+                </value>
+                <value>
+                    <fullName>DSS</fullName>
+                    <default>false</default>
+                    <label>DSS</label>
+                </value>
+                <value>
+                    <fullName>EIM</fullName>
+                    <default>false</default>
+                    <label>EIM</label>
+                </value>
+                <value>
+                    <fullName>ELM</fullName>
+                    <default>false</default>
+                    <label>ELM</label>
+                </value>
+                <value>
+                    <fullName>ENT</fullName>
+                    <default>false</default>
+                    <label>ENT</label>
+                </value>
+                <value>
+                    <fullName>ESS</fullName>
+                    <default>false</default>
+                    <label>ESS</label>
+                </value>
+                <value>
+                    <fullName>EXT</fullName>
+                    <default>false</default>
+                    <label>EXT</label>
+                </value>
+                <value>
+                    <fullName>EZR</fullName>
+                    <default>false</default>
+                    <label>EZR</label>
+                </value>
+                <value>
+                    <fullName>FAP</fullName>
+                    <default>false</default>
+                    <label>FAP</label>
+                </value>
+                <value>
+                    <fullName>FLR</fullName>
+                    <default>false</default>
+                    <label>FLR</label>
+                </value>
+                <value>
+                    <fullName>FN</fullName>
+                    <default>false</default>
+                    <label>FN</label>
+                </value>
+                <value>
+                    <fullName>FTF</fullName>
+                    <default>false</default>
+                    <label>FTF</label>
+                </value>
+                <value>
+                    <fullName>GC</fullName>
+                    <default>false</default>
+                    <label>GC</label>
+                </value>
+                <value>
+                    <fullName>GM</fullName>
+                    <default>false</default>
+                    <label>GM</label>
+                </value>
+                <value>
+                    <fullName>GPZ</fullName>
+                    <default>false</default>
+                    <label>GPZ</label>
+                </value>
+                <value>
+                    <fullName>HCA</fullName>
+                    <default>false</default>
+                    <label>HCA</label>
+                </value>
+                <value>
+                    <fullName>HCS</fullName>
+                    <default>false</default>
+                    <label>HCS</label>
+                </value>
+                <value>
+                    <fullName>HTS</fullName>
+                    <default>false</default>
+                    <label>HTS</label>
+                </value>
+                <value>
+                    <fullName>IAS</fullName>
+                    <default>false</default>
+                    <label>IAS</label>
+                </value>
+                <value>
+                    <fullName>ICL</fullName>
+                    <default>false</default>
+                    <label>ICL</label>
+                </value>
+                <value>
+                    <fullName>ICL-CMDx</fullName>
+                    <default>false</default>
+                    <label>ICL-CMDx</label>
+                </value>
+                <value>
+                    <fullName>ICL-MFH</fullName>
+                    <default>false</default>
+                    <label>ICL-MFH</label>
+                </value>
+                <value>
+                    <fullName>ICL-NEO</fullName>
+                    <default>false</default>
+                    <label>ICL-NEO</label>
+                </value>
+                <value>
+                    <fullName>ICP</fullName>
+                    <default>false</default>
+                    <label>ICP</label>
+                </value>
+                <value>
+                    <fullName>ILB</fullName>
+                    <default>false</default>
+                    <label>ILB</label>
+                </value>
+                <value>
+                    <fullName>IMF</fullName>
+                    <default>false</default>
+                    <label>IMF</label>
+                </value>
+                <value>
+                    <fullName>IMG</fullName>
+                    <default>false</default>
+                    <label>IMG</label>
+                </value>
+                <value>
+                    <fullName>INF</fullName>
+                    <default>false</default>
+                    <label>INF</label>
+                </value>
+                <value>
+                    <fullName>INFO</fullName>
+                    <default>false</default>
+                    <label>INFO</label>
+                </value>
+                <value>
+                    <fullName>INV</fullName>
+                    <default>false</default>
+                    <label>INV</label>
+                </value>
+                <value>
+                    <fullName>IR</fullName>
+                    <default>false</default>
+                    <label>IR</label>
+                </value>
+                <value>
+                    <fullName>ISCO</fullName>
+                    <default>false</default>
+                    <label>ISCO</label>
+                </value>
+                <value>
+                    <fullName>ISS</fullName>
+                    <default>false</default>
+                    <label>ISS</label>
+                </value>
+                <value>
+                    <fullName>LC</fullName>
+                    <default>false</default>
+                    <label>LC</label>
+                </value>
+                <value>
+                    <fullName>LCM</fullName>
+                    <default>false</default>
+                    <label>LCM</label>
+                </value>
+                <value>
+                    <fullName>LM</fullName>
+                    <default>false</default>
+                    <label>LM</label>
+                </value>
+                <value>
+                    <fullName>LVI</fullName>
+                    <default>false</default>
+                    <label>LVI</label>
+                </value>
+                <value>
+                    <fullName>MAS</fullName>
+                    <default>false</default>
+                    <label>MAS</label>
+                </value>
+                <value>
+                    <fullName>MBA</fullName>
+                    <default>false</default>
+                    <label>MBA</label>
+                </value>
+                <value>
+                    <fullName>MDX</fullName>
+                    <default>false</default>
+                    <label>MDX</label>
+                </value>
+                <value>
+                    <fullName>MFH</fullName>
+                    <default>false</default>
+                    <label>MFH</label>
+                </value>
+                <value>
+                    <fullName>MFT</fullName>
+                    <default>false</default>
+                    <label>MFT</label>
+                </value>
+                <value>
+                    <fullName>MLD</fullName>
+                    <default>false</default>
+                    <label>MLD</label>
+                </value>
+                <value>
+                    <fullName>MMO</fullName>
+                    <default>false</default>
+                    <label>MMO</label>
+                </value>
+                <value>
+                    <fullName>MOL</fullName>
+                    <default>false</default>
+                    <label>MOL</label>
+                </value>
+                <value>
+                    <fullName>MOX</fullName>
+                    <default>false</default>
+                    <label>MOX</label>
+                </value>
+                <value>
+                    <fullName>MSD</fullName>
+                    <default>false</default>
+                    <label>MSD</label>
+                </value>
+                <value>
+                    <fullName>MS kit</fullName>
+                    <default>false</default>
+                    <label>MS kit</label>
+                </value>
+                <value>
+                    <fullName>NAP</fullName>
+                    <default>false</default>
+                    <label>NAP</label>
+                </value>
+                <value>
+                    <fullName>NEO</fullName>
+                    <default>false</default>
+                    <label>NEO</label>
+                </value>
+                <value>
+                    <fullName>NEX</fullName>
+                    <default>false</default>
+                    <label>NEX</label>
+                </value>
+                <value>
+                    <fullName>NLB</fullName>
+                    <default>false</default>
+                    <label>NLB</label>
+                </value>
+                <value>
+                    <fullName>NPT</fullName>
+                    <default>false</default>
+                    <label>NPT</label>
+                </value>
+                <value>
+                    <fullName>NTD</fullName>
+                    <default>false</default>
+                    <label>NTD</label>
+                </value>
+                <value>
+                    <fullName>NVS</fullName>
+                    <default>false</default>
+                    <label>NVS</label>
+                </value>
+                <value>
+                    <fullName>OSAI</fullName>
+                    <default>false</default>
+                    <label>OSAI</label>
+                </value>
+                <value>
+                    <fullName>OSAM</fullName>
+                    <default>false</default>
+                    <label>OSAM</label>
+                </value>
+                <value>
+                    <fullName>OSC</fullName>
+                    <default>false</default>
+                    <label>OSC</label>
+                </value>
+                <value>
+                    <fullName>OSG</fullName>
+                    <default>false</default>
+                    <label>OSG</label>
+                </value>
+                <value>
+                    <fullName>OSIS</fullName>
+                    <default>false</default>
+                    <label>OSIS</label>
+                </value>
+                <value>
+                    <fullName>OSRL</fullName>
+                    <default>false</default>
+                    <label>OSRL</label>
+                </value>
+                <value>
+                    <fullName>OSSR</fullName>
+                    <default>false</default>
+                    <label>OSSR</label>
+                </value>
+                <value>
+                    <fullName>OSSS</fullName>
+                    <default>false</default>
+                    <label>OSSS</label>
+                </value>
+                <value>
+                    <fullName>OST</fullName>
+                    <default>false</default>
+                    <label>OST</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>PBR</fullName>
+                    <default>false</default>
+                    <label>PBR</label>
+                </value>
+                <value>
+                    <fullName>PCR</fullName>
+                    <default>false</default>
+                    <label>PCR</label>
+                </value>
+                <value>
+                    <fullName>PER</fullName>
+                    <default>false</default>
+                    <label>PER</label>
+                </value>
+                <value>
+                    <fullName>PGI</fullName>
+                    <default>false</default>
+                    <label>PGI</label>
+                </value>
+                <value>
+                    <fullName>PIV</fullName>
+                    <default>false</default>
+                    <label>PIV</label>
+                </value>
+                <value>
+                    <fullName>POCT</fullName>
+                    <default>false</default>
+                    <label>POCT</label>
+                </value>
+                <value>
+                    <fullName>PRE</fullName>
+                    <default>false</default>
+                    <label>PRE</label>
+                </value>
+                <value>
+                    <fullName>QAS</fullName>
+                    <default>false</default>
+                    <label>QAS</label>
+                </value>
+                <value>
+                    <fullName>QPS</fullName>
+                    <default>false</default>
+                    <label>QPS</label>
+                </value>
+                <value>
+                    <fullName>QTS</fullName>
+                    <default>false</default>
+                    <label>QTS</label>
+                </value>
+                <value>
+                    <fullName>RAD</fullName>
+                    <default>false</default>
+                    <label>RAD</label>
+                </value>
+                <value>
+                    <fullName>RAM</fullName>
+                    <default>false</default>
+                    <label>RAM</label>
+                </value>
+                <value>
+                    <fullName>RHS</fullName>
+                    <default>false</default>
+                    <label>RHS</label>
+                </value>
+                <value>
+                    <fullName>RRD</fullName>
+                    <default>false</default>
+                    <label>RRD</label>
+                </value>
+                <value>
+                    <fullName>RRS</fullName>
+                    <default>false</default>
+                    <label>RRS</label>
+                </value>
+                <value>
+                    <fullName>RTH</fullName>
+                    <default>false</default>
+                    <label>RTH</label>
+                </value>
+                <value>
+                    <fullName>RVA</fullName>
+                    <default>false</default>
+                    <label>RVA</label>
+                </value>
+                <value>
+                    <fullName>SBD</fullName>
+                    <default>false</default>
+                    <label>SBD</label>
+                </value>
+                <value>
+                    <fullName>SGL</fullName>
+                    <default>false</default>
+                    <label>SGL</label>
+                </value>
+                <value>
+                    <fullName>SIG</fullName>
+                    <default>false</default>
+                    <label>SIG</label>
+                </value>
+                <value>
+                    <fullName>SKC</fullName>
+                    <default>false</default>
+                    <label>SKC</label>
+                </value>
+                <value>
+                    <fullName>SPS</fullName>
+                    <default>false</default>
+                    <label>SPS</label>
+                </value>
+                <value>
+                    <fullName>SVC-One Source</fullName>
+                    <default>false</default>
+                    <label>SVC-One Source</label>
+                </value>
+                <value>
+                    <fullName>SVC-One Source: e-Learning</fullName>
+                    <default>false</default>
+                    <label>SVC-One Source: e-Learning</label>
+                </value>
+                <value>
+                    <fullName>SVC-One Source: Third Party</fullName>
+                    <default>false</default>
+                    <label>SVC-One Source: Third Party</label>
+                </value>
+                <value>
+                    <fullName>SVC-One Source: Validation</fullName>
+                    <default>false</default>
+                    <label>SVC-One Source: Validation</label>
+                </value>
+                <value>
+                    <fullName>SYN</fullName>
+                    <default>false</default>
+                    <label>SYN</label>
+                </value>
+                <value>
+                    <fullName>TBR</fullName>
+                    <default>false</default>
+                    <label>TBR</label>
+                </value>
+                <value>
+                    <fullName>TEA</fullName>
+                    <default>false</default>
+                    <label>TEA</label>
+                </value>
+                <value>
+                    <fullName>TIS</fullName>
+                    <default>false</default>
+                    <label>TIS</label>
+                </value>
+                <value>
+                    <fullName>TOF</fullName>
+                    <default>false</default>
+                    <label>TOF</label>
+                </value>
+                <value>
+                    <fullName>TSC</fullName>
+                    <default>false</default>
+                    <label>TSC</label>
+                </value>
+                <value>
+                    <fullName>TXV</fullName>
+                    <default>false</default>
+                    <label>TXV</label>
+                </value>
+                <value>
+                    <fullName>UIC</fullName>
+                    <default>false</default>
+                    <label>UIC</label>
+                </value>
+                <value>
+                    <fullName>UVS</fullName>
+                    <default>false</default>
+                    <label>UVS</label>
+                </value>
+                <value>
+                    <fullName>VIR</fullName>
+                    <default>false</default>
+                    <label>VIR</label>
+                </value>
+                <value>
+                    <fullName>VL</fullName>
+                    <default>false</default>
+                    <label>VL</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>8</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Program_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Program Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Demand Generation</fullName>
+                    <default>false</default>
+                    <label>Demand Generation</label>
+                </value>
+                <value>
+                    <fullName>Market Intelligence</fullName>
+                    <default>false</default>
+                    <label>Market Intelligence</label>
+                </value>
+                <value>
+                    <fullName>PDG</fullName>
+                    <default>false</default>
+                    <label>PDG</label>
+                </value>
+                <value>
+                    <fullName>Reputation</fullName>
+                    <default>false</default>
+                    <label>Reputation</label>
+                </value>
+                <value>
+                    <fullName>Sales Enablement</fullName>
+                    <default>false</default>
+                    <label>Sales Enablement</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Business_Unit__c</fullName>
+        <externalId>false</externalId>
+        <label>Business Element</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>ASLS</fullName>
+                    <default>false</default>
+                    <label>ASLS</label>
+                </value>
+                <value>
+                    <fullName>CORP</fullName>
+                    <default>false</default>
+                    <label>CORP</label>
+                </value>
+                <value>
+                    <fullName>DAS</fullName>
+                    <default>false</default>
+                    <label>DAS</label>
+                </value>
+                <value>
+                    <fullName>Dx</fullName>
+                    <default>false</default>
+                    <label>Dx</label>
+                </value>
+                <value>
+                    <fullName>Emerging Tech.</fullName>
+                    <default>false</default>
+                    <label>Emerging Tech.</label>
+                </value>
+                <value>
+                    <fullName>INF</fullName>
+                    <default>false</default>
+                    <label>INF</label>
+                </value>
+                <value>
+                    <fullName>LST</fullName>
+                    <default>false</default>
+                    <label>LST</label>
+                </value>
+                <value>
+                    <fullName>MULTI</fullName>
+                    <default>false</default>
+                    <label>MULTI</label>
+                </value>
+                <value>
+                    <fullName>ONE</fullName>
+                    <default>false</default>
+                    <label>ONE</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Campaign_Alias__c</fullName>
+        <externalId>false</externalId>
+        <label>Campaign Alias</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Creative_Piece__c</fullName>
+        <externalId>false</externalId>
+        <label>Creative Piece</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invoice_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Invoice Number</label>
+        <length>15</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invoice_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Invoice Status</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Yet Invoiced</fullName>
+                    <default>false</default>
+                    <label>Not Yet Invoiced</label>
+                </value>
+                <value>
+                    <fullName>Prepaid</fullName>
+                    <default>false</default>
+                    <label>Prepaid</label>
+                </value>
+                <value>
+                    <fullName>Entered in GELCO</fullName>
+                    <default>false</default>
+                    <label>Entered in GELCO</label>
+                </value>
+                <value>
+                    <fullName>VISA Purchase Card</fullName>
+                    <default>false</default>
+                    <label>VISA Purchase Card</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Market_Segment__c</fullName>
+        <externalId>false</externalId>
+        <label>Market Segment</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Academia</fullName>
+                    <default>false</default>
+                    <label>Academia</label>
+                </value>
+                <value>
+                    <fullName>Aerospace</fullName>
+                    <default>false</default>
+                    <label>Aerospace</label>
+                </value>
+                <value>
+                    <fullName>Agriculture</fullName>
+                    <default>false</default>
+                    <label>Agriculture</label>
+                </value>
+                <value>
+                    <fullName>Assay Development</fullName>
+                    <default>false</default>
+                    <label>Assay Development</label>
+                </value>
+                <value>
+                    <fullName>Automotive</fullName>
+                    <default>false</default>
+                    <label>Automotive</label>
+                </value>
+                <value>
+                    <fullName>Basic Research</fullName>
+                    <default>false</default>
+                    <label>Basic Research</label>
+                </value>
+                <value>
+                    <fullName>Biofuels</fullName>
+                    <default>false</default>
+                    <label>Biofuels</label>
+                </value>
+                <value>
+                    <fullName>Biotherapeutics</fullName>
+                    <default>false</default>
+                    <label>Biotherapeutics</label>
+                </value>
+                <value>
+                    <fullName>Chemicals</fullName>
+                    <default>false</default>
+                    <label>Chemicals</label>
+                </value>
+                <value>
+                    <fullName>Clinical / Biomonitoring</fullName>
+                    <default>false</default>
+                    <label>Clinical / Biomonitoring</label>
+                </value>
+                <value>
+                    <fullName>Clinical Genetics and Diagnostics</fullName>
+                    <default>false</default>
+                    <label>Clinical Genetics and Diagnostics</label>
+                </value>
+                <value>
+                    <fullName>Consumer products and Product Safety</fullName>
+                    <default>false</default>
+                    <label>Consumer products and Product Safety</label>
+                </value>
+                <value>
+                    <fullName>Core</fullName>
+                    <default>false</default>
+                    <label>Core</label>
+                </value>
+                <value>
+                    <fullName>Drug Development</fullName>
+                    <default>false</default>
+                    <label>Drug Development</label>
+                </value>
+                <value>
+                    <fullName>Drug Discovery</fullName>
+                    <default>false</default>
+                    <label>Drug Discovery</label>
+                </value>
+                <value>
+                    <fullName>Electronic Components / Electroplating</fullName>
+                    <default>false</default>
+                    <label>Electronic Components / Electroplating</label>
+                </value>
+                <value>
+                    <fullName>Environmental</fullName>
+                    <default>false</default>
+                    <label>Environmental</label>
+                </value>
+                <value>
+                    <fullName>Foods &amp; Beverages</fullName>
+                    <default>false</default>
+                    <label>Foods &amp; Beverages</label>
+                </value>
+                <value>
+                    <fullName>Forensics</fullName>
+                    <default>false</default>
+                    <label>Forensics</label>
+                </value>
+                <value>
+                    <fullName>Functional Genomics/Proteomics</fullName>
+                    <default>false</default>
+                    <label>Functional Genomics/Proteomics</label>
+                </value>
+                <value>
+                    <fullName>General Manufacturing</fullName>
+                    <default>false</default>
+                    <label>General Manufacturing</label>
+                </value>
+                <value>
+                    <fullName>Genetic Screening</fullName>
+                    <default>false</default>
+                    <label>Genetic Screening</label>
+                </value>
+                <value>
+                    <fullName>Genomics</fullName>
+                    <default>false</default>
+                    <label>Genomics</label>
+                </value>
+                <value>
+                    <fullName>Government</fullName>
+                    <default>false</default>
+                    <label>Government</label>
+                </value>
+                <value>
+                    <fullName>High Throughput Screening</fullName>
+                    <default>false</default>
+                    <label>High Throughput Screening</label>
+                </value>
+                <value>
+                    <fullName>Homeland Security</fullName>
+                    <default>false</default>
+                    <label>Homeland Security</label>
+                </value>
+                <value>
+                    <fullName>Imaging</fullName>
+                    <default>false</default>
+                    <label>Imaging</label>
+                </value>
+                <value>
+                    <fullName>Immunology</fullName>
+                    <default>false</default>
+                    <label>Immunology</label>
+                </value>
+                <value>
+                    <fullName>Life Science Research</fullName>
+                    <default>false</default>
+                    <label>Life Science Research</label>
+                </value>
+                <value>
+                    <fullName>Lubricants</fullName>
+                    <default>false</default>
+                    <label>Lubricants</label>
+                </value>
+                <value>
+                    <fullName>Microbiology</fullName>
+                    <default>false</default>
+                    <label>Microbiology</label>
+                </value>
+                <value>
+                    <fullName>Mining / Metals</fullName>
+                    <default>false</default>
+                    <label>Mining / Metals</label>
+                </value>
+                <value>
+                    <fullName>Molecular Biology</fullName>
+                    <default>false</default>
+                    <label>Molecular Biology</label>
+                </value>
+                <value>
+                    <fullName>Neuroscience</fullName>
+                    <default>false</default>
+                    <label>Neuroscience</label>
+                </value>
+                <value>
+                    <fullName>Next Generation Sequencing (NGS)</fullName>
+                    <default>false</default>
+                    <label>Next Generation Sequencing (NGS)</label>
+                </value>
+                <value>
+                    <fullName>Nuclear</fullName>
+                    <default>false</default>
+                    <label>Nuclear</label>
+                </value>
+                <value>
+                    <fullName>Nuclear Power and Radiation Safety</fullName>
+                    <default>false</default>
+                    <label>Nuclear Power and Radiation Safety</label>
+                </value>
+                <value>
+                    <fullName>Nutraceuticals</fullName>
+                    <default>false</default>
+                    <label>Nutraceuticals</label>
+                </value>
+                <value>
+                    <fullName>Optics</fullName>
+                    <default>false</default>
+                    <label>Optics</label>
+                </value>
+                <value>
+                    <fullName>Petrochemical</fullName>
+                    <default>false</default>
+                    <label>Petrochemical</label>
+                </value>
+                <value>
+                    <fullName>Pharm. Development &amp; Manufacturing</fullName>
+                    <default>false</default>
+                    <label>Pharm. Development &amp; Manufacturing</label>
+                </value>
+                <value>
+                    <fullName>Pharmaceutical &amp; Cosmetics</fullName>
+                    <default>false</default>
+                    <label>Pharmaceutical &amp; Cosmetics</label>
+                </value>
+                <value>
+                    <fullName>Polymers, Paints, Coatings and Plastics</fullName>
+                    <default>false</default>
+                    <label>Polymers, Paints, Coatings and Plastics</label>
+                </value>
+                <value>
+                    <fullName>Power / Utilities</fullName>
+                    <default>false</default>
+                    <label>Power / Utilities</label>
+                </value>
+                <value>
+                    <fullName>Protein Biology</fullName>
+                    <default>false</default>
+                    <label>Protein Biology</label>
+                </value>
+                <value>
+                    <fullName>Radiation/Health Physics</fullName>
+                    <default>false</default>
+                    <label>Radiation/Health Physics</label>
+                </value>
+                <value>
+                    <fullName>Radiotherapeutics/Nuclear Medicine</fullName>
+                    <default>false</default>
+                    <label>Radiotherapeutics/Nuclear Medicine</label>
+                </value>
+                <value>
+                    <fullName>Semiconductors and Nanomaterials</fullName>
+                    <default>false</default>
+                    <label>Semiconductors and Nanomaterials</label>
+                </value>
+                <value>
+                    <fullName>Solar</fullName>
+                    <default>false</default>
+                    <label>Solar</label>
+                </value>
+                <value>
+                    <fullName>Toxicology</fullName>
+                    <default>false</default>
+                    <label>Toxicology</label>
+                </value>
+                <value>
+                    <fullName>Wind</fullName>
+                    <default>false</default>
+                    <label>Wind</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Campaign_Leader__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>May add as many team members as needed separated by a comma.</inlineHelpText>
+        <label>Campaign Leader</label>
+        <length>120</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Creative_Source__c</fullName>
+        <externalId>false</externalId>
+        <label>Creative Source</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>In-house</fullName>
+                    <default>false</default>
+                    <label>In-house</label>
+                </value>
+                <value>
+                    <fullName>Brodeur</fullName>
+                    <default>false</default>
+                    <label>Brodeur</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>INF_Campaign_Id__c</fullName>
+        <description>Informatics - Unique code name that identifies the campaign</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Informatics - Unique code name that identifies the campaign</inlineHelpText>
+        <label>INF Campaign Id</label>
+        <length>30</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MIT_Project_Num__c</fullName>
+        <description>OLD-removed from page layouts 5/21/12</description>
+        <externalId>false</externalId>
+        <label>MIT Project No.</label>
+        <length>16</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parent_Campaign__c</fullName>
+        <description>OLD-Picklist version of lookup standard field.  DO NOT ADD NEW VALUES.
+ This links multiple campaign components to one master umbrella campaign</description>
+        <externalId>false</externalId>
+        <inlineHelpText>OLD - Please Create Campaign and link to it via Lookup in Field at top of page.</inlineHelpText>
+        <label>OLD-Parent Campaign</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>PerkinElmer LAS Website</fullName>
+                    <default>false</default>
+                    <label>PerkinElmer LAS Website</label>
+                </value>
+                <value>
+                    <fullName>AlphaScreen Phosphosensor Launch</fullName>
+                    <default>false</default>
+                    <label>AlphaScreen Phosphosensor Launch</label>
+                </value>
+                <value>
+                    <fullName>ASLS-ADV-Q3-11-IRPharma-EU</fullName>
+                    <default>false</default>
+                    <label>ASLS-ADV-Q3-11-IRPharma-EU</label>
+                </value>
+                <value>
+                    <fullName>ASLS-E3RD/EPKI-Q4-11-Compliance and IRPharma-GLO</fullName>
+                    <default>false</default>
+                    <label>ASLS-E3RD/EPKI-Q4-11-Compliance and IRPharma-GLO</label>
+                </value>
+                <value>
+                    <fullName>ASLS-EPKI-Q2-12-AMS-SPP-GLO</fullName>
+                    <default>false</default>
+                    <label>ASLS-EPKI-Q2-12-AMS-SPP-GLO</label>
+                </value>
+                <value>
+                    <fullName>ASLS-EPKI-Q3-11-Gateway-Projects-GLO</fullName>
+                    <default>false</default>
+                    <label>ASLS-EPKI-Q3-11-Gateway-Projects-GLO</label>
+                </value>
+                <value>
+                    <fullName>ASLS-EPKI-Q4-11-EnviroCampaign-EU</fullName>
+                    <default>false</default>
+                    <label>ASLS-EPKI-Q4-11-EnviroCampaign-EU</label>
+                </value>
+                <value>
+                    <fullName>ASLS-GEN-Q1-Q2-Q3-Q4-Frontier-EU</fullName>
+                    <default>false</default>
+                    <label>ASLS-GEN-Q1-Q2-Q3-Q4-Frontier-EU</label>
+                </value>
+                <value>
+                    <fullName>ASLS-GEN-Q1-Q2-Q3-Q4-SpectrumTwo-EU</fullName>
+                    <default>false</default>
+                    <label>ASLS-GEN-Q1-Q2-Q3-Q4-SpectrumTwo-EU</label>
+                </value>
+                <value>
+                    <fullName>ASLS-GEN-Q4-11-Food-EU</fullName>
+                    <default>false</default>
+                    <label>ASLS-GEN-Q4-11-Food-EU</label>
+                </value>
+                <value>
+                    <fullName>ASLS-MO-Q2-11-FlexarSQ-MASTER-EU</fullName>
+                    <default>false</default>
+                    <label>ASLS-MO-Q2-11-FlexarSQ-MASTER-EU</label>
+                </value>
+                <value>
+                    <fullName>ASLS-SEM-Q1-12-MSTOUR-UK</fullName>
+                    <default>false</default>
+                    <label>ASLS-SEM-Q1-12-MSTOUR-UK</label>
+                </value>
+                <value>
+                    <fullName>ASLS-SEM-Q2-11-IRLaunch-ES</fullName>
+                    <default>false</default>
+                    <label>ASLS-SEM-Q2-11-IRLaunch-ES</label>
+                </value>
+                <value>
+                    <fullName>ASLS-SEM-Q2-11-IRLaunch-IT</fullName>
+                    <default>false</default>
+                    <label>ASLS-SEM-Q2-11-IRLaunch-IT</label>
+                </value>
+                <value>
+                    <fullName>ASLS-SEM-Q2-11-IR-seminar-tour--FR</fullName>
+                    <default>false</default>
+                    <label>ASLS-SEM-Q2-11-IR-seminar-tour--FR</label>
+                </value>
+                <value>
+                    <fullName>ASLS-WKSP-Q3-Q4-12-WestInorganic-NA</fullName>
+                    <default>false</default>
+                    <label>ASLS-WKSP-Q3-Q4-12-WestInorganic-NA</label>
+                </value>
+                <value>
+                    <fullName>ASLS-SEM-Q3-11-AnorganicaNORTH-DACH</fullName>
+                    <default>false</default>
+                    <label>ASLS-SEM-Q3-11-AnorganicaNORTH-DACH</label>
+                </value>
+                <value>
+                    <fullName>ASLS-SEM-Q3-Q4-11-Inorganic-Launch-Tour-FR</fullName>
+                    <default>false</default>
+                    <label>ASLS-SEM-Q3-Q4-11-Inorganic-Launch-Tour-FR</label>
+                </value>
+                <value>
+                    <fullName>ASLS-SEM-Q4-11-AnorganicaSOUTH-DACH</fullName>
+                    <default>false</default>
+                    <label>ASLS-SEM-Q4-11-AnorganicaSOUTH-DACH</label>
+                </value>
+                <value>
+                    <fullName>ASLS-SEM-Q4-11-InorganicLaunchTour-MASTER-BE</fullName>
+                    <default>false</default>
+                    <label>ASLS-SEM-Q4-11-InorganicLaunchTour-MASTER-BE</label>
+                </value>
+                <value>
+                    <fullName>ASLS-SEM-Q4-11-InorganicLaunchTour-MASTER-NL</fullName>
+                    <default>false</default>
+                    <label>ASLS-SEM-Q4-11-InorganicLaunchTour-MASTER-NL</label>
+                </value>
+                <value>
+                    <fullName>ASLS-TS-Q2-11-HPLC-Budapest</fullName>
+                    <default>false</default>
+                    <label>ASLS-TS-Q2-11-HPLC-Budapest</label>
+                </value>
+                <value>
+                    <fullName>ASLS-WC-12-LabX-Webinars-NA</fullName>
+                    <default>false</default>
+                    <label>ASLS-WC-12-LabX-Webinars-NA</label>
+                </value>
+                <value>
+                    <fullName>ASLS-WKSP-10-RegionalEvents-NA</fullName>
+                    <default>false</default>
+                    <label>ASLS-WKSP-10-RegionalEvents-NA</label>
+                </value>
+                <value>
+                    <fullName>ASLS-WKSP-2012 IN Tour-NA</fullName>
+                    <default>false</default>
+                    <label>ASLS-WKSP-2012 IN Tour-NA</label>
+                </value>
+                <value>
+                    <fullName>ASLS-WKSP-Q3-11-WestFallWksps-US</fullName>
+                    <default>false</default>
+                    <label>ASLS-WKSP-Q3-11-WestFallWksps-US</label>
+                </value>
+                <value>
+                    <fullName>BIO_LR_Vendor_Groups</fullName>
+                    <default>false</default>
+                    <label>BIO_LR_Vendor_Groups</label>
+                </value>
+                <value>
+                    <fullName>BIO_Q111_BioCompare</fullName>
+                    <default>false</default>
+                    <label>BIO_Q111_BioCompare</label>
+                </value>
+                <value>
+                    <fullName>BIO_TM_VoiceCentric_GLO</fullName>
+                    <default>false</default>
+                    <label>BIO_TM_VoiceCentric_GLO</label>
+                </value>
+                <value>
+                    <fullName>BIO_TS_Q111_SBS_POSTERS_US</fullName>
+                    <default>false</default>
+                    <label>BIO_TS_Q111_SBS_POSTERS_US</label>
+                </value>
+                <value>
+                    <fullName>BIO_WS_Q111_ADS_MLD_LabelFree_GLO</fullName>
+                    <default>false</default>
+                    <label>BIO_WS_Q111_ADS_MLD_LabelFree_GLO</label>
+                </value>
+                <value>
+                    <fullName>BIO-Biotherapuetics-Q3-11-GLO</fullName>
+                    <default>false</default>
+                    <label>BIO-Biotherapuetics-Q3-11-GLO</label>
+                </value>
+                <value>
+                    <fullName>BIO-EPKI-FAPSurvey-GLO</fullName>
+                    <default>false</default>
+                    <label>BIO-EPKI-FAPSurvey-GLO</label>
+                </value>
+                <value>
+                    <fullName>BIO-GEN-Q4-10-AcademicALH-EU</fullName>
+                    <default>false</default>
+                    <label>BIO-GEN-Q4-10-AcademicALH-EU</label>
+                </value>
+                <value>
+                    <fullName>BIO-GEN-Q4-10-AcademicALH-US</fullName>
+                    <default>false</default>
+                    <label>BIO-GEN-Q4-10-AcademicALH-US</label>
+                </value>
+                <value>
+                    <fullName>BIO-LR-Q4-10-ReferFriend-GLO</fullName>
+                    <default>false</default>
+                    <label>BIO-LR-Q4-10-ReferFriend-GLO</label>
+                </value>
+                <value>
+                    <fullName>Bio-MolecularGroove-11</fullName>
+                    <default>false</default>
+                    <label>Bio-MolecularGroove-11</label>
+                </value>
+                <value>
+                    <fullName>BIO-Q211-Science-Cellular-Webinar</fullName>
+                    <default>false</default>
+                    <label>BIO-Q211-Science-Cellular-Webinar</label>
+                </value>
+                <value>
+                    <fullName>Biotech Vendor Shows for Bio-discovery</fullName>
+                    <default>false</default>
+                    <label>Biotech Vendor Shows for Bio-discovery</label>
+                </value>
+                <value>
+                    <fullName>BIO-TM-H2-11-MMD Celebrate Save-GLO</fullName>
+                    <default>false</default>
+                    <label>BIO-TM-H2-11-MMD Celebrate Save-GLO</label>
+                </value>
+                <value>
+                    <fullName>BIO-TS-Q1-11-HCA 2011-US</fullName>
+                    <default>false</default>
+                    <label>BIO-TS-Q1-11-HCA 2011-US</label>
+                </value>
+                <value>
+                    <fullName>BIO-TS-Q2-11-EMIM-NL</fullName>
+                    <default>false</default>
+                    <label>BIO-TS-Q2-11-EMIM-NL</label>
+                </value>
+                <value>
+                    <fullName>BIO-TS-Q3-11-MIPTEC-CH</fullName>
+                    <default>false</default>
+                    <label>BIO-TS-Q3-11-MIPTEC-CH</label>
+                </value>
+                <value>
+                    <fullName>BIO-TS-Q4-10-ASCB2010-US</fullName>
+                    <default>false</default>
+                    <label>BIO-TS-Q4-10-ASCB2010-US</label>
+                </value>
+                <value>
+                    <fullName>BIO-TS-Q4-10-ASCB-Booth-US</fullName>
+                    <default>false</default>
+                    <label>BIO-TS-Q4-10-ASCB-Booth-US</label>
+                </value>
+                <value>
+                    <fullName>BIO-TS-Q4-10-ASCB-Workshop-US</fullName>
+                    <default>false</default>
+                    <label>BIO-TS-Q4-10-ASCB-Workshop-US</label>
+                </value>
+                <value>
+                    <fullName>BIO-TS-Q4-10-SFN-Booth-US</fullName>
+                    <default>false</default>
+                    <label>BIO-TS-Q4-10-SFN-Booth-US</label>
+                </value>
+                <value>
+                    <fullName>BIO-TS-Q4-SFN-2010-10</fullName>
+                    <default>false</default>
+                    <label>BIO-TS-Q4-SFN-2010-10</label>
+                </value>
+                <value>
+                    <fullName>BIO-UG-Q3-10-LSC User Groups-EU</fullName>
+                    <default>false</default>
+                    <label>BIO-UG-Q3-10-LSC User Groups-EU</label>
+                </value>
+                <value>
+                    <fullName>BIO-WCA-2010-2011-RADDetection</fullName>
+                    <default>false</default>
+                    <label>BIO-WCA-2010-2011-RADDetection</label>
+                </value>
+                <value>
+                    <fullName>BIO-WKSP-Q4-10-SFN-OpenHouse-US</fullName>
+                    <default>false</default>
+                    <label>BIO-WKSP-Q4-10-SFN-OpenHouse-US</label>
+                </value>
+                <value>
+                    <fullName>EB-BIO_Q3_Q4-All Biointelli_Campaigns-GLO</fullName>
+                    <default>false</default>
+                    <label>EB-BIO_Q3_Q4-All Biointelli_Campaigns-GLO</label>
+                </value>
+                <value>
+                    <fullName>EB-BIO-Q2_Q4_Stimulus Marketing Campaigns - US</fullName>
+                    <default>false</default>
+                    <label>EB-BIO-Q2_Q4_Stimulus Marketing Campaigns - US</label>
+                </value>
+                <value>
+                    <fullName>EB Q1 10 NexION300 EU</fullName>
+                    <default>false</default>
+                    <label>EB Q1 10 NexION300 EU</label>
+                </value>
+                <value>
+                    <fullName>EB-Q4-07-AS-L25eCommerce-US</fullName>
+                    <default>false</default>
+                    <label>EB-Q4-07-AS-L25eCommerce-US</label>
+                </value>
+                <value>
+                    <fullName>EB-Q4-08-ePromo Campaign-FR</fullName>
+                    <default>false</default>
+                    <label>EB-Q4-08-ePromo Campaign-FR</label>
+                </value>
+                <value>
+                    <fullName>EB Q4 08 Varian Kangaroo attack EU</fullName>
+                    <default>false</default>
+                    <label>EB Q4 08 Varian Kangaroo attack EU</label>
+                </value>
+                <value>
+                    <fullName>Flexar HPLC</fullName>
+                    <default>false</default>
+                    <label>Flexar HPLC</label>
+                </value>
+                <value>
+                    <fullName>Forensics Web Casts 2005</fullName>
+                    <default>false</default>
+                    <label>Forensics Web Casts 2005</label>
+                </value>
+                <value>
+                    <fullName>GC Know How Now Newsletter</fullName>
+                    <default>false</default>
+                    <label>GC Know How Now Newsletter</label>
+                </value>
+                <value>
+                    <fullName>GC Trade-In 2005-2006</fullName>
+                    <default>false</default>
+                    <label>GC Trade-In 2005-2006</label>
+                </value>
+                <value>
+                    <fullName>GEN-Q3-Q4-10-NexIONEnviro-EU</fullName>
+                    <default>false</default>
+                    <label>GEN-Q3-Q4-10-NexIONEnviro-EU</label>
+                </value>
+                <value>
+                    <fullName>GIGA_Series_2011</fullName>
+                    <default>false</default>
+                    <label>GIGA_Series_2011</label>
+                </value>
+                <value>
+                    <fullName>Gulf Analytical Summit (GAS) &apos;06</fullName>
+                    <default>false</default>
+                    <label>Gulf Analytical Summit (GAS) &apos;06</label>
+                </value>
+                <value>
+                    <fullName>Gulf Coast Conference (GCC) &apos;06</fullName>
+                    <default>false</default>
+                    <label>Gulf Coast Conference (GCC) &apos;06</label>
+                </value>
+                <value>
+                    <fullName>Gulf Coast Conference 2010</fullName>
+                    <default>false</default>
+                    <label>Gulf Coast Conference 2010</label>
+                </value>
+                <value>
+                    <fullName>HPLC 2010</fullName>
+                    <default>false</default>
+                    <label>HPLC 2010</label>
+                </value>
+                <value>
+                    <fullName>Jade DSC Industry Trade-In Promotion</fullName>
+                    <default>false</default>
+                    <label>Jade DSC Industry Trade-In Promotion</label>
+                </value>
+                <value>
+                    <fullName>LabAutomation 06</fullName>
+                    <default>false</default>
+                    <label>LabAutomation 06</label>
+                </value>
+                <value>
+                    <fullName>LABWORKS 06 Webcasts</fullName>
+                    <default>false</default>
+                    <label>LABWORKS 06 Webcasts</label>
+                </value>
+                <value>
+                    <fullName>LSA Multichannel Trade-in Camapign</fullName>
+                    <default>false</default>
+                    <label>LSA Multichannel Trade-in Camapign</label>
+                </value>
+                <value>
+                    <fullName>LST-MO-Q3-12-TSANEWCUST-US</fullName>
+                    <default>false</default>
+                    <label>LST-MO-Q3-12-TSANEWCUST-US</label>
+                </value>
+                <value>
+                    <fullName>LST-WKSP-2012-RGHSWC-GLO</fullName>
+                    <default>false</default>
+                    <label>LST-WKSP-2012-RGHSWC-GLO</label>
+                </value>
+                <value>
+                    <fullName>MM FM LRIG 2007</fullName>
+                    <default>false</default>
+                    <label>MM FM LRIG 2007</label>
+                </value>
+                <value>
+                    <fullName>MM FM MW Academic Technology seminars</fullName>
+                    <default>false</default>
+                    <label>MM FM MW Academic Technology seminars</label>
+                </value>
+                <value>
+                    <fullName>MM FM MW UltraVIEW Workshops</fullName>
+                    <default>false</default>
+                    <label>MM FM MW UltraVIEW Workshops</label>
+                </value>
+                <value>
+                    <fullName>MM FM NE Academic Technology Seminars</fullName>
+                    <default>false</default>
+                    <label>MM FM NE Academic Technology Seminars</label>
+                </value>
+                <value>
+                    <fullName>MM FM NE Pharma/Biotech Workshops</fullName>
+                    <default>false</default>
+                    <label>MM FM NE Pharma/Biotech Workshops</label>
+                </value>
+                <value>
+                    <fullName>MM FM NE UltraVIEW Workshops</fullName>
+                    <default>false</default>
+                    <label>MM FM NE UltraVIEW Workshops</label>
+                </value>
+                <value>
+                    <fullName>MM FM NIH Tent Shows 2007</fullName>
+                    <default>false</default>
+                    <label>MM FM NIH Tent Shows 2007</label>
+                </value>
+                <value>
+                    <fullName>MM FM SE Academic Technology Seminars</fullName>
+                    <default>false</default>
+                    <label>MM FM SE Academic Technology Seminars</label>
+                </value>
+                <value>
+                    <fullName>MM FM SE UltraVIEW Workshops</fullName>
+                    <default>false</default>
+                    <label>MM FM SE UltraVIEW Workshops</label>
+                </value>
+                <value>
+                    <fullName>MM FM West Academic Technology Seminars</fullName>
+                    <default>false</default>
+                    <label>MM FM West Academic Technology Seminars</label>
+                </value>
+                <value>
+                    <fullName>MM FM West Pharma/BioTech Workshops</fullName>
+                    <default>false</default>
+                    <label>MM FM West Pharma/BioTech Workshops</label>
+                </value>
+                <value>
+                    <fullName>MM FM West UltraVIEW Workshops</fullName>
+                    <default>false</default>
+                    <label>MM FM West UltraVIEW Workshops</label>
+                </value>
+                <value>
+                    <fullName>NEN Rad Advantage</fullName>
+                    <default>false</default>
+                    <label>NEN Rad Advantage</label>
+                </value>
+                <value>
+                    <fullName>NPI-Q2-08 Flexar LC-GLOBAL</fullName>
+                    <default>false</default>
+                    <label>NPI-Q2-08 Flexar LC-GLOBAL</label>
+                </value>
+                <value>
+                    <fullName>NPI-Q3-08-275 HRes LC-GLOBAL</fullName>
+                    <default>false</default>
+                    <label>NPI-Q3-08-275 HRes LC-GLOBAL</label>
+                </value>
+                <value>
+                    <fullName>NPI-Q3-09 Flexar LC-GLOBAL</fullName>
+                    <default>false</default>
+                    <label>NPI-Q3-09 Flexar LC-GLOBAL</label>
+                </value>
+                <value>
+                    <fullName>PDA HPLC Quality Campaign</fullName>
+                    <default>false</default>
+                    <label>PDA HPLC Quality Campaign</label>
+                </value>
+                <value>
+                    <fullName>Pittcon &apos;06</fullName>
+                    <default>false</default>
+                    <label>Pittcon &apos;06</label>
+                </value>
+                <value>
+                    <fullName>PittCon 08</fullName>
+                    <default>false</default>
+                    <label>PittCon 08</label>
+                </value>
+                <value>
+                    <fullName>PROMO-2009-BIO-Project CATalyst-US</fullName>
+                    <default>false</default>
+                    <label>PROMO-2009-BIO-Project CATalyst-US</label>
+                </value>
+                <value>
+                    <fullName>PROMO Q2 07 3 page advertisment for Bio Com DE</fullName>
+                    <default>false</default>
+                    <label>PROMO Q2 07 3 page advertisment for Bio Com DE</label>
+                </value>
+                <value>
+                    <fullName>PROMO-Q2-10-DealoftheDay-NA</fullName>
+                    <default>false</default>
+                    <label>PROMO-Q2-10-DealoftheDay-NA</label>
+                </value>
+                <value>
+                    <fullName>PROMO-Q2-10-DocktoStock-NA</fullName>
+                    <default>false</default>
+                    <label>PROMO-Q2-10-DocktoStock-NA</label>
+                </value>
+                <value>
+                    <fullName>PROMO-Q2-10-TradeIn-NA</fullName>
+                    <default>false</default>
+                    <label>PROMO-Q2-10-TradeIn-NA</label>
+                </value>
+                <value>
+                    <fullName>PROMO-Q2-10-UniversityPartnership-NA</fullName>
+                    <default>false</default>
+                    <label>PROMO-Q2-10-UniversityPartnership-NA</label>
+                </value>
+                <value>
+                    <fullName>PROMO-Q2-FireandIce-NA</fullName>
+                    <default>false</default>
+                    <label>PROMO-Q2-FireandIce-NA</label>
+                </value>
+                <value>
+                    <fullName>PROMO-Q3-10-Simply_Fast_GCMS-NA</fullName>
+                    <default>false</default>
+                    <label>PROMO-Q3-10-Simply_Fast_GCMS-NA</label>
+                </value>
+                <value>
+                    <fullName>Radiothearupetics Multichannel Campaign</fullName>
+                    <default>false</default>
+                    <label>Radiothearupetics Multichannel Campaign</label>
+                </value>
+                <value>
+                    <fullName>RS-Q2-10-F1Day-UK</fullName>
+                    <default>false</default>
+                    <label>RS-Q2-10-F1Day-UK</label>
+                </value>
+                <value>
+                    <fullName>RS-Q4-10-MASS-Spectrometry-IT</fullName>
+                    <default>false</default>
+                    <label>RS-Q4-10-MASS-Spectrometry-IT</label>
+                </value>
+                <value>
+                    <fullName>SBS &apos;06</fullName>
+                    <default>false</default>
+                    <label>SBS &apos;06</label>
+                </value>
+                <value>
+                    <fullName>ScreenTech &apos;06</fullName>
+                    <default>false</default>
+                    <label>ScreenTech &apos;06</label>
+                </value>
+                <value>
+                    <fullName>Service Leads</fullName>
+                    <default>false</default>
+                    <label>Service Leads</label>
+                </value>
+                <value>
+                    <fullName>SM_Q1_08_SE Seminars_USA</fullName>
+                    <default>false</default>
+                    <label>SM_Q1_08_SE Seminars_USA</label>
+                </value>
+                <value>
+                    <fullName>SVC-Q3-Q4-10-OneSource-internal-GTM-Project-EU</fullName>
+                    <default>false</default>
+                    <label>SVC-Q3-Q4-10-OneSource-internal-GTM-Project-EU</label>
+                </value>
+                <value>
+                    <fullName>TS- IBC Drug Discovery Conference - August 6 – 9, 2007 in Boston, MA.</fullName>
+                    <default>false</default>
+                    <label>TS- IBC Drug Discovery Conference - August 6 – 9, 2007 in Boston, MA.</label>
+                </value>
+                <value>
+                    <fullName>TS - Q1 - 07- LabAutomation - USA</fullName>
+                    <default>false</default>
+                    <label>TS - Q1 - 07- LabAutomation - USA</label>
+                </value>
+                <value>
+                    <fullName>TS - Q1 -07 - SMFM -USA</fullName>
+                    <default>false</default>
+                    <label>TS - Q1 -07 - SMFM -USA</label>
+                </value>
+                <value>
+                    <fullName>TS-Q1-08-LabAuto 2008-USA</fullName>
+                    <default>false</default>
+                    <label>TS-Q1-08-LabAuto 2008-USA</label>
+                </value>
+                <value>
+                    <fullName>TS-Q1-09-LabAuto 2009-USA</fullName>
+                    <default>false</default>
+                    <label>TS-Q1-09-LabAuto 2009-USA</label>
+                </value>
+                <value>
+                    <fullName>TS-Q1-09-Society of Toxicology- USA</fullName>
+                    <default>false</default>
+                    <label>TS-Q1-09-Society of Toxicology- USA</label>
+                </value>
+                <value>
+                    <fullName>TS-Q1-10-Analytica 2010 DE</fullName>
+                    <default>false</default>
+                    <label>TS-Q1-10-Analytica 2010 DE</label>
+                </value>
+                <value>
+                    <fullName>TS - Q1 - 10 - PITTCON - NA</fullName>
+                    <default>false</default>
+                    <label>TS - Q1 - 10 - PITTCON - NA</label>
+                </value>
+                <value>
+                    <fullName>TS - Q1 - 10 - Winter Plasma - NA</fullName>
+                    <default>false</default>
+                    <label>TS - Q1 - 10 - Winter Plasma - NA</label>
+                </value>
+                <value>
+                    <fullName>TS - Q2 - 07 - FASEB - USA</fullName>
+                    <default>false</default>
+                    <label>TS - Q2 - 07 - FASEB - USA</label>
+                </value>
+                <value>
+                    <fullName>TS - Q2 - 07 - SBS - Canada</fullName>
+                    <default>false</default>
+                    <label>TS - Q2 - 07 - SBS - Canada</label>
+                </value>
+                <value>
+                    <fullName>TS-Q2-08-SBS 2008-USA</fullName>
+                    <default>false</default>
+                    <label>TS-Q2-08-SBS 2008-USA</label>
+                </value>
+                <value>
+                    <fullName>TS-Q2-09-AACR American Association for Cancer Research-USA</fullName>
+                    <default>false</default>
+                    <label>TS-Q2-09-AACR American Association for Cancer Research-USA</label>
+                </value>
+                <value>
+                    <fullName>TS-Q2-09-Experimental Biology FASEB 2009-USA</fullName>
+                    <default>false</default>
+                    <label>TS-Q2-09-Experimental Biology FASEB 2009-USA</label>
+                </value>
+                <value>
+                    <fullName>TS-Q2-09-IIS National Meeting - USA</fullName>
+                    <default>false</default>
+                    <label>TS-Q2-09-IIS National Meeting - USA</label>
+                </value>
+                <value>
+                    <fullName>TS-Q2-09-SBS-France</fullName>
+                    <default>false</default>
+                    <label>TS-Q2-09-SBS-France</label>
+                </value>
+                <value>
+                    <fullName>TS-Q2-09-SNM-Canada</fullName>
+                    <default>false</default>
+                    <label>TS-Q2-09-SNM-Canada</label>
+                </value>
+                <value>
+                    <fullName>TS-Q2-10-AACR -GLO</fullName>
+                    <default>false</default>
+                    <label>TS-Q2-10-AACR -GLO</label>
+                </value>
+                <value>
+                    <fullName>TS-Q2-10-Experimental Biology FASEB 2010-USA</fullName>
+                    <default>false</default>
+                    <label>TS-Q2-10-Experimental Biology FASEB 2010-USA</label>
+                </value>
+                <value>
+                    <fullName>TS-Q2-10-MICROSCIENCE 2010-UK</fullName>
+                    <default>false</default>
+                    <label>TS-Q2-10-MICROSCIENCE 2010-UK</label>
+                </value>
+                <value>
+                    <fullName>TS-Q2-10-SBS 2010-US</fullName>
+                    <default>false</default>
+                    <label>TS-Q2-10-SBS 2010-US</label>
+                </value>
+                <value>
+                    <fullName>TS-Q3-08 HPS Health Physics Annual Meeting-USA</fullName>
+                    <default>false</default>
+                    <label>TS-Q3-08 HPS Health Physics Annual Meeting-USA</label>
+                </value>
+                <value>
+                    <fullName>TS-Q3-10-American Association for Clinical Chemistry (AACC)-US</fullName>
+                    <default>false</default>
+                    <label>TS-Q3-10-American Association for Clinical Chemistry (AACC)-US</label>
+                </value>
+                <value>
+                    <fullName>TS-Q3-10-HET-Instrument-MASTER-NL</fullName>
+                    <default>false</default>
+                    <label>TS-Q3-10-HET-Instrument-MASTER-NL</label>
+                </value>
+                <value>
+                    <fullName>TS-Q3-10-IFT_2010-NA</fullName>
+                    <default>false</default>
+                    <label>TS-Q3-10-IFT_2010-NA</label>
+                </value>
+                <value>
+                    <fullName>TS-Q3-10-NATAS-US</fullName>
+                    <default>false</default>
+                    <label>TS-Q3-10-NATAS-US</label>
+                </value>
+                <value>
+                    <fullName>TS-Q3-10-NEMC-US</fullName>
+                    <default>false</default>
+                    <label>TS-Q3-10-NEMC-US</label>
+                </value>
+                <value>
+                    <fullName>TS-Q4-07 ASCB Conference – USA</fullName>
+                    <default>false</default>
+                    <label>TS-Q4-07 ASCB Conference – USA</label>
+                </value>
+                <value>
+                    <fullName>TS-Q4-07-Bioassay –USA</fullName>
+                    <default>false</default>
+                    <label>TS-Q4-07-Bioassay –USA</label>
+                </value>
+                <value>
+                    <fullName>TS-Q4-07-HUPO-KOREA</fullName>
+                    <default>false</default>
+                    <label>TS-Q4-07-HUPO-KOREA</label>
+                </value>
+                <value>
+                    <fullName>TS-Q4-08-ASCB-US</fullName>
+                    <default>false</default>
+                    <label>TS-Q4-08-ASCB-US</label>
+                </value>
+                <value>
+                    <fullName>TS-Q4-08-NEAFS Conference-USA</fullName>
+                    <default>false</default>
+                    <label>TS-Q4-08-NEAFS Conference-USA</label>
+                </value>
+                <value>
+                    <fullName>TS-Q4-08-SBS Symposium Valley Forge-USA</fullName>
+                    <default>false</default>
+                    <label>TS-Q4-08-SBS Symposium Valley Forge-USA</label>
+                </value>
+                <value>
+                    <fullName>TS-Q4-08-SFN-GLO</fullName>
+                    <default>false</default>
+                    <label>TS-Q4-08-SFN-GLO</label>
+                </value>
+                <value>
+                    <fullName>TS-Q4-09- ASCB Conference - USA</fullName>
+                    <default>false</default>
+                    <label>TS-Q4-09- ASCB Conference - USA</label>
+                </value>
+                <value>
+                    <fullName>TS-Q4-09-Bioassay:RRMC- USA</fullName>
+                    <default>false</default>
+                    <label>TS-Q4-09-Bioassay:RRMC- USA</label>
+                </value>
+                <value>
+                    <fullName>TS-Q4-09-EANM Meeting</fullName>
+                    <default>false</default>
+                    <label>TS-Q4-09-EANM Meeting</label>
+                </value>
+                <value>
+                    <fullName>TS-Q4-09-Soc for NeuroScience-Chicago USA</fullName>
+                    <default>false</default>
+                    <label>TS-Q4-09-Soc for NeuroScience-Chicago USA</label>
+                </value>
+                <value>
+                    <fullName>TurboMatrix HS Webcasts 2006</fullName>
+                    <default>false</default>
+                    <label>TurboMatrix HS Webcasts 2006</label>
+                </value>
+                <value>
+                    <fullName>UV Seminar Campaign 2005</fullName>
+                    <default>false</default>
+                    <label>UV Seminar Campaign 2005</label>
+                </value>
+                <value>
+                    <fullName>WC_08_LABWORKSWebcasts</fullName>
+                    <default>false</default>
+                    <label>WC_08_LABWORKSWebcasts</label>
+                </value>
+                <value>
+                    <fullName>WC Q2 07 EnVision EU</fullName>
+                    <default>false</default>
+                    <label>WC Q2 07 EnVision EU</label>
+                </value>
+                <value>
+                    <fullName>WC-Q2-08-ALH Webcasts-EU</fullName>
+                    <default>false</default>
+                    <label>WC-Q2-08-ALH Webcasts-EU</label>
+                </value>
+                <value>
+                    <fullName>WC-Q2-Q4-08-ALH Webinar Wednesday Campaign-US</fullName>
+                    <default>false</default>
+                    <label>WC-Q2-Q4-08-ALH Webinar Wednesday Campaign-US</label>
+                </value>
+                <value>
+                    <fullName>WKSP-2010-Inorganic-US</fullName>
+                    <default>false</default>
+                    <label>WKSP-2010-Inorganic-US</label>
+                </value>
+                <value>
+                    <fullName>WKSP Q1 09 FTB GLO</fullName>
+                    <default>false</default>
+                    <label>WKSP Q1 09 FTB GLO</label>
+                </value>
+                <value>
+                    <fullName>WKSP Q1-2-3-4 2010 NexION EU</fullName>
+                    <default>false</default>
+                    <label>WKSP Q1-2-3-4 2010 NexION EU</label>
+                </value>
+                <value>
+                    <fullName>WKSP-Q2-08-Longwood Product Shows-USA</fullName>
+                    <default>false</default>
+                    <label>WKSP-Q2-08-Longwood Product Shows-USA</label>
+                </value>
+                <value>
+                    <fullName>WKSP Q3 10 Anorganica NexION NORTH DE</fullName>
+                    <default>false</default>
+                    <label>WKSP Q3 10 Anorganica NexION NORTH DE</label>
+                </value>
+                <value>
+                    <fullName>WKSP Q3 10 CHROMTOUR DE</fullName>
+                    <default>false</default>
+                    <label>WKSP Q3 10 CHROMTOUR DE</label>
+                </value>
+                <value>
+                    <fullName>WKSP-Q3-10-Inorganic Seminars Florida-US</fullName>
+                    <default>false</default>
+                    <label>WKSP-Q3-10-Inorganic Seminars Florida-US</label>
+                </value>
+                <value>
+                    <fullName>WKSP Q4 10 Anorganica NexION SOUTH DACH</fullName>
+                    <default>false</default>
+                    <label>WKSP Q4 10 Anorganica NexION SOUTH DACH</label>
+                </value>
+                <value>
+                    <fullName>WS-Q1-Q4-09 - ALH Webinar Series-GLO</fullName>
+                    <default>false</default>
+                    <label>WS-Q1-Q4-09 - ALH Webinar Series-GLO</label>
+                </value>
+                <value>
+                    <fullName>WS-Q2-10-Inorganic Seminar Northeast-US</fullName>
+                    <default>false</default>
+                    <label>WS-Q2-10-Inorganic Seminar Northeast-US</label>
+                </value>
+                <value>
+                    <fullName>WS-Q3-10-Volocity Demo-All-Downloads-GLO</fullName>
+                    <default>false</default>
+                    <label>WS-Q3-10-Volocity Demo-All-Downloads-GLO</label>
+                </value>
+                <value>
+                    <fullName>WS-Volocity Free Software Download-GLO</fullName>
+                    <default>false</default>
+                    <label>WS-Volocity Free Software Download-GLO</label>
+                </value>
+                <value>
+                    <fullName>2006-2007 Consumables &amp; Minor Accessories Catalog</fullName>
+                    <default>false</default>
+                    <label>2006-2007 Consumables &amp; Minor Accessories Catalog</label>
+                </value>
+                <value>
+                    <fullName>2007 LIMS Webcasts</fullName>
+                    <default>false</default>
+                    <label>2007 LIMS Webcasts</label>
+                </value>
+                <value>
+                    <fullName>2008 NA Inorganic Workshop Series</fullName>
+                    <default>false</default>
+                    <label>2008 NA Inorganic Workshop Series</label>
+                </value>
+                <value>
+                    <fullName>2009 Bio-discovery Product of the Month Campaigns</fullName>
+                    <default>false</default>
+                    <label>2009 Bio-discovery Product of the Month Campaigns</label>
+                </value>
+                <value>
+                    <fullName>2010_2011_Beckman_Exits</fullName>
+                    <default>false</default>
+                    <label>2010_2011_Beckman_Exits</label>
+                </value>
+                <value>
+                    <fullName>2010 Bio-discovery Product of the Month Campaigns</fullName>
+                    <default>false</default>
+                    <label>2010 Bio-discovery Product of the Month Campaigns</label>
+                </value>
+                <value>
+                    <fullName>2H06 AS Online Seminars</fullName>
+                    <default>false</default>
+                    <label>2H06 AS Online Seminars</label>
+                </value>
+                <value>
+                    <fullName>ABRF &apos;06</fullName>
+                    <default>false</default>
+                    <label>ABRF &apos;06</label>
+                </value>
+                <value>
+                    <fullName>AFSS 2005</fullName>
+                    <default>false</default>
+                    <label>AFSS 2005</label>
+                </value>
+                <value>
+                    <fullName>ASMS &apos;06</fullName>
+                    <default>false</default>
+                    <label>ASMS &apos;06</label>
+                </value>
+                <value>
+                    <fullName>ASMS 2010</fullName>
+                    <default>false</default>
+                    <label>ASMS 2010</label>
+                </value>
+                <value>
+                    <fullName>Lites Promotion</fullName>
+                    <default>false</default>
+                    <label>Lites Promotion</label>
+                </value>
+                <value>
+                    <fullName>Biocompare.com</fullName>
+                    <default>false</default>
+                    <label>Biocompare.com</label>
+                </value>
+                <value>
+                    <fullName>CA10 - AS2007 - Biodiesel</fullName>
+                    <default>false</default>
+                    <label>CA10 - AS2007 - Biodiesel</label>
+                </value>
+                <value>
+                    <fullName>CA10 - AS2007 - Chemical Imaging</fullName>
+                    <default>false</default>
+                    <label>CA10 - AS2007 - Chemical Imaging</label>
+                </value>
+                <value>
+                    <fullName>CA10 - AS2007 - City Tour</fullName>
+                    <default>false</default>
+                    <label>CA10 - AS2007 - City Tour</label>
+                </value>
+                <value>
+                    <fullName>CA10 - AS2007 - Detection Systems</fullName>
+                    <default>false</default>
+                    <label>CA10 - AS2007 - Detection Systems</label>
+                </value>
+                <value>
+                    <fullName>CA10 - AS2007 - Environmental</fullName>
+                    <default>false</default>
+                    <label>CA10 - AS2007 - Environmental</label>
+                </value>
+                <value>
+                    <fullName>CA10 - AS2007 - Inorganic</fullName>
+                    <default>false</default>
+                    <label>CA10 - AS2007 - Inorganic</label>
+                </value>
+                <value>
+                    <fullName>CA10 - AS2007 - Thermal Targeted Apps</fullName>
+                    <default>false</default>
+                    <label>CA10 - AS2007 - Thermal Targeted Apps</label>
+                </value>
+                <value>
+                    <fullName>CA10 - AS2007 - Used/Lube Oil</fullName>
+                    <default>false</default>
+                    <label>CA10 - AS2007 - Used/Lube Oil</label>
+                </value>
+                <value>
+                    <fullName>CA10 - AS2007 - Victor/Envision</fullName>
+                    <default>false</default>
+                    <label>CA10 - AS2007 - Victor/Envision</label>
+                </value>
+                <value>
+                    <fullName>CA10 - MM2007 - Cellular Imaging</fullName>
+                    <default>false</default>
+                    <label>CA10 - MM2007 - Cellular Imaging</label>
+                </value>
+                <value>
+                    <fullName>CA10 - MM2007 - CS Autoplex</fullName>
+                    <default>false</default>
+                    <label>CA10 - MM2007 - CS Autoplex</label>
+                </value>
+                <value>
+                    <fullName>CA10 - MM2007 - JANUS ALH Platform</fullName>
+                    <default>false</default>
+                    <label>CA10 - MM2007 - JANUS ALH Platform</label>
+                </value>
+                <value>
+                    <fullName>CA10 - MM2007 - Reagents</fullName>
+                    <default>false</default>
+                    <label>CA10 - MM2007 - Reagents</label>
+                </value>
+                <value>
+                    <fullName>CA10 - MM2007 - Syngene and Cyclone</fullName>
+                    <default>false</default>
+                    <label>CA10 - MM2007 - Syngene and Cyclone</label>
+                </value>
+                <value>
+                    <fullName>CA - BioBar Promotions H106</fullName>
+                    <default>false</default>
+                    <label>CA - BioBar Promotions H106</label>
+                </value>
+                <value>
+                    <fullName>CA - JANUS Launch Tour</fullName>
+                    <default>false</default>
+                    <label>CA - JANUS Launch Tour</label>
+                </value>
+                <value>
+                    <fullName>CA - Syngene Promotion H106</fullName>
+                    <default>false</default>
+                    <label>CA - Syngene Promotion H106</label>
+                </value>
+                <value>
+                    <fullName>CA - Victor Promotion H106</fullName>
+                    <default>false</default>
+                    <label>CA - Victor Promotion H106</label>
+                </value>
+                <value>
+                    <fullName>EAS &apos;06</fullName>
+                    <default>false</default>
+                    <label>EAS &apos;06</label>
+                </value>
+                <value>
+                    <fullName>EB-2010-RAD Monthly NPI Campaigns-GLO</fullName>
+                    <default>false</default>
+                    <label>EB-2010-RAD Monthly NPI Campaigns-GLO</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Total_Processed__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Processed</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Expense_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Expense Category</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>6328500 Event - Sem/Group/Meet</fullName>
+                    <default>false</default>
+                    <label>6328500 Event - Sem/Group/Meet</label>
+                </value>
+                <value>
+                    <fullName>6321401 Promotional/Sponsorships</fullName>
+                    <default>false</default>
+                    <label>6321401 Promotional/Sponsorships</label>
+                </value>
+                <value>
+                    <fullName>6321000 Advertising Space</fullName>
+                    <default>false</default>
+                    <label>6321000 Advertising Space</label>
+                </value>
+                <value>
+                    <fullName>6321403 Electronic/Web Mktg.</fullName>
+                    <default>false</default>
+                    <label>6321403 Electronic/Web Mktg.</label>
+                </value>
+                <value>
+                    <fullName>6327000 Trade Show Expense</fullName>
+                    <default>false</default>
+                    <label>6327000 Trade Show Expense</label>
+                </value>
+                <value>
+                    <fullName>6328600 Event - Exhibitry</fullName>
+                    <default>false</default>
+                    <label>6328600 Event - Exhibitry</label>
+                </value>
+                <value>
+                    <fullName>6332800 Direct Mail</fullName>
+                    <default>false</default>
+                    <label>6332800 Direct Mail</label>
+                </value>
+                <value>
+                    <fullName>6322500 Advertising Produce</fullName>
+                    <default>false</default>
+                    <label>6322500 Advertising Produce</label>
+                </value>
+                <value>
+                    <fullName>6331500 Public Relations</fullName>
+                    <default>false</default>
+                    <label>6331500 Public Relations</label>
+                </value>
+                <value>
+                    <fullName>6321402 Film/Photo/Audio Vis</fullName>
+                    <default>false</default>
+                    <label>6321402 Film/Photo/Audio Vis</label>
+                </value>
+                <value>
+                    <fullName>6321404 Instruction Manuals</fullName>
+                    <default>false</default>
+                    <label>6321404 Instruction Manuals</label>
+                </value>
+                <value>
+                    <fullName>6325000 Sales Literature</fullName>
+                    <default>false</default>
+                    <label>6325000 Sales Literature</label>
+                </value>
+                <value>
+                    <fullName>6332500 Literature Printing</fullName>
+                    <default>false</default>
+                    <label>6332500 Literature Printing</label>
+                </value>
+                <value>
+                    <fullName>6332600 Literature Fulfillment</fullName>
+                    <default>false</default>
+                    <label>6332600 Literature Fulfillment</label>
+                </value>
+                <value>
+                    <fullName>6331600 Research/Strategy Dev.</fullName>
+                    <default>false</default>
+                    <label>6331600 Research/Strategy Dev.</label>
+                </value>
+                <value>
+                    <fullName>6332700 Brand Management</fullName>
+                    <default>false</default>
+                    <label>6332700 Brand Management</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Functional_Owner__c</fullName>
+        <description>Required field - dependent to Business Element field</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please select the department responsible for this campaign.</inlineHelpText>
+        <label>Functional Owner</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Marcom</fullName>
+                    <default>false</default>
+                    <label>Marcom</label>
+                </value>
+                <value>
+                    <fullName>Field Marketing-AM</fullName>
+                    <default>false</default>
+                    <label>Field Marketing-AM</label>
+                </value>
+                <value>
+                    <fullName>Field Marketing-APAC</fullName>
+                    <default>false</default>
+                    <label>Field Marketing-APAC</label>
+                </value>
+                <value>
+                    <fullName>Field Marketing-EMEA</fullName>
+                    <default>false</default>
+                    <label>Field Marketing-EMEA</label>
+                </value>
+                <value>
+                    <fullName>Marketing Operations</fullName>
+                    <default>false</default>
+                    <label>Marketing Operations</label>
+                </value>
+                <value>
+                    <fullName>Customer Care</fullName>
+                    <default>false</default>
+                    <label>Customer Care</label>
+                </value>
+                <value>
+                    <fullName>Sales</fullName>
+                    <default>false</default>
+                    <label>Sales</label>
+                </value>
+                <value>
+                    <fullName>Inside Sales</fullName>
+                    <default>false</default>
+                    <label>Inside Sales</label>
+                </value>
+                <value>
+                    <fullName>Service</fullName>
+                    <default>false</default>
+                    <label>Service</label>
+                </value>
+                <value>
+                    <fullName>Technical Support</fullName>
+                    <default>false</default>
+                    <label>Technical Support</label>
+                </value>
+                <value>
+                    <fullName>Regional Marketing</fullName>
+                    <default>false</default>
+                    <label>Regional Marketing</label>
+                </value>
+                <value>
+                    <fullName>Strategic Marketing</fullName>
+                    <default>false</default>
+                    <label>Strategic Marketing</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Publication_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Publication Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Magazine</fullName>
+                    <default>false</default>
+                    <label>Magazine</label>
+                </value>
+                <value>
+                    <fullName>Newspaper</fullName>
+                    <default>false</default>
+                    <label>Newspaper</label>
+                </value>
+                <value>
+                    <fullName>News</fullName>
+                    <default>false</default>
+                    <label>News</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Cost_Center_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Cost Center Number</label>
+        <length>15</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DB_Campaign_Tactic__c</fullName>
+        <description>This is a field that is installed by and used with the Adoption Dashboard AppExchange package. If your org already has a similar field, you can change the reports that are part of the Adoption Dashboard package to use your custom field and then delete this field.</description>
+        <externalId>false</externalId>
+        <label>DB Campaign Tactic</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Type</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Print Advertisement</fullName>
+                    <default>false</default>
+                    <label>Print Advertisement</label>
+                </value>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+                <value>
+                    <fullName>Employment Seminars</fullName>
+                    <default>false</default>
+                    <label>Employment Seminars</label>
+                </value>
+                <value>
+                    <fullName>Webinars</fullName>
+                    <default>false</default>
+                    <label>Webinars</label>
+                </value>
+                <value>
+                    <fullName>Public Relations</fullName>
+                    <default>false</default>
+                    <label>Public Relations</label>
+                </value>
+                <value>
+                    <fullName>Partners</fullName>
+                    <default>false</default>
+                    <label>Partners</label>
+                </value>
+                <value>
+                    <fullName>Referral Program</fullName>
+                    <default>false</default>
+                    <label>Referral Program</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Lunches</fullName>
+                    <default>false</default>
+                    <label>Lunches</label>
+                </value>
+                <value>
+                    <fullName>Direct Mail</fullName>
+                    <default>false</default>
+                    <label>Direct Mail</label>
+                </value>
+                <value>
+                    <fullName>Sales Call Down</fullName>
+                    <default>false</default>
+                    <label>Sales Call Down</label>
+                </value>
+                <value>
+                    <fullName>Online Banners/Ads</fullName>
+                    <default>false</default>
+                    <label>Online Banners/Ads</label>
+                </value>
+                <value>
+                    <fullName>Internal Website</fullName>
+                    <default>false</default>
+                    <label>Internal Website</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Data_Quality_Score__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(LEN(  Name  ) &lt; 5, 0,20) + IF(ISPICKVAL(  Type ,&quot;&quot; ), 0,20) + IF(ISPICKVAL( Status ,&quot;&quot; ), 0,20) + IF(LEN( TEXT(MONTH( StartDate )))= 0, 0,10) + IF( LEN(TEXT(MONTH( EndDate ))) = 0, 0,10) + IF(  NumberOfContacts  +  NumberOfLeads = 0, 0,10)  + IF( LEN( TEXT( ExpectedRevenue ) ) = 0, 0,10)</formula>
+        <label>Data Quality Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Follow_Up_Category__c</fullName>
+        <description>Telemarketing Category - VoiceCentric</description>
+        <externalId>false</externalId>
+        <label>Follow Up Process</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AA - Agree to Appointment</fullName>
+                    <default>false</default>
+                    <label>AA - Agree to Appointment</label>
+                </value>
+                <value>
+                    <fullName>Email - Send Email w/Fufillment</fullName>
+                    <default>false</default>
+                    <label>Email - Send Email w/Fufillment</label>
+                </value>
+                <value>
+                    <fullName>General Inquiry - Other Product</fullName>
+                    <default>false</default>
+                    <label>General Inquiry - Other Product</label>
+                </value>
+                <value>
+                    <fullName>Lit Fulfillment - Print</fullName>
+                    <default>false</default>
+                    <label>Lit Fulfillment - Print</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Legacy_Campaign_Id__c</fullName>
+        <externalId>true</externalId>
+        <label>Legacy Campaign Id</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Conversion_Rate__c</fullName>
+        <externalId>false</externalId>
+        <formula>(NumberOfConvertedLeads /  NumberOfLeads )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Lead Conversion Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Marcom_Field_Partner__c</fullName>
+        <externalId>false</externalId>
+        <label>Marcom/Field Partner</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Specific_Publication__c</fullName>
+        <externalId>false</externalId>
+        <label>Specific Publication</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>GC/LC Magazine</fullName>
+                    <default>false</default>
+                    <label>GC/LC Magazine</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Date_Invoice_Submitted__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Invoice Submitted</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Data_Quality_Description__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Data_Quality_Score__c =100,&quot;All Campaign Details Captured&quot;, &quot;Missing: &quot;&amp;IF( LEN( Name)&lt;5,&quot;Meaningful Campaign Name, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF(ISPICKVAL( Type ,&quot;&quot;), &quot;Type, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF( ISPICKVAL( Status ,&quot;&quot;), &quot;Status, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF( LEN(TEXT(MONTH( StartDate )))=0, &quot;Start Date, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF( LEN(TEXT(MONTH( EndDate )))=0, &quot;End Date, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF(NumberOfContacts  +  NumberOfLeads = 0, &quot;No Associated Members, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF( LEN(TEXT( ExpectedRevenue ))=0, &quot;Expected Revenue&quot;,&quot;&quot;))</formula>
+        <label>Data Quality Description</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Adtrack_Event_Source_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Adtrack Event Source Code</label>
+        <length>10</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Conversion_Rate__c</fullName>
+        <externalId>false</externalId>
+        <formula>NumberOfOpportunities /   NumberOfLeads</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity Conversion Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Percent</type>
+    </fields>
+    <validationRules>
+        <fullName>Name_of_NPI_Required</fullName>
+        <active>true</active>
+        <description>Please fill Name of NPI to save the record.</description>
+        <errorConditionFormula>NPI__c == true &amp;&amp; ISBLANK( Name_of_NPI__c )</errorConditionFormula>
+        <errorMessage>Please fill Name of NPI to save the record.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>GotMarketing</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>GotMarketing</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://e.gotmarketing.com/app/campaigner/screate.jsp?xsysid=-213&amp;memberid={!User_ID}&amp;fname={!User_FirstName}&amp;lname={!User_LastName}&amp;email={!User_Email}&amp;company={!User_Company}&amp;address1={!User_Address}&amp;city={!User_City}&amp;province={!User_State}&amp;postal={!User_PostalCode}&amp;username={!User_Username}&amp;password={!User_ID}&amp;userphone={!User_Phone}&amp;sforg={!Org_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>VerticalResponse1</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>VerticalResponse</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://salesforce.verticalresponse.com/login/salesforce_login.html?Organization_Address={!Org_Address}&amp;Organization_City={!Org_City}&amp;Organization_Country={!Org_Country}&amp;Organization_Fax={!Org_Fax}&amp;Organization_Name={!Org_Name}&amp;Organization_Phone={!Org_Phone}&amp;Organization_Postal_Code={!Org_PostalCode}&amp;Organization_State={!Org_State}&amp;User_Email={!User_Email}&amp;User_First_Name={!User_FirstName}&amp;User_Last_Name={!User_LastName}&amp;User_ID={!User_ID}&amp;User_Title={!User_Title}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>VerticalResponse2</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>false</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>VerticalResponse</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://salesforce.verticalresponse.com/login/partner/salesforce/welcome.html?SFDC_SESSID={!API_Session_ID}&amp;SFDC_PARTNER_SERVER={!API_Partner_Server_URL_50}&amp;SFDC_USER_ID={!User_ID}</url>
+        <width>900</width>
+    </webLinks>
+    <webLinks>
+        <fullName>Add_to_Pardot_List</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Add to Pardot List</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>https://pi.pardot.com/list/pullCrmCampaign/fid/{!Campaign.Id}/campaignName/{!URLENCODE(Campaign.Name)}/leadCount/{!Campaign.NumberOfLeads}/contactCount/{!Campaign.NumberOfContacts}?sessionid={!$Api.Session_ID}&amp;serverurl={!$Api.Partner_Server_URL_90}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>ViewAllCampaignMembers</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>500</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>View All Campaign Members</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/camp/rptcmpgncalldown.jsp?scope=1&amp;scopeid={!Campaign_Name}</url>
+        <width>500</width>
+    </webLinks>
+</CustomObject>

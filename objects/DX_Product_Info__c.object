@@ -1,0 +1,1945 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <label>Dx Product Info</label>
+    <nameField>
+        <label>DX Product Info Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Dx Product Info</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>Rate_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 1</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 2</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 3</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 4</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_5__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 5</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_6__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 6</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_7__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 7</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_8__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 8</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_9__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 9</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_10__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 10</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_11__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 11</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_12__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 12</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_13__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 13</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_14__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 14</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_15__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 15</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_16__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 16</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_17__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 17</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_18__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 18</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_19__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 19</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_20__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 20</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_21__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 21</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_22__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 22</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_23__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 23</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_24__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 24</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_25__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 25</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_26__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 26</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_27__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 27</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_28__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 28</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_29__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 29</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_30__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate 30</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_CF__c</fullName>
+        <externalId>false</externalId>
+        <label>Total CF</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NIPT_rate__c</fullName>
+        <externalId>false</externalId>
+        <label>NIPT rate</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_CPT_1__c</fullName>
+        <externalId>false</externalId>
+        <label>New CPT 1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_CPT_2__c</fullName>
+        <externalId>false</externalId>
+        <label>New CPT 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_CPT_3__c</fullName>
+        <externalId>false</externalId>
+        <label>New CPT 3</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_CPT_4__c</fullName>
+        <externalId>false</externalId>
+        <label>New CPT 4</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_CPT_5__c</fullName>
+        <externalId>false</externalId>
+        <label>New CPT 5</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_CPT_6__c</fullName>
+        <externalId>false</externalId>
+        <label>New CPT 6</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_CPT_7__c</fullName>
+        <externalId>false</externalId>
+        <label>New CPT 7</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_CPT_8__c</fullName>
+        <externalId>false</externalId>
+        <label>New CPT 8</label>
+        <length>25</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_CPT_9__c</fullName>
+        <externalId>false</externalId>
+        <label>New CPT 9</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_FTS__c</fullName>
+        <externalId>false</externalId>
+        <label>Total FTS</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_PES__c</fullName>
+        <externalId>false</externalId>
+        <label>Total PES</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_STS__c</fullName>
+        <externalId>false</externalId>
+        <label>Total STS</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_CPT_10__c</fullName>
+        <externalId>false</externalId>
+        <label>New CPT 10</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_CPT_11__c</fullName>
+        <externalId>false</externalId>
+        <label>New CPT 11</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_CPT_12__c</fullName>
+        <externalId>false</externalId>
+        <label>New CPT 12</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_CPT_13__c</fullName>
+        <externalId>false</externalId>
+        <label>New CPT 13</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_CPT_14__c</fullName>
+        <externalId>false</externalId>
+        <label>New CPT 14</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_CPT_15__c</fullName>
+        <externalId>false</externalId>
+        <label>New CPT 15</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_CPT_16__c</fullName>
+        <externalId>false</externalId>
+        <label>New CPT 16</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_CPT_17__c</fullName>
+        <externalId>false</externalId>
+        <label>New CPT 17</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_CPT_18__c</fullName>
+        <externalId>false</externalId>
+        <label>New CPT 18</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_CPT_19__c</fullName>
+        <externalId>false</externalId>
+        <label>New CPT 19</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_CPT_20__c</fullName>
+        <externalId>false</externalId>
+        <label>New CPT 20</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_CPT_21__c</fullName>
+        <externalId>false</externalId>
+        <label>New CPT 21</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_CPT_22__c</fullName>
+        <externalId>false</externalId>
+        <label>New CPT 22</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_CPT_23__c</fullName>
+        <externalId>false</externalId>
+        <label>New CPT 23</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_CPT_24__c</fullName>
+        <externalId>false</externalId>
+        <label>New CPT 24</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_CPT_25__c</fullName>
+        <externalId>false</externalId>
+        <label>New CPT 25</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_CPT_26__c</fullName>
+        <externalId>false</externalId>
+        <label>New CPT 26</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_CPT_27__c</fullName>
+        <externalId>false</externalId>
+        <label>New CPT 27</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_CPT_28__c</fullName>
+        <externalId>false</externalId>
+        <label>New CPT 28</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_CPT_29__c</fullName>
+        <externalId>false</externalId>
+        <label>New CPT 29</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_CPT_30__c</fullName>
+        <externalId>false</externalId>
+        <label>New CPT 30</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TOTAL_NIPT__c</fullName>
+        <externalId>false</externalId>
+        <label>TOTAL NIPT</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comment_box__c</fullName>
+        <externalId>false</externalId>
+        <label>Comment box</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Description_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Description 1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Description 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Description 3</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Description 4</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_5__c</fullName>
+        <externalId>false</externalId>
+        <label>Description 5</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_6__c</fullName>
+        <externalId>false</externalId>
+        <label>Description 6</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_7__c</fullName>
+        <externalId>false</externalId>
+        <label>Description 7</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_8__c</fullName>
+        <externalId>false</externalId>
+        <label>Description 8</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_9__c</fullName>
+        <externalId>false</externalId>
+        <label>Description 9</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PES_82105_AFP__c</fullName>
+        <externalId>false</externalId>
+        <label>PES - 82105 AFP</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_10__c</fullName>
+        <externalId>false</externalId>
+        <label>Description 10</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_11__c</fullName>
+        <externalId>false</externalId>
+        <label>Description 11</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_12__c</fullName>
+        <externalId>false</externalId>
+        <label>Description 12</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_13__c</fullName>
+        <externalId>false</externalId>
+        <label>Description 13</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_14__c</fullName>
+        <externalId>false</externalId>
+        <label>Description 14</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_15__c</fullName>
+        <externalId>false</externalId>
+        <label>Description 15</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_16__c</fullName>
+        <externalId>false</externalId>
+        <label>Description 16</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_17__c</fullName>
+        <externalId>false</externalId>
+        <label>Description 17</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_18__c</fullName>
+        <externalId>false</externalId>
+        <label>Description 18</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_19__c</fullName>
+        <externalId>false</externalId>
+        <label>Description 19</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_20__c</fullName>
+        <externalId>false</externalId>
+        <label>Description 20</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_21__c</fullName>
+        <externalId>false</externalId>
+        <label>Description 21</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_22__c</fullName>
+        <externalId>false</externalId>
+        <label>Description 22</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_23__c</fullName>
+        <externalId>false</externalId>
+        <label>Description 23</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_24__c</fullName>
+        <externalId>false</externalId>
+        <label>Description 24</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_25__c</fullName>
+        <externalId>false</externalId>
+        <label>Description 25</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_26__c</fullName>
+        <externalId>false</externalId>
+        <label>Description 26</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_27__c</fullName>
+        <externalId>false</externalId>
+        <label>Description 27</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_28__c</fullName>
+        <externalId>false</externalId>
+        <label>Description 28</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_29__c</fullName>
+        <externalId>false</externalId>
+        <label>Description 29</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_30__c</fullName>
+        <externalId>false</externalId>
+        <label>Description 30</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OncoChip_81479__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>OncoChip - 81479 Cytogenomic microarray analysis for neoplasia</inlineHelpText>
+        <label>OncoChip - 81479 Cytogenomic microarray</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FTS_84163_PAPP_A__c</fullName>
+        <externalId>false</externalId>
+        <label>FTS - 84163 PAPP-A</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FTS_84704_PAPP_A__c</fullName>
+        <externalId>false</externalId>
+        <label>FTS - 84704 PAPP-A</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PES_84163_PAPP_A__c</fullName>
+        <externalId>false</externalId>
+        <label>PES - 84163 PAPP-A</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FTS_84163_free_beta__c</fullName>
+        <externalId>false</externalId>
+        <label>FTS - 84163 free beta</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FTS_84704_free_beta__c</fullName>
+        <externalId>false</externalId>
+        <label>FTS - 84704 free beta</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>STS_84704_free_beta__c</fullName>
+        <externalId>false</externalId>
+        <label>STS - 84704 free beta</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>STS_86336_Inhibin_A__c</fullName>
+        <externalId>false</externalId>
+        <label>STS - 86336 Inhibin A</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contract_Information__c</fullName>
+        <externalId>false</externalId>
+        <label>Contract Information</label>
+        <referenceTo>Contract_Information__c</referenceTo>
+        <relationshipName>DX_Product_Info</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>NIPT_PA_Required_y_n__c</fullName>
+        <externalId>false</externalId>
+        <label>NIPT PA Required? (y/n)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>FISH_88283_Add_banding__c</fullName>
+        <externalId>false</externalId>
+        <label>FISH - 88283 Add banding</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FragileX_Dx_81244_FMR1__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>FragileX Dx - 81244 FMR1  fragile X gene analysis to characterize alleles</inlineHelpText>
+        <label>FragileX Dx - 81244 FMR1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Microarray_PA_Required__c</fullName>
+        <externalId>false</externalId>
+        <label>Microarray PA Required?</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Select_the_Fee_Schedule__c</fullName>
+        <externalId>false</externalId>
+        <label>Select the Fee Schedule</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CMS National Fee Schedule</fullName>
+                    <default>false</default>
+                    <label>CMS National Fee Schedule</label>
+                </value>
+                <value>
+                    <fullName>State Medicare Fee Schedule</fullName>
+                    <default>false</default>
+                    <label>State Medicare Fee Schedule</label>
+                </value>
+                <value>
+                    <fullName>State Medicaid Fee Schedule</fullName>
+                    <default>false</default>
+                    <label>State Medicaid Fee Schedule</label>
+                </value>
+                <value>
+                    <fullName>Plan Specific/Proprietary Fee Schedule</fullName>
+                    <default>false</default>
+                    <label>Plan Specific/Proprietary Fee Schedule</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CF_81220_cystic_fibrosis__c</fullName>
+        <externalId>false</externalId>
+        <label>CF - 81220 cystic fibrosis</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contract_exceptions_notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Contract exceptions/notes</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>X_Percent_discount_amount__c</fullName>
+        <externalId>false</externalId>
+        <label>X Percent discount amount</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FragileX_Screen_81243_FMR1__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>FragileX Screen - 81243 FMR1 fragile X gene analysis to detect abnormal alleles</inlineHelpText>
+        <label>FragileX Screen - 81243 FMR1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AFP_82106_amniotic_fluid_AFP__c</fullName>
+        <externalId>false</externalId>
+        <label>AFP - 82106 amniotic fluid AFP</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contract_Reimbursement_Method__c</fullName>
+        <externalId>false</externalId>
+        <label>Contract Reimbursement Method</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>X% discount off billable charges</fullName>
+                    <default>false</default>
+                    <label>X% discount off billable charges</label>
+                </value>
+                <value>
+                    <fullName>X% of Fee Schedule</fullName>
+                    <default>false</default>
+                    <label>X% of Fee Schedule</label>
+                </value>
+                <value>
+                    <fullName>X% discount off Fee Schedule</fullName>
+                    <default>false</default>
+                    <label>X% discount off Fee Schedule</label>
+                </value>
+                <value>
+                    <fullName>Code specific</fullName>
+                    <default>false</default>
+                    <label>Code specific</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Karyotype_88233Tissue_skin_POC__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Karyotype - 88233 Tissue/skin/POC establish culture</inlineHelpText>
+        <label>Karyotype-88233Tissue/skin/POC</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Karyotype_88262_Chrom_analysis__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Karyotype - 88262 Chrom analysis (15-20 cells/2 ktype)</inlineHelpText>
+        <label>Karyotype - 88262 Chrom analysis</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Karyotype_88269_Chrom_Analysis__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Karyotype - 88269 Chrom Analysis, in situ for amnio, 1 Karyotype w/banding</inlineHelpText>
+        <label>Karyotype - 88269 Chrom Analysis</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>STS_82677_UE3_Assay_of_estriol__c</fullName>
+        <externalId>false</externalId>
+        <label>STS - 82677 - UE3 /Assay of estriol</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AChE_82013_acetylcholinesterase__c</fullName>
+        <externalId>false</externalId>
+        <label>AChE - 82013 acetylcholinesterase</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NIPT_CPT_Code_84999_81479_81599__c</fullName>
+        <externalId>false</externalId>
+        <label>NIPT CPT Code (84999, 81479, 81599)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PPP_88291Molecular_cytogenetics__c</fullName>
+        <externalId>false</externalId>
+        <label>PPP-88291Molecular cytogenetics</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FISH_88271_Molecular_cytogenetics__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>FISH - 88271 Molecular cytogenetics; DNA probe, eac (EG, FISH)</inlineHelpText>
+        <label>FISH - 88271 Molecular cytogenetics</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FISH_88291_Molecular_cytogenetics__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>FISH - 88291 Molecular cytogenetics, interpretation &amp; report</inlineHelpText>
+        <label>FISH - 88291 Molecular cytogenetics</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>STS_82105_AFP_MS_Alpha_fetoprotein__c</fullName>
+        <externalId>false</externalId>
+        <label>STS - 82105 AFP-MS / Alpha-fetoprotein</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FISH_88273_ISH_analysis_10_30_cells__c</fullName>
+        <externalId>false</externalId>
+        <label>FISH - 88273 ISH analysis (10-30 cells)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Karyotype_88280_Chromosome_Analysis__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Karyotype - 88280 Chromosome Analysis, Additional Karyotype</inlineHelpText>
+        <label>Karyotype - 88280 Chromosome Analysis</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PES_84999_misc_chemistry_procedure_f__c</fullName>
+        <externalId>false</externalId>
+        <label>PES - 84999 misc. chemistry procedure</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PPP_88271_x_20_Molecular_cytogenetic__c</fullName>
+        <externalId>false</externalId>
+        <label>PPP - 88271 (x 20) Molecular cytogenetic</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Signature_ChipOS_SNP_81229_SNP_based__c</fullName>
+        <externalId>false</externalId>
+        <label>Signature ChipOS + SNP - 81229 SNP-based</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FISH_88230_Tissue_culture_lymphocytes__c</fullName>
+        <externalId>false</externalId>
+        <label>FISH - 88230 Tissue culture lymphocytes</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MCC_81265patient_comparative_specimen__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>MCC - 81265 patient and comparative specimen</inlineHelpText>
+        <label>MCC-81265patient &amp; comparative specimen</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FISH_88235Tissue_culture_amnioticfluid__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>FISH - 88235 Tissue culture of amniotic fluid/ Establish Culture</inlineHelpText>
+        <label>FISH - 88235Tissue culture amnioticfluid</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Karyotype_88235Tissue_culture_amniotic__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Karyotype - 88235 Tissue culture of amniotic fluid/ Establish Culture</inlineHelpText>
+        <label>Karyotype-88235Tissue culture amniotic</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Karyotype_88261_Five_cells_1_karyotype__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Karyotype - 88261 Five cells 1 karyotype, with banding</inlineHelpText>
+        <label>Karyotype - 88261 Five cells 1 karyotype</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Karyotype_88291_Molecular_cytogenetics__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Karyotype - 88291 Molecular cytogenetics, interpretation &amp; report</inlineHelpText>
+        <label>Karyotype - 88291 Molecular cytogenetics</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Signature_ChipOS_81228_oligo_base_arra__c</fullName>
+        <externalId>false</externalId>
+        <label>Signature ChipOS -81228 oligo-base array</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FISH_88233Tissue_skin_POC_establish_cult__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>FISH - 88233 Tissue/skin/POC establish culture</inlineHelpText>
+        <label>FISH-88233Tissue/skin/POC establish cult</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Karyotype_88230Tissue_culture_lymphocyte__c</fullName>
+        <externalId>false</externalId>
+        <label>Karyotype-88230Tissue culture lymphocyte</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <recordTypes>
+        <fullName>NTD</fullName>
+        <active>true</active>
+        <label>NTD</label>
+        <picklistValues>
+            <picklist>Contract_Reimbursement_Method__c</picklist>
+            <values>
+                <fullName>Code specific</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>X%25 discount off Fee Schedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>X%25 discount off billable charges</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>X%25 of Fee Schedule</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Microarray_PA_Required__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>NIPT_PA_Required_y_n__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Select_the_Fee_Schedule__c</picklist>
+            <values>
+                <fullName>CMS National Fee Schedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plan Specific%2FProprietary Fee Schedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>State Medicaid Fee Schedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>State Medicare Fee Schedule</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>SGL</fullName>
+        <active>true</active>
+        <label>SGL</label>
+        <picklistValues>
+            <picklist>Contract_Reimbursement_Method__c</picklist>
+            <values>
+                <fullName>Code specific</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>X%25 discount off Fee Schedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>X%25 discount off billable charges</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>X%25 of Fee Schedule</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Microarray_PA_Required__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>NIPT_PA_Required_y_n__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Select_the_Fee_Schedule__c</picklist>
+            <values>
+                <fullName>CMS National Fee Schedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plan Specific%2FProprietary Fee Schedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>State Medicaid Fee Schedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>State Medicare Fee Schedule</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Others</fullName>
+        <active>true</active>
+        <label>Others</label>
+        <picklistValues>
+            <picklist>Contract_Reimbursement_Method__c</picklist>
+            <values>
+                <fullName>Code specific</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>X%25 discount off Fee Schedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>X%25 discount off billable charges</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>X%25 of Fee Schedule</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Microarray_PA_Required__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>NIPT_PA_Required_y_n__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Select_the_Fee_Schedule__c</picklist>
+            <values>
+                <fullName>CMS National Fee Schedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plan Specific%2FProprietary Fee Schedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>State Medicaid Fee Schedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>State Medicare Fee Schedule</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+</CustomObject>

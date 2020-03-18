@@ -1,0 +1,908 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>RFx Request</label>
+    <nameField>
+        <displayFormat>RFx{00000}</displayFormat>
+        <label>RFx Request ID</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>RFx Requests</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>Active__c</fullName>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <externalId>false</externalId>
+        <label>Region</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Americas</fullName>
+                    <default>false</default>
+                    <label>Americas</label>
+                </value>
+                <value>
+                    <fullName>APAC</fullName>
+                    <default>false</default>
+                    <label>APAC</label>
+                </value>
+                <value>
+                    <fullName>EMEA</fullName>
+                    <default>false</default>
+                    <label>EMEA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Due_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Due Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Deal_Desk__c</fullName>
+        <defaultValue>&apos;dealdesk@perkinelmer.com&apos;</defaultValue>
+        <externalId>false</externalId>
+        <label>Deal Desk</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Next_Step__c</fullName>
+        <externalId>false</externalId>
+        <label>Next Step</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RFx_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>RFx Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Initial</fullName>
+                    <default>true</default>
+                    <label>Initial</label>
+                </value>
+                <value>
+                    <fullName>Awaiting</fullName>
+                    <default>false</default>
+                    <label>Awaiting</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Invited to RFx</fullName>
+                    <default>false</default>
+                    <label>Invited to RFx</label>
+                </value>
+                <value>
+                    <fullName>Submitted</fullName>
+                    <default>false</default>
+                    <label>Submitted</label>
+                </value>
+                <value>
+                    <fullName>Post Submission</fullName>
+                    <default>false</default>
+                    <label>Post Submission</label>
+                </value>
+                <value>
+                    <fullName>Bid Defense</fullName>
+                    <default>false</default>
+                    <label>Bid Defense</label>
+                </value>
+                <value>
+                    <fullName>Won</fullName>
+                    <default>false</default>
+                    <label>Won</label>
+                </value>
+                <value>
+                    <fullName>Lost</fullName>
+                    <default>false</default>
+                    <label>Lost</label>
+                </value>
+                <value>
+                    <fullName>No Bid</fullName>
+                    <default>false</default>
+                    <label>No Bid</label>
+                </value>
+                <value>
+                    <fullName>Withdrawn by Customer</fullName>
+                    <default>false</default>
+                    <label>Withdrawn by Customer</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Company_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Company Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Reason_Other__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason Other</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Request_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Request Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>RFI</fullName>
+                    <default>false</default>
+                    <label>RFI</label>
+                </value>
+                <value>
+                    <fullName>RFP</fullName>
+                    <default>false</default>
+                    <label>RFP</label>
+                </value>
+                <value>
+                    <fullName>RFQ</fullName>
+                    <default>false</default>
+                    <label>RFQ</label>
+                </value>
+                <value>
+                    <fullName>RFS</fullName>
+                    <default>false</default>
+                    <label>RFS</label>
+                </value>
+                <value>
+                    <fullName>Other (Please Specify)</fullName>
+                    <default>false</default>
+                    <label>Other (Please Specify)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Submitted_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Submitted By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>RFx_Form_Requests</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>US_Value_USD__c</fullName>
+        <externalId>false</externalId>
+        <label>US Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Title__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact Title</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Received_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Received Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>APAC_Value_USD__c</fullName>
+        <externalId>false</externalId>
+        <label>APAC Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>EMEA_Value_USD__c</fullName>
+        <externalId>false</externalId>
+        <label>EMEA Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Company_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Company Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Number_Of_Sites__c</fullName>
+        <externalId>false</externalId>
+        <label>Number Of Sites:</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RFx_PM_Assigned__c</fullName>
+        <externalId>false</externalId>
+        <label>RFx PM Assigned</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Response_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Response Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Green</fullName>
+                    <default>false</default>
+                    <label>Green</label>
+                </value>
+                <value>
+                    <fullName>Yellow</fullName>
+                    <default>false</default>
+                    <label>Yellow</label>
+                </value>
+                <value>
+                    <fullName>Red</fullName>
+                    <default>false</default>
+                    <label>Red</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Total_Value_USD__c</fullName>
+        <externalId>false</externalId>
+        <formula>APAC_Value_USD__c + EMEA_Value_USD__c + US_Value_USD__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_assets__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of assets</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Opportunity Name</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipName>RFx_Form_Requests</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Language__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Language</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Assistance_Needed__c</fullName>
+        <externalId>false</externalId>
+        <label>Assistance Needed?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Deal_Desk_Comment__c</fullName>
+        <externalId>false</externalId>
+        <label>Deal Desk Comment</label>
+        <length>3000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Reason_Assistance__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason Assistance</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Service_Categories__c</fullName>
+        <externalId>false</externalId>
+        <label>Service Categories</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Asset Utilization (Asset Genius)</fullName>
+                    <default>false</default>
+                    <label>Asset Utilization (Asset Genius)</label>
+                </value>
+                <value>
+                    <fullName>Expediting (escorting)</fullName>
+                    <default>false</default>
+                    <label>Expediting (escorting)</label>
+                </value>
+                <value>
+                    <fullName>On hand CSE</fullName>
+                    <default>false</default>
+                    <label>On hand CSE</label>
+                </value>
+                <value>
+                    <fullName>On site CSE</fullName>
+                    <default>false</default>
+                    <label>On site CSE</label>
+                </value>
+                <value>
+                    <fullName>On hand administrator</fullName>
+                    <default>false</default>
+                    <label>On hand administrator</label>
+                </value>
+                <value>
+                    <fullName>On site administrator</fullName>
+                    <default>false</default>
+                    <label>On site administrator</label>
+                </value>
+                <value>
+                    <fullName>Qualification of instrument</fullName>
+                    <default>false</default>
+                    <label>Qualification of instrument</label>
+                </value>
+                <value>
+                    <fullName>Computer Systems Validation</fullName>
+                    <default>false</default>
+                    <label>Computer Systems Validation</label>
+                </value>
+                <value>
+                    <fullName>Consulting</fullName>
+                    <default>false</default>
+                    <label>Consulting</label>
+                </value>
+                <value>
+                    <fullName>Instrument Qualification</fullName>
+                    <default>false</default>
+                    <label>Instrument Qualification</label>
+                </value>
+                <value>
+                    <fullName>Regulatory Affairs</fullName>
+                    <default>false</default>
+                    <label>Regulatory Affairs</label>
+                </value>
+                <value>
+                    <fullName>Lab Computing</fullName>
+                    <default>false</default>
+                    <label>Lab Computing</label>
+                </value>
+                <value>
+                    <fullName>Scientific Application Services</fullName>
+                    <default>false</default>
+                    <label>Scientific Application Services</label>
+                </value>
+                <value>
+                    <fullName>Scientific Data Services</fullName>
+                    <default>false</default>
+                    <label>Scientific Data Services</label>
+                </value>
+                <value>
+                    <fullName>Instrument Check™</fullName>
+                    <default>false</default>
+                    <label>Instrument Check™</label>
+                </value>
+                <value>
+                    <fullName>Instrument Concierge™</fullName>
+                    <default>false</default>
+                    <label>Instrument Concierge™</label>
+                </value>
+                <value>
+                    <fullName>Lab Support</fullName>
+                    <default>false</default>
+                    <label>Lab Support</label>
+                </value>
+                <value>
+                    <fullName>Scientific Support</fullName>
+                    <default>false</default>
+                    <label>Scientific Support</label>
+                </value>
+                <value>
+                    <fullName>Laboratory Efficiency Consulting</fullName>
+                    <default>false</default>
+                    <label>Laboratory Efficiency Consulting</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Box_Link_RFx_Details__c</fullName>
+        <externalId>false</externalId>
+        <label>Box Link (RFx Details)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Value_of_opportunity__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity_Name__r.Amount</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Value of opportunity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Date_Request_Submitted__c</fullName>
+        <defaultValue>TODAY()</defaultValue>
+        <externalId>false</externalId>
+        <label>Date Request Submitted</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Response_Submitted__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Response Submitted</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Is_this_a_Global_Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Is this a Global Account?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Site_Locations_please_specify__c</fullName>
+        <externalId>false</externalId>
+        <label>Site Locations (please specify):</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Services_that_apply_to_this_opportunity__c</fullName>
+        <externalId>false</externalId>
+        <label>Services that apply to this opportunity</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Asset Management</fullName>
+                    <default>false</default>
+                    <label>Asset Management</label>
+                </value>
+                <value>
+                    <fullName>Compliance</fullName>
+                    <default>false</default>
+                    <label>Compliance</label>
+                </value>
+                <value>
+                    <fullName>Information Services</fullName>
+                    <default>false</default>
+                    <label>Information Services</label>
+                </value>
+                <value>
+                    <fullName>Scientific Services</fullName>
+                    <default>false</default>
+                    <label>Scientific Services</label>
+                </value>
+                <value>
+                    <fullName>Relocation</fullName>
+                    <default>false</default>
+                    <label>Relocation</label>
+                </value>
+                <value>
+                    <fullName>Core Services</fullName>
+                    <default>false</default>
+                    <label>Core Services</label>
+                </value>
+                <value>
+                    <fullName>Instruments</fullName>
+                    <default>false</default>
+                    <label>Instruments</label>
+                </value>
+                <value>
+                    <fullName>Consumables</fullName>
+                    <default>false</default>
+                    <label>Consumables</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <validationRules>
+        <fullName>Request_Type_Other</fullName>
+        <active>true</active>
+        <description>If Request Type = Other (Please Specify) then prompts a message to the use to enter Reason Other.</description>
+        <errorConditionFormula>AND( ISPICKVAL(	Request_Type__c,&apos;Other (Please Specify)&apos;),
+ISBLANK(Reason_Other__c))</errorConditionFormula>
+        <errorDisplayField>Reason_Other__c</errorDisplayField>
+        <errorMessage>Please enter the reason for Other</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Assistance_Needed_other</fullName>
+        <active>true</active>
+        <description>If Assistance Needed = Yes then prompts a message to the use to enter Reason Assistance.</description>
+        <errorConditionFormula>AND( ISPICKVAL(Assistance_Needed__c,&apos;Yes&apos;),
+ISBLANK(Reason_Assistance__c))</errorConditionFormula>
+        <errorDisplayField>Reason_Assistance__c</errorDisplayField>
+        <errorMessage>Please enter the reason for Assistance needed</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>New_RFx_Request</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New RFx Request</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>https://na45.salesforce.com/a2f/e?help=1&amp;CF00N3A00000CDLLj={!Opportunity.Name}&amp;CF00N3A00000CDLLj_lkid={!Opportunity.Id}&amp;00N3A00000CDLLV={!Opportunity.Account}&amp;00N3A00000CDLLU={!Account.ShippingAddress}&amp;00N3A00000CDLLX={!Contact.Name}&amp;00N3A00000CDLLY={!Contact.Phone}&amp;00N3A00000CDLLZ={!Contact.Title}&amp;00N3A00000CDLLW={!Contact.Email}&amp;00N3A00000CDLLr={!Opportunity.RFx_Type__c}&amp;00N3A00000CDLLg={!IF( NOT(ISBLANK( Account.GA_Global_Account_Program__c )),&quot;Yes&quot;,&quot;No&quot;)}
+&amp;CF00N3A00000CDLLw={!$User.FirstName} {!$User.LastName}</url>
+    </webLinks>
+</CustomObject>

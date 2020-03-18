@@ -1,0 +1,4435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>BD_Escalation_Recommendation__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( AND( NOT(ISNULL(SVMXC__Preferred_Technician__c)), 
+          TEXT(SVMXC__Preferred_Technician__r.SVMXC__Role__c) = &quot;Depot Queue&quot;),
+    &quot;Depot Repair&quot;, &quot;Field Service&quot;)</formula>
+        <label>Escalation Recommendation</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BD_Obsolete_Material__c</fullName>
+        <externalId>false</externalId>
+        <formula>SVMXC__Product__r.Part_Type__c  = &quot;DIEN&quot;</formula>
+        <label>Is Obsolete Material?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Build__c</fullName>
+        <description>for FCO classes</description>
+        <externalId>false</externalId>
+        <label>Build</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date_Calibrated__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Calibrated</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Major__c</fullName>
+        <description>for FCO classes</description>
+        <externalId>false</externalId>
+        <label>Major</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Minor__c</fullName>
+        <description>for FCO classes</description>
+        <externalId>false</externalId>
+        <label>Minor</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Months_to_Next_Calibration__c</fullName>
+        <description>Months to Next Calibration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Months to Next Calibration</inlineHelpText>
+        <label>Months to Next Calibration</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PKI_ID__c</fullName>
+        <externalId>true</externalId>
+        <label>Legacy PKI ID</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Revision__c</fullName>
+        <externalId>false</externalId>
+        <label>Revision</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_BillTo_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Bill To Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Installed Products (Bill To Account)</relationshipLabel>
+        <relationshipName>BillTo_Installed_Products</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_BillTo_ExtId__c</fullName>
+        <externalId>false</externalId>
+        <label>Bill To External Id</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Building__c</fullName>
+        <externalId>false</externalId>
+        <label>Building</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_BusinessUnit__c</fullName>
+        <externalId>false</externalId>
+        <label>Business Unit</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Calibration_End_Date__c</fullName>
+        <description>Calibration End Date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Calibration End Date</inlineHelpText>
+        <label>Calibration End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Calibration_Start_Date__c</fullName>
+        <description>Calibration Start Date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Calibration Start Date</inlineHelpText>
+        <label>Calibration Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_CatalogProfileDesc__c</fullName>
+        <externalId>false</externalId>
+        <label>Catalog Profile Desc</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_CatalogProfile__c</fullName>
+        <externalId>false</externalId>
+        <label>Catalog Profile</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_CompanyCodeDesc__c</fullName>
+        <externalId>false</externalId>
+        <label>Company Code Desc</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_CompanyCode__c</fullName>
+        <externalId>false</externalId>
+        <label>Company Code</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_CompletedTxnNum__c</fullName>
+        <externalId>false</externalId>
+        <label>Completed Transaction Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ConfigurableMaterial__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Configurable Material</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Installed Products (Configurable Material)</relationshipLabel>
+        <relationshipName>Installed_Products1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ConstructionType__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Construction Type</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Installed Products (Construction Type)</relationshipLabel>
+        <relationshipName>Installed_Products</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_CostCenterDesc__c</fullName>
+        <externalId>false</externalId>
+        <label>Cost Center Desc</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_CostCenter__c</fullName>
+        <externalId>false</externalId>
+        <label>Cost Center</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Department__c</fullName>
+        <description>Calibrated Tools Department</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Calibrated Tools Department</inlineHelpText>
+        <label>Department</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Equipment_ID__c</fullName>
+        <description>Equipment ID on the Installed Product</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Equipment ID on the Installed Product</inlineHelpText>
+        <label>Equipment ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Field_Notes__c</fullName>
+        <description>Non integrated field called &quot;field notes&quot;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Non integrated field called &quot;field notes&quot;</inlineHelpText>
+        <label>Field Notes</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Floor__c</fullName>
+        <externalId>false</externalId>
+        <label>Floor</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Group__c</fullName>
+        <description>Calibrated Tools Group Picklist</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Calibrated Tools Group Picklist</inlineHelpText>
+        <label>Group</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>DAS</fullName>
+                    <default>false</default>
+                    <label>DAS</label>
+                </value>
+                <value>
+                    <fullName>DX</fullName>
+                    <default>false</default>
+                    <label>DX</label>
+                </value>
+                <value>
+                    <fullName>EH</fullName>
+                    <default>false</default>
+                    <label>EH</label>
+                </value>
+                <value>
+                    <fullName>LSS</fullName>
+                    <default>false</default>
+                    <label>LSS</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_InternalNote__c</fullName>
+        <externalId>false</externalId>
+        <label>Internal Note</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_IsAddress_OutOfSync__c</fullName>
+        <externalId>false</externalId>
+        <formula>OR(SVMXC__Street__c &lt;&gt; SVMXC__Site__r.SVMXC__Street__c,
+   SVMXC__City__c &lt;&gt; SVMXC__Site__r.SVMXC__City__c,
+   SVMXC__State__c &lt;&gt; SVMXC__Site__r.SVMXC__State__c,
+   SVMXC__Zip__c &lt;&gt; SVMXC__Site__r.SVMXC__Zip__c
+)</formula>
+        <label>Is Address Out Of Sync</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_IsMedicalDevice__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( OR(  SVMXC__Product__r.SMAX_PS_Medical_Classification__c = &apos;Yes&apos;, 
+          SVMXC__Product__r.SMAX_PS_Medical_Classification__c = &apos;Relevant&apos;,
+           CONTAINS(TEXT(SMAX_PS_UserStatus__c), &apos;MED&apos;)
+        ), TRUE, FALSE
+     )</formula>
+        <label>Is Medical Device</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Is_Calibrated__c</fullName>
+        <description>Determines if the tool is in an active calibration status.</description>
+        <externalId>false</externalId>
+        <formula>TODAY () &lt; SMAX_PS_Next_Calibration_Date__c &amp;&amp;  
+ISPICKVAL(SMAX_PS_Status__c, &quot;Active&quot;) || ISPICKVAL(SMAX_PS_Status__c, &quot;Active - Metrology&quot;) || ISPICKVAL(SMAX_PS_Status__c, &quot;Calibration not Required&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Determines if the tool is in an active calibration status.</inlineHelpText>
+        <label>Is Calibrated</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Is_MTE_PermissionSet__c</fullName>
+        <description>Denotes that the user has the mte permission set</description>
+        <externalId>false</externalId>
+        <formula>$Permission.SMAX_PS_HasMTEPermission</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Denotes that the user has the mte permission set</inlineHelpText>
+        <label>Has MTE Permission Set</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Is_Pending_IP_Record__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used for creating Generic IP process</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used for creating Generic IP process</inlineHelpText>
+        <label>Is Pending IP Record?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_LL_BillTo_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Local Language Bill To Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Installed Products (Local Language Bill To Account)</relationshipLabel>
+        <relationshipName>LocalLang_BillTo_Installed_Products</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_LL_BillTo_ExtId__c</fullName>
+        <externalId>false</externalId>
+        <label>Local Language Bill To External Id</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_LL_ShipTo_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Local Language Ship To Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Installed Products (Local Language Ship To Account)</relationshipLabel>
+        <relationshipName>LocalLang_ShipTo_Installed_Products</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_LL_ShipTo_ExtId__c</fullName>
+        <externalId>false</externalId>
+        <label>Local Language Ship To External Id</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_LabManager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Lab Manager Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Installed Products (Lab Manager Contact)</relationshipLabel>
+        <relationshipName>Installed_Products</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_LastTxnNum__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Transaction Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Last_Calibration_Date__c</fullName>
+        <description>Calibrated Tools Last Calibration Date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Calibrated Tools Last Calibration Date</inlineHelpText>
+        <label>Last Calibration Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Last_Date_Serviced__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Date Serviced</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Last_Servicing_Technician__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The last Technician to service this Installed Product, regardless of Work Order type (include PMs).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The last Technician to service this Installed Product, regardless of Work Order type (include PMs).</inlineHelpText>
+        <label>Last Servicing Technician</label>
+        <referenceTo>SVMXC__Service_Group_Members__c</referenceTo>
+        <relationshipLabel>Installed Products (Last Servicing Technician)</relationshipLabel>
+        <relationshipName>Last_Service_Tech</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Last_Work_Order_Details__c</fullName>
+        <description>Details the last servicing technician, date of service and order type.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Details the last servicing technician, date of service and order type.</inlineHelpText>
+        <label>Last Work Order Details</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Linked_Equpiment__c</fullName>
+        <description>Denotes the linked equipment to the current installed product</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes the linked equipment to the current installed product</inlineHelpText>
+        <label>Linked Equipment</label>
+        <length>250</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_LocationCodeDesc__c</fullName>
+        <externalId>false</externalId>
+        <label>Location Code Desc</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_LongDescription__c</fullName>
+        <externalId>false</externalId>
+        <label>Long Description</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_MTE_Calibration_Period__c</fullName>
+        <description>Used to view/set the calibration period.</description>
+        <externalId>false</externalId>
+        <label>MTE Calibration Period</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>365</fullName>
+                    <default>false</default>
+                    <label>12 Months</label>
+                </value>
+                <value>
+                    <fullName>730</fullName>
+                    <default>false</default>
+                    <label>24 Months</label>
+                </value>
+                <value>
+                    <fullName>1095</fullName>
+                    <default>false</default>
+                    <label>36 Months</label>
+                </value>
+                <value>
+                    <fullName>Custom</fullName>
+                    <default>false</default>
+                    <label>Custom</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_MTE_Change_Description__c</fullName>
+        <description>The text description of why the change was made</description>
+        <externalId>false</externalId>
+        <label>MTE Change Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_MTE_Change_Reason__c</fullName>
+        <description>Used to group reason for a change in the calibrated tool record.</description>
+        <externalId>false</externalId>
+        <label>MTE Change Reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>A</fullName>
+                    <default>false</default>
+                    <label>A</label>
+                </value>
+                <value>
+                    <fullName>Data Correction</fullName>
+                    <default>false</default>
+                    <label>Data Correction</label>
+                </value>
+                <value>
+                    <fullName>Calibration Date Change</fullName>
+                    <default>false</default>
+                    <label>Calibration Date Change</label>
+                </value>
+                <value>
+                    <fullName>Updating Tool Status</fullName>
+                    <default>false</default>
+                    <label>Updating Tool Status</label>
+                </value>
+                <value>
+                    <fullName>B</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>B</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_MTE_Country__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(SMAX_PS_Responsible_Technician__r.SVMXC__Country__c)</formula>
+        <inlineHelpText>Responsible technician country.</inlineHelpText>
+        <label>MTE Country</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_MTE_Custom_Calibration_Period_Nu__c</fullName>
+        <description>Number field used to calculate the duration between start and end calibration date for a custom calibration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number field used to calculate the duration between start and end calibration date for a custom calibration</inlineHelpText>
+        <label>MTE Custom Calibration Period</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_MTE_Custom_Calibration_Period__c</fullName>
+        <description>Count of months of custom calibration period.</description>
+        <externalId>false</externalId>
+        <formula>(SMAX_PS_Next_Calibration_Date__c-SMAX_PS_Last_Calibration_Date__c)/30</formula>
+        <inlineHelpText>Count of months of custom calibration period.</inlineHelpText>
+        <label>MTE Custom Calibration Period</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_MTE_Manufacturer__c</fullName>
+        <description>Manufacturer of the MTE.</description>
+        <externalId>false</externalId>
+        <label>MTE Manufacturer</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>3M CO</fullName>
+                    <default>false</default>
+                    <label>3M CO</label>
+                </value>
+                <value>
+                    <fullName>A&amp;D ENG</fullName>
+                    <default>false</default>
+                    <label>A&amp;D ENG</label>
+                </value>
+                <value>
+                    <fullName>AALBORG</fullName>
+                    <default>false</default>
+                    <label>AALBORG</label>
+                </value>
+                <value>
+                    <fullName>ACCULAB</fullName>
+                    <default>false</default>
+                    <label>ACCULAB</label>
+                </value>
+                <value>
+                    <fullName>ACOPIAN</fullName>
+                    <default>false</default>
+                    <label>ACOPIAN</label>
+                </value>
+                <value>
+                    <fullName>ADAVANTEST</fullName>
+                    <default>false</default>
+                    <label>ADAVANTEST</label>
+                </value>
+                <value>
+                    <fullName>AEROVOX</fullName>
+                    <default>false</default>
+                    <label>AEROVOX</label>
+                </value>
+                <value>
+                    <fullName>AGILENT</fullName>
+                    <default>false</default>
+                    <label>AGILENT</label>
+                </value>
+                <value>
+                    <fullName>AIRFLOW</fullName>
+                    <default>false</default>
+                    <label>AIRFLOW</label>
+                </value>
+                <value>
+                    <fullName>ALNOR INST</fullName>
+                    <default>false</default>
+                    <label>ALNOR INST</label>
+                </value>
+                <value>
+                    <fullName>ALPHALAB INC</fullName>
+                    <default>false</default>
+                    <label>ALPHALAB INC</label>
+                </value>
+                <value>
+                    <fullName>ALTHENA</fullName>
+                    <default>false</default>
+                    <label>ALTHENA</label>
+                </value>
+                <value>
+                    <fullName>AMETEK M&amp;G</fullName>
+                    <default>false</default>
+                    <label>AMETEK M&amp;G</label>
+                </value>
+                <value>
+                    <fullName>AMETEK USG</fullName>
+                    <default>false</default>
+                    <label>AMETEK USG</label>
+                </value>
+                <value>
+                    <fullName>AMPROBE INST</fullName>
+                    <default>false</default>
+                    <label>AMPROBE INST</label>
+                </value>
+                <value>
+                    <fullName>ANTON PAAR US</fullName>
+                    <default>false</default>
+                    <label>ANTON PAAR US</label>
+                </value>
+                <value>
+                    <fullName>APEX TOOL</fullName>
+                    <default>false</default>
+                    <label>APEX TOOL</label>
+                </value>
+                <value>
+                    <fullName>ARATRON II ELEC</fullName>
+                    <default>false</default>
+                    <label>ARATRON II ELEC</label>
+                </value>
+                <value>
+                    <fullName>ARIZONA INST</fullName>
+                    <default>false</default>
+                    <label>ARIZONA INST</label>
+                </value>
+                <value>
+                    <fullName>ASSOC RESCH</fullName>
+                    <default>false</default>
+                    <label>ASSOC RESCH</label>
+                </value>
+                <value>
+                    <fullName>B&amp;K PRECISION</fullName>
+                    <default>false</default>
+                    <label>B&amp;K PRECISION</label>
+                </value>
+                <value>
+                    <fullName>BACHARACH</fullName>
+                    <default>false</default>
+                    <label>BACHARACH</label>
+                </value>
+                <value>
+                    <fullName>BALMAC</fullName>
+                    <default>false</default>
+                    <label>BALMAC</label>
+                </value>
+                <value>
+                    <fullName>BALSTROM</fullName>
+                    <default>false</default>
+                    <label>BALSTROM</label>
+                </value>
+                <value>
+                    <fullName>BECKMAN INST</fullName>
+                    <default>false</default>
+                    <label>BECKMAN INST</label>
+                </value>
+                <value>
+                    <fullName>BELKNAP TOOL</fullName>
+                    <default>false</default>
+                    <label>BELKNAP TOOL</label>
+                </value>
+                <value>
+                    <fullName>BELL FW</fullName>
+                    <default>false</default>
+                    <label>BELL FW</label>
+                </value>
+                <value>
+                    <fullName>BENNING</fullName>
+                    <default>false</default>
+                    <label>BENNING</label>
+                </value>
+                <value>
+                    <fullName>BIOSYSTEMS</fullName>
+                    <default>false</default>
+                    <label>BIOSYSTEMS</label>
+                </value>
+                <value>
+                    <fullName>BioTek</fullName>
+                    <default>false</default>
+                    <label>BioTek</label>
+                </value>
+                <value>
+                    <fullName>BIRD ELEC</fullName>
+                    <default>false</default>
+                    <label>BIRD ELEC</label>
+                </value>
+                <value>
+                    <fullName>BLACK BOX</fullName>
+                    <default>false</default>
+                    <label>BLACK BOX</label>
+                </value>
+                <value>
+                    <fullName>BLUE WHITE</fullName>
+                    <default>false</default>
+                    <label>BLUE WHITE</label>
+                </value>
+                <value>
+                    <fullName>BP MICROSYSTEMS</fullName>
+                    <default>false</default>
+                    <label>BP MICROSYSTEMS</label>
+                </value>
+                <value>
+                    <fullName>BRECO</fullName>
+                    <default>false</default>
+                    <label>BRECO</label>
+                </value>
+                <value>
+                    <fullName>BRONKHORST</fullName>
+                    <default>false</default>
+                    <label>BRONKHORST</label>
+                </value>
+                <value>
+                    <fullName>BROOKS INSTRUMENTS</fullName>
+                    <default>false</default>
+                    <label>BROOKS INSTRUMENTS</label>
+                </value>
+                <value>
+                    <fullName>BROWN &amp; SHARP</fullName>
+                    <default>false</default>
+                    <label>BROWN &amp; SHARP</label>
+                </value>
+                <value>
+                    <fullName>BRUNELLE INST</fullName>
+                    <default>false</default>
+                    <label>BRUNELLE INST</label>
+                </value>
+                <value>
+                    <fullName>BST</fullName>
+                    <default>false</default>
+                    <label>BST</label>
+                </value>
+                <value>
+                    <fullName>BYTE BROS</fullName>
+                    <default>false</default>
+                    <label>BYTE BROS</label>
+                </value>
+                <value>
+                    <fullName>CARRIER CORP</fullName>
+                    <default>false</default>
+                    <label>CARRIER CORP</label>
+                </value>
+                <value>
+                    <fullName>CASCADE TEC</fullName>
+                    <default>false</default>
+                    <label>CASCADE TEC</label>
+                </value>
+                <value>
+                    <fullName>CDI</fullName>
+                    <default>false</default>
+                    <label>CDI</label>
+                </value>
+                <value>
+                    <fullName>CECOMP</fullName>
+                    <default>false</default>
+                    <label>CECOMP</label>
+                </value>
+                <value>
+                    <fullName>Cecomp Electronics</fullName>
+                    <default>false</default>
+                    <label>Cecomp Electronics</label>
+                </value>
+                <value>
+                    <fullName>CEN-TECH</fullName>
+                    <default>false</default>
+                    <label>CEN-TECH</label>
+                </value>
+                <value>
+                    <fullName>CERAMATEC INC</fullName>
+                    <default>false</default>
+                    <label>CERAMATEC INC</label>
+                </value>
+                <value>
+                    <fullName>CHARLESWATER</fullName>
+                    <default>false</default>
+                    <label>CHARLESWATER</label>
+                </value>
+                <value>
+                    <fullName>CHATILLON</fullName>
+                    <default>false</default>
+                    <label>CHATILLON</label>
+                </value>
+                <value>
+                    <fullName>CHECK-LINE</fullName>
+                    <default>false</default>
+                    <label>CHECK-LINE</label>
+                </value>
+                <value>
+                    <fullName>CHY</fullName>
+                    <default>false</default>
+                    <label>CHY</label>
+                </value>
+                <value>
+                    <fullName>CLAROSTAT</fullName>
+                    <default>false</default>
+                    <label>CLAROSTAT</label>
+                </value>
+                <value>
+                    <fullName>COHERENT INC</fullName>
+                    <default>false</default>
+                    <label>COHERENT INC</label>
+                </value>
+                <value>
+                    <fullName>COLE-PARMER</fullName>
+                    <default>false</default>
+                    <label>COLE-PARMER</label>
+                </value>
+                <value>
+                    <fullName>COLUMBIA RSCH</fullName>
+                    <default>false</default>
+                    <label>COLUMBIA RSCH</label>
+                </value>
+                <value>
+                    <fullName>COMDEL</fullName>
+                    <default>false</default>
+                    <label>COMDEL</label>
+                </value>
+                <value>
+                    <fullName>COMMERCIAL ELECTRIC</fullName>
+                    <default>false</default>
+                    <label>COMMERCIAL ELECTRIC</label>
+                </value>
+                <value>
+                    <fullName>CONSOL DEV</fullName>
+                    <default>false</default>
+                    <label>CONSOL DEV</label>
+                </value>
+                <value>
+                    <fullName>CONTROL CO</fullName>
+                    <default>false</default>
+                    <label>CONTROL CO</label>
+                </value>
+                <value>
+                    <fullName>CRAFTSMAN</fullName>
+                    <default>false</default>
+                    <label>CRAFTSMAN</label>
+                </value>
+                <value>
+                    <fullName>CVI LASER OPTICS</fullName>
+                    <default>false</default>
+                    <label>CVI LASER OPTICS</label>
+                </value>
+                <value>
+                    <fullName>DATA PREC</fullName>
+                    <default>false</default>
+                    <label>DATA PREC</label>
+                </value>
+                <value>
+                    <fullName>DAVIS INST</fullName>
+                    <default>false</default>
+                    <label>DAVIS INST</label>
+                </value>
+                <value>
+                    <fullName>DENVER INST</fullName>
+                    <default>false</default>
+                    <label>DENVER INST</label>
+                </value>
+                <value>
+                    <fullName>DESCO IND</fullName>
+                    <default>false</default>
+                    <label>DESCO IND</label>
+                </value>
+                <value>
+                    <fullName>DICKSON</fullName>
+                    <default>false</default>
+                    <label>DICKSON</label>
+                </value>
+                <value>
+                    <fullName>DIGI-SENSE</fullName>
+                    <default>false</default>
+                    <label>DIGI-SENSE</label>
+                </value>
+                <value>
+                    <fullName>DISTEK</fullName>
+                    <default>false</default>
+                    <label>DISTEK</label>
+                </value>
+                <value>
+                    <fullName>DRUCK INC</fullName>
+                    <default>false</default>
+                    <label>DRUCK INC</label>
+                </value>
+                <value>
+                    <fullName>DURATOOL</fullName>
+                    <default>false</default>
+                    <label>DURATOOL</label>
+                </value>
+                <value>
+                    <fullName>DWYER INST</fullName>
+                    <default>false</default>
+                    <label>DWYER INST</label>
+                </value>
+                <value>
+                    <fullName>EATON INST</fullName>
+                    <default>false</default>
+                    <label>EATON INST</label>
+                </value>
+                <value>
+                    <fullName>EBRO ELEC</fullName>
+                    <default>false</default>
+                    <label>EBRO ELEC</label>
+                </value>
+                <value>
+                    <fullName>ED&amp;D</fullName>
+                    <default>false</default>
+                    <label>ED&amp;D</label>
+                </value>
+                <value>
+                    <fullName>EICO ELEC</fullName>
+                    <default>false</default>
+                    <label>EICO ELEC</label>
+                </value>
+                <value>
+                    <fullName>EMD</fullName>
+                    <default>false</default>
+                    <label>EMD</label>
+                </value>
+                <value>
+                    <fullName>EMPIRE LEVEL INCORPORATED</fullName>
+                    <default>false</default>
+                    <label>EMPIRE LEVEL INCORPORATED</label>
+                </value>
+                <value>
+                    <fullName>EPPENDORF</fullName>
+                    <default>false</default>
+                    <label>EPPENDORF</label>
+                </value>
+                <value>
+                    <fullName>EQUUS</fullName>
+                    <default>false</default>
+                    <label>EQUUS</label>
+                </value>
+                <value>
+                    <fullName>ESCORT</fullName>
+                    <default>false</default>
+                    <label>ESCORT</label>
+                </value>
+                <value>
+                    <fullName>ETS-LINDGREN</fullName>
+                    <default>false</default>
+                    <label>ETS-LINDGREN</label>
+                </value>
+                <value>
+                    <fullName>EUTECHNICS</fullName>
+                    <default>false</default>
+                    <label>EUTECHNICS</label>
+                </value>
+                <value>
+                    <fullName>EXTECH</fullName>
+                    <default>false</default>
+                    <label>EXTECH</label>
+                </value>
+                <value>
+                    <fullName>FISHER SCIEN</fullName>
+                    <default>false</default>
+                    <label>FISHER SCIEN</label>
+                </value>
+                <value>
+                    <fullName>FLIR</fullName>
+                    <default>false</default>
+                    <label>FLIR</label>
+                </value>
+                <value>
+                    <fullName>FLUKE</fullName>
+                    <default>false</default>
+                    <label>Fluke</label>
+                </value>
+                <value>
+                    <fullName>FOWLER F CO</fullName>
+                    <default>false</default>
+                    <label>FOWLER F CO</label>
+                </value>
+                <value>
+                    <fullName>GAGE MASTER</fullName>
+                    <default>false</default>
+                    <label>GAGE MASTER</label>
+                </value>
+                <value>
+                    <fullName>GATES</fullName>
+                    <default>false</default>
+                    <label>GATES</label>
+                </value>
+                <value>
+                    <fullName>GEDORE TOOL</fullName>
+                    <default>false</default>
+                    <label>GEDORE TOOL</label>
+                </value>
+                <value>
+                    <fullName>GENERAL EASTERN</fullName>
+                    <default>false</default>
+                    <label>GENERAL EASTERN</label>
+                </value>
+                <value>
+                    <fullName>GENERAL TOOLS</fullName>
+                    <default>false</default>
+                    <label>GENERAL TOOLS</label>
+                </value>
+                <value>
+                    <fullName>GEN RESIST</fullName>
+                    <default>false</default>
+                    <label>GEN RESIST</label>
+                </value>
+                <value>
+                    <fullName>GEOTECHNICAL INSTRUMENTS</fullName>
+                    <default>false</default>
+                    <label>GEOTECHNICAL INSTRUMENTS</label>
+                </value>
+                <value>
+                    <fullName>GJC INSTRUMENTS</fullName>
+                    <default>false</default>
+                    <label>GJC INSTRUMENTS</label>
+                </value>
+                <value>
+                    <fullName>GLASTOBURY</fullName>
+                    <default>false</default>
+                    <label>GLASTOBURY</label>
+                </value>
+                <value>
+                    <fullName>GLOBAL SPEC</fullName>
+                    <default>false</default>
+                    <label>GLOBAL SPEC</label>
+                </value>
+                <value>
+                    <fullName>GOW-MAC INST</fullName>
+                    <default>false</default>
+                    <label>GOW-MAC INST</label>
+                </value>
+                <value>
+                    <fullName>GREENLEE</fullName>
+                    <default>false</default>
+                    <label>GREENLEE</label>
+                </value>
+                <value>
+                    <fullName>GS BLUE</fullName>
+                    <default>false</default>
+                    <label>GS BLUE</label>
+                </value>
+                <value>
+                    <fullName>GSE INC</fullName>
+                    <default>false</default>
+                    <label>GSE INC</label>
+                </value>
+                <value>
+                    <fullName>GW INSTEK LTD</fullName>
+                    <default>false</default>
+                    <label>GW INSTEK LTD</label>
+                </value>
+                <value>
+                    <fullName>HACH</fullName>
+                    <default>false</default>
+                    <label>HACH</label>
+                </value>
+                <value>
+                    <fullName>HANHART</fullName>
+                    <default>false</default>
+                    <label>HANHART</label>
+                </value>
+                <value>
+                    <fullName>Hart Scientific</fullName>
+                    <default>false</default>
+                    <label>Hart Scientific</label>
+                </value>
+                <value>
+                    <fullName>HARVARD</fullName>
+                    <default>false</default>
+                    <label>HARVARD</label>
+                </value>
+                <value>
+                    <fullName>HEALTH-O-METR</fullName>
+                    <default>false</default>
+                    <label>HEALTH-O-METR</label>
+                </value>
+                <value>
+                    <fullName>HEMCO CORP</fullName>
+                    <default>false</default>
+                    <label>HEMCO CORP</label>
+                </value>
+                <value>
+                    <fullName>HIPOTRONICS</fullName>
+                    <default>false</default>
+                    <label>HIPOTRONICS</label>
+                </value>
+                <value>
+                    <fullName>HITACHI</fullName>
+                    <default>false</default>
+                    <label>HITACHI</label>
+                </value>
+                <value>
+                    <fullName>HOLADAY IND</fullName>
+                    <default>false</default>
+                    <label>HOLADAY IND</label>
+                </value>
+                <value>
+                    <fullName>H-P</fullName>
+                    <default>false</default>
+                    <label>H-P</label>
+                </value>
+                <value>
+                    <fullName>IDEAL INDUSTRIES</fullName>
+                    <default>false</default>
+                    <label>IDEAL INDUSTRIES</label>
+                </value>
+                <value>
+                    <fullName>iGaging</fullName>
+                    <default>false</default>
+                    <label>iGaging</label>
+                </value>
+                <value>
+                    <fullName>IMADA INC</fullName>
+                    <default>false</default>
+                    <label>IMADA INC</label>
+                </value>
+                <value>
+                    <fullName>Innova</fullName>
+                    <default>false</default>
+                    <label>Innova</label>
+                </value>
+                <value>
+                    <fullName>INSCO</fullName>
+                    <default>false</default>
+                    <label>INSCO</label>
+                </value>
+                <value>
+                    <fullName>Intertek</fullName>
+                    <default>false</default>
+                    <label>Intertek</label>
+                </value>
+                <value>
+                    <fullName>J&amp;W SCIEN</fullName>
+                    <default>false</default>
+                    <label>J&amp;W SCIEN</label>
+                </value>
+                <value>
+                    <fullName>JENSEN INST</fullName>
+                    <default>false</default>
+                    <label>JENSEN INST</label>
+                </value>
+                <value>
+                    <fullName>JENSEN TOOLS</fullName>
+                    <default>false</default>
+                    <label>JENSEN TOOLS</label>
+                </value>
+                <value>
+                    <fullName>JOUAN</fullName>
+                    <default>false</default>
+                    <label>JOUAN</label>
+                </value>
+                <value>
+                    <fullName>KD SCIENTIFIC</fullName>
+                    <default>false</default>
+                    <label>KD SCIENTIFIC</label>
+                </value>
+                <value>
+                    <fullName>KEITHLEY</fullName>
+                    <default>false</default>
+                    <label>KEITHLEY</label>
+                </value>
+                <value>
+                    <fullName>KENDRO</fullName>
+                    <default>false</default>
+                    <label>KENDRO</label>
+                </value>
+                <value>
+                    <fullName>KESTERSON</fullName>
+                    <default>false</default>
+                    <label>KESTERSON</label>
+                </value>
+                <value>
+                    <fullName>KESTREL CORP</fullName>
+                    <default>false</default>
+                    <label>KESTREL CORP</label>
+                </value>
+                <value>
+                    <fullName>KEY</fullName>
+                    <default>false</default>
+                    <label>KEY</label>
+                </value>
+                <value>
+                    <fullName>KIKUSUI INTL</fullName>
+                    <default>false</default>
+                    <label>KIKUSUI INTL</label>
+                </value>
+                <value>
+                    <fullName>KIMBLE CHASE</fullName>
+                    <default>false</default>
+                    <label>KIMBLE CHASE</label>
+                </value>
+                <value>
+                    <fullName>KIN-TEK LABS</fullName>
+                    <default>false</default>
+                    <label>KIN-TEK LABS</label>
+                </value>
+                <value>
+                    <fullName>KIPP ZONEN</fullName>
+                    <default>false</default>
+                    <label>KIPP ZONEN</label>
+                </value>
+                <value>
+                    <fullName>KLEIN TOOLS</fullName>
+                    <default>false</default>
+                    <label>KLEIN TOOLS</label>
+                </value>
+                <value>
+                    <fullName>KROHN-HITE</fullName>
+                    <default>false</default>
+                    <label>KROHN-HITE</label>
+                </value>
+                <value>
+                    <fullName>KS TOOLS</fullName>
+                    <default>false</default>
+                    <label>KS TOOLS</label>
+                </value>
+                <value>
+                    <fullName>LAB METRIX</fullName>
+                    <default>false</default>
+                    <label>LAB METRIX</label>
+                </value>
+                <value>
+                    <fullName>LAMBDA ELEC</fullName>
+                    <default>false</default>
+                    <label>LAMBDA ELEC</label>
+                </value>
+                <value>
+                    <fullName>LEADER ELEC</fullName>
+                    <default>false</default>
+                    <label>LEADER ELEC</label>
+                </value>
+                <value>
+                    <fullName>LEAD SHINE</fullName>
+                    <default>false</default>
+                    <label>LEAD SHINE</label>
+                </value>
+                <value>
+                    <fullName>LECROY CORP</fullName>
+                    <default>false</default>
+                    <label>LECROY CORP</label>
+                </value>
+                <value>
+                    <fullName>LIGHTHOUSE</fullName>
+                    <default>false</default>
+                    <label>LIGHTHOUSE</label>
+                </value>
+                <value>
+                    <fullName>LINK INSTRUMENTS</fullName>
+                    <default>false</default>
+                    <label>LINK INSTRUMENTS</label>
+                </value>
+                <value>
+                    <fullName>LUDLUM SURVEY METER</fullName>
+                    <default>false</default>
+                    <label>LUDLUM SURVEY METER</label>
+                </value>
+                <value>
+                    <fullName>LUFKIN INST</fullName>
+                    <default>false</default>
+                    <label>LUFKIN INST</label>
+                </value>
+                <value>
+                    <fullName>LUTRON ELEC</fullName>
+                    <default>false</default>
+                    <label>LUTRON ELEC</label>
+                </value>
+                <value>
+                    <fullName>MAHR FEDERAL</fullName>
+                    <default>false</default>
+                    <label>MAHR FEDERAL</label>
+                </value>
+                <value>
+                    <fullName>MASTECH</fullName>
+                    <default>false</default>
+                    <label>MASTECH</label>
+                </value>
+                <value>
+                    <fullName>MATHESON</fullName>
+                    <default>false</default>
+                    <label>MATHESON</label>
+                </value>
+                <value>
+                    <fullName>MBV</fullName>
+                    <default>false</default>
+                    <label>MBV</label>
+                </value>
+                <value>
+                    <fullName>MCMASTER-CARR</fullName>
+                    <default>false</default>
+                    <label>MCMASTER-CARR</label>
+                </value>
+                <value>
+                    <fullName>MELLES GRIOT</fullName>
+                    <default>false</default>
+                    <label>MELLES GRIOT</label>
+                </value>
+                <value>
+                    <fullName>MERIAM INST</fullName>
+                    <default>false</default>
+                    <label>MERIAM INST</label>
+                </value>
+                <value>
+                    <fullName>METEK</fullName>
+                    <default>false</default>
+                    <label>METEK</label>
+                </value>
+                <value>
+                    <fullName>METERMAN</fullName>
+                    <default>false</default>
+                    <label>METERMAN</label>
+                </value>
+                <value>
+                    <fullName>METTLER</fullName>
+                    <default>false</default>
+                    <label>METTLER</label>
+                </value>
+                <value>
+                    <fullName>METTLER-TOLEDO THORTON</fullName>
+                    <default>false</default>
+                    <label>METTLER-TOLEDO THORTON</label>
+                </value>
+                <value>
+                    <fullName>MEYER GAGE</fullName>
+                    <default>false</default>
+                    <label>MEYER GAGE</label>
+                </value>
+                <value>
+                    <fullName>MHC TOOLS</fullName>
+                    <default>false</default>
+                    <label>MHC TOOLS</label>
+                </value>
+                <value>
+                    <fullName>MICRONTA</fullName>
+                    <default>false</default>
+                    <label>MICRONTA</label>
+                </value>
+                <value>
+                    <fullName>MITUTOYO</fullName>
+                    <default>false</default>
+                    <label>MITUTOYO</label>
+                </value>
+                <value>
+                    <fullName>MKS INST</fullName>
+                    <default>false</default>
+                    <label>MKS INST</label>
+                </value>
+                <value>
+                    <fullName>MONARCH</fullName>
+                    <default>false</default>
+                    <label>MONARCH</label>
+                </value>
+                <value>
+                    <fullName>MOUNTZ INC</fullName>
+                    <default>false</default>
+                    <label>MOUNTZ INC</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+                <value>
+                    <fullName>NARDA</fullName>
+                    <default>false</default>
+                    <label>NARDA</label>
+                </value>
+                <value>
+                    <fullName>NEIKO</fullName>
+                    <default>false</default>
+                    <label>NEIKO</label>
+                </value>
+                <value>
+                    <fullName>NEWPORT ELEC</fullName>
+                    <default>false</default>
+                    <label>NEWPORT ELEC</label>
+                </value>
+                <value>
+                    <fullName>NIELSEN-KEL</fullName>
+                    <default>false</default>
+                    <label>NIELSEN-KEL</label>
+                </value>
+                <value>
+                    <fullName>NIST</fullName>
+                    <default>false</default>
+                    <label>NIST</label>
+                </value>
+                <value>
+                    <fullName>NLG ANALYTICAL LTD</fullName>
+                    <default>false</default>
+                    <label>NLG ANALYTICAL LTD</label>
+                </value>
+                <value>
+                    <fullName>OAKTON</fullName>
+                    <default>false</default>
+                    <label>OAKTON</label>
+                </value>
+                <value>
+                    <fullName>OHAUS SCALE</fullName>
+                    <default>false</default>
+                    <label>OHAUS SCALE</label>
+                </value>
+                <value>
+                    <fullName>OMEGA ENG</fullName>
+                    <default>false</default>
+                    <label>OMEGA ENG</label>
+                </value>
+                <value>
+                    <fullName>ONO SOKKI TEC</fullName>
+                    <default>false</default>
+                    <label>ONO SOKKI TEC</label>
+                </value>
+                <value>
+                    <fullName>OPHIR</fullName>
+                    <default>false</default>
+                    <label>OPHIR</label>
+                </value>
+                <value>
+                    <fullName>OWON</fullName>
+                    <default>false</default>
+                    <label>OWON</label>
+                </value>
+                <value>
+                    <fullName>PB SWISS TOOLS</fullName>
+                    <default>false</default>
+                    <label>PB SWISS TOOLS</label>
+                </value>
+                <value>
+                    <fullName>PCE</fullName>
+                    <default>false</default>
+                    <label>PCE</label>
+                </value>
+                <value>
+                    <fullName>PE NELSON</fullName>
+                    <default>false</default>
+                    <label>PE NELSON</label>
+                </value>
+                <value>
+                    <fullName>PerkinElmer</fullName>
+                    <default>false</default>
+                    <label>PerkinElmer</label>
+                </value>
+                <value>
+                    <fullName>PERKIN-ELMER</fullName>
+                    <default>false</default>
+                    <label>PERKIN-ELMER</label>
+                </value>
+                <value>
+                    <fullName>PERMA-CAL</fullName>
+                    <default>false</default>
+                    <label>PERMA-CAL</label>
+                </value>
+                <value>
+                    <fullName>PHILIPS TST</fullName>
+                    <default>false</default>
+                    <label>PHILIPS TST</label>
+                </value>
+                <value>
+                    <fullName>PLATON</fullName>
+                    <default>false</default>
+                    <label>PLATON</label>
+                </value>
+                <value>
+                    <fullName>POLYSCIENCE</fullName>
+                    <default>false</default>
+                    <label>POLYSCIENCE</label>
+                </value>
+                <value>
+                    <fullName>PORTER INST</fullName>
+                    <default>false</default>
+                    <label>PORTER INST</label>
+                </value>
+                <value>
+                    <fullName>POWER DESIGN</fullName>
+                    <default>false</default>
+                    <label>POWER DESIGN</label>
+                </value>
+                <value>
+                    <fullName>POWERVAR</fullName>
+                    <default>false</default>
+                    <label>POWERVAR</label>
+                </value>
+                <value>
+                    <fullName>PRECISION INS</fullName>
+                    <default>false</default>
+                    <label>PRECISION INS</label>
+                </value>
+                <value>
+                    <fullName>PRINCETON RES</fullName>
+                    <default>false</default>
+                    <label>PRINCETON RES</label>
+                </value>
+                <value>
+                    <fullName>PROMAT</fullName>
+                    <default>false</default>
+                    <label>PROMAT</label>
+                </value>
+                <value>
+                    <fullName>PROSTER</fullName>
+                    <default>false</default>
+                    <label>PROSTER</label>
+                </value>
+                <value>
+                    <fullName>PYLE</fullName>
+                    <default>false</default>
+                    <label>PYLE</label>
+                </value>
+                <value>
+                    <fullName>QIAGEN</fullName>
+                    <default>false</default>
+                    <label>QIAGEN</label>
+                </value>
+                <value>
+                    <fullName>QLA</fullName>
+                    <default>false</default>
+                    <label>QLA</label>
+                </value>
+                <value>
+                    <fullName>QUALITY TECH LABS</fullName>
+                    <default>false</default>
+                    <label>QUALITY TECH LABS</label>
+                </value>
+                <value>
+                    <fullName>RAININ</fullName>
+                    <default>false</default>
+                    <label>RAININ</label>
+                </value>
+                <value>
+                    <fullName>RAYTEK</fullName>
+                    <default>false</default>
+                    <label>RAYTEK</label>
+                </value>
+                <value>
+                    <fullName>READ</fullName>
+                    <default>false</default>
+                    <label>READ</label>
+                </value>
+                <value>
+                    <fullName>REED INSTRUMENTS</fullName>
+                    <default>false</default>
+                    <label>REED INSTRUMENTS</label>
+                </value>
+                <value>
+                    <fullName>REID</fullName>
+                    <default>false</default>
+                    <label>REID</label>
+                </value>
+                <value>
+                    <fullName>RESTEK</fullName>
+                    <default>false</default>
+                    <label>RESTEK</label>
+                </value>
+                <value>
+                    <fullName>RICE LAKE</fullName>
+                    <default>false</default>
+                    <label>RICE LAKE</label>
+                </value>
+                <value>
+                    <fullName>ROD-L</fullName>
+                    <default>false</default>
+                    <label>ROD-L</label>
+                </value>
+                <value>
+                    <fullName>ROTA YOKOGAWA</fullName>
+                    <default>false</default>
+                    <label>ROTA YOKOGAWA</label>
+                </value>
+                <value>
+                    <fullName>RUDOLPH</fullName>
+                    <default>false</default>
+                    <label>RUDOLPH</label>
+                </value>
+                <value>
+                    <fullName>RYESON CORP</fullName>
+                    <default>false</default>
+                    <label>RYESON CORP</label>
+                </value>
+                <value>
+                    <fullName>SainSonic</fullName>
+                    <default>false</default>
+                    <label>SainSonic</label>
+                </value>
+                <value>
+                    <fullName>SARTORIUS</fullName>
+                    <default>false</default>
+                    <label>SARTORIUS</label>
+                </value>
+                <value>
+                    <fullName>SC CHROMATOGRAPHY</fullName>
+                    <default>false</default>
+                    <label>SC CHROMATOGRAPHY</label>
+                </value>
+                <value>
+                    <fullName>SCHERR-TUMI</fullName>
+                    <default>false</default>
+                    <label>SCHERR-TUMI</label>
+                </value>
+                <value>
+                    <fullName>SEEKONK MFG</fullName>
+                    <default>false</default>
+                    <label>SEEKONK MFG</label>
+                </value>
+                <value>
+                    <fullName>S E INTL CO</fullName>
+                    <default>false</default>
+                    <label>S E INTL CO</label>
+                </value>
+                <value>
+                    <fullName>SENSYM</fullName>
+                    <default>false</default>
+                    <label>SENSYM</label>
+                </value>
+                <value>
+                    <fullName>SETRA SYS</fullName>
+                    <default>false</default>
+                    <label>SETRA SYS</label>
+                </value>
+                <value>
+                    <fullName>SHARS</fullName>
+                    <default>false</default>
+                    <label>SHARS</label>
+                </value>
+                <value>
+                    <fullName>SHIMPO INSTRUMENTS</fullName>
+                    <default>false</default>
+                    <label>SHIMPO INSTRUMENTS</label>
+                </value>
+                <value>
+                    <fullName>SHORE INST</fullName>
+                    <default>false</default>
+                    <label>SHORE INST</label>
+                </value>
+                <value>
+                    <fullName>SIGMA PROD</fullName>
+                    <default>false</default>
+                    <label>SIGMA PROD</label>
+                </value>
+                <value>
+                    <fullName>SIMPSON ELEC</fullName>
+                    <default>false</default>
+                    <label>SIMPSON ELEC</label>
+                </value>
+                <value>
+                    <fullName>SMC</fullName>
+                    <default>false</default>
+                    <label>SMC</label>
+                </value>
+                <value>
+                    <fullName>SNAP-ON</fullName>
+                    <default>false</default>
+                    <label>SNAP-ON</label>
+                </value>
+                <value>
+                    <fullName>SORENSEN</fullName>
+                    <default>false</default>
+                    <label>SORENSEN</label>
+                </value>
+                <value>
+                    <fullName>SOTCHER MEAS</fullName>
+                    <default>false</default>
+                    <label>SOTCHER MEAS</label>
+                </value>
+                <value>
+                    <fullName>SPERRY</fullName>
+                    <default>false</default>
+                    <label>SPERRY</label>
+                </value>
+                <value>
+                    <fullName>SPER SCIENTIFIC</fullName>
+                    <default>false</default>
+                    <label>SPER SCIENTIFIC</label>
+                </value>
+                <value>
+                    <fullName>SPI</fullName>
+                    <default>false</default>
+                    <label>SPI</label>
+                </value>
+                <value>
+                    <fullName>SPI-RO MFG</fullName>
+                    <default>false</default>
+                    <label>SPI-RO MFG</label>
+                </value>
+                <value>
+                    <fullName>SPX CORP</fullName>
+                    <default>false</default>
+                    <label>SPX CORP</label>
+                </value>
+                <value>
+                    <fullName>STANDRIDGE</fullName>
+                    <default>false</default>
+                    <label>STANDRIDGE</label>
+                </value>
+                <value>
+                    <fullName>STANFORD RSCH</fullName>
+                    <default>false</default>
+                    <label>STANFORD RSCH</label>
+                </value>
+                <value>
+                    <fullName>STANLEY TOOL</fullName>
+                    <default>false</default>
+                    <label>STANLEY TOOL</label>
+                </value>
+                <value>
+                    <fullName>STARNA CELLS</fullName>
+                    <default>false</default>
+                    <label>STARNA CELLS</label>
+                </value>
+                <value>
+                    <fullName>STARNA SCIENTIFIC LTD</fullName>
+                    <default>false</default>
+                    <label>STARNA SCIENTIFIC LTD</label>
+                </value>
+                <value>
+                    <fullName>STARRETT</fullName>
+                    <default>false</default>
+                    <label>STARRETT</label>
+                </value>
+                <value>
+                    <fullName>STATIC SOLUTI</fullName>
+                    <default>false</default>
+                    <label>STATIC SOLUTI</label>
+                </value>
+                <value>
+                    <fullName>STRANASKA</fullName>
+                    <default>false</default>
+                    <label>STRANASKA</label>
+                </value>
+                <value>
+                    <fullName>SUN</fullName>
+                    <default>false</default>
+                    <label>SUN</label>
+                </value>
+                <value>
+                    <fullName>SUPCO PRODUCT</fullName>
+                    <default>false</default>
+                    <label>SUPCO PRODUCT</label>
+                </value>
+                <value>
+                    <fullName>TDK-LAMBDA</fullName>
+                    <default>false</default>
+                    <label>TDK-LAMBDA</label>
+                </value>
+                <value>
+                    <fullName>TEGAM</fullName>
+                    <default>false</default>
+                    <label>TEGAM</label>
+                </value>
+                <value>
+                    <fullName>TEGAM INC</fullName>
+                    <default>false</default>
+                    <label>TEGAM INC</label>
+                </value>
+                <value>
+                    <fullName>TEKTON</fullName>
+                    <default>false</default>
+                    <label>TEKTON</label>
+                </value>
+                <value>
+                    <fullName>TEKTRONIX</fullName>
+                    <default>false</default>
+                    <label>TEKTRONIX</label>
+                </value>
+                <value>
+                    <fullName>TEL-TRU MFG</fullName>
+                    <default>false</default>
+                    <label>TEL-TRU MFG</label>
+                </value>
+                <value>
+                    <fullName>TENMA MCM EL</fullName>
+                    <default>false</default>
+                    <label>TENMA MCM EL</label>
+                </value>
+                <value>
+                    <fullName>TESTO</fullName>
+                    <default>false</default>
+                    <label>TESTO</label>
+                </value>
+                <value>
+                    <fullName>THELCO</fullName>
+                    <default>false</default>
+                    <label>THELCO</label>
+                </value>
+                <value>
+                    <fullName>THERMO CORION</fullName>
+                    <default>false</default>
+                    <label>THERMO CORION</label>
+                </value>
+                <value>
+                    <fullName>THERMOLYNE</fullName>
+                    <default>false</default>
+                    <label>THERMOLYNE</label>
+                </value>
+                <value>
+                    <fullName>THERMO SCIEN</fullName>
+                    <default>false</default>
+                    <label>THERMO SCIEN</label>
+                </value>
+                <value>
+                    <fullName>THERMOWORKS</fullName>
+                    <default>false</default>
+                    <label>THERMOWORKS</label>
+                </value>
+                <value>
+                    <fullName>THERMO WORKS, INC.</fullName>
+                    <default>false</default>
+                    <label>THERMO WORKS, INC.</label>
+                </value>
+                <value>
+                    <fullName>THOR LABS</fullName>
+                    <default>false</default>
+                    <label>THOR LABS</label>
+                </value>
+                <value>
+                    <fullName>TINEAN</fullName>
+                    <default>false</default>
+                    <label>TINEAN</label>
+                </value>
+                <value>
+                    <fullName>TITAN</fullName>
+                    <default>false</default>
+                    <label>TITAN</label>
+                </value>
+                <value>
+                    <fullName>TOHNICHI MFG</fullName>
+                    <default>false</default>
+                    <label>TOHNICHI MFG</label>
+                </value>
+                <value>
+                    <fullName>TRACEABLE</fullName>
+                    <default>false</default>
+                    <label>TRACEABLE</label>
+                </value>
+                <value>
+                    <fullName>TRANSCAT</fullName>
+                    <default>false</default>
+                    <label>TRANSCAT</label>
+                </value>
+                <value>
+                    <fullName>TROEMNER INC</fullName>
+                    <default>false</default>
+                    <label>TROEMNER INC</label>
+                </value>
+                <value>
+                    <fullName>TSI/ALNOR INST</fullName>
+                    <default>false</default>
+                    <label>TSI/ALNOR INST</label>
+                </value>
+                <value>
+                    <fullName>TUBULAR MICRO</fullName>
+                    <default>false</default>
+                    <label>TUBULAR MICRO</label>
+                </value>
+                <value>
+                    <fullName>UEI</fullName>
+                    <default>false</default>
+                    <label>UEI</label>
+                </value>
+                <value>
+                    <fullName>UNI-T</fullName>
+                    <default>false</default>
+                    <label>UNI-T</label>
+                </value>
+                <value>
+                    <fullName>UNKNOWN</fullName>
+                    <default>false</default>
+                    <label>UNKNOWN</label>
+                </value>
+                <value>
+                    <fullName>USG</fullName>
+                    <default>false</default>
+                    <label>USG</label>
+                </value>
+                <value>
+                    <fullName>UTICA TOOL</fullName>
+                    <default>false</default>
+                    <label>UTICA TOOL</label>
+                </value>
+                <value>
+                    <fullName>UVP INC</fullName>
+                    <default>false</default>
+                    <label>UVP INC</label>
+                </value>
+                <value>
+                    <fullName>V&amp;A INST</fullName>
+                    <default>false</default>
+                    <label>V&amp;A INST</label>
+                </value>
+                <value>
+                    <fullName>VAISALA</fullName>
+                    <default>false</default>
+                    <label>VAISALA</label>
+                </value>
+                <value>
+                    <fullName>VALHALLA</fullName>
+                    <default>false</default>
+                    <label>VALHALLA</label>
+                </value>
+                <value>
+                    <fullName>VAN KEUREN</fullName>
+                    <default>false</default>
+                    <label>VAN KEUREN</label>
+                </value>
+                <value>
+                    <fullName>VARIAN ASSOC</fullName>
+                    <default>false</default>
+                    <label>VARIAN ASSOC</label>
+                </value>
+                <value>
+                    <fullName>VELLEMAN</fullName>
+                    <default>false</default>
+                    <label>VELLEMAN</label>
+                </value>
+                <value>
+                    <fullName>VERMONT GAGE</fullName>
+                    <default>false</default>
+                    <label>VERMONT GAGE</label>
+                </value>
+                <value>
+                    <fullName>VIASENSOR</fullName>
+                    <default>false</default>
+                    <label>VIASENSOR</label>
+                </value>
+                <value>
+                    <fullName>VICI METRONIC</fullName>
+                    <default>false</default>
+                    <label>VICI METRONIC</label>
+                </value>
+                <value>
+                    <fullName>VICTOR</fullName>
+                    <default>false</default>
+                    <label>VICTOR</label>
+                </value>
+                <value>
+                    <fullName>VKIT</fullName>
+                    <default>false</default>
+                    <label>VKIT</label>
+                </value>
+                <value>
+                    <fullName>VOLTCRAFT</fullName>
+                    <default>false</default>
+                    <label>VOLTCRAFT</label>
+                </value>
+                <value>
+                    <fullName>VWR SCIEN</fullName>
+                    <default>false</default>
+                    <label>VWR SCIEN</label>
+                </value>
+                <value>
+                    <fullName>WATERS MFG</fullName>
+                    <default>false</default>
+                    <label>WATERS MFG</label>
+                </value>
+                <value>
+                    <fullName>WAVETEK</fullName>
+                    <default>false</default>
+                    <label>WAVETEK</label>
+                </value>
+                <value>
+                    <fullName>WEBBER GAGE</fullName>
+                    <default>false</default>
+                    <label>WEBBER GAGE</label>
+                </value>
+                <value>
+                    <fullName>WEINSCHEL</fullName>
+                    <default>false</default>
+                    <label>WEINSCHEL</label>
+                </value>
+                <value>
+                    <fullName>WELLER</fullName>
+                    <default>false</default>
+                    <label>WELLER</label>
+                </value>
+                <value>
+                    <fullName>WHITWORTH</fullName>
+                    <default>false</default>
+                    <label>WHITWORTH</label>
+                </value>
+                <value>
+                    <fullName>WIHA WERKZEUG</fullName>
+                    <default>false</default>
+                    <label>WIHA WERKZEUG</label>
+                </value>
+                <value>
+                    <fullName>WIKA</fullName>
+                    <default>false</default>
+                    <label>WIKA</label>
+                </value>
+                <value>
+                    <fullName>WIKA INST</fullName>
+                    <default>false</default>
+                    <label>WIKA INST</label>
+                </value>
+                <value>
+                    <fullName>YAMATO CORP</fullName>
+                    <default>false</default>
+                    <label>YAMATO CORP</label>
+                </value>
+                <value>
+                    <fullName>YOKOGAWA CORP</fullName>
+                    <default>false</default>
+                    <label>YOKOGAWA CORP</label>
+                </value>
+                <value>
+                    <fullName>YSI</fullName>
+                    <default>false</default>
+                    <label>YSI</label>
+                </value>
+                <value>
+                    <fullName>ZEISS CARL</fullName>
+                    <default>false</default>
+                    <label>ZEISS CARL</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_MaintenancePlantDesc__c</fullName>
+        <externalId>false</externalId>
+        <label>Maintenance Plant Desc</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_MaintenancePlant__c</fullName>
+        <externalId>false</externalId>
+        <label>Maintenance Plant</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Manufacturer__c</fullName>
+        <externalId>false</externalId>
+        <label>Manufacturer</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ModelNumber__c</fullName>
+        <externalId>false</externalId>
+        <label>Model Number</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ModelSeries__c</fullName>
+        <description>The Model Series, used for matching to Skills in Auto-Assignment.
+This field is filled-in from the &quot;SKILL_GROUP&quot; IP Classification.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Model Series, used for matching to Skills in Auto-Assignment.
+This field is filled-in from the &quot;SKILL_GROUP&quot; IP Classification.</inlineHelpText>
+        <label>Model Series</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Next_Calibration_Date__c</fullName>
+        <description>Calibrated Tools Next Calibration Date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Calibrated Tools Next Calibration Date</inlineHelpText>
+        <label>Next Calibration Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Override_End_of_Life_Validation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Checkbox that allows for work orders to be created even if the installed product is end of life</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Checkbox that allows for work orders to be created even if the installed product is end of life</inlineHelpText>
+        <label>Override End of Life Validation</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_PKI_Business_Unit__c</fullName>
+        <externalId>false</externalId>
+        <label>PKI Business Unit</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>TBD</fullName>
+                    <default>false</default>
+                    <label>TBD</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_PKI_MTE_ID__c</fullName>
+        <description>Used for MTE.</description>
+        <displayFormat>MTE-{0000000}</displayFormat>
+        <externalId>false</externalId>
+        <inlineHelpText>Unique internal MTE ID.</inlineHelpText>
+        <label>PKI MTE ID</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Payer_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Payer Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Installed Products (Payer Account)</relationshipLabel>
+        <relationshipName>Payer_Installed_Products</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Payer_ExtId__c</fullName>
+        <externalId>false</externalId>
+        <label>Payer External Id</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_PlannerGroupDesc__c</fullName>
+        <externalId>false</externalId>
+        <label>Planner Group Desc</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_PlannerGroup__c</fullName>
+        <externalId>false</externalId>
+        <label>Planner Group</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_PlanningPlantDesc__c</fullName>
+        <externalId>false</externalId>
+        <label>Planning Plant Desc</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_PlanningPlant__c</fullName>
+        <externalId>false</externalId>
+        <label>Planning Plant</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_PreferredTechnicianNumber__c</fullName>
+        <description>The External ID of the Preferred Technician</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The External ID of the Preferred Technician</inlineHelpText>
+        <label>Preferred Technician Number</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Product_Life_Cycle__c</fullName>
+        <description>Denotes the serviceability of the product</description>
+        <externalId>false</externalId>
+        <formula>TEXT(SVMXC__Product__r.SMAX_PS_Product_Life_Cycle__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Denotes the serviceability of the product</inlineHelpText>
+        <label>Product Life Cycle</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Recalculate_MTE_Period__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used in workflow rule to recalculate MTE period field</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used in workflow rule to recalculate MTE period field</inlineHelpText>
+        <label>Recalculate MTE Period</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Recommended_PM_Date__c</fullName>
+        <description>Recommended PM Date from the Covered Product</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Recommended PM Date from the Covered Product</inlineHelpText>
+        <label>Recommended PM Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Recommended_PM_Date_from_Parent__c</fullName>
+        <description>Recommended PM Date pulled from Parent IP</description>
+        <externalId>false</externalId>
+        <formula>SVMXC__Parent__r.SMAX_PS_Recommended_PM_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Recommended PM Date pulled from Parent IP</inlineHelpText>
+        <label>Recommended PM Date from Parent</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Responsible_Technician__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Used to track the technician responsible for a calibrated tool. Used on the calibrated tool layouts only.</description>
+        <externalId>false</externalId>
+        <label>Responsible Technician</label>
+        <referenceTo>SVMXC__Service_Group_Members__c</referenceTo>
+        <relationshipLabel>Installed Products (Responsible Technician)</relationshipLabel>
+        <relationshipName>Calibrated_Tools</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Room__c</fullName>
+        <externalId>false</externalId>
+        <label>Room</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_SalesOrgDesc__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Org Desc</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_SalesOrg__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Org</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Schedule_Date_Flexibility_1__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of days a Scheduled PM can be moved without alerting the manager</inlineHelpText>
+        <label>Schedule Date Flexibility 1</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Schedule_Date_Flexibility_2__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of days a PM WO can be moved before needing approval</inlineHelpText>
+        <label>Schedule Date Flexibility 2</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_SecondaryTechnicianNumber__c</fullName>
+        <description>The External ID of the Secondary Technician</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The External ID of the Secondary Technician</inlineHelpText>
+        <label>Secondary Technician Number</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Secondary_Technician__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Secondary Technician</label>
+        <referenceTo>SVMXC__Service_Group_Members__c</referenceTo>
+        <relationshipLabel>Installed Products (Secondary Technician)</relationshipLabel>
+        <relationshipName>Installed_Products</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Serial_Number__c</fullName>
+        <description>External ID Serial Number</description>
+        <externalId>true</externalId>
+        <inlineHelpText>External ID Serial Number</inlineHelpText>
+        <label>Serial Number</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ShipTo_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Ship To Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Installed Products (Ship To Account)</relationshipLabel>
+        <relationshipName>ShipTo_Installed_Products</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ShipTo_ExtId__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To External Id</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_SoldTo_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Sold To Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Installed Products (Sold To Account)</relationshipLabel>
+        <relationshipName>SoldTo_Installed_Products</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_SoldTo_ExtId__c</fullName>
+        <externalId>false</externalId>
+        <label>Sold To External Id</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_StartUpDate__c</fullName>
+        <externalId>false</externalId>
+        <label>StartUp Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Status__c</fullName>
+        <description>Shows the Calibrated Tool Status</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows the Calibrated Tool Status</inlineHelpText>
+        <label>Tool Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Active - Metrology</fullName>
+                    <default>false</default>
+                    <label>Active - Metrology</label>
+                </value>
+                <value>
+                    <fullName>Calibration not Required</fullName>
+                    <default>false</default>
+                    <label>Calibration not Required</label>
+                </value>
+                <value>
+                    <fullName>Out for Calibration</fullName>
+                    <default>false</default>
+                    <label>Out for Calibration</label>
+                </value>
+                <value>
+                    <fullName>Out of Calibration</fullName>
+                    <default>false</default>
+                    <label>Out of Calibration</label>
+                </value>
+                <value>
+                    <fullName>Out of Service</fullName>
+                    <default>false</default>
+                    <label>Out of Service</label>
+                </value>
+                <value>
+                    <fullName>Out of Service - Metrology</fullName>
+                    <default>false</default>
+                    <label>Out of Service - Metrology</label>
+                </value>
+                <value>
+                    <fullName>Past Due</fullName>
+                    <default>false</default>
+                    <label>Past Due</label>
+                </value>
+                <value>
+                    <fullName>Pending Data Verification</fullName>
+                    <default>false</default>
+                    <label>Pending Data Verification</label>
+                </value>
+                <value>
+                    <fullName>Retired</fullName>
+                    <default>false</default>
+                    <label>Retired</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_System_ID__c</fullName>
+        <description>Stores the ID from the IP for the Characteristic = EQUIPMENT_EQUIPMENTID. Populated via Work Flow</description>
+        <externalId>false</externalId>
+        <label>System ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Tax_Jurisdiction__c</fullName>
+        <externalId>false</externalId>
+        <formula>SVMXC__Company__r.SMAX_PS_Tax_Jurisdiction__c</formula>
+        <label>Tax Jurisdiction</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Tax_Number_1__c</fullName>
+        <externalId>false</externalId>
+        <formula>SVMXC__Company__r.SMAX_PS_Tax_Number_1__c</formula>
+        <label>Tax Number 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Tax_Number_3__c</fullName>
+        <externalId>false</externalId>
+        <formula>SVMXC__Company__r.SMAX_PS_Tax_Number_3__c</formula>
+        <label>Tax Number 3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Technical_ID_Number__c</fullName>
+        <externalId>true</externalId>
+        <label>Technical Identification Number</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Technician_Manager__c</fullName>
+        <externalId>false</externalId>
+        <formula>SMAX_PS_Responsible_Technician__r.SVMX_PS_Technician_Manager__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Technician Manager</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ThirdPartyVendorName__c</fullName>
+        <externalId>false</externalId>
+        <label>Third Party Vendor Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ThirdPartyVendorNumber__c</fullName>
+        <externalId>false</externalId>
+        <label>Third Party Vendor Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_UserStatus__c</fullName>
+        <externalId>false</externalId>
+        <label>User Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>InActive</fullName>
+                    <default>false</default>
+                    <label>InActive</label>
+                </value>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ValidFrom__c</fullName>
+        <externalId>false</externalId>
+        <label>Valid From</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Age__c</fullName>
+        <description>Returns a number of the calculates the date/time from installed date to now</description>
+        <externalId>false</externalId>
+        <formula>(TODAY()  -  SVMXC__Date_Installed__c)/365.25</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Returns a number of the calculates the date/time from installed date to now</inlineHelpText>
+        <label>Age (In Years)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Current_Uptime__c</fullName>
+        <externalId>false</externalId>
+        <formula>TODAY()-SVMX_PS_Last_Date_Downtime__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Current Uptime</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Division__c</fullName>
+        <description>Denotes the division responsible for the product</description>
+        <externalId>false</externalId>
+        <formula>SVMXC__Product__r.SMAX_PS_Division__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Denotes the division responsible for the product</inlineHelpText>
+        <label>Division</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_External_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Installed Product External ID</description>
+        <externalId>true</externalId>
+        <label>SAP Equipment Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_IP_Count__c</fullName>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IP Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Instrument_Asset_ID__c</fullName>
+        <description>Customers&apos; instrument asset ID number.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Customers&apos; instrument asset ID number.</inlineHelpText>
+        <label>Instrument Asset ID</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Last_Date_Downtime__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Date Downtime</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_MTFSI_Date__c</fullName>
+        <description>Date of first Case for Mean Time for First Service Incident or question ( Used for determination customer installation experience and training at installation )</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date of first Case for Mean Time for First Service Incident or question ( Used for determination customer installation experience and training at installation )</inlineHelpText>
+        <label>MTFSI Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_MTFSI__c</fullName>
+        <description>Mean Time for First Service Incident or question (used for determination customer installation experience and training at installation). Expressed in number of whole days.</description>
+        <externalId>false</externalId>
+        <formula>IF (NOT(ISBLANK(SVMX_PS_MTFSI_Date__c)), (SVMX_PS_MTFSI_Date__c - SVMXC__Date_Installed__c), NULL)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Mean Time for First Service Incident or question (used for determination customer installation experience and training at installation). Expressed in number of whole days.</inlineHelpText>
+        <label>MTFSI</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Module__c</fullName>
+        <description>Module of Installed Product</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Module of Installed Product</inlineHelpText>
+        <label>Module</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Public_Tender_Notes__c</fullName>
+        <description>notes on equipments/customer with important information such as special prices in case of Public Tender</description>
+        <externalId>false</externalId>
+        <inlineHelpText>notes on equipments/customer with important information such as special prices in case of Public Tender</inlineHelpText>
+        <label>Public Tender Notes</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Regular_Technician__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Regular technician to service the installed product</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Regular technician to service the installed product</inlineHelpText>
+        <label>Regular Technician</label>
+        <referenceTo>SVMXC__Service_Group_Members__c</referenceTo>
+        <relationshipLabel>Installed Products (Regular Technician)</relationshipLabel>
+        <relationshipName>Installed_Products1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Serial_Number__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Unique serial number field that is used to prevent duplicate IPs from being adding to the database by throwing a duplicate error message.</description>
+        <externalId>false</externalId>
+        <label>Dup Serial Number Check</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_VS_Cloned_From_IP__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This field represents the field from which the IP was cloned/created when doing Part Swap</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field represents the field from which the IP was cloned/created when doing Part Swap</inlineHelpText>
+        <label>Cloned From IP</label>
+        <referenceTo>SVMXC__Installed_Product__c</referenceTo>
+        <relationshipLabel>Installed Products (Cloned From IP)</relationshipLabel>
+        <relationshipName>SVMX_PS_VS_Cloned_From_IP</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <recordTypes>
+        <fullName>SMAX_PS_Calibrated_Tools</fullName>
+        <active>true</active>
+        <description>Calibrated Tools Record Type</description>
+        <label>Calibrated Tools</label>
+        <picklistValues>
+            <picklist>SMAX_PS_Group__c</picklist>
+            <values>
+                <fullName>DAS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LSS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SMAX_PS_MTE_Calibration_Period__c</picklist>
+            <values>
+                <fullName>1095</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>365</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>730</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Custom</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SMAX_PS_MTE_Change_Reason__c</picklist>
+            <values>
+                <fullName>Calibration Date Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Correction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Updating Tool Status</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SMAX_PS_MTE_Manufacturer__c</picklist>
+            <values>
+                <fullName>3M CO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>A%26D ENG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AALBORG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ACCULAB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ACOPIAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ADAVANTEST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AEROVOX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AGILENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AIRFLOW</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ALNOR INST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ALPHALAB INC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ALTHENA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AMETEK M%26G</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AMETEK USG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AMPROBE INST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ANTON PAAR US</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>APEX TOOL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ARATRON II ELEC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ARIZONA INST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ASSOC RESCH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B%26K PRECISION</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BACHARACH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BALMAC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BALSTROM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BECKMAN INST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BELKNAP TOOL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BELL FW</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BENNING</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BIOSYSTEMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BIRD ELEC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BLACK BOX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BLUE WHITE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BP MICROSYSTEMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BRECO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BRONKHORST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BROOKS INSTRUMENTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BROWN %26 SHARP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BRUNELLE INST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BYTE BROS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BioTek</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CARRIER CORP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CASCADE TEC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CDI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CECOMP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CEN-TECH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CERAMATEC INC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CHARLESWATER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CHATILLON</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CHECK-LINE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CHY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CLAROSTAT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COHERENT INC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COLE-PARMER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COLUMBIA RSCH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COMDEL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COMMERCIAL ELECTRIC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONSOL DEV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CONTROL CO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CRAFTSMAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CVI LASER OPTICS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cecomp Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DATA PREC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DAVIS INST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DENVER INST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DESCO IND</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DICKSON</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DIGI-SENSE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DISTEK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DRUCK INC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DURATOOL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DWYER INST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EATON INST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EBRO ELEC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ED%26D</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EICO ELEC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMPIRE LEVEL INCORPORATED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EPPENDORF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EQUUS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ESCORT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ETS-LINDGREN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EUTECHNICS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EXTECH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FISHER SCIEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FLIR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FLUKE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FOWLER F CO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GAGE MASTER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GATES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GEDORE TOOL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GEN RESIST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GENERAL EASTERN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GENERAL TOOLS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GEOTECHNICAL INSTRUMENTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GJC INSTRUMENTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GLASTOBURY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GLOBAL SPEC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GOW-MAC INST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GREENLEE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GS BLUE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GSE INC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GW INSTEK LTD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>H-P</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HACH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HANHART</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HARVARD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HEALTH-O-METR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HEMCO CORP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HIPOTRONICS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HITACHI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HOLADAY IND</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hart Scientific</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IDEAL INDUSTRIES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IMADA INC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INSCO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Innova</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intertek</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>J%26W SCIEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JENSEN INST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JENSEN TOOLS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JOUAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KD SCIENTIFIC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KEITHLEY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KENDRO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KESTERSON</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KESTREL CORP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KEY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KIKUSUI INTL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KIMBLE CHASE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KIN-TEK LABS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KIPP ZONEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KLEIN TOOLS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KROHN-HITE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KS TOOLS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LAB METRIX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LAMBDA ELEC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LEAD SHINE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LEADER ELEC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LECROY CORP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LIGHTHOUSE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LINK INSTRUMENTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LUDLUM SURVEY METER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LUFKIN INST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LUTRON ELEC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MAHR FEDERAL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MASTECH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MATHESON</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MBV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MCMASTER-CARR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MELLES GRIOT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MERIAM INST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>METEK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>METERMAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>METTLER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>METTLER-TOLEDO THORTON</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MEYER GAGE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MHC TOOLS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MICRONTA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MITUTOYO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MKS INST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MONARCH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MOUNTZ INC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>N%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NARDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NEIKO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NEWPORT ELEC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NIELSEN-KEL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NIST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NLG ANALYTICAL LTD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OAKTON</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OHAUS SCALE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OMEGA ENG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ONO SOKKI TEC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OPHIR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OWON</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PB SWISS TOOLS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PCE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PE NELSON</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PERKIN-ELMER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PERMA-CAL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHILIPS TST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PLATON</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>POLYSCIENCE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PORTER INST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>POWER DESIGN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>POWERVAR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PRECISION INS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PRINCETON RES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PROMAT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PROSTER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PYLE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QIAGEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QLA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QUALITY TECH LABS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RAININ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RAYTEK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>READ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>REED INSTRUMENTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>REID</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RESTEK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RICE LAKE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ROD-L</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ROTA YOKOGAWA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RUDOLPH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RYESON CORP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S E INTL CO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SARTORIUS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SC CHROMATOGRAPHY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SCHERR-TUMI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEEKONK MFG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SENSYM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SETRA SYS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SHARS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SHIMPO INSTRUMENTS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SHORE INST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SIGMA PROD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SIMPSON ELEC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SMC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SNAP-ON</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SORENSEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SOTCHER MEAS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SPER SCIENTIFIC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SPERRY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SPI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SPI-RO MFG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SPX CORP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>STANDRIDGE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>STANFORD RSCH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>STANLEY TOOL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>STARNA CELLS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>STARNA SCIENTIFIC LTD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>STARRETT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>STATIC SOLUTI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>STRANASKA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SUN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SUPCO PRODUCT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SainSonic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TDK-LAMBDA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TEGAM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TEGAM INC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TEKTON</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TEKTRONIX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TEL-TRU MFG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TENMA MCM EL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TESTO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>THELCO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>THERMO CORION</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>THERMO SCIEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>THERMO WORKS%2C INC%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>THERMOLYNE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>THERMOWORKS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>THOR LABS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TINEAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TITAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TOHNICHI MFG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TRACEABLE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TRANSCAT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TROEMNER INC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TSI%2FALNOR INST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TUBULAR MICRO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UEI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNI-T</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNKNOWN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UTICA TOOL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UVP INC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>V%26A INST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VAISALA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VALHALLA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VAN KEUREN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VARIAN ASSOC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VELLEMAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VERMONT GAGE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VIASENSOR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VICI METRONIC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VICTOR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VKIT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VOLTCRAFT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VWR SCIEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WATERS MFG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WAVETEK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WEBBER GAGE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WEINSCHEL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WELLER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WHITWORTH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WIHA WERKZEUG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WIKA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WIKA INST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>YAMATO CORP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>YOKOGAWA CORP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>YSI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ZEISS CARL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>iGaging</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SMAX_PS_PKI_Business_Unit__c</picklist>
+            <values>
+                <fullName>TBD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SMAX_PS_Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Active - Metrology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Calibration not Required</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out for Calibration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out of Calibration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out of Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out of Service - Metrology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Past Due</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending Data Verification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retired</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SMAX_PS_UserStatus__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>InActive</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>SMAX_PS_Installed_Product</fullName>
+        <active>true</active>
+        <description>Default Installed Record Type</description>
+        <label>Installed Product</label>
+        <picklistValues>
+            <picklist>SMAX_PS_Group__c</picklist>
+            <values>
+                <fullName>DAS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LSS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SMAX_PS_MTE_Calibration_Period__c</picklist>
+            <values>
+                <fullName>1095</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>365</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>730</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Custom</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SMAX_PS_MTE_Change_Reason__c</picklist>
+            <values>
+                <fullName>A</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SMAX_PS_MTE_Manufacturer__c</picklist>
+            <values>
+                <fullName>PerkinElmer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SMAX_PS_PKI_Business_Unit__c</picklist>
+            <values>
+                <fullName>TBD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SMAX_PS_Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Active - Metrology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Calibration not Required</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out of Calibration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out of Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out of Service - Metrology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Past Due</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending Data Verification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retired</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SMAX_PS_UserStatus__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>InActive</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <validationRules>
+        <fullName>No_Change_to_MTFSI_Date</fullName>
+        <active>true</active>
+        <description>Once the MTFSI Date has been populated, date cannot be changed</description>
+        <errorConditionFormula>NOT(ISBLANK(PRIORVALUE(SVMX_PS_MTFSI_Date__c))) &amp;&amp;  ISCHANGED( SVMX_PS_MTFSI_Date__c)</errorConditionFormula>
+        <errorMessage>Date cannot be changed once populated</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>No_Future_Date_Last_Calibration_Date</fullName>
+        <active>true</active>
+        <description>Last Calibration Date value cannot be in the future.</description>
+        <errorConditionFormula>(SMAX_PS_Last_Calibration_Date__c &gt; TODAY())</errorConditionFormula>
+        <errorDisplayField>SMAX_PS_Last_Calibration_Date__c</errorDisplayField>
+        <errorMessage>Last Calibration Date cannot be in the future. Please adjust the date and save.</errorMessage>
+    </validationRules>
+</CustomObject>

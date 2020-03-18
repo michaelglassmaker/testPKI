@@ -19,6 +19,7 @@ global class LeadInternalRoutingController{
     public String bu {get;set;}
     public String state {get;set;}
     public Map<String,String> ISO_Codemap{get;set;}
+    public String Company {get;set;}
     
     public LeadInternalRoutingController() {
         salesReps = new List<SalesRep>();
@@ -28,6 +29,7 @@ global class LeadInternalRoutingController{
         bu      = ApexPages.currentPage().getParameters().get('BU');
         State   = ApexPages.currentPage().getParameters().get('ST');
         zipcode = ApexPages.currentPage().getParameters().get('ZC');
+        Company = ApexPages.currentPage().getParameters().get('CP');
         //String will be set to true when a request is made 
         string str=ApexPages.currentPage().getParameters().get('SR');
         
@@ -174,7 +176,7 @@ global class LeadInternalRoutingController{
     // method called by the Visualforce page's submit button
     public PageReference submit() {
         searchresult=false;
-        pageReference pg = new pageReference('/apex/LeadInternalRoutingPage?&CN=' + country + '&PL=' + product+'&SR=true'+'&BU=' + bu+ '&ST=' + state + '&ZC=' + zipcode);
+        pageReference pg = new pageReference('/apex/LeadInternalRoutingPage?&CN=' + country + '&PL=' + product+'&SR=true'+'&BU=' + bu+ '&ST=' + state + '&ZC=' + zipcode+'&CP=' + Company);
         pg.setRedirect(true);
         return pg;
     }
@@ -197,7 +199,7 @@ global class LeadInternalRoutingController{
         List<SalesRep> TempList = new List<SalesRep>();
         String Query = 'select Assigned_To__c,BU__c,Company__c,Description__c,Email__c,Global_Region__c,IGOR_PAC__c,Lead_Type__c,Lead_Source__c,Queue__c,Job_Function__c,State_Province__c,Title__c,Product_Line__c,Seconday_Qualification__c,Topic__c FROM Rep_Assignment_Table__c';
         
-        if(country != 'None' || State!=null || Product != 'None' || bu != 'None' || zipcode!= null){
+        if(country != 'None' || State!=null || Product != 'None' || bu != 'None' || zipcode!= null || Company != null){
             Query = Query + ' WHERE';
         }
         if(!String.isBlank(State)){
@@ -231,6 +233,11 @@ global class LeadInternalRoutingController{
             else{
             Query = Query + ' LIMIT 2000';
             }
+            i=6;
+        }
+        if(Company != '' && Company != null){
+         if(i>0){ Query = Query + ' AND'; }
+         Query = Query + ' Company__c INCLUDES (\'' + Company + '\')';
         }
         
         System.debug('[QUERY]::' + Query);

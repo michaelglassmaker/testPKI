@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>SMAX_PS_Is_Serialized__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Denotes that a product is serialized.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes that a product is serialized.</inlineHelpText>
+        <label>Is Serialized?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Part_Number__c</fullName>
+        <description>Denotes the part number that is transferred in a stock transfer line</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes the part number that is transferred in a stock transfer line</inlineHelpText>
+        <label>Part Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_VS_Product_Stock__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup to Product Stock record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Lookup to Product Stock record</inlineHelpText>
+        <label>Product Stock</label>
+        <referenceTo>SVMXC__Product_Stock__c</referenceTo>
+        <relationshipLabel>Stock Transfer Lines (Product Stock)</relationshipLabel>
+        <relationshipName>SVMX_PS_VS_Product_Stock</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_VS_Serial_Number__c</fullName>
+        <description>The field indicates the Serial Number in Text form. This will be used to find the proper Stock Serial under the product stock. Either this field or &quot;Stock Serial&quot; need to be populated in case if product is Serialized in order to get proper data.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The field indicates the Serial Number in Text form. This will be used to find the proper Stock Serial under the product stock. Either this field or &quot;Stock Serial&quot; need to be populated in case if product is Serialized in order to get proper data.</inlineHelpText>
+        <label>Serial Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_VS_Stocked_Serial__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The field indicates reference to Stock Serial. This will be used to find the proper Stock Serial under the consumed product stock. Either this field or &quot;Serial Number&quot; need to be populated in case if product is Serialized in order to get data.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The field indicates reference to Stock Serial. This will be used to find the proper Stock Serial under the consumed product stock. Either this field or &quot;Serial Number&quot; need to be populated in case if product is Serialized in order to get data.</inlineHelpText>
+        <label>Stocked Serial</label>
+        <referenceTo>SVMXC__Product_Serial__c</referenceTo>
+        <relationshipLabel>Stock Transfer Lines (Stocked Serial)</relationshipLabel>
+        <relationshipName>SVMX_PS_VS_Stock_Serial</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+</CustomObject>

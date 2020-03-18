@@ -187,7 +187,7 @@ public class AccountMethods
         return accountHierarchyList;
         
     }   
-    
+    // MG commented lines   
     public void updateAccountvalues(){
         Map<Id, RecordType> recType  = new Map<ID, RecordType>([select id,Name from RecordType where Developername = 'Customer' AND sobjecttype = 'Account' AND IsActive = TRUE ]);
         
@@ -207,9 +207,10 @@ public class AccountMethods
             if ( (o.Account_Sub_Category__c == null) || (o.Account_Sub_Category__c != null)) { 
                 o.Account_Sub_Category_Calc__c = o.Account_Sub_Category__c; 
             } 
-            if(o.Merged_Flag__c==true && rectype.containsKey(o.RecordTypeId)) {
-                o.IsExcludedFromRealign = false;
+        /*    if(o.Merged_Flag__c==true && rectype.containsKey(o.RecordTypeId)) {
+               o.IsExcludedFromRealign = false;
             }
+            */
         }
     }
     

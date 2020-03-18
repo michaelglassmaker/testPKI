@@ -1,0 +1,1877 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Used to translate the WO fields for output docs.  This is needed for offline use by the mobile</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Read</externalSharingModel>
+    <label>Translation</label>
+    <nameField>
+        <label>Translation Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Translations</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Read</sharingModel>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>SMAX_Dear__c</fullName>
+        <description>translation for scheduled email template</description>
+        <externalId>false</externalId>
+        <inlineHelpText>translation for scheduled email template</inlineHelpText>
+        <label>Dear</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_NO__c</fullName>
+        <externalId>false</externalId>
+        <label>NO</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_N_A__c</fullName>
+        <description>Used to hols value for N/A or Not Applicable</description>
+        <externalId>false</externalId>
+        <label>N/A</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_VAT__c</fullName>
+        <externalId>false</externalId>
+        <label>VAT</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_YES__c</fullName>
+        <externalId>false</externalId>
+        <label>YES</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_City__c</fullName>
+        <description>for technician schedule vf email</description>
+        <externalId>false</externalId>
+        <inlineHelpText>for technician schedule vf email</inlineHelpText>
+        <label>City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Date</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Note__c</fullName>
+        <description>Added to allow for new field in the Parts section to be added for Italy</description>
+        <externalId>false</externalId>
+        <label>Note</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Model__c</fullName>
+        <externalId>false</externalId>
+        <label>Model</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Street__c</fullName>
+        <externalId>false</externalId>
+        <label>Street</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Account__c</fullName>
+        <description>for technician schedule vf email</description>
+        <externalId>false</externalId>
+        <inlineHelpText>for technician schedule vf email</inlineHelpText>
+        <label>Account</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Country__c</fullName>
+        <externalId>false</externalId>
+        <label>Country</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>AO</fullName>
+                    <default>false</default>
+                    <label>AO</label>
+                </value>
+                <value>
+                    <fullName>AT</fullName>
+                    <default>false</default>
+                    <label>AT</label>
+                </value>
+                <value>
+                    <fullName>AU</fullName>
+                    <default>false</default>
+                    <label>AU</label>
+                </value>
+                <value>
+                    <fullName>BD</fullName>
+                    <default>false</default>
+                    <label>BD</label>
+                </value>
+                <value>
+                    <fullName>BE</fullName>
+                    <default>false</default>
+                    <label>BE</label>
+                </value>
+                <value>
+                    <fullName>BR</fullName>
+                    <default>false</default>
+                    <label>BR</label>
+                </value>
+                <value>
+                    <fullName>BW</fullName>
+                    <default>false</default>
+                    <label>BW</label>
+                </value>
+                <value>
+                    <fullName>CA</fullName>
+                    <default>false</default>
+                    <label>CA</label>
+                </value>
+                <value>
+                    <fullName>CH</fullName>
+                    <default>false</default>
+                    <label>CH</label>
+                </value>
+                <value>
+                    <fullName>CL</fullName>
+                    <default>false</default>
+                    <label>CL</label>
+                </value>
+                <value>
+                    <fullName>CN</fullName>
+                    <default>false</default>
+                    <label>CN</label>
+                </value>
+                <value>
+                    <fullName>DE</fullName>
+                    <default>false</default>
+                    <label>DE</label>
+                </value>
+                <value>
+                    <fullName>DK</fullName>
+                    <default>false</default>
+                    <label>DK</label>
+                </value>
+                <value>
+                    <fullName>DO</fullName>
+                    <default>false</default>
+                    <label>DO</label>
+                </value>
+                <value>
+                    <fullName>ES</fullName>
+                    <default>false</default>
+                    <label>ES</label>
+                </value>
+                <value>
+                    <fullName>FI</fullName>
+                    <default>false</default>
+                    <label>FI</label>
+                </value>
+                <value>
+                    <fullName>FJ</fullName>
+                    <default>false</default>
+                    <label>FJ</label>
+                </value>
+                <value>
+                    <fullName>FR</fullName>
+                    <default>false</default>
+                    <label>FR</label>
+                </value>
+                <value>
+                    <fullName>GB</fullName>
+                    <default>false</default>
+                    <label>GB</label>
+                </value>
+                <value>
+                    <fullName>HK</fullName>
+                    <default>false</default>
+                    <label>HK</label>
+                </value>
+                <value>
+                    <fullName>HU</fullName>
+                    <default>false</default>
+                    <label>HU</label>
+                </value>
+                <value>
+                    <fullName>ID</fullName>
+                    <default>false</default>
+                    <label>ID</label>
+                </value>
+                <value>
+                    <fullName>IE</fullName>
+                    <default>false</default>
+                    <label>IE</label>
+                </value>
+                <value>
+                    <fullName>IL</fullName>
+                    <default>false</default>
+                    <label>IL</label>
+                </value>
+                <value>
+                    <fullName>IN</fullName>
+                    <default>false</default>
+                    <label>IN</label>
+                </value>
+                <value>
+                    <fullName>IT</fullName>
+                    <default>false</default>
+                    <label>IT</label>
+                </value>
+                <value>
+                    <fullName>JP</fullName>
+                    <default>false</default>
+                    <label>JP</label>
+                </value>
+                <value>
+                    <fullName>KR</fullName>
+                    <default>false</default>
+                    <label>KR</label>
+                </value>
+                <value>
+                    <fullName>LI</fullName>
+                    <default>false</default>
+                    <label>LI</label>
+                </value>
+                <value>
+                    <fullName>LK</fullName>
+                    <default>false</default>
+                    <label>LK</label>
+                </value>
+                <value>
+                    <fullName>LS</fullName>
+                    <default>false</default>
+                    <label>LS</label>
+                </value>
+                <value>
+                    <fullName>LU</fullName>
+                    <default>false</default>
+                    <label>LU</label>
+                </value>
+                <value>
+                    <fullName>MU</fullName>
+                    <default>false</default>
+                    <label>MU</label>
+                </value>
+                <value>
+                    <fullName>MW</fullName>
+                    <default>false</default>
+                    <label>MW</label>
+                </value>
+                <value>
+                    <fullName>MX</fullName>
+                    <default>false</default>
+                    <label>MX</label>
+                </value>
+                <value>
+                    <fullName>MY</fullName>
+                    <default>false</default>
+                    <label>MY</label>
+                </value>
+                <value>
+                    <fullName>MZ</fullName>
+                    <default>false</default>
+                    <label>MZ</label>
+                </value>
+                <value>
+                    <fullName>NA</fullName>
+                    <default>false</default>
+                    <label>NA</label>
+                </value>
+                <value>
+                    <fullName>NL</fullName>
+                    <default>false</default>
+                    <label>NL</label>
+                </value>
+                <value>
+                    <fullName>NO</fullName>
+                    <default>false</default>
+                    <label>NO</label>
+                </value>
+                <value>
+                    <fullName>NP</fullName>
+                    <default>false</default>
+                    <label>NP</label>
+                </value>
+                <value>
+                    <fullName>NZ</fullName>
+                    <default>false</default>
+                    <label>NZ</label>
+                </value>
+                <value>
+                    <fullName>PH</fullName>
+                    <default>false</default>
+                    <label>PH</label>
+                </value>
+                <value>
+                    <fullName>PL</fullName>
+                    <default>false</default>
+                    <label>PL</label>
+                </value>
+                <value>
+                    <fullName>PR</fullName>
+                    <default>false</default>
+                    <label>PR</label>
+                </value>
+                <value>
+                    <fullName>SE</fullName>
+                    <default>false</default>
+                    <label>SE</label>
+                </value>
+                <value>
+                    <fullName>SG</fullName>
+                    <default>false</default>
+                    <label>SG</label>
+                </value>
+                <value>
+                    <fullName>SM</fullName>
+                    <default>false</default>
+                    <label>SM</label>
+                </value>
+                <value>
+                    <fullName>SZ</fullName>
+                    <default>false</default>
+                    <label>SZ</label>
+                </value>
+                <value>
+                    <fullName>TH</fullName>
+                    <default>false</default>
+                    <label>TH</label>
+                </value>
+                <value>
+                    <fullName>TR</fullName>
+                    <default>false</default>
+                    <label>TR</label>
+                </value>
+                <value>
+                    <fullName>TW</fullName>
+                    <default>false</default>
+                    <label>TW</label>
+                </value>
+                <value>
+                    <fullName>UK</fullName>
+                    <default>false</default>
+                    <label>UK</label>
+                </value>
+                <value>
+                    <fullName>US</fullName>
+                    <default>false</default>
+                    <label>US</label>
+                </value>
+                <value>
+                    <fullName>VN</fullName>
+                    <default>false</default>
+                    <label>VN</label>
+                </value>
+                <value>
+                    <fullName>ZA</fullName>
+                    <default>false</default>
+                    <label>ZA</label>
+                </value>
+                <value>
+                    <fullName>ZM</fullName>
+                    <default>false</default>
+                    <label>ZM</label>
+                </value>
+                <value>
+                    <fullName>ZW</fullName>
+                    <default>false</default>
+                    <label>ZW</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Discount__c</fullName>
+        <externalId>false</externalId>
+        <label>Discount</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Email_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Email ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Language__c</fullName>
+        <externalId>false</externalId>
+        <label>Language</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>English</fullName>
+                    <default>false</default>
+                    <label>English</label>
+                </value>
+                <value>
+                    <fullName>Spanish</fullName>
+                    <default>false</default>
+                    <label>Spanish</label>
+                </value>
+                <value>
+                    <fullName>French</fullName>
+                    <default>false</default>
+                    <label>French</label>
+                </value>
+                <value>
+                    <fullName>German</fullName>
+                    <default>false</default>
+                    <label>German</label>
+                </value>
+                <value>
+                    <fullName>Italian</fullName>
+                    <default>false</default>
+                    <label>Italian</label>
+                </value>
+                <value>
+                    <fullName>Norwegian</fullName>
+                    <default>false</default>
+                    <label>Norwegian</label>
+                </value>
+                <value>
+                    <fullName>Swedish</fullName>
+                    <default>false</default>
+                    <label>Swedish</label>
+                </value>
+                <value>
+                    <fullName>Polish</fullName>
+                    <default>false</default>
+                    <label>Polish</label>
+                </value>
+                <value>
+                    <fullName>Dutch</fullName>
+                    <default>false</default>
+                    <label>Dutch</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Quantity__c</fullName>
+        <externalId>false</externalId>
+        <label>Quantity</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Equipment__c</fullName>
+        <description>for schedule technician template</description>
+        <externalId>false</externalId>
+        <inlineHelpText>for schedule technician template</inlineHelpText>
+        <label>Equipment</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_PO_Number__c</fullName>
+        <description>for schedule technician email</description>
+        <externalId>false</externalId>
+        <inlineHelpText>for schedule technician email</inlineHelpText>
+        <label>PO Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Quoted_By__c</fullName>
+        <externalId>false</externalId>
+        <label>Quoted By:</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_System_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>System ID</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Base_Price__c</fullName>
+        <description>Denotes the base price for an estimate</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes the base price for an estimate</inlineHelpText>
+        <label>Base Price</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Fax_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Fax Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Order_Type__c</fullName>
+        <description>for technician scheduling email template</description>
+        <externalId>false</externalId>
+        <inlineHelpText>for technician scheduling email template</inlineHelpText>
+        <label>Order Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Tool_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Tool Notes</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Tools_Used__c</fullName>
+        <externalId>false</externalId>
+        <label>Tools Used</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Unit_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Unit Price</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Date_Format__c</fullName>
+        <description>mm/dd/yyyy or dd/mm/yyyy</description>
+        <externalId>false</externalId>
+        <inlineHelpText>mm/dd/yyyy or dd/mm/yyyy</inlineHelpText>
+        <label>Date Format</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Expiry_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Expiry Date</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Field_Notes__c</fullName>
+        <description>for schedule technician vf email template</description>
+        <externalId>false</externalId>
+        <inlineHelpText>for schedule technician vf email template</inlineHelpText>
+        <label>Field Notes</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Page_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Page Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Part_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Part Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Record_Type__c</fullName>
+        <description>for technician schedule email</description>
+        <externalId>false</externalId>
+        <inlineHelpText>for technician schedule email</inlineHelpText>
+        <label>Record Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Total_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Price</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BD_EUROIMMUN_Product__c</fullName>
+        <externalId>false</externalId>
+        <label>EUROIMMUN Product</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Address_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Address Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Bill_To_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Bill To Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Billing_Type__c</fullName>
+        <description>for scheduling email template</description>
+        <externalId>false</externalId>
+        <inlineHelpText>for scheduling email template</inlineHelpText>
+        <label>Billing Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Equipment_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Equipment ID</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Order_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Order Status</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Phone_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Phone Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Price_Quotes__c</fullName>
+        <externalId>false</externalId>
+        <label>Price Quotes</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Activity_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Activity Code</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Address_Line1__c</fullName>
+        <externalId>false</externalId>
+        <label>Address Line1</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Address_Line2__c</fullName>
+        <externalId>false</externalId>
+        <label>Address Line2</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Address_Line3__c</fullName>
+        <externalId>false</externalId>
+        <label>Address Line3</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Address_Line4__c</fullName>
+        <externalId>false</externalId>
+        <label>Address Line4</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Customer_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Duration_hr_s__c</fullName>
+        <description>for schedule email vf template</description>
+        <externalId>false</externalId>
+        <inlineHelpText>for schedule email vf template</inlineHelpText>
+        <label>Duration:  hr(s)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Labor_Details__c</fullName>
+        <externalId>false</externalId>
+        <label>Labor Details</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Material_Used__c</fullName>
+        <externalId>false</externalId>
+        <label>Material Used</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_No_Parts_Used__c</fullName>
+        <description>Message to display on FSR when No Parts are Used</description>
+        <externalId>false</externalId>
+        <label>No Parts Used</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Serial_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Serial Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Work_Complete__c</fullName>
+        <externalId>false</externalId>
+        <label>Work Complete</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Contact_Person__c</fullName>
+        <description>for schedule technician vf template</description>
+        <externalId>false</externalId>
+        <inlineHelpText>for schedule technician vf template</inlineHelpText>
+        <label>Contact Person</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_FSR_Email_Body__c</fullName>
+        <externalId>false</externalId>
+        <label>FSR Email Body</label>
+        <length>2000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Location_Notes__c</fullName>
+        <description>for schedule technician email vf template</description>
+        <externalId>false</externalId>
+        <inlineHelpText>for schedule technician email vf template</inlineHelpText>
+        <label>Location Notes</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_PM_OQ_IPV_Left__c</fullName>
+        <externalId>false</externalId>
+        <label>PM OQ IPV Left</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Purchase_Order__c</fullName>
+        <externalId>false</externalId>
+        <label>Purchase Order</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Service_Report__c</fullName>
+        <externalId>false</externalId>
+        <label>Service Report</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_State_Province__c</fullName>
+        <description>for schedule technician vf template</description>
+        <externalId>false</externalId>
+        <inlineHelpText>for schedule technician vf template</inlineHelpText>
+        <label>State/Province</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Total_Discount__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Discount</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Address_Website__c</fullName>
+        <externalId>false</externalId>
+        <label>Address Website</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Calibrated_Tool__c</fullName>
+        <externalId>false</externalId>
+        <label>Calibrated Tool</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Contract_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Contract Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_SLA_Terms_Notes__c</fullName>
+        <description>for schedule email vf template</description>
+        <externalId>false</externalId>
+        <inlineHelpText>for schedule email vf template</inlineHelpText>
+        <label>SLA Terms Notes</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Start_Date_Time__c</fullName>
+        <description>for schedule technician vf email template</description>
+        <externalId>false</externalId>
+        <inlineHelpText>for schedule technician vf email template</inlineHelpText>
+        <label>Start Date/Time</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Zip_Postal_Code__c</fullName>
+        <description>for schedule technician vf template</description>
+        <externalId>false</externalId>
+        <inlineHelpText>for schedule technician vf template</inlineHelpText>
+        <label>Zip/Postal Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Assignment_Dates__c</fullName>
+        <description>for schedule technician vf email template</description>
+        <externalId>false</externalId>
+        <inlineHelpText>for schedule technician vf email template</inlineHelpText>
+        <label>Assignment Dates</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Customer_Contact__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Contact</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Location_Details__c</fullName>
+        <description>for scheduling email template vf</description>
+        <externalId>false</externalId>
+        <inlineHelpText>for scheduling email template vf</inlineHelpText>
+        <label>Location Details</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Long_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Long Description</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Part_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Part Description</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Purpose_of_Visit__c</fullName>
+        <externalId>false</externalId>
+        <label>Purpose of Visit</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Service_Estimate__c</fullName>
+        <externalId>false</externalId>
+        <label>Service Estimate</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Term_Details_FSR__c</fullName>
+        <externalId>false</externalId>
+        <label>Term Details FSR</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Terms_Conditions__c</fullName>
+        <externalId>false</externalId>
+        <label>Terms &amp; Conditions</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Total_Base_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Base Price</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Work_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Work Description</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BD_EUROIMMUN_Address_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>EUROIMMUN Address Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BD_EUROIMMUN_Work_Summary__c</fullName>
+        <externalId>false</externalId>
+        <label>EUROIMMUN Work Summary</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Address_Telephone__c</fullName>
+        <externalId>false</externalId>
+        <label>Address Telephone</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Contract_End_Date__c</fullName>
+        <description>for schedule technician vf email</description>
+        <externalId>false</externalId>
+        <inlineHelpText>for schedule technician vf email</inlineHelpText>
+        <label>Contract End Date</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Estimate_PO_Terms__c</fullName>
+        <description>Should include the following text: You can submit the purchase order via fax to 0800 891 714 or via email on cc.uk@perkinelmer.com 
+Please ensure the Quote Number located in the top is included on your Purchase Order. 
+If your company is VAT exempt please supply the exemption certificate when sending in your Purchase Order.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please include: You can submit the purchase order via fax to 0800 891 714 or via email on cc.uk@perkinelmer.com 
+Please ensure the Quote Number located in the top is included on your Purchase Order. 
+If your company is VAT exempt please</inlineHelpText>
+        <label>Estimate PO Terms</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_FSR_Email_Subject__c</fullName>
+        <externalId>false</externalId>
+        <label>FSR Email Subject</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Lot_Serial_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Lot/Serial Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_No_Labor_Recorded__c</fullName>
+        <externalId>false</externalId>
+        <label>No Labor Recorded</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Short_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Short Description</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Total_Labor_Hours__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Labor Hours</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Work_Order_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Work Order Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BD_EUROIMMUN_Address_Line1__c</fullName>
+        <externalId>false</externalId>
+        <label>EUROIMMUN Address Line1</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BD_EUROIMMUN_Address_Line2__c</fullName>
+        <externalId>false</externalId>
+        <label>EUROIMMUN Address Line2</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BD_EUROIMMUN_Address_Line3__c</fullName>
+        <externalId>false</externalId>
+        <label>EUROIMMUN Address Line3</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BD_EUROIMMUN_Website_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>EUROIMMUN Website &amp; Phone</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Contract_Line_Item__c</fullName>
+        <description>for schedule technician vf template</description>
+        <externalId>false</externalId>
+        <inlineHelpText>for schedule technician vf template</inlineHelpText>
+        <label>Contract/Line Item</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Customer_Signature__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Signature</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Equipment_Location__c</fullName>
+        <externalId>false</externalId>
+        <label>Equipment Location</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Total_Travel_Hours__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Travel Hours</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Access_Instructions__c</fullName>
+        <description>for schedule technician vf email</description>
+        <externalId>false</externalId>
+        <inlineHelpText>for schedule technician vf email</inlineHelpText>
+        <label>Access Instructions</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Contract_Start_Date__c</fullName>
+        <description>for schedule technician email vf template</description>
+        <externalId>false</externalId>
+        <inlineHelpText>for schedule technician email vf template</inlineHelpText>
+        <label>Contract Start Date</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Estimate_Email_Body__c</fullName>
+        <externalId>false</externalId>
+        <label>Estimate Email Body</label>
+        <length>2000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Problem_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Problem Description</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Installed_Product_ID__c</fullName>
+        <description>for schedule technician vf email template</description>
+        <externalId>false</externalId>
+        <inlineHelpText>for schedule technician vf email template</inlineHelpText>
+        <label>Installed Product ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Material_Description__c</fullName>
+        <description>schedule technician email vf</description>
+        <externalId>false</externalId>
+        <inlineHelpText>schedule technician email vf</inlineHelpText>
+        <label>Material Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Requested_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Requested Start Date</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Technician_Signature__c</fullName>
+        <externalId>false</externalId>
+        <label>Technician Signature</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BD_EUROIMMUN_Reason_for_Visit__c</fullName>
+        <externalId>false</externalId>
+        <label>EUROIMMUN Reason for Visit</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Contract_Entitlements__c</fullName>
+        <description>for schedule technician vf email template</description>
+        <externalId>false</externalId>
+        <inlineHelpText>for schedule technician vf email template</inlineHelpText>
+        <label>Contract Entitlements</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Last_Calibration_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Calibration Date</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Next_Calibration_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Next Calibration Date</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Quotation_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Quotation Description</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Remote_Service_Report__c</fullName>
+        <description>Title for Remote Service Report</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Title for Remote Service Report</inlineHelpText>
+        <label>Remote Service Report</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Term_Details_Estimate__c</fullName>
+        <externalId>false</externalId>
+        <label>Term Details Estimate</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Estimate_Email_Subject__c</fullName>
+        <externalId>false</externalId>
+        <label>Estimate Email Subject</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Purchase_Order_Details__c</fullName>
+        <description>for schedule technician email vf</description>
+        <externalId>false</externalId>
+        <inlineHelpText>for schedule technician email vf</inlineHelpText>
+        <label>Purchase Order Details</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BD_EUROIMMUN_Instrument_Working__c</fullName>
+        <externalId>false</externalId>
+        <label>EUROIMMUN Instrument Working?</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Term_Details_Estimate_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Term Details Estimate 2</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_No_Calibrated_Tools_Used__c</fullName>
+        <externalId>false</externalId>
+        <label>No Calibrated Tools Used</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_SAP_Service_Order_Number__c</fullName>
+        <description>Denotes the Service Order Number from SAP</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes the Service Order Number from SAP</inlineHelpText>
+        <label>SAP Service Order Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_has_been_assigned_to_you__c</fullName>
+        <description>For assignment email template</description>
+        <externalId>false</externalId>
+        <inlineHelpText>For assignment email template</inlineHelpText>
+        <label>has been assigned to you :</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Total_Amount_before_taxes__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Amount before taxes</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Kind_Regards_Customer_Care__c</fullName>
+        <description>for schedule technician vf template</description>
+        <externalId>false</externalId>
+        <inlineHelpText>for schedule technician vf template</inlineHelpText>
+        <label>Kind Regards, Customer Care</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Work_Order_Problem_Summary__c</fullName>
+        <description>for scheduled technician email</description>
+        <externalId>false</externalId>
+        <inlineHelpText>for scheduled technician email</inlineHelpText>
+        <label>Work Order Problem Summary</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Service_Representative_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Service Representative Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Customer_Required_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Required Start Date</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Client_Ability_to_Resolve_Issue__c</fullName>
+        <description>for schedule technician vf email</description>
+        <externalId>false</externalId>
+        <inlineHelpText>for schedule technician vf email</inlineHelpText>
+        <label>Client Ability to Resolve Issue</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Terms_for_Customer_Quote_Accept__c</fullName>
+        <description>Should include the following text: To be completed by the customer on acceptance of prices quoted above</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Should include the following text: To be completed by the customer on acceptance of prices quoted above</inlineHelpText>
+        <label>Terms for Customer Quote Acceptance</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

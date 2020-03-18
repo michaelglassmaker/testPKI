@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>SMAX_PS_Contact_Person_Details__c</fullName>
+        <externalId>false</externalId>
+        <formula>SVMXC__Contact__r.Email  + &quot;;&quot; + &quot; &quot; &amp; SVMXC__Contact__r.Phone</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact Person Details</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Customer_Account_Details__c</fullName>
+        <description>This custom field displays customer address</description>
+        <externalId>false</externalId>
+        <formula>SVMXC__Company__r.BillingStreet &amp; BR()
+&amp;SVMXC__Company__r.BillingCity +  &quot;,&quot; + &quot; &quot; 
+&amp;SVMXC__Company__r.BillingState + &quot; &quot;
+&amp;SVMXC__Company__r.BillingPostalCode &amp;BR()
+&amp;SVMXC__Company__r.BillingCountry</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This custom field displays customer address</inlineHelpText>
+        <label>Customer Account Details</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_External_Notes__c</fullName>
+        <description>External Notes related to the Service and visible to the Customer</description>
+        <externalId>false</externalId>
+        <inlineHelpText>External Notes related to the Service and visible to the Customer</inlineHelpText>
+        <label>External Notes</label>
+        <length>10000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Installed_Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This custom field displays the Instrument details for the service quote via a lookup to the Installed Product</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This custom field displays the Instrument details for the service quote via a lookup to the Installed Product</inlineHelpText>
+        <label>Installed Product</label>
+        <referenceTo>SVMXC__Installed_Product__c</referenceTo>
+        <relationshipLabel>Service Quotes</relationshipLabel>
+        <relationshipName>Service_Quotes</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Internal_Notes__c</fullName>
+        <description>Internal Notes related to the Service Quote</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Internal Notes related to the Service Quote</inlineHelpText>
+        <label>Internal Notes</label>
+        <length>10000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_CIG_Code__c</fullName>
+        <description>The code tells us that the payment is approved by the government and covers anti Mafia law.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The code tells us that the payment is approved by the government and covers anti Mafia law.</inlineHelpText>
+        <label>CIG Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

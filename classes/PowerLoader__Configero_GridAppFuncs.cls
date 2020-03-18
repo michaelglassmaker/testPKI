@@ -9,6 +9,9 @@ global class Configero_GridAppFuncs {
     global Configero_GridAppFuncs() {
 
     }
+    global static List<Map<String,Object>> getFieldListMapForObject(String objectAPIName) {
+        return null;
+    }
     global static String getObjectMeta(String objectAPIName) {
         return null;
     }

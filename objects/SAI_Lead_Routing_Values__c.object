@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>For PDG Lead Routing</description>
+    <enableFeeds>false</enableFeeds>
+    <label>SAI Lead Routing Values</label>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>SAI_Values__c</fullName>
+        <externalId>false</externalId>
+        <label>SAI Values</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+</CustomObject>

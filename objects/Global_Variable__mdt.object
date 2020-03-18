@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Custom Metadata Type used to store Global Variables</description>
+    <label>Global Variable</label>
+    <pluralLabel>Global Variables</pluralLabel>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>Value__c</fullName>
+        <description>Value of your Global Variable</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Value</label>
+        <length>40</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Global_Variable_Name__c</fullName>
+        <description>Name of your Global Variable</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Global Variable Name</label>
+        <length>40</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

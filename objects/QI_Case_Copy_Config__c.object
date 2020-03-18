@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <label>QI Case Copy Config</label>
+    <nameField>
+        <label>QI Case Copy Config Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>QI Case Copy Config</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>Case_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Case Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Open</fullName>
+                    <default>false</default>
+                    <label>Open</label>
+                </value>
+                <value>
+                    <fullName>Closed</fullName>
+                    <default>false</default>
+                    <label>Closed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Quality_Case_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Quality Case Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Mfg Procedures</fullName>
+                    <default>false</default>
+                    <label>Mfg Procedures</label>
+                </value>
+                <value>
+                    <fullName>Bill of Material</fullName>
+                    <default>false</default>
+                    <label>Bill of Material</label>
+                </value>
+                <value>
+                    <fullName>Camera</fullName>
+                    <default>false</default>
+                    <label>Camera</label>
+                </value>
+                <value>
+                    <fullName>Chip Quality</fullName>
+                    <default>false</default>
+                    <label>Chip Quality</label>
+                </value>
+                <value>
+                    <fullName>Mfg Test</fullName>
+                    <default>false</default>
+                    <label>Mfg Test</label>
+                </value>
+                <value>
+                    <fullName>Mfg Tooling</fullName>
+                    <default>false</default>
+                    <label>Mfg Tooling</label>
+                </value>
+                <value>
+                    <fullName>Mis/Other</fullName>
+                    <default>false</default>
+                    <label>Mis/Other</label>
+                </value>
+                <value>
+                    <fullName>Optics</fullName>
+                    <default>false</default>
+                    <label>Optics</label>
+                </value>
+                <value>
+                    <fullName>Out of Box Failure</fullName>
+                    <default>false</default>
+                    <label>Out of Box Failure</label>
+                </value>
+                <value>
+                    <fullName>PC/Controller</fullName>
+                    <default>false</default>
+                    <label>PC/Controller</label>
+                </value>
+                <value>
+                    <fullName>Plumbing – Pumps/Tubing</fullName>
+                    <default>false</default>
+                    <label>Plumbing – Pumps/Tubing</label>
+                </value>
+                <value>
+                    <fullName>Robot</fullName>
+                    <default>false</default>
+                    <label>Robot</label>
+                </value>
+                <value>
+                    <fullName>Wiring/Cabling</fullName>
+                    <default>false</default>
+                    <label>Wiring/Cabling</label>
+                </value>
+                <value>
+                    <fullName>Misc. Hardware</fullName>
+                    <default>false</default>
+                    <label>Misc. Hardware</label>
+                </value>
+                <value>
+                    <fullName>PCB</fullName>
+                    <default>false</default>
+                    <label>PCB</label>
+                </value>
+                <value>
+                    <fullName>Product Specs</fullName>
+                    <default>false</default>
+                    <label>Product Specs</label>
+                </value>
+                <value>
+                    <fullName>Missing/Wrong Component</fullName>
+                    <default>false</default>
+                    <label>Missing/Wrong Component</label>
+                </value>
+                <value>
+                    <fullName>Duplicate</fullName>
+                    <default>false</default>
+                    <label>Duplicate</label>
+                </value>
+                <value>
+                    <fullName>Caliper Operating Process</fullName>
+                    <default>false</default>
+                    <label>Caliper Operating Process</label>
+                </value>
+                <value>
+                    <fullName>Product Enhancements</fullName>
+                    <default>false</default>
+                    <label>Product Enhancements</label>
+                </value>
+                <value>
+                    <fullName>Vendor/Supplier Issue</fullName>
+                    <default>false</default>
+                    <label>Vendor/Supplier Issue</label>
+                </value>
+                <value>
+                    <fullName>Onsite Service/Support</fullName>
+                    <default>false</default>
+                    <label>Onsite Service/Support</label>
+                </value>
+                <value>
+                    <fullName>Packaging/Shipping</fullName>
+                    <default>false</default>
+                    <label>Packaging/Shipping</label>
+                </value>
+                <value>
+                    <fullName>Software/Firmware</fullName>
+                    <default>false</default>
+                    <label>Software/Firmware</label>
+                </value>
+                <value>
+                    <fullName>Product Safety</fullName>
+                    <default>false</default>
+                    <label>Product Safety</label>
+                </value>
+                <value>
+                    <fullName>Product User Documentation</fullName>
+                    <default>false</default>
+                    <label>Product User Documentation</label>
+                </value>
+                <value>
+                    <fullName>Training/Workmanship</fullName>
+                    <default>false</default>
+                    <label>Training/Workmanship</label>
+                </value>
+                <value>
+                    <fullName>Warranty</fullName>
+                    <default>false</default>
+                    <label>Warranty</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Resolution_Code_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Resolution Code 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>100% - No field replacements</fullName>
+                    <default>false</default>
+                    <label>100% - No field replacements</label>
+                </value>
+                <value>
+                    <fullName>50% - Only Minor field replacements</fullName>
+                    <default>false</default>
+                    <label>50% - Only Minor field replacements</label>
+                </value>
+                <value>
+                    <fullName>0% - Major field replacements</fullName>
+                    <default>false</default>
+                    <label>0% - Major field replacements</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Resolution_Code_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Resolution Code 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>100% - No components missing</fullName>
+                    <default>false</default>
+                    <label>100% - No components missing</label>
+                </value>
+                <value>
+                    <fullName>50% - 1 or 2 components missing</fullName>
+                    <default>false</default>
+                    <label>50% - 1 or 2 components missing</label>
+                </value>
+                <value>
+                    <fullName>0% - 2+ components missing</fullName>
+                    <default>false</default>
+                    <label>0% - 2+ components missing</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Resolution_Code_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Resolution Code 3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>100% - Professional AND Protected</fullName>
+                    <default>false</default>
+                    <label>100% - Professional AND Protected</label>
+                </value>
+                <value>
+                    <fullName>50% - Professional OR Protected</fullName>
+                    <default>false</default>
+                    <label>50% - Professional OR Protected</label>
+                </value>
+                <value>
+                    <fullName>0% - Neither</fullName>
+                    <default>false</default>
+                    <label>0% - Neither</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Service_Case_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Service Case Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Application</fullName>
+                    <default>false</default>
+                    <label>Application</label>
+                </value>
+                <value>
+                    <fullName>Chip and Reagent Replacement</fullName>
+                    <default>false</default>
+                    <label>Chip and Reagent Replacement</label>
+                </value>
+                <value>
+                    <fullName>Consumable</fullName>
+                    <default>false</default>
+                    <label>Consumable</label>
+                </value>
+                <value>
+                    <fullName>Field Service</fullName>
+                    <default>false</default>
+                    <label>Field Service</label>
+                </value>
+                <value>
+                    <fullName>Hardware</fullName>
+                    <default>false</default>
+                    <label>Hardware</label>
+                </value>
+                <value>
+                    <fullName>Question</fullName>
+                    <default>false</default>
+                    <label>Question</label>
+                </value>
+                <value>
+                    <fullName>Software</fullName>
+                    <default>false</default>
+                    <label>Software</label>
+                </value>
+                <value>
+                    <fullName>Training Request</fullName>
+                    <default>false</default>
+                    <label>Training Request</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Quality_Case_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Quality Case Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Open</fullName>
+                    <default>false</default>
+                    <label>Open</label>
+                </value>
+                <value>
+                    <fullName>Closed</fullName>
+                    <default>false</default>
+                    <label>Closed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Quality_Case_Sub_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Quality Case Sub Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Quality_Case_Type__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>TBD</fullName>
+                    <default>false</default>
+                    <label>TBD</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Onsite Service/Support</controllingFieldValue>
+                <controllingFieldValue>Packaging/Shipping</controllingFieldValue>
+                <controllingFieldValue>Software/Firmware</controllingFieldValue>
+                <controllingFieldValue>Product Safety</controllingFieldValue>
+                <controllingFieldValue>Product User Documentation</controllingFieldValue>
+                <controllingFieldValue>Training/Workmanship</controllingFieldValue>
+                <controllingFieldValue>Warranty</controllingFieldValue>
+                <controllingFieldValue>PC/Controller</controllingFieldValue>
+                <controllingFieldValue>Plumbing – Pumps/Tubing</controllingFieldValue>
+                <controllingFieldValue>Robot</controllingFieldValue>
+                <controllingFieldValue>Wiring/Cabling</controllingFieldValue>
+                <controllingFieldValue>Misc. Hardware</controllingFieldValue>
+                <controllingFieldValue>PCB</controllingFieldValue>
+                <controllingFieldValue>Product Specs</controllingFieldValue>
+                <controllingFieldValue>Missing/Wrong Component</controllingFieldValue>
+                <controllingFieldValue>Duplicate</controllingFieldValue>
+                <controllingFieldValue>Caliper Operating Process</controllingFieldValue>
+                <controllingFieldValue>Mfg Procedures</controllingFieldValue>
+                <controllingFieldValue>Bill of Material</controllingFieldValue>
+                <controllingFieldValue>Camera</controllingFieldValue>
+                <controllingFieldValue>Chip Quality</controllingFieldValue>
+                <controllingFieldValue>Mfg Test</controllingFieldValue>
+                <controllingFieldValue>Mfg Tooling</controllingFieldValue>
+                <controllingFieldValue>Mis/Other</controllingFieldValue>
+                <controllingFieldValue>Optics</controllingFieldValue>
+                <controllingFieldValue>Out of Box Failure</controllingFieldValue>
+                <controllingFieldValue>Product Enhancements</controllingFieldValue>
+                <controllingFieldValue>Vendor/Supplier Issue</controllingFieldValue>
+                <valueName>TBD</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Service_Case_Sub_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Service Case Sub-Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Courtesy Call</fullName>
+                    <default>false</default>
+                    <label>Courtesy Call</label>
+                </value>
+                <value>
+                    <fullName>Installation</fullName>
+                    <default>false</default>
+                    <label>Installation</label>
+                </value>
+                <value>
+                    <fullName>Move</fullName>
+                    <default>false</default>
+                    <label>Move</label>
+                </value>
+                <value>
+                    <fullName>Preventative Maintenance</fullName>
+                    <default>false</default>
+                    <label>Preventative Maintenance</label>
+                </value>
+                <value>
+                    <fullName>Service Call</fullName>
+                    <default>false</default>
+                    <label>Service Call</label>
+                </value>
+                <value>
+                    <fullName>System Validation</fullName>
+                    <default>false</default>
+                    <label>System Validation</label>
+                </value>
+                <value>
+                    <fullName>Training</fullName>
+                    <default>false</default>
+                    <label>Training</label>
+                </value>
+                <value>
+                    <fullName>Internal - Sales Assist</fullName>
+                    <default>false</default>
+                    <label>Internal - Sales Assist</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+</CustomObject>

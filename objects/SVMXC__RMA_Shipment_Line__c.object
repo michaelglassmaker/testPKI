@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <fullName>SMAX_PS_Create_Parts_Order_from_Location</fullName>
+        <description>SVMX_PS_Create_Parts_Order_From_Location_Request</description>
+        <displayedFields>
+            <field>SMAX_PS_Part_Number__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Partnum__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SVMXC__Product__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SVMXC__Expected_Quantity2__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Create Parts Order from Location</label>
+    </fieldSets>
+    <fields>
+        <fullName>BD_Return_Part_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Return Part Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partnum__c</fullName>
+        <description>Same as SAP Product code. Same as Material Number from SAP.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Same as SAP Product code. Same as Material Number from SAP.</inlineHelpText>
+        <label>Part Number</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_BatchNum__c</fullName>
+        <description>Batch number related to the parts order line</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Batch number related to the parts order line</inlineHelpText>
+        <label>Batch Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_DecontaminationCertificateEnclos__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Decontamination Certificate Enclosed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Decontamination Certificate Enclosed</inlineHelpText>
+        <label>Decontamination Certificate Enclosed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Decontamination__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Denotes if the parts order line is decontamination</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes if the parts order line is decontamination</inlineHelpText>
+        <label>Decontamination</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Expected_Arrival__c</fullName>
+        <description>Expected time of arrival per the Logistics team.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Expected time of arrival per the Logistics team.</inlineHelpText>
+        <label>Expected Arrival</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ExternalId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>External ID</description>
+        <externalId>true</externalId>
+        <inlineHelpText>External ID</inlineHelpText>
+        <label>SAP Quote Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_LineDescription__c</fullName>
+        <description>Denotes the line description about the parts order line</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes the line description about the parts order line</inlineHelpText>
+        <label>Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_My_Parts_Order_Line__c</fullName>
+        <description>Denotes that the parts order line is owned by the running user</description>
+        <externalId>false</externalId>
+        <formula>IF( SVMXC__RMA_Shipment_Order__r.OwnerId ==  $User.Id &amp;&amp; (Today() - DATEVALUE(CreatedDate)) &lt;= 90 , true, false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Denotes that the parts order line is owned by the running user</inlineHelpText>
+        <label>My Parts Order Line</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Part_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>SVMXC__Product__r.Partnum__c</formula>
+        <label>Part Number (Formula)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Product_Family__c</fullName>
+        <description>This custom formula field displays the Product Family field from the Product Object</description>
+        <externalId>false</externalId>
+        <formula>TEXT(SVMXC__Product__r.Family)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This custom formula field displays the Product Family field from the Product Object</inlineHelpText>
+        <label>Product Family</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Product_Sales__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Used to limit products by sales org.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to limit products by sales org.</inlineHelpText>
+        <label>Sellable Product</label>
+        <referenceTo>SMAX_PS_ProductSales__c</referenceTo>
+        <relationshipLabel>Parts Order Lines</relationshipLabel>
+        <relationshipName>Parts_Order_Lines</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_SAP_ReturnReason__c</fullName>
+        <description>Denotes product return reason</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes product return reason</inlineHelpText>
+        <label>Return Reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Inventory Reduction</fullName>
+                    <default>false</default>
+                    <label>Inventory Reduction</label>
+                </value>
+                <value>
+                    <fullName>DOA</fullName>
+                    <default>false</default>
+                    <label>DOA</label>
+                </value>
+                <value>
+                    <fullName>Rework</fullName>
+                    <default>false</default>
+                    <label>Rework</label>
+                </value>
+                <value>
+                    <fullName>QM evaluation</fullName>
+                    <default>false</default>
+                    <label>QM evaluation</label>
+                </value>
+                <value>
+                    <fullName>Recall</fullName>
+                    <default>false</default>
+                    <label>Recall</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_SerialNum__c</fullName>
+        <description>serial number related to the parts order</description>
+        <externalId>false</externalId>
+        <inlineHelpText>serial number related to the parts order</inlineHelpText>
+        <label>Serial Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

@@ -11,6 +11,11 @@ Set<Id> SetOfOppIds = new Set<Id>();
           
             ac.name='Test Account';
             ac.shippingCountry = 'US';
+            ac.shippingStreet = 'Street1';
+            ac.shippingCity = 'City1';
+            ac.shippingState = 'State';
+            ac.shippingCountry ='US';
+            ac.shippingPostalCode = '12345';
             ac.Industry ='Biotech';
             ac.CurrencyIsoCode = 'USD';
             ac.BillingStreet = 'Street1';

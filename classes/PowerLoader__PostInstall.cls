@@ -15,4 +15,7 @@ global class PostInstall implements System.InstallHandler {
     global void onInstall(System.InstallContext context) {
 
     }
+    global void setCustomSettings() {
+
+    }
 }

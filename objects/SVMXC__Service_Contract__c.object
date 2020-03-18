@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>SMAX_PS_BillToNumber__c</fullName>
+        <externalId>false</externalId>
+        <label>Bill To Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Business_Unit__c</fullName>
+        <description>Denotes the business unit related to the Service/Maintenance Contract</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes the business unit related to the Service/Maintenance Contract</inlineHelpText>
+        <label>Business Unit</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_CompletedTxnNum__c</fullName>
+        <externalId>false</externalId>
+        <label>Completed Transaction Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ContractAdminEmail__c</fullName>
+        <externalId>false</externalId>
+        <label>Contract Admin Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ContractAdminName__c</fullName>
+        <externalId>false</externalId>
+        <label>Contract Admin</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ContractAdminPhone__c</fullName>
+        <externalId>false</externalId>
+        <label>Contract Admin Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ContractType__c</fullName>
+        <externalId>false</externalId>
+        <label>Contract Type</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Contract_Status__c</fullName>
+        <description>Status of the Service Contract</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Status of the Service Contract</inlineHelpText>
+        <label>Contract Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Lost</fullName>
+                    <default>false</default>
+                    <label>Lost</label>
+                </value>
+                <value>
+                    <fullName>Booked</fullName>
+                    <default>false</default>
+                    <label>Booked</label>
+                </value>
+                <value>
+                    <fullName>In progress</fullName>
+                    <default>false</default>
+                    <label>In progress</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_EntitledQtyRemaining__c</fullName>
+        <description>Entitled Quantity Remaining</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Entitled Quantity Remaining</inlineHelpText>
+        <label>Entitled Qty Remaining</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_EntitledQty__c</fullName>
+        <description>Entitled Quantity</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Entitled Quantity</inlineHelpText>
+        <label>Entitled Qty</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_InconsistentTxnNum__c</fullName>
+        <externalId>false</externalId>
+        <formula>SMAX_PS_CompletedTxnNum__c &lt;&gt; SMAX_PS_LastTxnNum__c</formula>
+        <label>Inconsistent Transaction Number</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_IsDeleted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Deleted</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Is_Billable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Billable</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Is_Enterprise__c</fullName>
+        <externalId>false</externalId>
+        <formula>SMAX_PS_ContractType__c = &quot;ZOSC&quot; || SVMX_PS_Parent_Contract__r.SMAX_PS_ContractType__c = &quot;ZOSC&quot;</formula>
+        <label>Is Enterprise</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Is_Warranty__c</fullName>
+        <externalId>false</externalId>
+        <formula>SMAX_PS_ContractType__c = &quot;ZW01&quot; || SVMX_PS_Parent_Contract__r.SMAX_PS_ContractType__c = &quot;ZW01&quot;</formula>
+        <label>Is Warranty</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ItemCategoryDesc__c</fullName>
+        <externalId>false</externalId>
+        <label>Item Category Desc</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ItemCategory__c</fullName>
+        <externalId>false</externalId>
+        <label>Item Category</label>
+        <length>5</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ItemNotes__c</fullName>
+        <description>Item Notes</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Item Notes</inlineHelpText>
+        <label>Item Notes</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ItemPrice__c</fullName>
+        <description>Item Price</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Item Price</inlineHelpText>
+        <label>Item Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ItemPrintAfterNotes__c</fullName>
+        <description>Item Print After Notes</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Item Print After Notes</inlineHelpText>
+        <label>Item Print After Notes</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ItemPrintBeforeNotes__c</fullName>
+        <description>Item Print Before Notes</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Item Print Before Notes</inlineHelpText>
+        <label>Item Print Before Notes</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_LastTxnNum__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Transaction Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_MaterialSalesNotes__c</fullName>
+        <description>Material Sales Notes</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Material Sales Notes</inlineHelpText>
+        <label>Material Sales Notes</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_PODate__c</fullName>
+        <externalId>false</externalId>
+        <label>PO Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_PONumber__c</fullName>
+        <externalId>false</externalId>
+        <label>PO Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_PayerNumber__c</fullName>
+        <externalId>false</externalId>
+        <label>Payer Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_PreviousContractNumber__c</fullName>
+        <description>Previous Contract Number</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Previous Contract Number</inlineHelpText>
+        <label>Previous Contract Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_PreviousQuoteNumber__c</fullName>
+        <description>Previous Quote Number</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Previous Quote Number</inlineHelpText>
+        <label>Previous Quote Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_RenewalContractNumber__c</fullName>
+        <description>Renewal Contract Number</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Renewal Contract Number</inlineHelpText>
+        <label>Renewal Contract Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_RenewalQuoteNumber__c</fullName>
+        <description>Renewal Quote Number</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Renewal Quote Number</inlineHelpText>
+        <label>Renewal Quote Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Renewed_To__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Renewed To</label>
+        <referenceTo>SVMXC__Service_Contract__c</referenceTo>
+        <relationshipLabel>Service/Maintenance Contracts (Renewed To)</relationshipLabel>
+        <relationshipName>Service_Maintenance_Contracts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_SLA_Terms_Notes__c</fullName>
+        <description>SLA Terms notes from SAP.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SLA Terms notes from SAP.</inlineHelpText>
+        <label>SLA Terms Notes</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_SalesOrg__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Org</label>
+        <length>5</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_SalesRepName__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Rep Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ServiceContractInvoiceNotes__c</fullName>
+        <description>Service Contract Invoice Notes</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Service Contract Invoice Notes</inlineHelpText>
+        <label>Service Contract Invoice Notes</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ServiceContractPrintableNotes__c</fullName>
+        <description>Service Contract Printable Notes</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Service Contract Printable Notes</inlineHelpText>
+        <label>Service Contract Printable Notes</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ServicePartsDiscountCovered__c</fullName>
+        <description>Service Parts Discount Covered</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Service Parts Discount Covered</inlineHelpText>
+        <label>Service Parts Discount Covered</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ServiceQuoteNotes__c</fullName>
+        <description>Service Quote Notes</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Service Quote Notes</inlineHelpText>
+        <label>Service Quote Notes</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ShipToNumber__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_SoldToNumber__c</fullName>
+        <externalId>false</externalId>
+        <label>Sold To Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ThirdPartyVendorName__c</fullName>
+        <externalId>false</externalId>
+        <label>Third Party Vendor Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ThirdPartyVendorNumber__c</fullName>
+        <externalId>false</externalId>
+        <label>Third Party Vendor Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Contract_Renewed__c</fullName>
+        <description>This is used to calculate Contract Renewal Rate. If there is a Renewal Date field it will return a value of 1. If the field is blank the value of 0 is returned.</description>
+        <externalId>false</externalId>
+        <formula>IF( ISNULL( SVMXC__Renewal_Date__c ) , 0, 1)</formula>
+        <label>Contract Renewed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_External_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Invoice_Frequency_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Invoice Frequency Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>In Advance</fullName>
+                    <default>false</default>
+                    <label>In Advance</label>
+                </value>
+                <value>
+                    <fullName>Arrears</fullName>
+                    <default>false</default>
+                    <label>Arrears</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Invoice_Frequency__c</fullName>
+        <externalId>false</externalId>
+        <label>Invoice Frequency</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Monthly</fullName>
+                    <default>false</default>
+                    <label>Monthly</label>
+                </value>
+                <value>
+                    <fullName>Quarterly</fullName>
+                    <default>false</default>
+                    <label>Quarterly</label>
+                </value>
+                <value>
+                    <fullName>Annually</fullName>
+                    <default>false</default>
+                    <label>Annually</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Item_Status__c</fullName>
+        <description>Graphical depiction of the &quot;Is Deleted&quot; flag. If &quot;Is Deleted&quot; flag is set to TRUE - Deleted Item displays. If the &quot;Is Deleted&quot; flag is set to FALSE - Contract Item displays.</description>
+        <externalId>false</externalId>
+        <formula>IF(SVMXC__Active__c=FALSE , IMAGE(&quot;/servlet/servlet.FileDownload?file=0153A000003zqIe&quot;,&quot;Blue&quot;), 
+IF( SVMXC__End_Date__c &lt; TODAY () ||SVMXC__Start_Date__c &gt; Today() || SMAX_PS_IsDeleted__c = True , IMAGE(&quot;/servlet/servlet.FileDownload?file=0153A000004IFeR&quot;, &quot;Red&quot;), 
+IF ( SVMXC__End_Date__c &gt; TODAY () &amp;&amp;  SVMXC__Start_Date__c &lt; Today() &amp;&amp; SMAX_PS_IsDeleted__c = False, IMAGE(&quot;/servlet/servlet.FileDownload?file=0153A000003ynmH&quot;, &quot;Green&quot;), 
+IMAGE(&quot;/servlet/servlet.FileDownload?file= 0153A000003ynmH&quot;, &quot;Green&quot;))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Green checkmark denotes within the Contract Detail Start and End Dates. Red X denotes expired contract dates. Red dollar sign denotes that the Account is on Credit Hold.</inlineHelpText>
+        <label>Item Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Parent_Contract__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Parent Contract</label>
+        <referenceTo>SVMXC__Service_Contract__c</referenceTo>
+        <relationshipLabel>Contract Items</relationshipLabel>
+        <relationshipName>ChildServiceMaintnanceContracts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Renewed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Renewed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Service_Quote__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Relationship between Service/Maintenance Contract and Service Quote</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Relationship between Service/Maintenance Contract and Service Quote</inlineHelpText>
+        <label>Service Quote</label>
+        <referenceTo>SVMXC__Quote__c</referenceTo>
+        <relationshipLabel>Service/Maintenance Contracts</relationshipLabel>
+        <relationshipName>Service_Maintenance_Contracts1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <recordTypes>
+        <fullName>ContractItem</fullName>
+        <active>true</active>
+        <label>Contract Item</label>
+        <picklistValues>
+            <picklist>SMAX_PS_Contract_Status__c</picklist>
+            <values>
+                <fullName>Booked</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lost</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SVMX_PS_Invoice_Frequency_Type__c</picklist>
+            <values>
+                <fullName>Arrears</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Advance</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SVMX_PS_Invoice_Frequency__c</picklist>
+            <values>
+                <fullName>Annually</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quarterly</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>ServiceContract</fullName>
+        <active>true</active>
+        <label>Service Contract</label>
+        <picklistValues>
+            <picklist>SMAX_PS_Contract_Status__c</picklist>
+            <values>
+                <fullName>Booked</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lost</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SVMX_PS_Invoice_Frequency_Type__c</picklist>
+            <values>
+                <fullName>Arrears</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Advance</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SVMX_PS_Invoice_Frequency__c</picklist>
+            <values>
+                <fullName>Annually</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quarterly</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+</CustomObject>

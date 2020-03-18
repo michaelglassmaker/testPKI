@@ -37,7 +37,7 @@ public static Account createTestAccount(String Name, String Phone, String Indust
         String FirstName, String Email) {
         Contact conContact = new Contact(AccountId = AccountId,
             LastName = LastName,
-            FirstName = FirstName,
+            FirstName = FirstName,Solution_Area_of_Interest__c='Air',
             Email = Email);
         return conContact;
     }

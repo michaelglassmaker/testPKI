@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>SMAX_PS_ConsumableDiscountCovered__c</fullName>
+        <externalId>false</externalId>
+        <label>Consumable Discount Covered</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_EntitledQtyRemaining__c</fullName>
+        <externalId>false</externalId>
+        <label>Entitled Qty Remaining</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_EntitledQty__c</fullName>
+        <externalId>false</externalId>
+        <label>Entitled Qty</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_EntitlementCondition__c</fullName>
+        <externalId>false</externalId>
+        <label>Entitlement Condition(s)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_EntitlementTypeName__c</fullName>
+        <externalId>false</externalId>
+        <label>Entitlement Type Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_EntitlementType__c</fullName>
+        <externalId>false</externalId>
+        <label>Entitlement Type</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_External_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Entitlement Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_IsDeleted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Deleted</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_LastTxnNum__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Transaction Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ServicePartsDiscountCovered__c</fullName>
+        <externalId>false</externalId>
+        <label>Service Parts Discount Covered</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Total_Coverage__c</fullName>
+        <description>Total Coverage defined as a sum of the &quot;Discount Covered&quot; fields. Used for Auto-Entitlement logic.
+NOTE: Because Consumable Discount Covered is defined as a Number, not Percent, special math is needed.</description>
+        <externalId>false</externalId>
+        <formula>(SMAX_PS_ConsumableDiscountCovered__c/100)
++ SVMXC__Expense_Discount_Covered__c
++ SVMXC__Labor_Discount_Covered__c
++ SVMXC__Parts_Discount_Covered__c
++ SMAX_PS_ServicePartsDiscountCovered__c
++ SVMXC__Travel_Discount_Covered__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total Coverage defined as a sum of the &quot;Discount Covered&quot; fields. Used for Auto-Entitlement logic.</inlineHelpText>
+        <label>Total Coverage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+</CustomObject>

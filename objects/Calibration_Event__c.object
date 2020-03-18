@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Child object of Installed Product to track the individual calibration events for a particular calibrated tool.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>Calibration Event</label>
+    <nameField>
+        <displayFormat>CE-{00000000}</displayFormat>
+        <label>Calibration Event Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Calibration Events</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>SMAX_PS_Reason__c</fullName>
+        <description>Reason for making the changes</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Reason for making the changes</inlineHelpText>
+        <label>Reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Data Correction</fullName>
+                    <default>false</default>
+                    <label>Data Correction</label>
+                </value>
+                <value>
+                    <fullName>Calibration Date Change</fullName>
+                    <default>false</default>
+                    <label>Calibration Date Change</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Calibrated_Tool__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Calibrated Tool</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>SVMXC__Installed_Product__c.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Calibrated Tools</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>SVMXC__Installed_Product__c</referenceTo>
+        <relationshipLabel>Calibration Events</relationshipLabel>
+        <relationshipName>Calibration_Events</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Calibrated_by__c</fullName>
+        <externalId>false</externalId>
+        <label>Calibrated by</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>ACR Technical Services, Inc.</fullName>
+                    <default>false</default>
+                    <label>ACR Technical Services, Inc.</label>
+                </value>
+                <value>
+                    <fullName>Agilent</fullName>
+                    <default>false</default>
+                    <label>Agilent</label>
+                </value>
+                <value>
+                    <fullName>Amazon</fullName>
+                    <default>false</default>
+                    <label>Amazon</label>
+                </value>
+                <value>
+                    <fullName>Anton Paar</fullName>
+                    <default>false</default>
+                    <label>Anton Paar</label>
+                </value>
+                <value>
+                    <fullName>Arizona Instrument, LLC</fullName>
+                    <default>false</default>
+                    <label>Arizona Instrument, LLC</label>
+                </value>
+                <value>
+                    <fullName>ATS Analytics</fullName>
+                    <default>false</default>
+                    <label>ATS Analytics</label>
+                </value>
+                <value>
+                    <fullName>California Integration Coordinators, Inc.</fullName>
+                    <default>false</default>
+                    <label>California Integration Coordinators, Inc.</label>
+                </value>
+                <value>
+                    <fullName>Control Company</fullName>
+                    <default>false</default>
+                    <label>Control Company</label>
+                </value>
+                <value>
+                    <fullName>Davis Calibration</fullName>
+                    <default>false</default>
+                    <label>Davis Calibration</label>
+                </value>
+                <value>
+                    <fullName>Dick Munns Company</fullName>
+                    <default>false</default>
+                    <label>Dick Munns Company</label>
+                </value>
+                <value>
+                    <fullName>Distek</fullName>
+                    <default>false</default>
+                    <label>Distek</label>
+                </value>
+                <value>
+                    <fullName>Essco Calibration Lab</fullName>
+                    <default>false</default>
+                    <label>Essco Calibration Lab</label>
+                </value>
+                <value>
+                    <fullName>ETS-Lindgren</fullName>
+                    <default>false</default>
+                    <label>ETS-Lindgren</label>
+                </value>
+                <value>
+                    <fullName>Extech Instruments</fullName>
+                    <default>false</default>
+                    <label>Extech Instruments</label>
+                </value>
+                <value>
+                    <fullName>FLIR</fullName>
+                    <default>false</default>
+                    <label>FLIR</label>
+                </value>
+                <value>
+                    <fullName>Fluke</fullName>
+                    <default>false</default>
+                    <label>Fluke</label>
+                </value>
+                <value>
+                    <fullName>GJC Instruments Ltd.</fullName>
+                    <default>false</default>
+                    <label>GJC Instruments Ltd.</label>
+                </value>
+                <value>
+                    <fullName>HACH</fullName>
+                    <default>false</default>
+                    <label>HACH</label>
+                </value>
+                <value>
+                    <fullName>International Process Solutions</fullName>
+                    <default>false</default>
+                    <label>International Process Solutions</label>
+                </value>
+                <value>
+                    <fullName>LabMetrix</fullName>
+                    <default>false</default>
+                    <label>LabMetrix</label>
+                </value>
+                <value>
+                    <fullName>Llantrisant</fullName>
+                    <default>false</default>
+                    <label>Llantrisant</label>
+                </value>
+                <value>
+                    <fullName>Ludlum Measurements, Inc.</fullName>
+                    <default>false</default>
+                    <label>Ludlum Measurements, Inc.</label>
+                </value>
+                <value>
+                    <fullName>Mettler Toledo</fullName>
+                    <default>false</default>
+                    <label>Mettler Toledo</label>
+                </value>
+                <value>
+                    <fullName>Millipore Corp.</fullName>
+                    <default>false</default>
+                    <label>Millipore Corp.</label>
+                </value>
+                <value>
+                    <fullName>MONARCH</fullName>
+                    <default>false</default>
+                    <label>MONARCH</label>
+                </value>
+                <value>
+                    <fullName>National Standards of Puerto Rico</fullName>
+                    <default>false</default>
+                    <label>National Standards of Puerto Rico</label>
+                </value>
+                <value>
+                    <fullName>NIST</fullName>
+                    <default>false</default>
+                    <label>NIST</label>
+                </value>
+                <value>
+                    <fullName>OEM</fullName>
+                    <default>false</default>
+                    <label>OEM</label>
+                </value>
+                <value>
+                    <fullName>PerkinElmer</fullName>
+                    <default>false</default>
+                    <label>PerkinElmer</label>
+                </value>
+                <value>
+                    <fullName>Precision Measurements</fullName>
+                    <default>false</default>
+                    <label>Precision Measurements</label>
+                </value>
+                <value>
+                    <fullName>Restek</fullName>
+                    <default>false</default>
+                    <label>Restek</label>
+                </value>
+                <value>
+                    <fullName>Rice Lake</fullName>
+                    <default>false</default>
+                    <label>Rice Lake</label>
+                </value>
+                <value>
+                    <fullName>Rudolph - OEM</fullName>
+                    <default>false</default>
+                    <label>Rudolph - OEM</label>
+                </value>
+                <value>
+                    <fullName>Starna</fullName>
+                    <default>false</default>
+                    <label>Starna</label>
+                </value>
+                <value>
+                    <fullName>Tektronix</fullName>
+                    <default>false</default>
+                    <label>Tektronix</label>
+                </value>
+                <value>
+                    <fullName>Transcat</fullName>
+                    <default>false</default>
+                    <label>Transcat</label>
+                </value>
+                <value>
+                    <fullName>Trescal</fullName>
+                    <default>false</default>
+                    <label>Trescal</label>
+                </value>
+                <value>
+                    <fullName>Troemner</fullName>
+                    <default>false</default>
+                    <label>Troemner</label>
+                </value>
+                <value>
+                    <fullName>V:KIT</fullName>
+                    <default>false</default>
+                    <label>V:KIT</label>
+                </value>
+                <value>
+                    <fullName>Vaisala</fullName>
+                    <default>false</default>
+                    <label>Vaisala</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_As_Left_Result__c</fullName>
+        <externalId>false</externalId>
+        <label>As Left Result</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                    <label>Unknown</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_As_Found_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>As Found Result</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                    <label>Unknown</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Calibration_Period__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Calibrated_Tool__r.SMAX_PS_MTE_Calibration_Period__c)</formula>
+        <label>Calibration Period</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Deviation_Report_ID__c</fullName>
+        <description>Report ID from SAP</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Deviation Report ID from SAP.</inlineHelpText>
+        <label>Deviation Report ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Calibration_Completed__c</fullName>
+        <externalId>false</externalId>
+        <label>Calibration Completed</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Has_MTE_Permission_Set__c</fullName>
+        <description>Denotes that the running user has the MTE Permission Set Applied</description>
+        <externalId>false</externalId>
+        <formula>$Permission.SMAX_PS_HasMTEPermission</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Denotes that the running user has the MTE Permission Set Applied</inlineHelpText>
+        <label>Has MTE Permission Set?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+</CustomObject>

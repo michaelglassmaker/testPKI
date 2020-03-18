@@ -51,7 +51,7 @@ public class INF_CreateRenewalOpportunityOnClosedWon{
         }
         insert OpptyList;
         
-        Opportunity opp1 = new Opportunity (Name='Opp1',StageName='Stage 6 - Implement (Closed)',CloseDate=Date.today(),Solution_Area_of_Interest__c='Energy');
+      /*  Opportunity opp1 = new Opportunity (Name='Opp1',StageName='Stage 6 - Implement (Closed)',CloseDate=Date.today(),Solution_Area_of_Interest__c='Energy');
         insert opp1;
         
         Pricebook2  standardPb = [select id, name, isActive from Pricebook2 where IsStandard = true limit 1];
@@ -81,14 +81,16 @@ public class INF_CreateRenewalOpportunityOnClosedWon{
         insert pbeList;
         
         List<OpportunityLineItem> oppLineItems = new List<OpportunityLineItem>();
-        List<Opportunity> OppsUpdateRen = new List<Opportunity>();
+        
         List<Opportunity> OppsUpdateNonRen1 = new List<Opportunity>();
         List<Opportunity> OppsUpdateNonRen = new List<Opportunity>();
         
-        
+        */
+        List<Opportunity> OppsUpdateRen = new List<Opportunity>();
         for(Opportunity opp : OpptyList){
-            oppLineItems.add(new OpportunityLineItem(OpportunityID=opp.id,Start_Date_INF__c=Date.today(),End_Date_INF__c=Date.today(),TotalPrice=10,Quantity=1,PriceBookEntryID=pbeList[0].id));
+          /*  oppLineItems.add(new OpportunityLineItem(OpportunityID=opp.id,Start_Date_INF__c=Date.today(),End_Date_INF__c=Date.today(),TotalPrice=10,Quantity=1,PriceBookEntryID=pbeList[0].id));
             oppLineItems.add(new OpportunityLineItem(OpportunityID=opp.id,Start_Date_INF__c=Date.today(),End_Date_INF__c=Date.today(),TotalPrice=10,Quantity=1,PriceBookEntryID=pbeList[1].id));
+            */
             opp.StageName='Closed Won';
             opp.GP_OrderNum_INF__c ='ORD1234';
             opp.Solution_Area_of_Interest__c='Energy';
@@ -96,9 +98,11 @@ public class INF_CreateRenewalOpportunityOnClosedWon{
             
         }
         
-        insert oppLineItems;
+        //insert oppLineItems;
         test.startTest();
+        system.debug('Test Started::::');
         update OppsUpdateRen;
+        system.debug('Test Stopped::::');
         test.stopTest();
         
     }

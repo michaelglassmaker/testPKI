@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>This will store all email templates per record type required for emailing the service report</description>
+    <enableFeeds>false</enableFeeds>
+    <label>Email Template Settings</label>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>SVMX_PS_ES_Default__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field defines if the Org Wide Address is default and can be used for any object for which no org wide address is found</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field defines if the Org Wide Address is default and can be used for any object for which no org wide address is found</inlineHelpText>
+        <label>Default</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_ES_Object_API_Name__c</fullName>
+        <description>This field carries the Object API Name</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field carries the Object API Name</inlineHelpText>
+        <label>Object API Name</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_ES_Record_Type_Name__c</fullName>
+        <description>This field carries the name of record type</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field carries the name of record type</inlineHelpText>
+        <label>Record Type Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_ES_Service_Report_Name__c</fullName>
+        <description>This field specifies service report name where the templates need to be used</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field specifies service report name where the templates need to be used</inlineHelpText>
+        <label>Service Report Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_ES_Template_Unique_Name__c</fullName>
+        <description>This field carries the name of Template to be used while sending email</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field carries the name of Template to be used while sending email</inlineHelpText>
+        <label>Template Unique Name</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

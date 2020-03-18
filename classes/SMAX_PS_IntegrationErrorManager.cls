@@ -151,52 +151,52 @@ public with sharing class SMAX_PS_IntegrationErrorManager {
 	/**
 	 * SVMXCFG-1056 Updating stock transfers with integration errors
 	 */
-//	public static void updateStockTransferErrorStatus(List<SMAX_PS_IntegrationError__c> ieNewList)
-//	{
-//		Set<Id> stIds = new Set<Id>();
-//		for (SMAX_PS_IntegrationError__c ie : ieNewList)
-//		{
-//			if ( ie.SMAX_PS_StockTransfer__c != null && ie.SMAX_PS_StockTransfer__c != null )
-//			{
-//				Id stId = ie.SMAX_PS_StockTransfer__c;
-//				stIds.add(stId);
-//			}
-//		}
-//
-//		if (stIds.isEmpty())
-//			return;
-//
-//		List<SVMXC__Stock_Transfer__c> stList = [SELECT Id, Name, SMAX_PS_Status__c
-//		FROM SVMXC__Stock_Transfer__c WHERE Id IN :stIds];
-//		for (SVMXC__Stock_Transfer__c st : stList)
-//		{
-//			if (st.SMAX_PS_Status__c == 'Submitted')
-//			{
-//				st.SMAX_PS_Status__c = 'Error';
-//			}
-//		}
-//
-//		List<SMAX_PS_ErrorLog__c> logs = new List<SMAX_PS_ErrorLog__c>();
-//		Database.SaveResult[] results = Database.update(stList, false);
-//		for (Integer i = 0; i < results.size(); i++)
-//		{
-//			Database.SaveResult result = results[i];
-//			SVMXC__Stock_Transfer__c st = stList[i];
-//			if (!result.isSuccess())
-//			{
-//				String errorMsg = 'Error updating Stock Transfer with Integration Error: ' + st.Name + ' - ' + result.getErrors();
-//				System.debug('INT_ERROR_PO: ' + errorMsg);
-//				logs.add(SMAX_PS_LogUtility.createLog(SMAX_PS_LogUtility.ERROR, errorMsg, 'SMAX_PS_IntegrationErrorManager', null, st.Id));
-//			}
-//			else
-//			{
-//				System.debug('INT_ERROR_PO: Success updating Stock Transfer: ' + st.Id);
-//			}
-//		}
-//
-//		if (!logs.isEmpty())
-//			insert logs;
-//	}
+	public static void updateStockTransferErrorStatus(List<SMAX_PS_IntegrationError__c> ieNewList)
+	{
+		Set<Id> stIds = new Set<Id>();
+		for (SMAX_PS_IntegrationError__c ie : ieNewList)
+		{
+			if ( ie.SMAX_PS_StockTransfer__c != null && ie.SMAX_PS_StockTransfer__c != null )
+			{
+				Id stId = ie.SMAX_PS_StockTransfer__c;
+				stIds.add(stId);
+			}
+		}
+
+		if (stIds.isEmpty())
+			return;
+
+		List<SVMXC__Stock_Transfer__c> stList = [SELECT Id, Name, SMAX_PS_Status__c
+		FROM SVMXC__Stock_Transfer__c WHERE Id IN :stIds];
+		for (SVMXC__Stock_Transfer__c st : stList)
+		{
+			if (st.SMAX_PS_Status__c == 'Submitted')
+			{
+				st.SMAX_PS_Status__c = 'Error';
+			}
+		}
+
+		List<SMAX_PS_ErrorLog__c> logs = new List<SMAX_PS_ErrorLog__c>();
+		Database.SaveResult[] results = Database.update(stList, false);
+		for (Integer i = 0; i < results.size(); i++)
+		{
+			Database.SaveResult result = results[i];
+			SVMXC__Stock_Transfer__c st = stList[i];
+			if (!result.isSuccess())
+			{
+				String errorMsg = 'Error updating Stock Transfer with Integration Error: ' + st.Name + ' - ' + result.getErrors();
+				System.debug('INT_ERROR_PO: ' + errorMsg);
+				logs.add(SMAX_PS_LogUtility.createLog(SMAX_PS_LogUtility.ERROR, errorMsg, 'SMAX_PS_IntegrationErrorManager', null, st.Id));
+			}
+			else
+			{
+				System.debug('INT_ERROR_PO: Success updating Stock Transfer: ' + st.Id);
+			}
+		}
+
+		if (!logs.isEmpty())
+			insert logs;
+	}
 
 	/**
 	 *  SVMXINT-572 DMR - No changes "Error"
@@ -205,6 +205,8 @@ public with sharing class SMAX_PS_IntegrationErrorManager {
 	public static void unlockDMR(List<SMAX_PS_IntegrationError__c> ieNewList)
 	{
 		Set<Id> invoiceIds = new Set<Id>();
+		Set<Id> invoicesToOpen = new Set<Id>();
+		Set<Id> invoicesToError = new Set<Id>();
 		for (SMAX_PS_IntegrationError__c ie : ieNewList)
 		{
 			if ( ie.SMAX_PS_Invoice__c != null && ie.SMAX_PS_ErrorMessage__c != null )
@@ -214,6 +216,13 @@ public with sharing class SMAX_PS_IntegrationErrorManager {
 				{
 					// This is really a warning.. should still "Unlock" DMR
 					invoiceIds.add(invoiceId);
+					invoicesToOpen.add(invoiceId);
+				}
+				else if (ie.SMAX_PS_ErrorMessage__c.contains('is currently being processed'))
+				{
+					// SVMXCFG-1080 This is an error.. should change to "Error" status
+					invoiceIds.add(invoiceId);
+					invoicesToError.add(invoiceId);
 				}
 			}
 		}
@@ -222,13 +231,21 @@ public with sharing class SMAX_PS_IntegrationErrorManager {
 			return;
 
 		List<SVMXC__Proforma_Invoice__c> invoiceToUpdate = new List<SVMXC__Proforma_Invoice__c>();
-		List<SVMXC__Proforma_Invoice__c> invoices = [SELECT Id, Name, SVMXC__Status__c
+		List<SVMXC__Proforma_Invoice__c> invoices = [SELECT Id, Name, SVMXC__Status__c, SMAX_PS_SAP_DMR_InvoiceNumber__c
 			FROM SVMXC__Proforma_Invoice__c WHERE Id IN :invoiceIds];
 		for (SVMXC__Proforma_Invoice__c inv : invoices) 
 		{
-			if ( inv.SVMXC__Status__c == 'Locked' ) 
+			if (invoicesToOpen.contains(inv.Id) && inv.SVMXC__Status__c == 'Locked' )
 			{
 				inv.SVMXC__Status__c = 'Open';
+				invoiceToUpdate.add(inv);
+			}
+			// SVMXCFG-1080 - Move to "error", but only if no invoice number received
+			else if (invoicesToError.contains(inv.Id)
+				&& (inv.SVMXC__Status__c == 'Locked' || inv.SVMXC__Status__c == 'Released')
+				&& inv.SMAX_PS_SAP_DMR_InvoiceNumber__c == null)
+			{
+				inv.SVMXC__Status__c = 'Error';
 				invoiceToUpdate.add(inv);
 			}
 		}

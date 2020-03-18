@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <fullName>SVMX_PS_Mass_Accept_Work_Orders</fullName>
+        <description>SVMX_PS_Mass_Accept_Work_Orders</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>SVMX_PS_Mass_Accept_Work_Orders</label>
+    </fieldSets>
+    <fields>
+        <fullName>BD_Depot_Queue_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>Depot Queue Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BD_Depot_Queue_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Depot Queue Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Calibrated_Tool_Reference__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This custom lookup field to the Installed Product is used in the Calibrated Tool Record Type and Page Layout</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This custom lookup field to the Installed Product is used in the Calibrated Tool Record Type and Page Layout</inlineHelpText>
+        <label>Calibrated Tool Reference</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>SVMXC__Installed_Product__c.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Calibrated Tools</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>SVMXC__Installed_Product__c</referenceTo>
+        <relationshipLabel>Technician/Equipment</relationshipLabel>
+        <relationshipName>Technician_Equipment</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Count_Tech__c</fullName>
+        <description>counts the technician records</description>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>counts the technician records</inlineHelpText>
+        <label>Count Tech</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_LocationCode__c</fullName>
+        <externalId>false</externalId>
+        <label>Location Code</label>
+        <length>6</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Plant__c</fullName>
+        <description>SAP Plant used for External ID and integration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SAP Plant used for External ID and integration</inlineHelpText>
+        <label>Plant</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Technician_Geographies_2__c</fullName>
+        <description>Used in dispatch console for technician search and for character limit overflow with Technician Geographies field</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used in dispatch console for technician search and for character limit overflow with Technician Geographies field</inlineHelpText>
+        <label>Technician Geographies 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Technician_Geographies__c</fullName>
+        <description>Listing of Technician Geographies used in technician search on dispatch console.</description>
+        <externalId>false</externalId>
+        <label>Technician Geographies</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Technician_Manager_Email__c</fullName>
+        <externalId>false</externalId>
+        <formula>SVMXC__Salesforce_User__r.Manager.Email</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Technician Manager Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Work_Center__c</fullName>
+        <description>SAP Work Center used for External ID and integration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SAP Work Center used for External ID and integration</inlineHelpText>
+        <label>Work Center</label>
+        <length>15</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Employment_Status__c</fullName>
+        <description>Reflects the current employment status for this technician</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Reflects the current employment status for this technician</inlineHelpText>
+        <label>Employment Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Full-time</fullName>
+                    <default>false</default>
+                    <label>Full-time</label>
+                </value>
+                <value>
+                    <fullName>Part-time</fullName>
+                    <default>false</default>
+                    <label>Part-time</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_External_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Preferred_Language__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(SVMXC__Salesforce_User__r.BigMachines__Language_Preference__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Preferred Language</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Primary_Tech_Check__c</fullName>
+        <description>Checks if the logged user is the technician - used in mass accept</description>
+        <externalId>false</externalId>
+        <formula>IF( SVMXC__Salesforce_User__c = $User.Id || 
+$Profile.Name = &quot;System Administrator&quot; || 
+$Profile.Name = &quot;SVMX PS - Service Manager - Platform&quot;|| 
+$Profile.Name = &quot;SVMX PS - Customer Care&quot;, 
+1, 
+0 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Checks if the logged user is the technician - used in mass accept</inlineHelpText>
+        <label>Primary Tech Check</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_Technician_Manager__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( isblank(SVMXC__Salesforce_User__c ),&quot;NA&quot;,   SVMXC__Salesforce_User__r.Manager.FirstName &amp;&quot; &quot;&amp; SVMXC__Salesforce_User__r.Manager.LastName)</formula>
+        <label>Technician Manager</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

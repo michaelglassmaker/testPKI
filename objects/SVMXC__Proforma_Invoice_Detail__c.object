@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>SMAX_PS_Invoice_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>SVMXC__Proforma_Invoice__r.RecordType.Name</formula>
+        <label>Invoice Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Proforma_Invoice_Status__c</fullName>
+        <description>Displays the Proforma Invoice Status.</description>
+        <externalId>false</externalId>
+        <formula>TEXT(SVMXC__Proforma_Invoice__r.SVMXC__Status__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Proforma Invoice Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_SAP_DMR_Number__c</fullName>
+        <description>SAP DMR Number</description>
+        <externalId>true</externalId>
+        <inlineHelpText>SAP DMR Number</inlineHelpText>
+        <label>SAP DMR Number</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_SAP_Invoice_Number__c</fullName>
+        <externalId>true</externalId>
+        <label>SAP Invoice Number</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_TotalNetAmount__c</fullName>
+        <description>Total Net Amount</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total Net Amount</inlineHelpText>
+        <label>Total Net Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_TotalTaxAmount__c</fullName>
+        <description>Total Tax Amount</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total Tax Amount</inlineHelpText>
+        <label>Total Tax Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+</CustomObject>

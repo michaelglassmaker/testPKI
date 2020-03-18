@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <label>Notification Center HTML Home Page</label>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>URL__c</fullName>
+        <externalId>false</externalId>
+        <label>URL</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Color__c</fullName>
+        <externalId>false</externalId>
+        <label>Color</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Mail_To__c</fullName>
+        <externalId>false</externalId>
+        <label>Mail To</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Display_Text__c</fullName>
+        <externalId>false</externalId>
+        <label>Display Text</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Background_Color__c</fullName>
+        <externalId>false</externalId>
+        <label>Background Color</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>View Hierarchy Button - List of account fields displayed</description>
+    <enableFeeds>false</enableFeeds>
+    <label>Custom Account View Hierarchy Setting</label>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>Field_List__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The List of Fields that are to be displayed on the Custom View Hierarchy on Account</inlineHelpText>
+        <label>Field List</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

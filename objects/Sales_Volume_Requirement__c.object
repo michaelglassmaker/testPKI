@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>Sales Volume Requirement</label>
+    <nameField>
+        <displayFormat>{000000}</displayFormat>
+        <label>Sales Volume Requirement ID</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Sales Volume Requirements</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>Year__c</fullName>
+        <externalId>false</externalId>
+        <label>Year #</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+                <value>
+                    <fullName>6</fullName>
+                    <default>false</default>
+                    <label>6</label>
+                </value>
+                <value>
+                    <fullName>7</fullName>
+                    <default>false</default>
+                    <label>7</label>
+                </value>
+                <value>
+                    <fullName>8</fullName>
+                    <default>false</default>
+                    <label>8</label>
+                </value>
+                <value>
+                    <fullName>9</fullName>
+                    <default>false</default>
+                    <label>9</label>
+                </value>
+                <value>
+                    <fullName>10</fullName>
+                    <default>false</default>
+                    <label>10</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Apts_Currency__c</fullName>
+        <externalId>false</externalId>
+        <label>Currency</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Australian Dollar (AUD)</fullName>
+                    <default>false</default>
+                    <label>Australian Dollar (AUD)</label>
+                </value>
+                <value>
+                    <fullName>Canadian Dollar (CAD)</fullName>
+                    <default>false</default>
+                    <label>Canadian Dollar (CAD)</label>
+                </value>
+                <value>
+                    <fullName>Swiss Franc (CHF)</fullName>
+                    <default>false</default>
+                    <label>Swiss Franc (CHF)</label>
+                </value>
+                <value>
+                    <fullName>Danish Krone (DKK)</fullName>
+                    <default>false</default>
+                    <label>Danish Krone (DKK)</label>
+                </value>
+                <value>
+                    <fullName>Euro (EUR)</fullName>
+                    <default>false</default>
+                    <label>Euro (EUR)</label>
+                </value>
+                <value>
+                    <fullName>British Pound (GBP)</fullName>
+                    <default>false</default>
+                    <label>British Pound (GBP)</label>
+                </value>
+                <value>
+                    <fullName>Hong Kong Dollar (HKD)</fullName>
+                    <default>false</default>
+                    <label>Hong Kong Dollar (HKD)</label>
+                </value>
+                <value>
+                    <fullName>Japanese Yen (JPY)</fullName>
+                    <default>false</default>
+                    <label>Japanese Yen (JPY)</label>
+                </value>
+                <value>
+                    <fullName>Korean Won (KRW)</fullName>
+                    <default>false</default>
+                    <label>Korean Won (KRW)</label>
+                </value>
+                <value>
+                    <fullName>Malaysian Ringgit (MYR)</fullName>
+                    <default>false</default>
+                    <label>Malaysian Ringgit (MYR)</label>
+                </value>
+                <value>
+                    <fullName>Norwegian Krone (NOK)</fullName>
+                    <default>false</default>
+                    <label>Norwegian Krone (NOK)</label>
+                </value>
+                <value>
+                    <fullName>Pilippine Peso (PJP)</fullName>
+                    <default>false</default>
+                    <label>Pilippine Peso (PJP)</label>
+                </value>
+                <value>
+                    <fullName>Polish Zloty (PLN)</fullName>
+                    <default>false</default>
+                    <label>Polish Zloty (PLN)</label>
+                </value>
+                <value>
+                    <fullName>Swedish Krona (SEK)</fullName>
+                    <default>false</default>
+                    <label>Swedish Krona (SEK)</label>
+                </value>
+                <value>
+                    <fullName>Singapore Dollar (SGD)</fullName>
+                    <default>false</default>
+                    <label>Singapore Dollar (SGD)</label>
+                </value>
+                <value>
+                    <fullName>Thai Baht (THB)</fullName>
+                    <default>false</default>
+                    <label>Thai Baht (THB)</label>
+                </value>
+                <value>
+                    <fullName>Taiwan Dollar (TWD)</fullName>
+                    <default>false</default>
+                    <label>Taiwan Dollar (TWD)</label>
+                </value>
+                <value>
+                    <fullName>South African Rand (ZAR)</fullName>
+                    <default>false</default>
+                    <label>South African Rand (ZAR)</label>
+                </value>
+                <value>
+                    <fullName>United States Dollar (USD)</fullName>
+                    <default>false</default>
+                    <label>United States Dollar (USD)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Apts_Product_Line__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Line</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ATOMIC ABSORPTION SPECTROSCOPY (AA)</fullName>
+                    <default>false</default>
+                    <label>ATOMIC ABSORPTION SPECTROSCOPY (AA)</label>
+                </value>
+                <value>
+                    <fullName>APPLICATION SYSTEMS (APS)</fullName>
+                    <default>false</default>
+                    <label>APPLICATION SYSTEMS (APS)</label>
+                </value>
+                <value>
+                    <fullName>ANALYTICAL PROTEOMICS (ANP)</fullName>
+                    <default>false</default>
+                    <label>ANALYTICAL PROTEOMICS (ANP)</label>
+                </value>
+                <value>
+                    <fullName>AUTO ROBOTIC SYSTEMS (ARS)</fullName>
+                    <default>false</default>
+                    <label>AUTO ROBOTIC SYSTEMS (ARS)</label>
+                </value>
+                <value>
+                    <fullName>aSi-GE (ASG)</fullName>
+                    <default>false</default>
+                    <label>aSi-GE (ASG)</label>
+                </value>
+                <value>
+                    <fullName>aSi-PKI (ASP)</fullName>
+                    <default>false</default>
+                    <label>aSi-PKI (ASP)</label>
+                </value>
+                <value>
+                    <fullName>AUTOMATED WORKSTATIONS (AWS)</fullName>
+                    <default>false</default>
+                    <label>AUTOMATED WORKSTATIONS (AWS)</label>
+                </value>
+                <value>
+                    <fullName>CALIPER LIQUID HANDLING (CLH)</fullName>
+                    <default>false</default>
+                    <label>CALIPER LIQUID HANDLING (CLH)</label>
+                </value>
+                <value>
+                    <fullName>CALIPER REAGENTS (CLR)</fullName>
+                    <default>false</default>
+                    <label>CALIPER REAGENTS (CLR)</label>
+                </value>
+                <value>
+                    <fullName>CUSTOM MANUFACTURING (CMG)</fullName>
+                    <default>false</default>
+                    <label>CUSTOM MANUFACTURING (CMG)</label>
+                </value>
+                <value>
+                    <fullName>DEXELA - CMOS (CMS)</fullName>
+                    <default>false</default>
+                    <label>DEXELA - CMOS (CMS)</label>
+                </value>
+                <value>
+                    <fullName>CELLULAR SCRN &amp; ADME (CSA)</fullName>
+                    <default>false</default>
+                    <label>CELLULAR SCRN &amp; ADME (CSA)</label>
+                </value>
+                <value>
+                    <fullName>DIAGNOSTICS (DIA)</fullName>
+                    <default>false</default>
+                    <label>DIAGNOSTICS (DIA)</label>
+                </value>
+                <value>
+                    <fullName>DISTRIB PROD/OTHERLS (DIS)</fullName>
+                    <default>false</default>
+                    <label>DISTRIB PROD/OTHERLS (DIS)</label>
+                </value>
+                <value>
+                    <fullName>DNA MEASUREMENTS (DNA)</fullName>
+                    <default>false</default>
+                    <label>DNA MEASUREMENTS (DNA)</label>
+                </value>
+                <value>
+                    <fullName>ENTERPRISE SW SOLUTION (ESS)</fullName>
+                    <default>false</default>
+                    <label>ENTERPRISE SW SOLUTION (ESS)</label>
+                </value>
+                <value>
+                    <fullName>FLOUR AGENTS PORTFOLIO (FAP)</fullName>
+                    <default>false</default>
+                    <label>FLOUR AGENTS PORTFOLIO (FAP)</label>
+                </value>
+                <value>
+                    <fullName>FUNCTIONAL GENOM &amp; PROTEOM (FGP)</fullName>
+                    <default>false</default>
+                    <label>FUNCTIONAL GENOM &amp; PROTEOM (FGP)</label>
+                </value>
+                <value>
+                    <fullName>GAS CROMATOGRAPHY (GC)</fullName>
+                    <default>false</default>
+                    <label>GAS CROMATOGRAPHY (GC)</label>
+                </value>
+                <value>
+                    <fullName>HIGH CONTENT SCREENING (HCS)</fullName>
+                    <default>false</default>
+                    <label>HIGH CONTENT SCREENING (HCS)</label>
+                </value>
+                <value>
+                    <fullName>SCREENING REAGENTS (HTS)</fullName>
+                    <default>false</default>
+                    <label>SCREENING REAGENTS (HTS)</label>
+                </value>
+                <value>
+                    <fullName>IMAGING &amp; ANALYSIS SOLN (IAS)</fullName>
+                    <default>false</default>
+                    <label>IMAGING &amp; ANALYSIS SOLN (IAS)</label>
+                </value>
+                <value>
+                    <fullName>INDUCTIVELY COUPLED (ICP)</fullName>
+                    <default>false</default>
+                    <label>INDUCTIVELY COUPLED (ICP)</label>
+                </value>
+                <value>
+                    <fullName>IN VIVO IMAGING (INV)</fullName>
+                    <default>false</default>
+                    <label>IN VIVO IMAGING (INV)</label>
+                </value>
+                <value>
+                    <fullName>IR SPECTROSCOPY (IR)</fullName>
+                    <default>false</default>
+                    <label>IR SPECTROSCOPY (IR)</label>
+                </value>
+                <value>
+                    <fullName>LIQUID CHROMATOGRAPH (LC)</fullName>
+                    <default>false</default>
+                    <label>LIQUID CHROMATOGRAPH (LC)</label>
+                </value>
+                <value>
+                    <fullName>LC MASS SPEC (LCM)</fullName>
+                    <default>false</default>
+                    <label>LC MASS SPEC (LCM)</label>
+                </value>
+                <value>
+                    <fullName>INDUCTIVELY COUPLED (MAS)</fullName>
+                    <default>false</default>
+                    <label>INDUCTIVELY COUPLED (MAS)</label>
+                </value>
+                <value>
+                    <fullName>MOLECULAR DIAGNOSTIC (MDX)</fullName>
+                    <default>false</default>
+                    <label>MOLECULAR DIAGNOSTIC (MDX)</label>
+                </value>
+                <value>
+                    <fullName>MICROFLUIDICS TECH (MFT)</fullName>
+                    <default>false</default>
+                    <label>MICROFLUIDICS TECH (MFT)</label>
+                </value>
+                <value>
+                    <fullName>MULTI-LABEL DETECTION (MLD)</fullName>
+                    <default>false</default>
+                    <label>MULTI-LABEL DETECTION (MLD)</label>
+                </value>
+                <value>
+                    <fullName>RESEARCH REAGENTS (MOL)</fullName>
+                    <default>false</default>
+                    <label>RESEARCH REAGENTS (MOL)</label>
+                </value>
+                <value>
+                    <fullName>MICROFLUIDICS LABCHIP (MOX)</fullName>
+                    <default>false</default>
+                    <label>MICROFLUIDICS LABCHIP (MOX)</label>
+                </value>
+                <value>
+                    <fullName>NUCLEIC ACID PREP (NAP)</fullName>
+                    <default>false</default>
+                    <label>NUCLEIC ACID PREP (NAP)</label>
+                </value>
+                <value>
+                    <fullName>NEONATAL (NEO)</fullName>
+                    <default>false</default>
+                    <label>NEONATAL (NEO)</label>
+                </value>
+                <value>
+                    <fullName>NEONATAL LABS (NLB)</fullName>
+                    <default>false</default>
+                    <label>NEONATAL LABS (NLB)</label>
+                </value>
+                <value>
+                    <fullName>NEW MARKETS OTHER (NMO)</fullName>
+                    <default>false</default>
+                    <label>NEW MARKETS OTHER (NMO)</label>
+                </value>
+                <value>
+                    <fullName>PROTEIN BIOLOGY REAG (PBR)</fullName>
+                    <default>false</default>
+                    <label>PROTEIN BIOLOGY REAG (PBR)</label>
+                </value>
+                <value>
+                    <fullName>PROTEOM &amp; GENOM INST (PGI)</fullName>
+                    <default>false</default>
+                    <label>PROTEOM &amp; GENOM INST (PGI)</label>
+                </value>
+                <value>
+                    <fullName>PRENATAL (PRE)</fullName>
+                    <default>false</default>
+                    <label>PRENATAL (PRE)</label>
+                </value>
+                <value>
+                    <fullName>QUANT TOMOGRAPHY SYS (QTS)</fullName>
+                    <default>false</default>
+                    <label>QUANT TOMOGRAPHY SYS (QTS)</label>
+                </value>
+                <value>
+                    <fullName>RAMAN SPECTROSCOPY (RAM)</fullName>
+                    <default>false</default>
+                    <label>RAMAN SPECTROSCOPY (RAM)</label>
+                </value>
+                <value>
+                    <fullName>LIFE SCIENCE BUSINESS (RES)</fullName>
+                    <default>false</default>
+                    <label>LIFE SCIENCE BUSINESS (RES)</label>
+                </value>
+                <value>
+                    <fullName>RADIOMETRIC DETECTION (RRD)</fullName>
+                    <default>false</default>
+                    <label>RADIOMETRIC DETECTION (RRD)</label>
+                </value>
+                <value>
+                    <fullName>RESEARCH REAGENTS (RRS)</fullName>
+                    <default>false</default>
+                    <label>RESEARCH REAGENTS (RRS)</label>
+                </value>
+                <value>
+                    <fullName>SAMPLE PREP &amp; HTS SYST (SPS)</fullName>
+                    <default>false</default>
+                    <label>SAMPLE PREP &amp; HTS SYST (SPS)</label>
+                </value>
+                <value>
+                    <fullName>THERMAL AND ELEMENTAL ANALYSIS (TEA)</fullName>
+                    <default>false</default>
+                    <label>THERMAL AND ELEMENTAL ANALYSIS (TEA)</label>
+                </value>
+                <value>
+                    <fullName>TISSUE (TIS)</fullName>
+                    <default>false</default>
+                    <label>TISSUE (TIS)</label>
+                </value>
+                <value>
+                    <fullName>TISSUE (CORE) (TSC)</fullName>
+                    <default>false</default>
+                    <label>TISSUE (CORE) (TSC)</label>
+                </value>
+                <value>
+                    <fullName>ULTRAVIOLET/VISIBLE SPECTROSCOPY(UV/VIS)</fullName>
+                    <default>false</default>
+                    <label>ULTRAVIOLET/VISIBLE SPECTROSCOPY(UV/VIS)</label>
+                </value>
+                <value>
+                    <fullName>VIROLOGY-Edx (VIR)</fullName>
+                    <default>false</default>
+                    <label>VIROLOGY-Edx (VIR)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Sales_Volume_Units__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Volume (Units)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Volume_Currency__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Volume (Currency)</label>
+        <precision>9</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Volume_Required__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Volume Required</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Apts_Product_Line_Print__c</fullName>
+        <description>To fill</description>
+        <externalId>false</externalId>
+        <label>Product Line Print</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+</CustomObject>

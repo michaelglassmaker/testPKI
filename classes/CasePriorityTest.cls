@@ -6,17 +6,15 @@ see  changes in Git Compare View
 */
 
 public class CasePriorityTest{
-    
-    @testSetup static void setup() {
-SAI_Lead_Routing_Values__c cc = new SAI_Lead_Routing_Values__c();
-cc.SAI_Values__c = 'Applied Genomics, Maternal Fetal Health, Newborn Screening';
- insert cc;
- }
+
     static testMethod void cloudopsCase(){
         Account acc = CT_TestDataSetupUtility.createTestAccount('TEST','77778','Test');
         insert acc;
-        Contact con = CT_TestDataSetupUtility.createTestContact(acc.id,'test','mjgmjg02@test.com');
+        Contact con = CT_TestDataSetupUtility.createTestContact(acc.id,'test','test','test@test.com');
         insert con;
-        Case casetoinsert = CT_TestDataSetupUtility.createTestCase('Cloud Operations','New','Phone',acc.id,con.id);
+        Case casetoinsert = CT_TestDataSetupUtility.createTestCase('Informatics','New','test','Phone',acc.id,con.id);
         insert casetoinsert;
+        
+       
+    }
 }

@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>SMAX_PS_Adjustments_Reviewed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Denotes if adjustments have been reviewed. Used in the Send DMR Adjustments SFM</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes if adjustments have been reviewed. Used in the Send DMR Adjustments SFM</inlineHelpText>
+        <label>Adjustments Reviewed</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_CRC_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>CRC Notes</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Cancel_Posting_Date__c</fullName>
+        <description>Displays the Invoice canceled date.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Displays the Invoice canceled date.</inlineHelpText>
+        <label>Cancel Posting Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_CompletedTxnNumber__c</fullName>
+        <description>Completed Transaction Number</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Completed Transaction Number</inlineHelpText>
+        <label>Completed Transaction Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Completed_Date_Time_from_WO__c</fullName>
+        <externalId>false</externalId>
+        <formula>SMAX_PS_Work_Order__r.SVMXC__Completed_Date_Time__c</formula>
+        <label>Completed Date/Time from WO</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Contract_Entitlement__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Displays the Contract Entitlement for the related Work Order.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Contract Entitlement for the related Work Order.</inlineHelpText>
+        <label>Contract Entitlement</label>
+        <referenceTo>SVMXC__Service_Contract_Services__c</referenceTo>
+        <relationshipLabel>Proforma Invoices</relationshipLabel>
+        <relationshipName>Proforma_Invoices</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Contract_Item__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Displays the Contract Item from the related Work Order.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Contract Item from the related Work Order.</inlineHelpText>
+        <label>Contract Item</label>
+        <referenceTo>SVMXC__Service_Contract__c</referenceTo>
+        <relationshipLabel>Proforma Invoices</relationshipLabel>
+        <relationshipName>Proforma_Invoices</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Currency_Symbol__c</fullName>
+        <description>Copy of the Currency Symbol from the WO</description>
+        <externalId>false</externalId>
+        <formula>SMAX_PS_Work_Order__r.SMAX_PS_Currency_Symbol__c</formula>
+        <label>Currency Symbol</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_EInvoice_Code_1__c</fullName>
+        <externalId>false</externalId>
+        <label>E-Invoice Code 1</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_EInvoice_Code_2__c</fullName>
+        <externalId>false</externalId>
+        <label>E-Invoice Code 2</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_EInvoice_Code_3__c</fullName>
+        <externalId>false</externalId>
+        <label>E-Invoice Code 3</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_EInvoice_Customer_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>E-Invoice Customer Id</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_EInvoice_Platform_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>E-Invoice Platform Id</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Enterprise_DMR_Review__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to indicate that Enterprise has reviewed this DMR.</inlineHelpText>
+        <label>Enterprise DMR Review</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Invoice_Not_Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicates that an Invoice is not required. The system will automatically discount 100% and change status.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates that an Invoice is not required. The system will automatically discount 100% and change status.</inlineHelpText>
+        <label>Invoice Not Required</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Lines_for_Review__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicates that there are lines containing adjustments that have not been reviewed.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates that there are lines containing adjustments that have not been reviewed.</inlineHelpText>
+        <label>Lines for Review</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Platform_Event_Log__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/apex/SMAX_PS_PlatformEventLog?RelatedID=&quot; &amp; Id &amp; &quot;&amp;RelatedName=&quot; &amp; Name, &quot;View&quot;)</formula>
+        <label>Platform Event Log</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Rejection_Reason__c</fullName>
+        <description>Denotes the reason why the DMR was rejected</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes the reason why the DMR was rejected</inlineHelpText>
+        <label>Rejection Reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Incorrect Time (Labour/Travel)</fullName>
+                    <default>false</default>
+                    <label>Incorrect Time (Labour/Travel)</label>
+                </value>
+                <value>
+                    <fullName>Incorrect Labour or Travel  and Material</fullName>
+                    <default>false</default>
+                    <label>Incorrect Labour or Travel  and Material</label>
+                </value>
+                <value>
+                    <fullName>Incorrect Material</fullName>
+                    <default>false</default>
+                    <label>Incorrect Material</label>
+                </value>
+                <value>
+                    <fullName>Incorrect Price</fullName>
+                    <default>false</default>
+                    <label>Incorrect Price</label>
+                </value>
+                <value>
+                    <fullName>Wrong accounts/partners</fullName>
+                    <default>false</default>
+                    <label>Wrong accounts/partners</label>
+                </value>
+                <value>
+                    <fullName>Duplicate</fullName>
+                    <default>false</default>
+                    <label>Duplicate</label>
+                </value>
+                <value>
+                    <fullName>Other or Misc</fullName>
+                    <default>false</default>
+                    <label>Other or Misc</label>
+                </value>
+                <value>
+                    <fullName>Manager Approval Needed</fullName>
+                    <default>false</default>
+                    <label>Manager Approval Needed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ReleaseImmediately__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Release Immediately - True or False</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Release Immediately - True or False</inlineHelpText>
+        <label>Release Immediately</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Review_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( SMAX_PS_Lines_for_Review__c = true , 
+IMAGE(&quot;/servlet/servlet.FileDownload?file=0153A000003ynmJ&quot;, &quot;Red&quot;,40,40), 
+IMAGE(&quot;/servlet/servlet.FileDownload?file=0153A000003ynmH&quot;, &quot;Green&quot;,40,40))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Red exclamation point indicates that there are adjustments that need to be reviewed. Green check mark indicates that there are no adjustments.</inlineHelpText>
+        <label>Review Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_SAP_CancelInvoiceNumber__c</fullName>
+        <externalId>true</externalId>
+        <label>SAP Cancel Invoice Number</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_SAP_DMR_InvoiceNumber__c</fullName>
+        <externalId>false</externalId>
+        <label>SAP DMR Invoice Number</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_SAP_DMR_Number__c</fullName>
+        <externalId>true</externalId>
+        <label>SAP DMR Number</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_SAP_InvoiceNumber__c</fullName>
+        <externalId>true</externalId>
+        <label>SAP Invoice Number</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_SAP_Invoice_DMR_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>SAP Invoice DMR Number</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Technician_from_WO__c</fullName>
+        <externalId>false</externalId>
+        <formula>SMAX_PS_Work_Order__r.SVMXC__Group_Member__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Technician from WO</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Work_Order__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Used to display the WO on the Proforma</description>
+        <externalId>false</externalId>
+        <label>Work Order</label>
+        <referenceTo>SVMXC__Service_Order__c</referenceTo>
+        <relationshipLabel>Proforma Invoices</relationshipLabel>
+        <relationshipName>Proforma_Invoices</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <recordTypes>
+        <fullName>Cancelation</fullName>
+        <active>true</active>
+        <label>Cancelation</label>
+        <picklistValues>
+            <picklist>SMAX_PS_Rejection_Reason__c</picklist>
+            <values>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Labour or Travel  and Material</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Material</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Price</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Time %28Labour%2FTravel%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other or Misc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong accounts%2Fpartners</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>DMR</fullName>
+        <active>true</active>
+        <description>DMR</description>
+        <label>DMR</label>
+        <picklistValues>
+            <picklist>SMAX_PS_Rejection_Reason__c</picklist>
+            <values>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Labour or Travel  and Material</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Material</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Price</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Time %28Labour%2FTravel%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Approval Needed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other or Misc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong accounts%2Fpartners</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Invoice</fullName>
+        <active>true</active>
+        <description>Invoice</description>
+        <label>Invoice</label>
+        <picklistValues>
+            <picklist>SMAX_PS_Rejection_Reason__c</picklist>
+            <values>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Labour or Travel  and Material</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Material</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Price</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incorrect Time %28Labour%2FTravel%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager Approval Needed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other or Misc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong accounts%2Fpartners</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+</CustomObject>

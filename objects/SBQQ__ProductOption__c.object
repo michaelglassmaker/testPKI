@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>CPQ_External_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>CPQ_License_Agreement_Name_c__c</fullName>
+        <externalId>false</externalId>
+        <label>CPQ_License_Agreement_Name__c</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SaaS</fullName>
+                    <default>false</default>
+                    <label>SaaS</label>
+                </value>
+                <value>
+                    <fullName>PE + IFX</fullName>
+                    <default>false</default>
+                    <label>PE + IFX</label>
+                </value>
+                <value>
+                    <fullName>PE</fullName>
+                    <default>false</default>
+                    <label>PE</label>
+                </value>
+                <value>
+                    <fullName>Cloud</fullName>
+                    <default>false</default>
+                    <label>Cloud</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CPQ_License_Type_Attribute__c</fullName>
+        <description>Stores the license type for use with configuration attributes.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Stores the license type for use with configuration attributes.</inlineHelpText>
+        <label>License Type Filter</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Perpetual</fullName>
+                    <default>false</default>
+                    <label>Perpetual</label>
+                </value>
+                <value>
+                    <fullName>Term</fullName>
+                    <default>false</default>
+                    <label>Term</label>
+                </value>
+                <value>
+                    <fullName>Subscription</fullName>
+                    <default>false</default>
+                    <label>Subscription</label>
+                </value>
+                <value>
+                    <fullName>SaaS</fullName>
+                    <default>false</default>
+                    <label>SaaS</label>
+                </value>
+                <value>
+                    <fullName>PaaS</fullName>
+                    <default>false</default>
+                    <label>PaaS</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CPQ_License_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>SBQQ__OptionalSKU__r.License_Type_INF__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>License Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CPQ_Pricing_Model_Attribute__c</fullName>
+        <externalId>false</externalId>
+        <label>Pricing Model Filter</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Named User</fullName>
+                    <default>false</default>
+                    <label>Named User</label>
+                </value>
+                <value>
+                    <fullName>Renewals Only</fullName>
+                    <default>false</default>
+                    <label>Renewals Only</label>
+                </value>
+                <value>
+                    <fullName>Site</fullName>
+                    <default>false</default>
+                    <label>Site</label>
+                </value>
+                <value>
+                    <fullName>Basic</fullName>
+                    <default>false</default>
+                    <label>Basic</label>
+                </value>
+                <value>
+                    <fullName>Bundle</fullName>
+                    <default>false</default>
+                    <label>Bundle</label>
+                </value>
+                <value>
+                    <fullName>Concurrent</fullName>
+                    <default>false</default>
+                    <label>Concurrent</label>
+                </value>
+                <value>
+                    <fullName>Instance</fullName>
+                    <default>false</default>
+                    <label>Instance</label>
+                </value>
+                <value>
+                    <fullName>Module</fullName>
+                    <default>false</default>
+                    <label>Module</label>
+                </value>
+                <value>
+                    <fullName>Personal subscription</fullName>
+                    <default>false</default>
+                    <label>Personal subscription</label>
+                </value>
+                <value>
+                    <fullName>Private</fullName>
+                    <default>false</default>
+                    <label>Private</label>
+                </value>
+                <value>
+                    <fullName>Special</fullName>
+                    <default>false</default>
+                    <label>Special</label>
+                </value>
+                <value>
+                    <fullName>Study</fullName>
+                    <default>false</default>
+                    <label>Study</label>
+                </value>
+                <value>
+                    <fullName>TIBCO Included</fullName>
+                    <default>false</default>
+                    <label>TIBCO Included</label>
+                </value>
+                <value>
+                    <fullName>TIBCO Not Included</fullName>
+                    <default>false</default>
+                    <label>TIBCO Not Included</label>
+                </value>
+                <value>
+                    <fullName>Training</fullName>
+                    <default>false</default>
+                    <label>Training</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CPQ_Quantity_Controlled_By_Parent__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Ensures that the option&apos;s quantity matches that of the parent (i.e. configured SKU) quantity. Used with quote calculator plugin.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Ensures that the option&apos;s quantity matches that of the parent (i.e. configured SKU) quantity. Used with quote calculator plugin.</inlineHelpText>
+        <label>Quantity Controlled By Parent</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Reminder__c</fullName>
+        <description>Adds a reminder message that appears during product configuration.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Adds a reminder message that appears during product configuration.</inlineHelpText>
+        <label>Reminder</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CPQ_Unit_of_Measure__c</fullName>
+        <description>Used to filter products within bundles via configuration attribute.</description>
+        <externalId>false</externalId>
+        <label>Pricing Model</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Named User</fullName>
+                    <default>false</default>
+                    <label>Named User</label>
+                </value>
+                <value>
+                    <fullName>Instance</fullName>
+                    <default>false</default>
+                    <label>Instance</label>
+                </value>
+                <value>
+                    <fullName>Site</fullName>
+                    <default>false</default>
+                    <label>Site</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+</CustomObject>

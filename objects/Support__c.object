@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <content>supporthome</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Contact support</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <label>Support</label>
+    <nameField>
+        <displayFormat>PKI-{00000000}</displayFormat>
+        <label>Support Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Support</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Business_Unit__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Problem_type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATEDBY_USER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>HelpDesk_Email__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Subject__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>Business_Unit__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Problem_type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Subject__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>HelpDesk_Email__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Status__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Subject__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Problem_type__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Office_Location__c</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Business_Unit__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Description__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Problem_type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Subject__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>Region__c</fullName>
+        <externalId>false</externalId>
+        <formula>Office_Location__r.Region__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Region</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>In Review</fullName>
+                    <default>false</default>
+                    <label>In Review</label>
+                </value>
+                <value>
+                    <fullName>Waiting for Submitter response</fullName>
+                    <default>false</default>
+                    <label>Waiting for Submitter response</label>
+                </value>
+                <value>
+                    <fullName>Resolved</fullName>
+                    <default>false</default>
+                    <label>Resolved</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>Email Sent to Local IT support</fullName>
+                    <default>false</default>
+                    <label>Email Sent to Local IT support</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Subject__c</fullName>
+        <externalId>false</externalId>
+        <label>Subject</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Instruction__c</fullName>
+        <defaultValue>&quot;Submit a WOS ticket for non salesforce.com support and Help&quot;</defaultValue>
+        <externalId>false</externalId>
+        <label>Instruction</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Problem_type__c</fullName>
+        <externalId>false</externalId>
+        <label>Problem Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Business Related</fullName>
+                    <default>false</default>
+                    <label>Business Related</label>
+                </value>
+                <value>
+                    <fullName>General and Other issues</fullName>
+                    <default>false</default>
+                    <label>General and Other issues</label>
+                </value>
+                <value>
+                    <fullName>Mobile Salesforce.com</fullName>
+                    <default>false</default>
+                    <label>Mobile Salesforce.com</label>
+                </value>
+                <value>
+                    <fullName>New User Request</fullName>
+                    <default>false</default>
+                    <label>New User Request</label>
+                </value>
+                <value>
+                    <fullName>Reports and Dashboards</fullName>
+                    <default>false</default>
+                    <label>Reports and Dashboards</label>
+                </value>
+                <value>
+                    <fullName>Salesforce.com How-Tos</fullName>
+                    <default>false</default>
+                    <label>Salesforce.com How-Tos</label>
+                </value>
+                <value>
+                    <fullName>Sales functionality</fullName>
+                    <default>false</default>
+                    <label>Sales functionality</label>
+                </value>
+                <value>
+                    <fullName>Service functionality</fullName>
+                    <default>false</default>
+                    <label>Service functionality</label>
+                </value>
+                <value>
+                    <fullName>Technical Issue</fullName>
+                    <default>false</default>
+                    <label>Technical Issue</label>
+                </value>
+                <value>
+                    <fullName>User Reactivation</fullName>
+                    <default>false</default>
+                    <label>User Reactivation</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Business_Unit__c</fullName>
+        <externalId>false</externalId>
+        <label>Business Unit</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>ASLS</fullName>
+                    <default>false</default>
+                    <label>ASLS</label>
+                </value>
+                <value>
+                    <fullName>Diagnosis</fullName>
+                    <default>false</default>
+                    <label>Diagnosis</label>
+                </value>
+                <value>
+                    <fullName>LST</fullName>
+                    <default>false</default>
+                    <label>LST</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Email2HelpDesk__c</fullName>
+        <externalId>false</externalId>
+        <label>Email2HelpDesk</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HelpDesk_Email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Office_Location__r.HelpDesk_Email__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>HelpDesk Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HelpDesk_Phone__c</fullName>
+        <externalId>false</externalId>
+        <formula>Office_Location__r.DayTime_Phone__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>HelpDesk Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Office_Location__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Office location</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select your office location</inlineHelpText>
+        <label>Office Location</label>
+        <referenceTo>ITHelpDesk_Contacts__c</referenceTo>
+        <relationshipLabel>Support</relationshipLabel>
+        <relationshipName>Support</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>New_User_Email_ID__c</fullName>
+        <description>A Valid PerkinElmer user ID is required</description>
+        <externalId>false</externalId>
+        <label>New User Email ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_User_Employee_ID__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>A valid employee ID is required for salesforce.com account creation</inlineHelpText>
+        <label>New User Employee ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Current_User_to_mirror__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter existing salesforce.com user account to mirror for the new account creation</inlineHelpText>
+        <label>Current User to mirror</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Support3</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Username_to_Reactivate__c</fullName>
+        <externalId>false</externalId>
+        <label>Username to Reactivate</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <validationRules>
+        <fullName>GBL_GBL_Support_newuser_fields_populated</fullName>
+        <active>true</active>
+        <errorConditionFormula>OR(AND( ISPICKVAL( Problem_type__c,&apos;New User Request&apos;), ISBLANK( New_User_Email_ID__c ) ) , 
+AND(NOT( ISBLANK( New_User_Email_ID__c )) , NOT(ISPICKVAL( Problem_type__c,&apos;New User Request&apos;))) )</errorConditionFormula>
+        <errorMessage>IF &apos;problem type&apos; is New User Request, ensure &apos;New User Creation Details&apos; section is populated. Otherwise leave it blank.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>GBL_GBL_Support_reactivatefields_popultd</fullName>
+        <active>true</active>
+        <errorConditionFormula>OR(AND( ISPICKVAL( Problem_type__c,&apos;User Reactivation&apos;), ISBLANK( Username_to_Reactivate__c ) ) , 
+AND(NOT( ISBLANK( Username_to_Reactivate__c )) , NOT(ISPICKVAL( Problem_type__c,&apos;User Reactivation&apos;))) )</errorConditionFormula>
+        <errorMessage>IF &apos;problem type&apos; is User Reactivation, ensure &apos;Username to reactivate&apos; field is populated. For all other problem types, &apos;Username to reactivate&apos;  field must be left blank.</errorMessage>
+    </validationRules>
+</CustomObject>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>SMAX_PS_AutoAdjust_InvoiceNotReq__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicates that this line was Auto Adjusted to 100% Discount due to the Invoice Not Required checkbox.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates that this line was Auto Adjusted to 100% Discount due to the Invoice Not Required checkbox.</inlineHelpText>
+        <label>Auto Adjusted for Invoice Not Required</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_CalculatedLinePrice__c</fullName>
+        <externalId>false</externalId>
+        <formula>/* Start with the Replacement Base Price if not blank.. */ 
+BLANKVALUE(SMAX_PS_ReplacementBasePrice__c, 
+/* OR the Actual Price - Contract Discount */ 
+(SVMXC__Price__c * 
+(1.0 - (BLANKVALUE(SMAX_PS_ContractPercentDiscount__c, 0.00) / 100)) )) 
+/* Multiply by Qty */ 
+* SVMXC__Quantity__c 
+
+/* Next Apply the Service Percent Adjustment */ 
+* IF (ISBLANK(SMAX_PS_ServicePercentAdjustment__c), 
+1.0, 
+IF (ISPICKVAL(SMAX_PS_ServicePercentAdjustmentType__c, &quot;Discount&quot;), 
+1.0 - (SMAX_PS_ServicePercentAdjustment__c / 100), 
+1.0 + (SMAX_PS_ServicePercentAdjustment__c / 100) 
+) 
+) 
+
+/* Next Apply the Service Amount Adjustment */ 
++ IF (ISBLANK(SMAX_PS_ServiceAmountAdjustment__c), 
+0.0, 
+IF (ISPICKVAL(SMAX_PS_ServiceAmountAdjustmentType__c, &quot;Discount&quot;), 
+(-1.0 * SMAX_PS_ServiceAmountAdjustment__c), 
+SMAX_PS_ServiceAmountAdjustment__c 
+) 
+)</formula>
+        <label>Calculated Line Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ContractPercentDiscount__c</fullName>
+        <description>Contract Percent Discount</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Contract Percent Discount</inlineHelpText>
+        <label>Contract Discount</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Count_Lines_for_Review__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISNULL(SMAX_PS_ReplacementBasePrice__c)) ||
+NOT(ISNULL(SMAX_PS_ServiceAmountAdjustment__c)) ||
+NOT(ISNULL(SMAX_PS_ServicePercentAdjustment__c)), 1, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Count Lines for Review</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_EInvoice_Code_1__c</fullName>
+        <externalId>false</externalId>
+        <label>E-Invoice Code 1</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_EInvoice_Code_2__c</fullName>
+        <externalId>false</externalId>
+        <label>E-Invoice Code 2</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_EInvoice_Code_3__c</fullName>
+        <externalId>false</externalId>
+        <label>E-Invoice Code 3</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Material_Part_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Material Part Description</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_NetAmount__c</fullName>
+        <description>Net Amount</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Net Amount</inlineHelpText>
+        <label>Net Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Part_Number__c</fullName>
+        <description>Referencing the part number from the product lookup on Proforma Invoice Lines</description>
+        <externalId>false</externalId>
+        <formula>SVMXC__Product__r.Partnum__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Referencing the part number from the product lookup on Proforma Invoice Lines</inlineHelpText>
+        <label>Part Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ReplacementBasePrice__c</fullName>
+        <description>Replacement Base Price</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Replacement Base Price</inlineHelpText>
+        <label>Replacement Base Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Reviewed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used to indicate that Invoice Lines have been reviewed by CRC.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to indicate that Invoice Lines have been reviewed by CRC.</inlineHelpText>
+        <label>Reviewed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_SAP_DMR_LineNumber__c</fullName>
+        <description>SAP DMR Number</description>
+        <externalId>true</externalId>
+        <inlineHelpText>SAP DMR Number</inlineHelpText>
+        <label>SAP DMR Line Number</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_SAP_Invoice_Line_Number__c</fullName>
+        <externalId>true</externalId>
+        <label>SAP Invoice Line Number</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ServiceAmountAdjustmentType__c</fullName>
+        <description>Service Amount Adjustment Type</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Service Amount Adjustment Type</inlineHelpText>
+        <label>Service Amount Adjustment Type</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Uplift</fullName>
+                    <default>false</default>
+                    <label>Uplift</label>
+                </value>
+                <value>
+                    <fullName>Discount</fullName>
+                    <default>false</default>
+                    <label>Discount</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ServiceAmountAdjustment__c</fullName>
+        <description>Service Amount Adjustment</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Service Amount Adjustment</inlineHelpText>
+        <label>Service Amount Adjustment</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ServicePercentAdjustmentType__c</fullName>
+        <description>Service Percent Adjustment Type</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Service Percent Adjustment Type</inlineHelpText>
+        <label>Service Percent Adjustment Type</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Uplift</fullName>
+                    <default>false</default>
+                    <label>Uplift</label>
+                </value>
+                <value>
+                    <fullName>Discount</fullName>
+                    <default>false</default>
+                    <label>Discount</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_ServicePercentAdjustment__c</fullName>
+        <description>Service Percent Adjustment</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Service Percent Adjustment</inlineHelpText>
+        <label>Service Percent Adjustment</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_TaxAmount__c</fullName>
+        <description>Tax Amount</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Tax Amount</inlineHelpText>
+        <label>Tax Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+</CustomObject>

@@ -23,7 +23,15 @@ global class Configero_GridApp extends PowerLoader.Configero_Base {
 
     }
     @RemoteAction
+    global static Map<String,String> getAllIdsByCriteria(String objectAPIName, List<String> fields, Map<String,String> criteria, Integer pageSize) {
+        return null;
+    }
+    @RemoteAction
     global static List<SObject> getDrillUpIds(String objectAPIName, String field, List<Id> ids) {
+        return null;
+    }
+    @RemoteAction
+    global static List<Map<String,Object>> getFieldListMapForObject(String objectAPIName) {
         return null;
     }
     @RemoteAction
@@ -46,6 +54,10 @@ global class Configero_GridApp extends PowerLoader.Configero_Base {
     }
     @RemoteAction
     global static String getObjectPicklistMeta(String objectAPIName, List<String> picklists) {
+        return null;
+    }
+    @RemoteAction
+    global static String getRelatedFieldMeta(String objectAPIName, List<String> extendedFields) {
         return null;
     }
     @RemoteAction

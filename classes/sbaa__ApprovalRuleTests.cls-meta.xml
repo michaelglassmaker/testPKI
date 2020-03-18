@@ -3,7 +3,7 @@
     <apiVersion>42.0</apiVersion>
     <packageVersions>
         <majorNumber>224</majorNumber>
-        <minorNumber>4</minorNumber>
+        <minorNumber>5</minorNumber>
         <namespace>sbaa</namespace>
     </packageVersions>
     <status>Active</status>

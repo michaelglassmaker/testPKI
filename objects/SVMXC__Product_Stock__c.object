@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Location_City__c</fullName>
+        <externalId>false</externalId>
+        <formula>SVMXC__Location__r.SVMXC__City__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Location City</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Base_UOM__c</fullName>
+        <description>Displays the UOM from the Product object</description>
+        <externalId>false</externalId>
+        <formula>TEXT(SVMXC__Product__r.QuantityUnitOfMeasure)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Displays the UOM from the Product object</inlineHelpText>
+        <label>Base &quot;UOM&quot;</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_CompletedTxnNum__c</fullName>
+        <externalId>false</externalId>
+        <label>Completed Transaction Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_External_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Is_My_Company_Code__c</fullName>
+        <description>Denotes that the product stock record is related to their company code</description>
+        <externalId>false</externalId>
+        <formula>IF($User.SMAX_PS_Sales_Org__c==SVMXC__Location__r.SMAX_PS_SalesOrg__c,true,false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Denotes that the product stock record is related to their company code</inlineHelpText>
+        <label>Is My Sales Org</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Is_Serialized__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(SVMXC__Product__r.SVMXC__Enable_Serialized_Tracking__c = true 
+|| SVMXC__Product__r.SMAX_PS_BatchManagementRequirementIndi__c = true, 
+true, 
+false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Serialized</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_LastTxnNum__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Transaction Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Maintenance_Plant__c</fullName>
+        <externalId>false</externalId>
+        <formula>SVMXC__Location__r.SMAX_PS_MaintenancePlant__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Maintenance Plant</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_My_Stock__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF($User.Id=SVMXC__Location__r.SVMXC__Service_Engineer__r.Id, TRUE, FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>My Stock</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Part_Number__c</fullName>
+        <description>References part number on the product record</description>
+        <externalId>false</externalId>
+        <formula>SVMXC__Product__r.Partnum__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>References part number on the product record</inlineHelpText>
+        <label>Part Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Product_Description__c</fullName>
+        <description>Displays the Product Description from the Product object</description>
+        <externalId>false</externalId>
+        <formula>SVMXC__Product__r.Description</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Displays the Product Description from the Product object</inlineHelpText>
+        <label>Product Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Product_Name__c</fullName>
+        <description>product name related to product stock</description>
+        <externalId>false</externalId>
+        <formula>SVMXC__Product__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>product name related to product stock</inlineHelpText>
+        <label>Product Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Product_Type__c</fullName>
+        <description>Denotes the type of product that the product stock is related to</description>
+        <externalId>false</externalId>
+        <formula>TEXT(SVMXC__Product__r.SVMXC__Product_Type__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Denotes the type of product that the product stock is related to</inlineHelpText>
+        <label>Product Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_SalesOrg__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Org</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Unit_Price_Currency__c</fullName>
+        <externalId>false</externalId>
+        <label>Unit Price Currency</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SMAX_PS_Unit_Price__c</fullName>
+        <description>The default Unit Price of the Product in this Sales Org. For use in Off-line Pricing.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The default Unit Price of the Product in this Sales Org. For use in Off-line Pricing.</inlineHelpText>
+        <label>Unit Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_VS_Product_Tracking__c</fullName>
+        <description>This field helps to determine the Product Tracking (If Serialized/Non-Serialized)</description>
+        <externalId>false</externalId>
+        <formula>TEXT(SVMXC__Product__r.SVMXC__Tracking__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This field helps to determine the Product Tracking (If Serialized/Non-Serialized)</inlineHelpText>
+        <label>Product Tracking</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <validationRules>
+        <fullName>ProductStock_Required_Fields</fullName>
+        <active>true</active>
+        <errorConditionFormula>OR(ISBLANK( SVMXC__Location__c ), ISBLANK( SVMXC__Product__c ))</errorConditionFormula>
+        <errorMessage>Must specify both a Product and Location for Product Stock.</errorMessage>
+    </validationRules>
+</CustomObject>

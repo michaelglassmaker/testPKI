@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Settings to control Stock Transfer</description>
+    <enableFeeds>false</enableFeeds>
+    <label>Stock Transfer Settings</label>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>SVMX_PS_VS_Value__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Field to store the value(true/false)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field to store the value(true/false)</inlineHelpText>
+        <label>Value</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_VS_Field_Type__c</fullName>
+        <description>This indicates what type of value is expected for the custom setting</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This indicates what type of value is expected for the custom setting</inlineHelpText>
+        <label>Field Type</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVMX_PS_VS_Text_Value__c</fullName>
+        <description>Field to store Text Value</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field to store Text Value</inlineHelpText>
+        <label>Text Value</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

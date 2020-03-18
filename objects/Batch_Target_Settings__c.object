@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <label>Batch Target Settings</label>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>Lead_Target_Batch_Size__c</fullName>
+        <externalId>false</externalId>
+        <label>Lead Target Batch Size</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Metrics_Batch_Size__c</fullName>
+        <externalId>false</externalId>
+        <label>Lead Metrics Batch Size</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Line_Item_Target_Batch_Size__c</fullName>
+        <externalId>false</externalId>
+        <label>Line Item Target Batch Size</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Zero_Product_Lead_Batch_Size__c</fullName>
+        <externalId>false</externalId>
+        <label>Zero Product Lead Batch Size</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Target_Batch_Size__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity Target Batch Size</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Metrics_Batch_Size__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity Metrics Batch Size</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Line_Metrics_Batch_Size__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Line Metrics Batch Size</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Zero_Month_Rep_Target_Batch_Size__c</fullName>
+        <externalId>false</externalId>
+        <label>Zero Month Rep Target Batch Size</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rgn_Product_Line_Metrics_Batch_Size__c</fullName>
+        <externalId>false</externalId>
+        <label>Rgn Product Line Metrics Batch Size</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Zero_Month_Territory_Target_Batch_Size__c</fullName>
+        <externalId>false</externalId>
+        <label>Zero Month Territory Target Batch Size</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Zero_Rgn_Product_Line_Targe_Batch_Size__c</fullName>
+        <externalId>false</externalId>
+        <label>Zero Rgion Product Line Targe Batch Size</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Zero_Rep_Product_Line_Target_Batch_Size__c</fullName>
+        <externalId>false</externalId>
+        <label>Zero Rep Product Line Target Batch Size</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Zero_Rgn_Product_Line_Target_Batch_Size__c</fullName>
+        <externalId>false</externalId>
+        <label>Zero Rgion Product Line Targe Batch Size</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Zero_Rgion_Product_Line_Targe_Batch_Size__c</fullName>
+        <externalId>false</externalId>
+        <label>Zero Rgion Product Line Targe Batch Size</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>
